@@ -1,0 +1,18 @@
+# 本地单独存放：AI 生成的原图片，不随网站发布
+originals/
+
+# 部署暂存目录（wrangler pages deploy _site）
+_site/
+
+# AI 工作日志等本地数据，不进公开仓库
+.workbuddy/
+
+# 本地验证截图与临时预览图（_verify*.js / analyze_eng.py 等脚本保留）
+tools/_*.png
+
+# 依赖与系统文件
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+.wrangler/

@@ -1,0 +1,9 @@
+name = "smallfigure"
+pages_build_output_dir = "_site"
+compatibility_date = "2025-10-22"
+
+# 下载计数：D1 数据库 smallfigure_downloads
+[[d1_databases]]
+binding = "DB"
+database_name = "smallfigure_downloads"
+database_id = "2d543190-2207-4446-b869-1c11c42b1f1d"

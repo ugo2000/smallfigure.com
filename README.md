@@ -1,0 +1,109 @@
+# smallfigure.com
+
+每个人都有自己的故事，就像 smallfigure 里的每个小人。
+
+原创小人图鉴：把老张、果克星人、女工程师这些**单体小人**的图分门别类放上网，
+支持**分类浏览、尺寸筛选、名称搜索、大图下载、下载热度计数**。
+smallfigure = 小人的图。
+
+线上地址：https://smallfigure.com （Cloudflare Pages 托管）
+
+## 收录内容
+
+| 分类 | 内容 |
+|---|---|
+| 人物立绘 | 老张（立绘 + 原图）、果克星人（立绘 + 原图）、女工程师立绘 |
+| 小徽章 | 低音核 / 晶铃 / 等离子 三枚霓虹线稿徽章 |
+
+只收单体小人和小徽章；动画帧、游戏截图、封面、背景一律不上站。
+
+## 功能
+
+- **分类**：人物立绘 / 小徽章
+- **搜索**：名称、简介、标签实时匹配（如「老张」「透明」「徽章」），按 `/` 快速聚焦
+- **尺寸筛选**：≤400px / 401–800px / 801–1600px / >1600px 四档
+- **排序**：默认 / 尺寸 / 体积 / 名称
+- **灯箱**：大图 + 元数据 + 标签 + 下载，支持 ←/→ 切换、ESC 关闭
+- **下载计数**：每张图的后台下载次数存在 Cloudflare D1，**满 100 次才在卡片右上角和灯箱里亮出计数**
+  （`↓ 137` 金色徽章 / 「下载次数 137 次」）。不到 100 次只统计、不展示
+- **背景音乐**：默认开启（浏览器拦截自动播放时，访客首次点页面即响起），右下角圆形按钮随时开关，
+  选择记在 localStorage，刷新不丢
+
+## 目录结构
+
+```
+├── index.html / styles.css / app.js   # 站点本体（零依赖原生三件套）
+├── functions/api/                     # Pages Functions：下载计数后端
+│   ├── counts.js                      #   GET  /api/counts     全量计数
+│   └── download/[id].js               #   POST /api/download/:id  自增并返回最新值
+├── migrations/0001_init.sql           # D1 建表脚本（downloads 表）
+├── wrangler.toml                      # Pages 项目配置 + D1 绑定（DB）
+├── data/images.json                   # 素材元数据（构建产物）
+├── assets/img/
+│   ├── full/                          # 站内大图（最长边 1024，PNG）
+│   └── thumbs/                        # 网格缩略图（最长边 400，WebP）
+├── assets/audio/bgm.mp3               # 背景音乐（Meditation · Arulo，Mixkit 免费曲库）
+├── processed/                         # 人物透明立绘：character-art 技能脚本从 AI 原图重抠
+├── originals/                         # ★ AI 生成的原图片，本地单独存放，不发布
+├── tools/build_assets.py              # 素材构建脚本（可重复跑，幂等）
+├── tools/sync_site.sh                 # 同步站点文件进 _site
+├── tools/deploy.sh                    # 一键部署（同步 + wrangler pages deploy）
+└── .gitignore                         # 忽略 originals/、_site/、临时预览图
+```
+
+## 本地开发
+
+```bash
+# 带计数后端的本地预览（Pages Functions + 本地 D1）
+npx wrangler pages dev _site --port 8788
+# 打开 http://127.0.0.1:8788
+
+# 纯静态预览（计数接口不可用，徽章不显示，不影响浏览）
+python -m http.server 8080
+```
+
+## 重新构建素材
+
+改了 `processed/` 或 game-ball1 里的图之后，重跑一次构建脚本即可更新全站图片与元数据：
+
+```bash
+python tools/build_assets.py
+```
+
+脚本会：复制原图到 `originals/` → 生成大图/缩略图 → 重写 `data/images.json`。
+清单在脚本顶部的 `ITEMS` 里，加小人就往里加一行；`processed/` 开头表示用站点自己的重抠版。
+
+## 部署（Cloudflare Pages）
+
+```bash
+# 一键：同步 _site → 直传部署（含 Functions）
+bash tools/deploy.sh
+
+# 手动等价操作：
+bash tools/sync_site.sh
+npx wrangler pages deploy _site --project-name=smallfigure --branch=main
+```
+
+下载计数依赖 D1 数据库 `smallfigure_downloads`（已在 wrangler.toml 绑定为 `DB`），
+建表语句在 `migrations/0001_init.sql`；换账号/换库时改 wrangler.toml 里的 `database_id` 并重跑：
+
+```bash
+npx wrangler d1 execute smallfigure_downloads --remote --file migrations/0001_init.sql
+```
+
+自定义域名 `smallfigure.com` 已绑定（Cloudflare DNS CNAME → smallfigure.pages.dev，已 proxied，
+SSL 自动签发）。当前状态：线上 https://smallfigure.com 正常运行。
+
+## 背景音乐
+
+曲目 **Meditation**（作者 Arulo，1:58），来自 Mixkit 免费曲库，Mixkit Stock Music Free License：
+允许在网站公开播放、免署名、可商用（不得用于 CD/电视广播/游戏）。源文件：
+`https://assets.mixkit.co/music/441/441.mp3`（曲目页 `https://mixkit.co/free-stock-music/meditation-441/`）。
+换曲子：下载新 mp3 覆盖 `assets/audio/bgm.mp3`，重新部署即可，代码零改动。
+
+代码仓库：GitHub 仓库 `ugo2000/smallfigure.com`（建库后由 AI 通过 connector 全量推送）。
+
+## 素材来源与授权
+
+- 老张 / 果克星人 / 女工程师立绘与徽章：均为原创角色，非真实人物肖像，可自由分发。
+- AI 生成的原图片在本地 `originals/` 单独存档，不随网站发布（详见目录结构说明）。

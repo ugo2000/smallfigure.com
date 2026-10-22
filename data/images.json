@@ -1,0 +1,220 @@
+{
+ "site": "smallfigure.com",
+ "subtitle": "原创小人图鉴 · 立绘 / 小徽章",
+ "generated": "2026-10-22T21:59:40+08:00",
+ "source": "game-ball1（游戏《音弹》角色美术，本站只收单体小人与徽章）",
+ "count": 8,
+ "categories": [
+  {
+   "key": "characters",
+   "label": "人物立绘"
+  },
+  {
+   "key": "badges",
+   "label": "小徽章"
+  }
+ ],
+ "images": [
+  {
+   "id": "hero-t",
+   "name": "老张 · 立绘",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "file": "assets/img/full/hero_t.png",
+   "thumb": "assets/img/thumbs/hero_t.webp",
+   "width": 512,
+   "height": 512,
+   "srcWidth": 512,
+   "srcHeight": 512,
+   "bytes": 336537,
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#342e28",
+   "tags": [
+    "老张",
+    "主角",
+    "立绘",
+    "hero",
+    "透明",
+    "小人"
+   ],
+   "desc": "本站看板小人：棕夹克工装男，AI 生成后抠成透明 PNG，512×512"
+  },
+  {
+   "id": "hero",
+   "name": "老张 · 立绘原图",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "file": "assets/img/full/hero.png",
+   "thumb": "assets/img/thumbs/hero.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1191332,
+   "transparent": false,
+   "animated": false,
+   "effect": null,
+   "color": "#c5baad",
+   "tags": [
+    "老张",
+    "主角",
+    "立绘",
+    "hero",
+    "原图"
+   ],
+   "desc": "AI 原始生成图，浅灰底未抠图（原图在 originals/ 有备份）"
+  },
+  {
+   "id": "alien-t",
+   "name": "果克星人 · 立绘",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "file": "assets/img/full/alien_t.png",
+   "thumb": "assets/img/thumbs/alien_t.webp",
+   "width": 512,
+   "height": 512,
+   "srcWidth": 512,
+   "srcHeight": 512,
+   "bytes": 296833,
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#24292c",
+   "tags": [
+    "果克星人",
+    "外星人",
+    "立绘",
+    "alien",
+    "透明",
+    "小人"
+   ],
+   "desc": "绿色大头外星小人，透明 PNG，512×512"
+  },
+  {
+   "id": "alien",
+   "name": "果克星人 · 立绘原图",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "file": "assets/img/full/alien.png",
+   "thumb": "assets/img/thumbs/alien.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1027804,
+   "transparent": false,
+   "animated": false,
+   "effect": null,
+   "color": "#c9c9c6",
+   "tags": [
+    "果克星人",
+    "外星人",
+    "alien",
+    "原图"
+   ],
+   "desc": "AI 原始生成图，未抠图"
+  },
+  {
+   "id": "engineer",
+   "name": "女工程师 · 立绘",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "file": "assets/img/full/hero_new.png",
+   "thumb": "assets/img/thumbs/hero_new.webp",
+   "width": 512,
+   "height": 512,
+   "srcWidth": 512,
+   "srcHeight": 512,
+   "bytes": 305596,
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#171e22",
+   "tags": [
+    "女工程师",
+    "立绘",
+    "engineer",
+    "透明",
+    "小人"
+   ],
+   "desc": "技能验证时生成的漫画风女工程师，透明 PNG，512×512"
+  },
+  {
+   "id": "zone-bass",
+   "name": "徽章 · 低音核",
+   "category": "badges",
+   "categoryLabel": "小徽章",
+   "file": "assets/img/full/zone_bass.png",
+   "thumb": "assets/img/thumbs/zone_bass.webp",
+   "width": 384,
+   "height": 384,
+   "srcWidth": 384,
+   "srcHeight": 384,
+   "bytes": 312037,
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#2a6863",
+   "tags": [
+    "徽章",
+    "低音核",
+    "bass",
+    "透明",
+    "小图"
+   ],
+   "desc": "霓虹线稿小徽章，音区标识之一"
+  },
+  {
+   "id": "zone-bell",
+   "name": "徽章 · 晶铃",
+   "category": "badges",
+   "categoryLabel": "小徽章",
+   "file": "assets/img/full/zone_bell.png",
+   "thumb": "assets/img/thumbs/zone_bell.webp",
+   "width": 384,
+   "height": 384,
+   "srcWidth": 384,
+   "srcHeight": 384,
+   "bytes": 243293,
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#362e45",
+   "tags": [
+    "徽章",
+    "晶铃",
+    "bell",
+    "透明",
+    "小图"
+   ],
+   "desc": "霓虹线稿小徽章，音区标识之一"
+  },
+  {
+   "id": "zone-lead",
+   "name": "徽章 · 等离子",
+   "category": "badges",
+   "categoryLabel": "小徽章",
+   "file": "assets/img/full/zone_lead.png",
+   "thumb": "assets/img/thumbs/zone_lead.webp",
+   "width": 384,
+   "height": 384,
+   "srcWidth": 384,
+   "srcHeight": 384,
+   "bytes": 267787,
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#6d482e",
+   "tags": [
+    "徽章",
+    "等离子",
+    "lead",
+    "透明",
+    "小图"
+   ],
+   "desc": "霓虹线稿小徽章，音区标识之一"
+  }
+ ]
+}

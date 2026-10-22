@@ -1,0 +1,17 @@
+# HTML 不缓存，改版后刷新即可见（防止浏览器拿旧页面）
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# 静态资源缓存一天（图片内容变化不频繁，构建后重传即刷新）
+/assets/*
+  Cache-Control: public, max-age=86400
+
+# 音频基本不变，缓存 7 天；注意：Pages 的 _headers 后匹配的规则胜出，这条必须放在 /assets/* 后面
+/assets/audio/*
+  Cache-Control: public, max-age=604800
+
+# 数据文件短缓存，保证元数据更新及时可见
+/data/*
+  Cache-Control: public, max-age=300
