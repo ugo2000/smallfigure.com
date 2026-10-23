@@ -47,14 +47,15 @@ CAT_LABELS = {
     "flora": {"zh": "异星植物", "en": "Alien Flora"},
     "stoneage": {"zh": "石器原始", "en": "Stone Age & Primitives"},
     "potions": {"zh": "奇色液体", "en": "Colored Potions"},
+    "books": {"zh": "魔法书籍", "en": "Arcane Books"},
     "badges": {"zh": "小徽章", "en": "Badges"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 徽章",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Badges"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 徽章",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Badges"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
-          "异星生物 / 异星植物 / 石器原始 / 奇色液体）"
+          "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍）"
           " + 早期《音弹》游戏美术资产 + 果克星人系列（据张祥前《果克星球奇遇》描述 AI 生成）")
 
 # 每项：源文件, id, 中文名, 英文名, 分类, 标签, 中文简介, 英文简介, 透明, 动画效果
@@ -443,6 +444,37 @@ ITEMS = [
      "tags_en": ["original", "potion", "violet", "tall vial", "crystal stopper", "transparent"],
      "desc_zh": "原创系列：修长高瓶盛着通透幽紫药液，瓶底嵌着发光晶核，瓶口是一枚尖头水晶塞，瓶身凝着几滴冷雾，药水图鉴风，透明 PNG，1024×1024",
      "desc_en": "Original series: a slender tall vial of clear violet potion, a glowing crystal core embedded in the base, a pointed crystal stopper in the neck, cold mist beading on the glass, potion catalogue style, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    # ---- 魔法书籍（封面符文全部为虚构符号，非地球任何现有语言）----
+    {"src": "processed/book_grimoire_t.png", "id": "book-grimoire", "name_zh": "血红法典 · 魔法书籍", "name_en": "Crimson Grimoire · Arcane Book",
+     "cat": "books", "tags": ["原创", "魔法书籍", "法典", "皮革装帧", "黄铜扣", "封印", "透明"],
+     "tags_en": ["original", "arcane book", "grimoire", "leather bound", "brass clasp", "sealed", "transparent"],
+     "desc_zh": "原创系列：厚重的血红皮革法典立于封面，封面刻着一枚由纯虚构几何符号与棱角符文组成的圆形印记，青蓝色光芒从刻痕里渗出，四角包着磨损的铜护片，正面横着一道沉重铜扣，魔典图鉴风，透明 PNG，1024×1024",
+     "desc_en": "Original series: a thick crimson leather grimoire standing upright, its cover carved with a circular emblem of purely invented geometric symbols and angular runes, cyan-blue light seeping from the carved grooves, worn brass corner protectors, a heavy brass clasp across the front, arcane book catalogue style, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/book_open_tome_t.png", "id": "book-open-tome", "name_zh": "摊开魔典 · 魔法书籍", "name_en": "Open Spell Tome · Arcane Book",
+     "cat": "books", "tags": ["原创", "魔法书籍", "羊皮纸", "摊开", "紫色符光", "飘浮符号", "透明"],
+     "tags_en": ["original", "arcane book", "open tome", "parchment", "violet glow", "floating glyphs", "transparent"],
+     "desc_zh": "原创系列：摊开平放的古老魔典，两页泛黄羊皮纸上写满纯虚构的抽象符号与几何图形，紫金双色墨迹，右页若干符号发亮浮离纸面，紫色细烟袅袅升起，魔典图鉴风，透明 PNG，1024×1024",
+     "desc_en": "Original series: an ancient tome lying open, both yellowed parchment pages covered with purely invented abstract glyphs and geometric diagrams in violet and gold ink, several marks on the right page glowing and lifting off the page, thin violet wisps rising above, arcane book catalogue style, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/book_scroll_t.png", "id": "book-scroll", "name_zh": "符纹卷轴 · 魔法书籍", "name_en": "Rune Scroll · Arcane Book",
+     "cat": "books", "tags": ["原创", "魔法书籍", "卷轴", "羊皮纸", "木轴", "余烬", "透明"],
+     "tags_en": ["original", "arcane book", "scroll", "parchment", "wooden rod", "embers", "transparent"],
+     "desc_zh": "原创系列：半展的魔法卷轴立于木轴之上，羊皮纸面排满纯虚构的抽象刻痕与几何图形，焦橙与深青墨色，其中一带符号隐隐泛着琥珀色火光，几点余烬飘散向上，魔典图鉴风，透明 PNG，1024×1024",
+     "desc_en": "Original series: a partially unrolled magical scroll standing on its wooden rod, the parchment covered in rows of purely invented abstract marks and geometric diagrams in burnt orange and dark teal ink, one band of glyphs glowing faintly amber as if smoldering, a few embers drifting upward, arcane book catalogue style, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/book_crystal_t.png", "id": "book-crystal", "name_zh": "水晶法典 · 魔法书籍", "name_en": "Crystal Codex · Arcane Book",
+     "cat": "books", "tags": ["原创", "魔法书籍", "水晶", "金属框", "悬浮", "寒光", "透明"],
+     "tags_en": ["original", "arcane book", "crystal", "metal frame", "hovering", "frost light", "transparent"],
+     "desc_zh": "原创系列：嵌着淡蓝水晶的封闭法典悬浮在半空，细银黑金属框以爪状卡扣咬住书脊边缘，水晶面上刻着纯虚构的锐角符号与交错几何线条，冷蓝白光从刻纹里透出，框缘结着一圈霜光，浮冰晶在四周漂移，魔典图鉴风，透明 PNG，1024×1024",
+     "desc_en": "Original series: a closed codex with a pale ice-blue crystal set into its cover, held by a thin dark-silver metal frame with claw-like prongs gripping the edges, the crystal face engraved with purely invented sharp angular strokes and intersecting geometric lines, cold blue-white light glowing from the engravings, a rim of frosty light along the frame, tiny ice crystals drifting around, arcane book catalogue style, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/book_bone_t.png", "id": "book-bone", "name_zh": "骨饰禁书 · 魔法书籍", "name_en": "Bone-Bound Grimoire · Arcane Book",
+     "cat": "books", "tags": ["原创", "魔法书籍", "骨饰", "黑封皮", "磷光", "寒雾", "透明"],
+     "tags_en": ["original", "arcane book", "bone binding", "black cover", "sickly glow", "cold mist", "transparent"],
+     "desc_zh": "原创系列：灰骨板装帧的黑暗禁书立于封面，脊背拱起数根雕骨肋条，正面一枚锡扣，封面竖排一枚由纯虚构钩状符号与骨形印记组成的纹章，泛着病态绿光，底缘绕着冷雾，页面染成深褐，魔典图鉴风，透明 PNG，1024×1024",
+     "desc_en": "Original series: a blackened occult tome bound in dark grey bone plates, small carved bone ribs arching over the spine, a tarnished pewter clasp on the front, a single emblem in a tight vertical column built from purely invented hooked strokes and bone-shaped sigils, glowing a dim sickly green, cold mist curling along the base, page edges stained dark umber, arcane book catalogue style, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
     # ---- 小徽章 ----
     {"src": "img/zone_bass.png", "id": "zone-bass", "name_zh": "徽章 · 低音核", "name_en": "Badge · Bass Core",

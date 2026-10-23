@@ -28,14 +28,14 @@ const BASE = process.env.SF_URL || 'https://www.smallfigure.com';
 
   check('O1 线上默认英文标题', (await T('title')) === 'smallfigure · Original Asset Gallery', await T('title'));
   check('O2 线上英文副标题', (await T('.subtitle')).indexOf('Everything has its own story') === 0, await T('.subtitle'));
-  check('O3 线上卡片数 64', (await pg.$$('.card')).length === 64, String((await pg.$$('.card')).length));
+  check('O3 线上卡片数 69', (await pg.$$('.card')).length === 69, String((await pg.$$('.card')).length));
   check('O4 线上英文卡片名', (await T('.card-meta h3')) === 'Laozhang · Character Art', await T('.card-meta h3'));
 
   await pg.click('.site-header .lang-btn[data-lang="zh"]');
   await pg.waitForTimeout(600);
   check('O5 切中文标题', (await T('title')) === 'smallfigure · 原创素材图鉴', await T('title'));
   check('O6 切中文卡片名', (await T('.card-meta h3')) === '老张 · 立绘', await T('.card-meta h3'));
-  check('O7 切中文计数行', (await T('#countLine')).indexOf('共 64 张') === 0, await T('#countLine'));
+  check('O7 切中文计数行', (await T('#countLine')).indexOf('共 69 张') === 0, await T('#countLine'));
 
   await pg.click('.card');
   await pg.waitForTimeout(600);
@@ -81,11 +81,12 @@ const BASE = process.env.SF_URL || 'https://www.smallfigure.com';
     await pg.waitForTimeout(250);
   }
 
-  // 新增：异星生物 / 异星植物 / 石器原始 / 奇色液体 四个分类
+  // 新增：异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 五个分类
   for (const [key, label, n, kw] of [['异星生物', '异星生物', 4, '异星生物'],
                                    ['异星植物', '异星植物', 4, '异星植物'],
                                    ['石器', '石器原始', 5, '石器'],
-                                   ['奇色液体', '奇色液体', 4, '奇色液体']]) {
+                                   ['奇色液体', '奇色液体', 4, '奇色液体'],
+                                   ['魔法书籍', '魔法书籍', 5, '魔法书籍']]) {
     const i = chips.findIndex(c => c.indexOf(key) === 0);
     if (i < 0) { check('O18 ' + label + ' chip 存在', false, chips.join(' / ')); continue; }
     await pg.click('.chip >> nth=' + i);

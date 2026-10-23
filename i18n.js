@@ -9,9 +9,9 @@
   var DICT = {
     zh: {
       'site.title': 'smallfigure · 原创素材图鉴',
-      'meta.desc': 'smallfigure 原创素材图鉴：角色立绘、武器装备、弹药军械、徽章、动物、食物美食、载具机械、异星生物、异星植物、石器原始、奇色液体……每件素材都有自己的故事，不限题材。支持分类、尺寸筛选与名称搜索。',
+      'meta.desc': 'smallfigure 原创素材图鉴：角色立绘、武器装备、弹药军械、徽章、动物、食物美食、载具机械、异星生物、异星植物、石器原始、奇色液体、魔法书籍……每件素材都有自己的故事，不限题材。支持分类、尺寸筛选与名称搜索。',
       'hero.subtitle': '万物皆有自己的故事，smallfigure 收集这些故事',
-      'search.placeholder': '搜素材 / 标签：角色、武器、弹药、动物、食物、载具、异星生物、异星植物、石器、液体、透明、徽章…',
+      'search.placeholder': '搜素材 / 标签：角色、武器、弹药、动物、食物、载具、异星生物、异星植物、石器、液体、法典、卷轴、透明、徽章…',
       'toolbar.cats': '分类筛选',
       'filter.size': '尺寸',
       'size.all': '全部尺寸',
@@ -60,9 +60,9 @@
     },
     en: {
       'site.title': 'smallfigure · Original Asset Gallery',
-      'meta.desc': 'smallfigure is an original asset gallery: character art, weapons and gear, ammunition, badges, creatures, food and drink, vehicles and machines, alien creatures, alien flora, stone-age primitives, colored potions — every piece has its own story, no subject limits. Filter by category and size, search by name.',
+      'meta.desc': 'smallfigure is an original asset gallery: character art, weapons and gear, ammunition, badges, creatures, food and drink, vehicles and machines, alien creatures, alien flora, stone-age primitives, colored potions, arcane books — every piece has its own story, no subject limits. Filter by category and size, search by name.',
       'hero.subtitle': 'Everything has its own story — smallfigure collects them',
-      'search.placeholder': 'Search art / tags: character, weapon, ammo, animal, food, vehicle, alien, flora, stone age, potion, transparent, badge…',
+      'search.placeholder': 'Search art / tags: character, weapon, ammo, animal, food, vehicle, alien, flora, stone age, potion, grimoire, spellbook, transparent, badge…',
       'toolbar.cats': 'Category filter',
       'filter.size': 'Size',
       'size.all': 'All sizes',
