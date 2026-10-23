@@ -17,6 +17,7 @@ smallfigure 是一个「包罗万象」的原创素材图鉴站，不局限于�
 """
 import json
 import os
+import re
 import shutil
 import sys
 from datetime import datetime, timezone, timedelta
@@ -70,7 +71,7 @@ ITEMS = [
     {"src": "img/hero.png", "id": "hero", "name_zh": "老张 · 立绘原图", "name_en": "Laozhang · Original Artwork",
      "cat": "characters", "tags": ["老张", "主角", "立绘", "hero", "原图"],
      "tags_en": ["Laozhang", "protagonist", "character art", "hero", "original"],
-     "desc_zh": "AI 原始生成图，浅灰底未抠图（原图在 originals/ 有备份）",
+     "desc_zh": "AI 原始生成图，浅灰底未抠图（原图在本地备份目录中有留存）",
      "desc_en": "Original AI-generated image, light gray background, not cut out (backup kept in originals/)",
      "transparent": False, "effect": None},
     {"src": "processed/alien_t.png", "id": "alien-t", "name_zh": "果克星人 · 立绘", "name_en": "Gucck Alien · Character Art",
@@ -168,7 +169,7 @@ ITEMS = [
     {"src": "processed/figure_fairy_lattice_t.png", "id": "figure-fairy-lattice", "name_zh": "薄翼仙子 · 立绘", "name_en": "The Gossamer Fairy · Character Art",
      "cat": "characters", "tags": ["原创", "仙子", "精灵", "薄翼", "漂浮", "立绘", "fairy", "透明", "小人"],
      "tags_en": ["original", "fairy", "gossamer wings", "floating", "character art", "transparent", "little figure"],
-     "desc_zh": "原创系列：薄荷绿短发、原创几何网纹薄翼、茶叶金线小裙、赤脚漂浮的仙子，刻意避开 Tinker Bell 造型，细腻美式漫画风，透明 PNG，512×512",
+     "desc_zh": "原创系列：薄荷绿短发、原创几何网纹薄翼、茶叶金线小裙、赤脚漂浮的仙子，刻意避开既有童话仙子的经典造型，细腻美式漫画风，透明 PNG，512×512",
      "desc_en": "Original series: a fairy with mint-green hair, original geometric-lattice gossamer wings, a teal leaf-and-gold dress and bare floating feet, deliberately not a Tinker Bell likeness, detailed American comic style, transparent PNG, 512×512",
      "transparent": True, "effect": None},
     # ---- 武器装备系列（原创单件实物立绘，全部避开已有角色的随身物件）----
@@ -241,7 +242,7 @@ ITEMS = [
      "desc_en": "Original series: a sleek black cat with a red scarf, sitting with its tail curled, detailed American comic style, transparent PNG, 512×512",
      "transparent": True, "effect": None},
     {"src": "processed/cr_raven_t.png", "id": "cr-raven", "name_zh": "渡鸦 · 立绘", "name_en": "Raven · Character Art",
-     "cat": "animals", "tags": ["原创", "动物", "渡鸦", "鸟", "立绘", "raven", "transparent", "小人"],
+     "cat": "animals", "tags": ["原创", "动物", "渡鸦", "鸟", "立绘", "raven", "透明", "小人"],
      "tags_en": ["original", "animal", "raven", "bird", "character art", "transparent", "little figure"],
      "desc_zh": "原创系列：羽色带蓝紫虹彩、歪头审视的渡鸦，腿间缝隙已抠净，细腻美式漫画风，透明 PNG，512×512",
      "desc_en": "Original series: a glossy raven with blue-violet iridescent plumage and a inquisitive tilted head, gap between the legs fully cleared, detailed American comic style, transparent PNG, 512×512",
@@ -316,7 +317,7 @@ ITEMS = [
     {"src": "processed/veh_spaceship_t.png", "id": "veh-spaceship", "name_zh": "复古火箭飞船 · 载具", "name_en": "Retro Rocket Ship · Vehicle",
      "cat": "vehicles", "tags": ["原创", "载具", "飞船", "火箭", "复古未来", "spaceship", "rocket", "透明"],
      "tags_en": ["original", "vehicle", "spaceship", "rocket", "retro future", "transparent"],
-     "desc_zh": "原创系列：镀铬子弹形舰体配铆钉蒙皮与后掠双翼，中段一排青色发光舷窗，红色尾翼喷出橙黄尾焰，1960 年代 pulp 太空海报风，透明 PNG，1024×1024",
+     "desc_zh": "原创系列：镀铬子弹形舰体配铆钉蒙皮与后掠双翼，中段一排青色发光舷窗，红色尾翼喷出橙黄尾焰，1960 年代通俗科幻海报风，透明 PNG，1024×1024",
      "desc_en": "Original series: a chrome bullet-shaped hull with riveted panels and swept fins, a row of glowing cyan portholes, a red tail fin with an orange flame, 1960s pulp space poster style, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
     {"src": "processed/veh_propeller_t.png", "id": "veh-propeller", "name_zh": "螺旋桨轻型飞机 · 载具", "name_en": "Propeller Light Aircraft · Vehicle",
@@ -384,24 +385,24 @@ ITEMS = [
     {"src": "processed/flora_iron_tree_t.png", "id": "flora-iron-tree", "name_zh": "铁骨圣树 · 异星植物", "name_en": "Ironwood Sacred Tree · Alien Flora",
      "cat": "flora", "tags": ["原创", "异星植物", "树木", "铁骨", "扇形叶", "发光核", "tree", "ironwood", "透明"],
      "tags_en": ["original", "alien flora", "tree", "ironwood", "fan leaves", "transparent"],
-     "desc_zh": "Original series: a gnarled alien tree with a dark ironwood trunk, symmetric teal fan-shaped leaves spreading like a crown, a glowing orange seed core cradled in the branches, alien forest illustration style, transparent PNG, 1024×1024",
+     "desc_zh": "原创系列：虬结的铁骨圣树，深色铁木质树干，扇形青绿叶片对称展开如冠，枝桠间托着一枚发光橙色种核，异星森林插画风，透明 PNG，1024×1024",
      "desc_en": "Original series: a gnarled alien tree with a dark ironwood trunk, symmetric teal fan-shaped leaves spreading like a crown, a glowing orange seed core cradled in the branches, alien forest illustration style, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
     # ---- 石器原始（石器工具 / 原始人）----
     {"src": "processed/stone_flint_axe_t.png", "id": "stone-flint-axe", "name_zh": "燧石战斧 · 石器", "name_en": "Flint Battle Axe · Stone Age",
-     "cat": "stoneage", "tags": ["原创", "石器", "燧石", "战斧", "原始", "原始人", "flint", "axe", "transparent"],
+     "cat": "stoneage", "tags": ["原创", "石器", "燧石", "战斧", "原始", "原始人", "flint", "axe", "透明"],
      "tags_en": ["original", "stone age", "flint", "axe", "primitive", "transparent"],
      "desc_zh": "原创系列：巨型燧石刃绑在弯木柄上，石面带天然贝壳状断口，柄身缠绕皮条与骨钉，斧头泛冷白光泽，史前石器图鉴风，透明 PNG，1024×1024",
      "desc_en": "Original series: a giant flint blade lashed to a curved wooden haft, the stone showing natural conchoidal fracture, hide strips and bone spikes binding the shaft, the head with a cold white sheen, prehistoric artefact study style, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
     {"src": "processed/stone_bone_hammer_t.png", "id": "stone-bone-hammer", "name_zh": "骨柄石锤 · 石器", "name_en": "Bone-Handled Stone Hammer · Stone Age",
-     "cat": "stoneage", "tags": ["原创", "石器", "石锤", "骨柄", "原始", "hammer", "bone", "transparent"],
+     "cat": "stoneage", "tags": ["原创", "石器", "石锤", "骨柄", "原始", "hammer", "bone", "透明"],
      "tags_en": ["original", "stone age", "hammer", "bone handle", "primitive", "transparent"],
      "desc_zh": "原创系列：灰白石锤头凿出粗糙凿痕，中央穿孔绑着一根打磨光滑的长骨柄，柄尾系着几缕麻绳，史前工具图鉴风，透明 PNG，1024×1024",
      "desc_en": "Original series: a grey stone hammer head with rough chisel marks, a hole bored through the centre lashed to a smoothly polished long bone handle, a few hemp fibres tied at the tail, prehistoric tool study style, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
     {"src": "processed/stone_mortar_t.png", "id": "stone-mortar", "name_zh": "玄武岩石臼 · 石器", "name_en": "Basalt Mortar · Stone Age",
-     "cat": "stoneage", "tags": ["原创", "石器", "石臼", "研磨", "原始", "mortar", "basalt", "transparent"],
+     "cat": "stoneage", "tags": ["原创", "石器", "石臼", "研磨", "原始", "mortar", "basalt", "透明"],
      "tags_en": ["original", "stone age", "mortar", "grinding", "primitive", "transparent"],
      "desc_zh": "原创系列：厚重玄武岩凿成的石臼，内壁被研磨出光滑凹面，臼底躺着几粒黑色谷物与白色粉末，边缘散落碎石与木杵，史前工具图鉴风，透明 PNG，1024×1024",
      "desc_en": "Original series: a heavy basalt mortar hewn from rock, the inner wall worn smooth by grinding, a few black grains and pale powder resting at the bottom, chips of stone and a wooden pestle scattered around the rim, prehistoric tool study style, transparent PNG, 1024×1024",
@@ -510,6 +511,16 @@ def dominant_color(im):
     return "#%02x%02x%02x" % (r, g, b)
 
 
+def zh_tags(tags):
+    """中文标签只留含中文的词。
+
+    ITEMS 的 tags 里历史上混进了英文词（当初为了让搜索能命中英文关键词），
+    结果中文界面下灯箱标签直接显示英文。正确做法是英文词归 tags_en 承担，
+    中文界面显示纯中文标签；搜索索引里中英两套都在，检索能力不受影响。
+    """
+    return [t for t in tags if re.search(r"[\u4e00-\u9fff]", t)]
+
+
 def main():
     for d in (OUT_FULL, OUT_THUMB, OUT_ANIM, OUT_ORIG, OUT_DATA):
         os.makedirs(d, exist_ok=True)
@@ -538,7 +549,8 @@ def main():
     images = []
     for it in ITEMS:
         src_rel, iid = it["src"], it["id"]
-        cat, tags = it["cat"], it["tags"]
+        cat = it["cat"]
+        tags = zh_tags(it["tags"])
         src = resolve_src(src_rel)
         if not os.path.exists(src):
             print("  [缺失]", src_rel)

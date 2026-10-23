@@ -79,7 +79,7 @@ for it in B.ITEMS:
         "animated": it["effect"] is not None,
         "effect": it["effect"],
         "color": B.dominant_color(full),
-        "tags": it["tags"],
+        "tags": B.zh_tags(it["tags"]),
         "tagsEn": it["tags_en"],
         "desc": it["desc_zh"],
         "descEn": it["desc_en"],

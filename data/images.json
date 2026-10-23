@@ -2,7 +2,7 @@
  "site": "smallfigure.com",
  "subtitle": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 徽章",
  "subtitleEn": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Badges",
- "generated": "2026-10-23T16:29:53+08:00",
+ "generated": "2026-10-23T17:13:55+08:00",
  "source": "原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / 异星生物 / 异星植物 / 石器原始 / 奇色液体） + 早期《音弹》游戏美术资产 + 果克星人系列（据张祥前《果克星球奇遇》描述 AI 生成）",
  "count": 64,
  "categories": [
@@ -86,7 +86,6 @@
     "老张",
     "主角",
     "立绘",
-    "hero",
     "透明",
     "小人"
    ],
@@ -124,7 +123,6 @@
     "老张",
     "主角",
     "立绘",
-    "hero",
     "原图"
    ],
    "tagsEn": [
@@ -134,7 +132,7 @@
     "hero",
     "original"
    ],
-   "desc": "AI 原始生成图，浅灰底未抠图（原图在 originals/ 有备份）",
+   "desc": "AI 原始生成图，浅灰底未抠图（原图在本地备份目录中有留存）",
    "descEn": "Original AI-generated image, light gray background, not cut out (backup kept in originals/)"
   },
   {
@@ -160,7 +158,6 @@
     "果克星人",
     "外星人",
     "立绘",
-    "alien",
     "透明",
     "小人"
    ],
@@ -196,7 +193,6 @@
    "tags": [
     "果克星人",
     "外星人",
-    "alien",
     "原图"
    ],
    "tagsEn": [
@@ -229,7 +225,6 @@
    "tags": [
     "女工程师",
     "立绘",
-    "engineer",
     "透明",
     "小人"
    ],
@@ -454,7 +449,6 @@
     "原创",
     "厨师",
     "立绘",
-    "chef",
     "透明",
     "小人"
    ],
@@ -491,7 +485,6 @@
     "原创",
     "老爷爷",
     "立绘",
-    "grandpa",
     "透明",
     "小人"
    ],
@@ -528,7 +521,6 @@
     "原创",
     "机器人",
     "立绘",
-    "robot",
     "透明",
     "小人"
    ],
@@ -566,7 +558,6 @@
     "歌者",
     "吉他",
     "立绘",
-    "singer",
     "透明",
     "小人"
    ],
@@ -605,7 +596,6 @@
     "女巫",
     "老巫婆",
     "立绘",
-    "witch",
     "透明",
     "小人"
    ],
@@ -645,7 +635,6 @@
     "蘑菇",
     "森林",
     "立绘",
-    "witch",
     "透明",
     "小人"
    ],
@@ -687,7 +676,6 @@
     "尖耳",
     "弓",
     "立绘",
-    "elf",
     "透明",
     "小人"
    ],
@@ -730,7 +718,6 @@
     "薄翼",
     "漂浮",
     "立绘",
-    "fairy",
     "透明",
     "小人"
    ],
@@ -743,7 +730,7 @@
     "transparent",
     "little figure"
    ],
-   "desc": "原创系列：薄荷绿短发、原创几何网纹薄翼、茶叶金线小裙、赤脚漂浮的仙子，刻意避开 Tinker Bell 造型，细腻美式漫画风，透明 PNG，512×512",
+   "desc": "原创系列：薄荷绿短发、原创几何网纹薄翼、茶叶金线小裙、赤脚漂浮的仙子，刻意避开既有童话仙子的经典造型，细腻美式漫画风，透明 PNG，512×512",
    "descEn": "Original series: a fairy with mint-green hair, original geometric-lattice gossamer wings, a teal leaf-and-gold dress and bare floating feet, deliberately not a Tinker Bell likeness, detailed American comic style, transparent PNG, 512×512"
   },
   {
@@ -770,8 +757,6 @@
     "武器",
     "战锤",
     "锻造",
-    "weapon",
-    "hammer",
     "透明",
     "小图"
    ],
@@ -811,8 +796,6 @@
     "武器",
     "手枪",
     "蒸汽朋克",
-    "weapon",
-    "pistol",
     "透明",
     "小图"
    ],
@@ -852,8 +835,6 @@
     "装备",
     "盾",
     "防具",
-    "shield",
-    "gear",
     "透明",
     "小图"
    ],
@@ -893,8 +874,6 @@
     "武器",
     "链锤",
     "带刺铁球",
-    "weapon",
-    "flail",
     "透明",
     "小图"
    ],
@@ -934,8 +913,6 @@
     "道具",
     "药剂",
     "玻璃瓶",
-    "vial",
-    "potion",
     "透明",
     "小图"
    ],
@@ -976,8 +953,6 @@
     "头盔",
     "面甲",
     "科幻",
-    "helmet",
-    "gear",
     "透明",
     "小图"
    ],
@@ -1019,8 +994,6 @@
     "弹壳",
     "黄铜",
     "复古",
-    "ammunition",
-    "shell",
     "透明"
    ],
    "tagsEn": [
@@ -1059,8 +1032,6 @@
     "霰弹",
     "红壳",
     "猎枪",
-    "shotgun",
-    "ammunition",
     "透明"
    ],
    "tagsEn": [
@@ -1099,8 +1070,6 @@
     "炮弹",
     "铸铁",
     "锈迹",
-    "cannonball",
-    "ordnance",
     "透明"
    ],
    "tagsEn": [
@@ -1140,8 +1109,6 @@
     "未来",
     "科幻",
     "发光",
-    "energy",
-    "future",
     "透明"
    ],
    "tagsEn": [
@@ -1180,7 +1147,6 @@
     "动物",
     "猫",
     "立绘",
-    "cat",
     "透明",
     "小人"
    ],
@@ -1220,8 +1186,7 @@
     "渡鸦",
     "鸟",
     "立绘",
-    "raven",
-    "transparent",
+    "透明",
     "小人"
    ],
    "tagsEn": [
@@ -1260,7 +1225,6 @@
     "动物",
     "水獭",
     "立绘",
-    "otter",
     "透明",
     "小人"
    ],
@@ -1302,8 +1266,6 @@
     "镰刀",
     "东南亚",
     "异域",
-    "farmer",
-    "sickle",
     "透明",
     "小人"
    ],
@@ -1346,8 +1308,6 @@
     "锄头",
     "东非",
     "异域",
-    "farmer",
-    "hoe",
     "透明",
     "小人"
    ],
@@ -1390,8 +1350,6 @@
     "干草叉",
     "麦束",
     "中亚",
-    "farmer",
-    "pitchfork",
     "透明",
     "小人"
    ],
@@ -1435,8 +1393,6 @@
     "竹竿",
     "谷穗",
     "南美",
-    "farmer",
-    "bamboo",
     "透明",
     "小人"
    ],
@@ -1478,8 +1434,6 @@
     "拉面",
     "面食",
     "日式",
-    "ramen",
-    "food",
     "透明"
    ],
    "tagsEn": [
@@ -1517,8 +1471,6 @@
     "食物",
     "汉堡",
     "快餐",
-    "burger",
-    "food",
     "透明"
    ],
    "tagsEn": [
@@ -1555,8 +1507,6 @@
     "食物",
     "披萨",
     "奶酪",
-    "pizza",
-    "food",
     "透明"
    ],
    "tagsEn": [
@@ -1594,8 +1544,6 @@
     "蛋糕",
     "草莓",
     "甜点",
-    "cake",
-    "food",
     "透明"
    ],
    "tagsEn": [
@@ -1634,8 +1582,6 @@
     "小笼包",
     "蒸笼",
     "中式",
-    "dumpling",
-    "food",
     "透明"
    ],
    "tagsEn": [
@@ -1674,8 +1620,6 @@
     "飞船",
     "火箭",
     "复古未来",
-    "spaceship",
-    "rocket",
     "透明"
    ],
    "tagsEn": [
@@ -1686,7 +1630,7 @@
     "retro future",
     "transparent"
    ],
-   "desc": "原创系列：镀铬子弹形舰体配铆钉蒙皮与后掠双翼，中段一排青色发光舷窗，红色尾翼喷出橙黄尾焰，1960 年代 pulp 太空海报风，透明 PNG，1024×1024",
+   "desc": "原创系列：镀铬子弹形舰体配铆钉蒙皮与后掠双翼，中段一排青色发光舷窗，红色尾翼喷出橙黄尾焰，1960 年代通俗科幻海报风，透明 PNG，1024×1024",
    "descEn": "Original series: a chrome bullet-shaped hull with riveted panels and swept fins, a row of glowing cyan portholes, a red tail fin with an orange flame, 1960s pulp space poster style, transparent PNG, 1024×1024"
   },
   {
@@ -1714,8 +1658,6 @@
     "飞机",
     "螺旋桨",
     "飞行器",
-    "aviation",
-    "propeller",
     "透明"
    ],
    "tagsEn": [
@@ -1755,8 +1697,6 @@
     "机械臂",
     "液压",
     "机器人",
-    "robot",
-    "industrial",
     "透明"
    ],
    "tagsEn": [
@@ -1796,8 +1736,6 @@
     "蒸汽机",
     "锅炉",
     "飞轮",
-    "engine",
-    "steam",
     "透明"
    ],
    "tagsEn": [
@@ -1838,8 +1776,6 @@
     "水晶",
     "爬行",
     "外星",
-    "crystal",
-    "monster",
     "透明"
    ],
    "tagsEn": [
@@ -1879,7 +1815,6 @@
     "漂浮",
     "触须",
     "深海",
-    "jellyfish",
     "透明"
    ],
    "tagsEn": [
@@ -1918,8 +1853,6 @@
     "六眼",
     "拾荒者",
     "外星种族",
-    "six eye",
-    "alien",
     "透明"
    ],
    "tagsEn": [
@@ -1958,8 +1891,6 @@
     "深空",
     "猎手",
     "外星",
-    "hunter",
-    "mecha",
     "透明"
    ],
    "tagsEn": [
@@ -1998,8 +1929,6 @@
     "藤蔓",
     "螺旋",
     "星形花",
-    "vine",
-    "spiral",
     "透明"
    ],
    "tagsEn": [
@@ -2039,8 +1968,6 @@
     "水晶",
     "发光",
     "菌类",
-    "fungus",
-    "crystal",
     "透明"
    ],
    "tagsEn": [
@@ -2080,8 +2007,6 @@
     "漂浮",
     "金色",
     "触须",
-    "seed pod",
-    "floating",
     "透明"
    ],
    "tagsEn": [
@@ -2121,8 +2046,6 @@
     "铁骨",
     "扇形叶",
     "发光核",
-    "tree",
-    "ironwood",
     "透明"
    ],
    "tagsEn": [
@@ -2133,7 +2056,7 @@
     "fan leaves",
     "transparent"
    ],
-   "desc": "Original series: a gnarled alien tree with a dark ironwood trunk, symmetric teal fan-shaped leaves spreading like a crown, a glowing orange seed core cradled in the branches, alien forest illustration style, transparent PNG, 1024×1024",
+   "desc": "原创系列：虬结的铁骨圣树，深色铁木质树干，扇形青绿叶片对称展开如冠，枝桠间托着一枚发光橙色种核，异星森林插画风，透明 PNG，1024×1024",
    "descEn": "Original series: a gnarled alien tree with a dark ironwood trunk, symmetric teal fan-shaped leaves spreading like a crown, a glowing orange seed core cradled in the branches, alien forest illustration style, transparent PNG, 1024×1024"
   },
   {
@@ -2162,9 +2085,7 @@
     "战斧",
     "原始",
     "原始人",
-    "flint",
-    "axe",
-    "transparent"
+    "透明"
    ],
    "tagsEn": [
     "original",
@@ -2202,9 +2123,7 @@
     "石锤",
     "骨柄",
     "原始",
-    "hammer",
-    "bone",
-    "transparent"
+    "透明"
    ],
    "tagsEn": [
     "original",
@@ -2242,9 +2161,7 @@
     "石臼",
     "研磨",
     "原始",
-    "mortar",
-    "basalt",
-    "transparent"
+    "透明"
    ],
    "tagsEn": [
     "original",
@@ -2283,8 +2200,6 @@
     "猎人",
     "长矛",
     "兽皮",
-    "primitive",
-    "hunter",
     "透明"
    ],
    "tagsEn": [
@@ -2324,8 +2239,6 @@
     "采集者",
     "藤篮",
     "羽毛",
-    "primitive",
-    "gatherer",
     "透明"
    ],
    "tagsEn": [
@@ -2365,8 +2278,6 @@
     "品红",
     "锥形瓶",
     "发光",
-    "potion",
-    "magenta",
     "透明"
    ],
    "tagsEn": [
@@ -2406,8 +2317,6 @@
     "青绿",
     "圆瓶",
     "气泡",
-    "potion",
-    "teal",
     "透明"
    ],
    "tagsEn": [
@@ -2447,8 +2356,6 @@
     "琥珀",
     "方瓶",
     "暖光",
-    "potion",
-    "amber",
     "透明"
    ],
    "tagsEn": [
@@ -2488,8 +2395,6 @@
     "幽紫",
     "高瓶",
     "水晶塞",
-    "potion",
-    "violet",
     "透明"
    ],
    "tagsEn": [
@@ -2525,7 +2430,6 @@
    "tags": [
     "徽章",
     "低音核",
-    "bass",
     "透明",
     "小图"
    ],
@@ -2561,7 +2465,6 @@
    "tags": [
     "徽章",
     "晶铃",
-    "bell",
     "透明",
     "小图"
    ],
@@ -2597,7 +2500,6 @@
    "tags": [
     "徽章",
     "等离子",
-    "lead",
     "透明",
     "小图"
    ],
