@@ -28,14 +28,14 @@ const BASE = process.env.SF_URL || 'https://www.smallfigure.com';
 
   check('O1 线上默认英文标题', (await T('title')) === 'smallfigure · Original Asset Gallery', await T('title'));
   check('O2 线上英文副标题', (await T('.subtitle')).indexOf('Everything has its own story') === 0, await T('.subtitle'));
-  check('O3 线上卡片数 30', (await pg.$$('.card')).length === 30);
+  check('O3 线上卡片数 35', (await pg.$$('.card')).length === 35);
   check('O4 线上英文卡片名', (await T('.card-meta h3')) === 'Laozhang · Character Art', await T('.card-meta h3'));
 
   await pg.click('.site-header .lang-btn[data-lang="zh"]');
   await pg.waitForTimeout(600);
   check('O5 切中文标题', (await T('title')) === 'smallfigure · 原创素材图鉴', await T('title'));
   check('O6 切中文卡片名', (await T('.card-meta h3')) === '老张 · 立绘', await T('.card-meta h3'));
-  check('O7 切中文计数行', (await T('#countLine')).indexOf('共 30 张') === 0, await T('#countLine'));
+  check('O7 切中文计数行', (await T('#countLine')).indexOf('共 35 张') === 0, await T('#countLine'));
 
   await pg.click('.card');
   await pg.waitForTimeout(600);
@@ -50,6 +50,22 @@ const BASE = process.env.SF_URL || 'https://www.smallfigure.com';
   const srcs = await pg.$$eval('.card img', els => els.map(e => e.getAttribute('src') || ''));
   check('O11 全部缩略图 URL 带版本号', srcs.length > 0 && srcs.every(s => /\?v=[0-9a-f]{8}$/.test(s)),
     srcs.filter(s => !/\?v=/.test(s)).slice(0, 3).join(' | '));
+
+  // 新增的「食物美食」分类：chip 出现 + 点击后筛出 5 张 + 卡片名正确
+  const chips = await pg.$$eval('.chip', els => els.map(e => e.textContent.trim()));
+  check('O12 食物分类 chip 存在（中文）', chips.some(c => c.indexOf('食物') === 0 || c.indexOf('食物美食') === 0),
+    chips.join(' / '));
+  const foodIdx = chips.findIndex(c => c.indexOf('食物') === 0);
+  if (foodIdx >= 0) {
+    await pg.click('.chip >> nth=' + foodIdx);
+    await pg.waitForTimeout(500);
+    check('O13 点食物分类筛出 5 张', (await pg.$$('.card')).length === 5, String((await pg.$$('.card')).length));
+    await pg.click('.card');
+    await pg.waitForTimeout(500);
+    check('O14 食物灯箱中文名', (await T('#lbName')).indexOf('· 食物') > 0, await T('#lbName'));
+    await pg.keyboard.press('Escape');
+    await pg.waitForTimeout(300);
+  }
 
   console.log('JS 错误:', errors.length ? errors.join(' | ') : '无');
   console.log(`\n结果: ${pass} PASS / ${fail} FAIL`);

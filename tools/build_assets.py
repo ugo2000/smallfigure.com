@@ -39,13 +39,14 @@ CAT_LABELS = {
     "characters": {"zh": "人物立绘", "en": "Character Art"},
     "weapons": {"zh": "武器装备", "en": "Weapons & Gear"},
     "animals": {"zh": "动物", "en": "Creatures"},
+    "food": {"zh": "食物美食", "en": "Food & Drink"},
     "badges": {"zh": "小徽章", "en": "Badges"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 动物 / 徽章",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Creatures / Badges"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 动物 / 食物 / 徽章",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Creatures / Food & Drink / Badges"}
 
-SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 徽章 / 动物）"
+SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 徽章 / 动物 / 食物美食）"
           " + 早期《音弹》游戏美术资产 + 果克星人系列（据张祥前《果克星球奇遇》描述 AI 生成）")
 
 # 每项：源文件, id, 中文名, 英文名, 分类, 标签, 中文简介, 英文简介, 透明, 动画效果
@@ -218,6 +219,37 @@ ITEMS = [
      "tags_en": ["original", "animal", "otter", "character art", "transparent", "little figure"],
      "desc_zh": "原创系列：怀抱河石、浓密棕毛配浅色腹毛的水獭，细腻美式漫画风，透明 PNG，512×512",
      "desc_en": "Original series: a plump otter hugging a smooth river stone, dense brown fur with a cream throat, detailed American comic style, transparent PNG, 512×512",
+     "transparent": True, "effect": None},
+    # ---- 食物美食 ----
+    {"src": "processed/food_ramen_t.png", "id": "food-ramen", "name_zh": "豚骨拉面 · 食物", "name_en": "Tonkotsu Ramen · Food",
+     "cat": "food", "tags": ["原创", "食物", "拉面", "面食", "日式", "ramen", "food", "透明"],
+     "tags_en": ["original", "food", "ramen", "noodles", "japanese", "transparent"],
+     "desc_zh": "原创系列：青花纹瓷大碗盛着金黄豚骨汤、溏心蛋、叉烧与葱花，配海苔与升腾热气，细腻美式漫画风，透明 PNG，1024×1024",
+     "desc_en": "Original series: a blue-and-white porcelain bowl of golden tonkotsu broth with soft-boiled egg, chashu pork, shredded scallion and nori, steam curling upward, detailed American comic style, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/food_burger_t.png", "id": "food-burger", "name_zh": "芝士汉堡 · 食物", "name_en": "Cheeseburger · Food",
+     "cat": "food", "tags": ["原创", "食物", "汉堡", "快餐", "burger", "food", "透明"],
+     "tags_en": ["original", "food", "burger", "fast food", "transparent"],
+     "desc_zh": "原创系列：芝麻面包夹厚牛肉饼、融化的芝士、生菜番茄与酸黄瓜，边缘露出番茄酱蛋黄酱，细腻美式漫画风，透明 PNG，1024×1024",
+     "desc_en": "Original series: a sesame-seeded bun stacked with a thick beef patty, melted cheese, lettuce, tomato and pickles, ketchup and mustard peeking at the edge, detailed American comic style, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/food_pizza_t.png", "id": "food-pizza", "name_zh": "萨拉米披萨角 · 食物", "name_en": "Pepperoni Pizza Slice · Food",
+     "cat": "food", "tags": ["原创", "食物", "披萨", "奶酪", "pizza", "food", "透明"],
+     "tags_en": ["original", "food", "pizza", "cheese", "transparent"],
+     "desc_zh": "原创系列：厚边焦香饼底、卷边萨拉米、融化拉丝的莫扎里拉与罗勒叶，尖端垂着奶酪丝，细腻美式漫画风，透明 PNG，1024×1024",
+     "desc_en": "Original series: a thick blistered crust, curled pepperoni, stretchy mozzarella pulling from the tip and basil leaves, detailed American comic style, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/food_cake_t.png", "id": "food-cake", "name_zh": "草莓奶油蛋糕 · 食物", "name_en": "Strawberry Cream Cake · Food",
+     "cat": "food", "tags": ["原创", "食物", "蛋糕", "草莓", "甜点", "cake", "food", "透明"],
+     "tags_en": ["original", "food", "cake", "strawberry", "dessert", "transparent"],
+     "desc_zh": "原创系列：三层海绵夹粉色草莓奶油、切面淋着草莓酱，顶上一颗带叶草莓，配白瓷盘与薄荷，细腻美式漫画风，透明 PNG，1024×1024",
+     "desc_en": "Original series: three sponge layers with pink strawberry cream, sauce dripping down the cut face, a glossy strawberry on top, served on a white plate with mint, detailed American comic style, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/food_dumpling_t.png", "id": "food-dumpling", "name_zh": "小笼蒸笼 · 食物", "name_en": "Soup Dumplings · Food",
+     "cat": "food", "tags": ["原创", "食物", "小笼包", "蒸笼", "中式", "dumpling", "food", "透明"],
+     "tags_en": ["original", "food", "dumpling", "steamer", "chinese", "transparent"],
+     "desc_zh": "原创系列：竹编圆蒸笼里六只带褶小笼包，缝隙间升起热气，旁边配深色酱油碟与葱花，细腻美式漫画风，透明 PNG，1024×1024",
+     "desc_en": "Original series: six pleated soup dumplings in a woven bamboo steamer, steam rising from the gaps, a dark soy sauce dish and chopped scallion beside it, detailed American comic style, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
     # ---- 小徽章 ----
     {"src": "img/zone_bass.png", "id": "zone-bass", "name_zh": "徽章 · 低音核", "name_en": "Badge · Bass Core",
