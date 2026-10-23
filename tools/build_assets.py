@@ -35,10 +35,15 @@ BG_RGB = (13, 17, 23)  # 站点暗色底色，用于算主色和合成预览
 
 CAT_LABELS = {
     "characters": {"zh": "人物立绘", "en": "Character Art"},
+    "weapons": {"zh": "武器装备", "en": "Weapons & Gear"},
     "badges": {"zh": "小徽章", "en": "Badges"},
 }
 
-SUBTITLE = {"zh": "原创小人图鉴 · 立绘 / 小徽章", "en": "Original Little Figure Gallery · Character Art / Badges"}
+SUBTITLE = {"zh": "原创小人图鉴 · 立绘 / 武器装备 / 小徽章",
+            "en": "Original Little Figure Gallery · Character Art / Weapons & Gear / Badges"}
+
+SOURCE = ("game-ball1（游戏《音弹》角色美术）+ 原创人物系列（细腻美式漫画风 AI 生成，含职业小人/女巫/精灵）"
+          " + 原创武器装备系列 + 果克星人系列（据张祥前《果克星球奇遇》描述 AI 生成）")
 
 # 每项：源文件, id, 中文名, 英文名, 分类, 标签, 中文简介, 英文简介, 透明, 动画效果
 # 透明立绘的来源：processed/ 下的是用 character-art 技能脚本从 AI 原图重抠的干净版
@@ -154,6 +159,43 @@ ITEMS = [
      "tags_en": ["original", "fairy", "gossamer wings", "floating", "character art", "transparent", "little figure"],
      "desc_zh": "原创系列：薄荷绿短发、原创几何网纹薄翼、茶叶金线小裙、赤脚漂浮的仙子，刻意避开 Tinker Bell 造型，细腻美式漫画风，透明 PNG，512×512",
      "desc_en": "Original series: a fairy with mint-green hair, original geometric-lattice gossamer wings, a teal leaf-and-gold dress and bare floating feet, deliberately not a Tinker Bell likeness, detailed American comic style, transparent PNG, 512×512",
+     "transparent": True, "effect": None},
+    # ---- 武器装备系列（原创单件实物立绘，全部避开已有角色的随身物件）----
+    {"src": "processed/wpn_hammer_t.png", "id": "wpn-hammer", "name_zh": "共鸣战锤 · 武器", "name_en": "Resonance War Hammer · Weapon",
+     "cat": "weapons", "tags": ["原创", "武器", "战锤", "锻造", "weapon", "hammer", "透明", "小图"],
+     "tags_en": ["original", "weapon", "war hammer", "forged", "hammer", "transparent", "small"],
+     "desc_zh": "原创系列：音叉形双叉锤头 + 同心圆刻纹面 + 红皮缠柄锻造战锤，细腻美式漫画风单件实物立绘，透明 PNG，512×512",
+     "desc_en": "Original series: a forged war hammer with tuning-fork prongs, concentric engraved rings and a leather-wrapped haft, detailed American comic style single-item art, transparent PNG, 512×512",
+     "transparent": True, "effect": None},
+    {"src": "processed/wpn_pistol_t.png", "id": "wpn-pistol", "name_zh": "蒸汽铆钉手枪 · 武器", "name_en": "Steam Rivet Pistol · Weapon",
+     "cat": "weapons", "tags": ["原创", "武器", "手枪", "蒸汽朋克", "weapon", "pistol", "透明", "小图"],
+     "tags_en": ["original", "weapon", "pistol", "steampunk", "steam", "transparent", "small"],
+     "desc_zh": "原创系列：发蓝钢枪管 + 黄铜铆钉 + 压力表 + 排气管的蒸汽手枪，细腻美式漫画风单件实物立绘，透明 PNG，512×512",
+     "desc_en": "Original series: a steam-powered pistol with a blued steel barrel, brass rivets, a pressure gauge and an exhaust pipe, detailed American comic style single-item art, transparent PNG, 512×512",
+     "transparent": True, "effect": None},
+    {"src": "processed/wpn_shield_t.png", "id": "wpn-shield", "name_zh": "音叉纹圆盾 · 装备", "name_en": "Tuning Fork Shield · Gear",
+     "cat": "weapons", "tags": ["原创", "装备", "盾", "防具", "shield", "gear", "透明", "小图"],
+     "tags_en": ["original", "gear", "shield", "armor", "defense", "transparent", "small"],
+     "desc_zh": "原创系列：铆钉铜边 + 中央盾凸 + 音叉形浮雕盾纹的圆盾，细腻美式漫画风单件实物立绘，透明 PNG，512×512",
+     "desc_en": "Original series: a round heater shield with a riveted brass rim, raised central boss and an embossed tuning-fork crest, detailed American comic style single-item art, transparent PNG, 512×512",
+     "transparent": True, "effect": None},
+    {"src": "processed/wpn_flail_t.png", "id": "wpn-flail", "name_zh": "链锤 · 武器", "name_en": "Chain Flail · Weapon",
+     "cat": "weapons", "tags": ["原创", "武器", "链锤", "带刺铁球", "weapon", "flail", "透明", "小图"],
+     "tags_en": ["original", "weapon", "flail", "chain", "spiked ball", "transparent", "small"],
+     "desc_zh": "原创系列：可辨识链节 + 带刺铁球的战链锤，链环空隙完整保留，细腻美式漫画风单件实物立绘，透明 PNG，512×512",
+     "desc_en": "Original series: a war flail with clearly readable chain links and a spiked iron ball, chain gaps fully preserved, detailed American comic style single-item art, transparent PNG, 512×512",
+     "transparent": True, "effect": None},
+    {"src": "processed/wpn_vial_t.png", "id": "wpn-vial", "name_zh": "共鸣药剂瓶 · 道具", "name_en": "Resonance Tonic Vial · Prop",
+     "cat": "weapons", "tags": ["原创", "道具", "药剂", "玻璃瓶", "vial", "potion", "透明", "小图"],
+     "tags_en": ["original", "prop", "potion", "vial", "glass flask", "transparent", "small"],
+     "desc_zh": "原创系列：琥珀色内发光液体 + 红蜡封 + 无字羊皮纸吊牌的圆肚玻璃药瓶，细腻美式漫画风单件实物立绘，透明 PNG，512×512",
+     "desc_en": "Original series: a round glass flask with glowing amber liquid, a red wax seal and a blank parchment tag, detailed American comic style single-item art, transparent PNG, 512×512",
+     "transparent": True, "effect": None},
+    {"src": "processed/wpn_helmet_t.png", "id": "wpn-helmet", "name_zh": "面甲战斗盔 · 装备", "name_en": "Visor Combat Helmet · Gear",
+     "cat": "weapons", "tags": ["原创", "装备", "头盔", "面甲", "科幻", "helmet", "gear", "透明", "小图"],
+     "tags_en": ["original", "gear", "helmet", "visor", "sci-fi", "armor", "transparent", "small"],
+     "desc_zh": "原创系列：横向青色发光面罩 + 天线小红灯 + 铆钉护颊的复古未来战斗盔，细腻美式漫画风单件实物立绘，透明 PNG，512×512",
+     "desc_en": "Original series: a retro-futurist combat helmet with a glowing cyan visor slit, a beaded antenna and riveted cheek plates, detailed American comic style single-item art, transparent PNG, 512×512",
      "transparent": True, "effect": None},
     # ---- 小徽章 ----
     {"src": "img/zone_bass.png", "id": "zone-bass", "name_zh": "徽章 · 低音核", "name_en": "Badge · Bass Core",
@@ -294,7 +336,7 @@ def main():
         "subtitle": SUBTITLE["zh"],
         "subtitleEn": SUBTITLE["en"],
         "generated": datetime.now(timezone(timedelta(hours=8))).isoformat(timespec="seconds"),
-        "source": "game-ball1（游戏《音弹》角色美术）+ 原创人物系列（细腻美式漫画风 AI 生成，含职业小人/女巫/精灵）+ 果克星人系列（据张祥前《果克星球奇遇》描述 AI 生成）",
+        "source": SOURCE,
         "count": len(images),
         "categories": [{"key": k, "label": v["zh"], "labelEn": v["en"]} for k, v in CAT_LABELS.items()],
         "images": images,

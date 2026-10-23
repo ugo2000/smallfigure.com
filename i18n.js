@@ -9,7 +9,7 @@
   var DICT = {
     zh: {
       'site.title': 'smallfigure · 原创小人图鉴',
-      'meta.desc': '原创小人图库：老张、果克星人、女工程师的角色立绘与小徽章，支持分类、尺寸筛选与名称搜索。',
+      'meta.desc': '原创小人图库：老张、果克星人、女工程师的角色立绘，加上女巫、精灵、原创武器装备与小徽章，支持分类、尺寸筛选与名称搜索。',
       'hero.subtitle': '每个人都有自己的故事，就像 smallfigure 里的每个小人',
       'search.placeholder': '搜小人 / 标签：老张、果克星人、透明、徽章…',
       'toolbar.cats': '分类筛选',
@@ -60,7 +60,7 @@
     },
     en: {
       'site.title': 'smallfigure · Little Figure Gallery',
-      'meta.desc': 'A gallery of original little figures: Laozhang, the Gucck alien, and the lady engineer, plus small badges. Filter by category and size, search by name.',
+      'meta.desc': 'A gallery of original little figures: Laozhang, the Gucck alien, the lady engineer, plus original witches, elves, weapons & gear, and small badges. Filter by category and size, search by name.',
       'hero.subtitle': 'Everyone has a story, just like every little figure in smallfigure',
       'search.placeholder': 'Search figures / tags: Laozhang, alien, transparent, badge…',
       'toolbar.cats': 'Category filter',
