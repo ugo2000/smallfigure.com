@@ -28,14 +28,14 @@ const BASE = process.env.SF_URL || 'https://www.smallfigure.com';
 
   check('O1 线上默认英文标题', (await T('title')) === 'smallfigure · Original Asset Gallery', await T('title'));
   check('O2 线上英文副标题', (await T('.subtitle')).indexOf('Everything has its own story') === 0, await T('.subtitle'));
-  check('O3 线上卡片数 35', (await pg.$$('.card')).length === 35);
+  check('O3 线上卡片数 47', (await pg.$$('.card')).length === 47);
   check('O4 线上英文卡片名', (await T('.card-meta h3')) === 'Laozhang · Character Art', await T('.card-meta h3'));
 
   await pg.click('.site-header .lang-btn[data-lang="zh"]');
   await pg.waitForTimeout(600);
   check('O5 切中文标题', (await T('title')) === 'smallfigure · 原创素材图鉴', await T('title'));
   check('O6 切中文卡片名', (await T('.card-meta h3')) === '老张 · 立绘', await T('.card-meta h3'));
-  check('O7 切中文计数行', (await T('#countLine')).indexOf('共 35 张') === 0, await T('#countLine'));
+  check('O7 切中文计数行', (await T('#countLine')).indexOf('共 47 张') === 0, await T('#countLine'));
 
   await pg.click('.card');
   await pg.waitForTimeout(600);
@@ -65,6 +65,20 @@ const BASE = process.env.SF_URL || 'https://www.smallfigure.com';
     check('O14 食物灯箱中文名', (await T('#lbName')).indexOf('· 食物') > 0, await T('#lbName'));
     await pg.keyboard.press('Escape');
     await pg.waitForTimeout(300);
+  }
+  // 新增：弹药军械 / 载具机械 两个分类
+  for (const [key, label, n, kw] of [['弹药', '弹药军械', 4, '弹药'], ['载具', '载具机械', 4, '载具']]) {
+    const i = chips.findIndex(c => c.indexOf(key) === 0);
+    if (i < 0) { check('O15 ' + label + ' chip 存在', false, chips.join(' / ')); continue; }
+    await pg.click('.chip >> nth=' + i);
+    await pg.waitForTimeout(450);
+    check('O15 ' + label + ' chip 存在', true, 'count=' + n);
+    check('O16 点' + label + '筛出 ' + n + ' 张', (await pg.$$('.card')).length === n, String((await pg.$$('.card')).length));
+    await pg.click('.card');
+    await pg.waitForTimeout(450);
+    check('O17 ' + label + '灯箱中文名', (await T('#lbName')).indexOf(kw) > 0, await T('#lbName'));
+    await pg.keyboard.press('Escape');
+    await pg.waitForTimeout(250);
   }
 
   console.log('JS 错误:', errors.length ? errors.join(' | ') : '无');
