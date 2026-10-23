@@ -28,14 +28,14 @@ const BASE = process.env.SF_URL || 'https://www.smallfigure.com';
 
   check('O1 线上默认英文标题', (await T('title')) === 'smallfigure · Little Figure Gallery', await T('title'));
   check('O2 线上英文副标题', (await T('.subtitle')).indexOf('Everyone has a story') === 0, await T('.subtitle'));
-  check('O3 线上卡片数 17', (await pg.$$('.card')).length === 17);
+  check('O3 线上卡片数 21', (await pg.$$('.card')).length === 21);
   check('O4 线上英文卡片名', (await T('.card-meta h3')) === 'Laozhang · Character Art', await T('.card-meta h3'));
 
   await pg.click('.site-header .lang-btn[data-lang="zh"]');
   await pg.waitForTimeout(600);
   check('O5 切中文标题', (await T('title')) === 'smallfigure · 原创小人图鉴', await T('title'));
   check('O6 切中文卡片名', (await T('.card-meta h3')) === '老张 · 立绘', await T('.card-meta h3'));
-  check('O7 切中文计数行', (await T('#countLine')).indexOf('共 17 张') === 0, await T('#countLine'));
+  check('O7 切中文计数行', (await T('#countLine')).indexOf('共 21 张') === 0, await T('#countLine'));
 
   await pg.click('.card');
   await pg.waitForTimeout(600);
