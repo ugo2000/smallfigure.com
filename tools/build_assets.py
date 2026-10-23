@@ -54,14 +54,15 @@ CAT_LABELS = {
     "techdev": {"zh": "奇械科技", "en": "Odd Devices"},
     "xenohorror": {"zh": "异星猎食", "en": "Alien Predation"},
     "badges": {"zh": "小徽章", "en": "Badges"},
+    "planets": {"zh": "星球徽志", "en": "Planet Sigils"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
-          "异星猎食）"
+          "异星猎食 / 星球徽志）"
           " + 早期《音弹》游戏美术资产 + 果克星人系列（据张祥前《果克星球奇遇》描述 AI 生成）")
 
 # 每项：源文件, id, 中文名, 英文名, 分类, 标签, 中文简介, 英文简介, 透明, 动画效果
@@ -639,6 +640,43 @@ ITEMS = [
      "desc_zh": "霓虹线稿小徽章，等离子球与环形电弧造型，透明 PNG，384×384",
      "desc_en": "Neon line-art badge shaped like a plasma orb with an electric arc ring, transparent PNG, 384×384",
      "transparent": True, "effect": None},
+    # ---- 星球徽志（奇怪星球图标，character-art 技能出图 + 重抠）----
+    {"src": "processed/planet_shard_ring_t.png", "id": "planet-shard-ring", "name_zh": "碎环星 · 星球徽志", "name_en": "Shard-Ring World · Planet Sigil",
+     "cat": "planets", "tags": ["星球", "碎环", "行星", "图标", "透明", "奇怪"],
+     "tags_en": ["planet", "shard ring", "ring", "icon", "transparent", "weird"],
+     "desc_zh": "奇怪星球图标：球体被一圈不连续的碎岩星环环绕，环上有缺口而非平滑，透明 PNG，1024×1024",
+     "desc_en": "A weird planet icon: a sphere encircled by a discontinuous ring of broken floating rock shards with visible gaps, not a smooth ring, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/planet_nested_t.png", "id": "planet-nested", "name_zh": "孕星 · 星球徽志", "name_en": "Nested World · Planet Sigil",
+     "cat": "planets", "tags": ["星球", "套球", "壳", "行星", "图标", "透明", "奇怪"],
+     "tags_en": ["planet", "nested", "shell", "icon", "transparent", "weird"],
+     "desc_zh": "奇怪星球图标：半透明蛋壳状外壳星球内，浮着一颗更小的发光行星，透明 PNG，1024×1024",
+     "desc_en": "A weird planet icon: a translucent eggshell-like shell planet with a smaller glowing planet floating inside it, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/planet_eye_t.png", "id": "planet-eye", "name_zh": "凝视星 · 星球徽志", "name_en": "Gazing World · Planet Sigil",
+     "cat": "planets", "tags": ["星球", "巨眼", "星系", "行星", "图标", "透明", "奇怪"],
+     "tags_en": ["planet", "eye", "galaxy", "icon", "transparent", "weird"],
+     "desc_zh": "奇怪星球图标：整个表面是一只巨眼，瞳孔是漩涡星系，诡异而令人不安，透明 PNG，1024×1024",
+     "desc_en": "A weird planet icon: a sphere whose whole face is one enormous eye, the iris a tiny spiral galaxy, uncanny and unsettling, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/planet_molten_core_t.png", "id": "planet-molten-core", "name_zh": "熔核星 · 星球徽志", "name_en": "Molten-Core World · Planet Sigil",
+     "cat": "planets", "tags": ["星球", "熔岩", "裂缝", "行星", "图标", "透明", "奇怪"],
+     "tags_en": ["planet", "molten", "fissure", "icon", "transparent", "weird"],
+     "desc_zh": "奇怪星球图标：地表龟裂，裂缝透出炽热熔核，仿佛即将炸开，透明 PNG，1024×1024",
+     "desc_en": "A weird planet icon: a rocky sphere with deep fissures glowing molten from within, looking about to burst, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/planet_cube_t.png", "id": "planet-cube", "name_zh": "晶立方星 · 星球徽志", "name_en": "Cubic World · Planet Sigil",
+     "cat": "planets", "tags": ["星球", "立方", "低多边形", "行星", "图标", "透明", "奇怪"],
+     "tags_en": ["planet", "cube", "low-poly", "icon", "transparent", "weird"],
+     "desc_zh": "奇怪星球图标：不是球，而是一颗带圆角的立方体行星，低多边形玩具质感，透明 PNG，1024×1024",
+     "desc_en": "A weird planet icon: not a sphere but a rounded cube planet with beveled edges, low-poly toy look, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/planet_twin_t.png", "id": "planet-twin", "name_zh": "脐行星 · 星球徽志", "name_en": "Twin-Bond World · Planet Sigil",
+     "cat": "planets", "tags": ["星球", "双生", "脐带", "行星", "图标", "透明", "奇怪"],
+     "tags_en": ["planet", "twin", "umbilical", "icon", "transparent", "weird"],
+     "desc_zh": "奇怪星球图标：两颗大小不一的星球部分融合，被一条发光脐带状光带相连，透明 PNG，1024×1024",
+     "desc_en": "A weird planet icon: two spheres of different sizes partly merged, joined by a glowing umbilical band of light, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
 ]
 
 # 原图片（AI 生成）→ originals/ 单独存放，网站不直接用这些文件
@@ -702,11 +740,13 @@ def main():
         os.makedirs(d, exist_ok=True)
 
     # 清掉上一轮的产物，保证目录里只剩当前清单内的文件（站点不放的图不会被残留发布）
-    for d in (OUT_FULL, OUT_THUMB, OUT_ANIM):
-        for fn in os.listdir(d):
-            fp = os.path.join(d, fn)
-            if os.path.isfile(fp):
-                os.remove(fp)
+    # 设 NO_CLEAN=1 可跳过（仅新增条目、无孤儿文件时安全，避免批量删除触发安全网关）
+    if not os.environ.get("NO_CLEAN"):
+        for d in (OUT_FULL, OUT_THUMB, OUT_ANIM):
+            for fn in os.listdir(d):
+                fp = os.path.join(d, fn)
+                if os.path.isfile(fp):
+                    os.remove(fp)
 
     # ---------- 1. 原图片进 originals/ ----------
     print("== 复制原图片到 originals/ ==")

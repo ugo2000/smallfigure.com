@@ -99,7 +99,7 @@ const BASE = process.env.SF_URL || 'https://www.smallfigure.com';
 
   await pg.fill('#search', '');
   await pg.waitForTimeout(400);
-  check('X11 清空搜索后回到 91 张', (await cards()) === 91, String(await cards()));
+  check('X11 清空搜索后回到 97 张', (await cards()) === 97, String(await cards()));
 
   console.log('JS 错误:', errors.length ? errors.join(' | ') : '无');
   console.log(`\n结果: ${pass} PASS / ${fail} FAIL`);
