@@ -269,6 +269,13 @@ def resize_max(im, mx):
     return im.resize((max(1, round(w * s)), max(1, round(h * s))), Image.LANCZOS)
 
 
+def file_ver(path):
+    """文件内容哈希前 8 位：图片内容变了 URL 就变，CDN/浏览器缓存自动失效"""
+    import hashlib
+    with open(path, 'rb') as f:
+        return hashlib.sha1(f.read()).hexdigest()[:8]
+
+
 def dominant_color(im):
     """合成到暗色底后取平均色，返回 #rrggbb"""
     rgba = im.convert("RGBA")
@@ -339,6 +346,7 @@ def main():
             "srcWidth": w,
             "srcHeight": h,
             "bytes": os.path.getsize(full_path),
+            "ver": file_ver(full_path),
             "transparent": it["transparent"],
             "animated": it["effect"] is not None,
             "effect": it["effect"],

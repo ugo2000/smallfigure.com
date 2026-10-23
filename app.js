@@ -31,6 +31,13 @@
   function locName(im) { return (SF.lang() === 'en' && im.nameEn) ? im.nameEn : im.name; }
   function locDesc(im) { return (SF.lang() === 'en' && im.descEn) ? im.descEn : im.desc; }
   function locCat(im) { return (SF.lang() === 'en' && im.categoryLabelEn) ? im.categoryLabelEn : im.categoryLabel; }
+
+  /* 图片 URL 带内容版本号：图片内容变了 URL 就变，
+     避免 CDN / 浏览器缓存继续发旧图（/assets/* 缓存 24 小时） */
+  function assetUrl(im, key) {
+    var u = im[key] || '';
+    return im.ver ? u + '?v=' + im.ver : u;
+  }
   function locTags(im) { return (SF.lang() === 'en' && im.tagsEn) ? im.tagsEn : im.tags; }
   function sizeBucket(w, h) {
     var m = Math.max(w, h);
@@ -234,10 +241,10 @@
       var framePx = Math.round(im.frameHeight * scale);
       return '<div class="fx-sheet" data-sheet="' + im.frames + '" data-framepx="' + framePx + '"' +
         ' style="width:' + w + 'px;height:' + h + 'px;' +
-        'background-image:url(' + im.file + ');background-size:' + w + 'px ' + (framePx * im.frames) + 'px;"></div>';
+        'background-image:url(' + assetUrl(im, 'file') + ');background-size:' + w + 'px ' + (framePx * im.frames) + 'px;"></div>';
     }
     var fx = im.effect ? ' class="fx-' + im.effect + '"' : '';
-    return '<img' + fx + ' loading="lazy" src="' + im.thumb + '" alt="' + esc(locName(im)) + '" width="' + im.width + '" height="' + im.height + '">';
+    return '<img' + fx + ' loading="lazy" src="' + assetUrl(im, 'thumb') + '" alt="' + esc(locName(im)) + '" width="' + im.width + '" height="' + im.height + '">';
   }
 
   function cardEl(im) {
@@ -314,7 +321,7 @@
       div.className = 'fx-sheet';
       div.style.width = w + 'px';
       div.style.height = h + 'px';
-      div.style.backgroundImage = 'url(' + im.file + ')';
+      div.style.backgroundImage = 'url(' + assetUrl(im, 'file') + ')';
       div.style.backgroundSize = w + 'px ' + (framePx * im.frames) + 'px';
       stage.appendChild(div);
       lbPlayer = makeSheetPlayer(div, im.frames, framePx);
@@ -323,7 +330,7 @@
       $('lbPlay').textContent = SF.t('lb.pause');
     } else {
       var img = document.createElement('img');
-      img.src = im.file;
+      img.src = assetUrl(im, 'file');
       img.alt = locName(im);
       if (im.effect) {
         img.className = 'fx-' + im.effect;
@@ -338,7 +345,7 @@
     $('lbDesc').textContent = locDesc(im);
     $('lbTags').innerHTML = locTags(im).map(function (t) { return '<span>' + esc(t) + '</span>'; }).join('');
     var dl = $('lbDownload');
-    dl.href = im.file;
+    dl.href = assetUrl(im, 'file');
     dl.setAttribute('download', im.id + '.png');
     $('lbMeta').innerHTML = lbMetaHtml(im);
     var pos = view.indexOf(im);
@@ -397,7 +404,7 @@
   /* ---------- 下载：先上报计数（最多等 2 秒），再触发文件下载 ---------- */
   function triggerDownload(im) {
     var a = document.createElement('a');
-    a.href = im.file;
+    a.href = assetUrl(im, 'file');
     a.setAttribute('download', im.id + '.png');
     document.body.appendChild(a);
     a.click();

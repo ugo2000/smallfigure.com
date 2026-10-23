@@ -46,6 +46,11 @@ const BASE = process.env.SF_URL || 'https://www.smallfigure.com';
   const api = await pg.evaluate(() => fetch('api/counts').then(r => r.json()).catch(() => null));
   check('O10 线上计数 API', !!api && api.ok === true, JSON.stringify(api).slice(0, 80));
 
+  // 图片 URL 必须带内容版本号：图片改了 URL 也要变，否则 CDN 24h 缓存会继续发旧图
+  const srcs = await pg.$$eval('.card img', els => els.map(e => e.getAttribute('src') || ''));
+  check('O11 全部缩略图 URL 带版本号', srcs.length > 0 && srcs.every(s => /\?v=[0-9a-f]{8}$/.test(s)),
+    srcs.filter(s => !/\?v=/.test(s)).slice(0, 3).join(' | '));
+
   console.log('JS 错误:', errors.length ? errors.join(' | ') : '无');
   console.log(`\n结果: ${pass} PASS / ${fail} FAIL`);
   await browser.close();

@@ -74,6 +74,7 @@ for it in B.ITEMS:
         "srcWidth": sw,
         "srcHeight": sh,
         "bytes": os.path.getsize(full_path),
+        "ver": B.file_ver(full_path),
         "transparent": it["transparent"],
         "animated": it["effect"] is not None,
         "effect": it["effect"],
