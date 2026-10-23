@@ -11,6 +11,19 @@ _site/
 tools/_*.png
 processed/_*.png
 
+# 抠图中间产物与临时目录（定版成品 *_t.png 入库）
+processed/_n4_tmp/
+processed/_n4_tmp_raw/
+processed/*_clean.png
+processed/*_clean_mark.png
+
+# 本轮抠图探索脚本（仅保留定版管线 _n4_pipeline3.py）
+tools/_n4_*
+!tools/_n4_pipeline3.py
+
+# 一次性诊断脚本
+tools/_diag_*
+
 # 本地凭据文件（绝不进公开仓库）
 .gh_token
 .cf_token

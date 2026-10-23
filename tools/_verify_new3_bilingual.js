@@ -55,10 +55,10 @@ const BASE = process.env.SF_URL || 'https://www.smallfigure.com';
   if (allIdx >= 0) { await pg.click('.chip >> nth=' + allIdx); await pg.waitForTimeout(450); }
   await pg.fill('#search', '镰刀');
   await pg.waitForTimeout(500);
-  check('N7 中文搜镰刀命中 1 张', (await pg.$$('.card')).length === 1, String((await pg.$$('.card')).length));
-  if ((await pg.$$('.card')).length === 1) {
-    check('N8 镰刀卡中文名', (await T('.card-meta h3')).indexOf('镰刀') > 0, await T('.card-meta h3'));
-  }
+  // 注：异星生物「深空猎手」简介里也提到镰刀武器，故命中 2 张（老素材 + 新增异星素材）
+  const sickles = await pg.$$eval('.card-meta h3', els => els.map(e => e.textContent.trim()));
+  check('N7 中文搜镰刀命中 2 张', sickles.length === 2, sickles.join(' | '));
+  check('N7b 镰刀命中含「持镰刀的青年」', sickles.some(s => s.indexOf('持镰刀的青年') === 0), sickles.join(' | '));
   await pg.fill('#search', '');
   await pg.waitForTimeout(400);
   await pg.fill('#search', 'pitchfork');

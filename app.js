@@ -215,10 +215,11 @@
       if (state.cat !== 'all' && im.category !== state.cat) return false;
       if (state.size !== 'all' && sizeBucket(im.width, im.height) !== state.size) return false;
       if (q) {
-        /* 中英文名/简介/标签全部进 haystack：两种语言的关键词都能搜到 */
-        var hay = (im.name + ' ' + locName(im) + ' ' + im.desc + ' ' + locDesc(im) + ' ' +
+        /* 中英文名/简介/标签/分类名全部进 haystack：两种语言的关键词都能搜到 */
+        var hay = (im.name + ' ' + (im.nameEn || '') + ' ' +
+          im.desc + ' ' + (im.descEn || '') + ' ' +
           im.tags.join(' ') + ' ' + (im.tagsEn || []).join(' ') + ' ' +
-          im.categoryLabel + ' ' + locCat(im)).toLowerCase();
+          im.categoryLabel + ' ' + (im.categoryLabelEn || '')).toLowerCase();
         if (hay.indexOf(q) === -1) return false;
       }
       return true;
