@@ -2,7 +2,7 @@
  "site": "smallfigure.com",
  "subtitle": "原创小人图鉴 · 立绘 / 小徽章",
  "subtitleEn": "Original Little Figure Gallery · Character Art / Badges",
- "generated": "2026-10-23T08:25:15+08:00",
+ "generated": "2026-10-23T08:55:27+08:00",
  "source": "game-ball1（游戏《音弹》角色美术，本站只收单体小人与徽章）",
  "count": 8,
  "categories": [
@@ -44,6 +44,14 @@
     "透明",
     "小人"
    ],
+   "tagsEn": [
+    "Laozhang",
+    "protagonist",
+    "character art",
+    "hero",
+    "transparent",
+    "little figure"
+   ],
    "desc": "本站看板小人：棕夹克工装男，AI 生成后抠成透明 PNG，512×512",
    "descEn": "The mascot of this site: a brown-jacket workwear man, AI-generated and cut out to a transparent PNG, 512×512"
   },
@@ -71,6 +79,13 @@
     "立绘",
     "hero",
     "原图"
+   ],
+   "tagsEn": [
+    "Laozhang",
+    "protagonist",
+    "character art",
+    "hero",
+    "original"
    ],
    "desc": "AI 原始生成图，浅灰底未抠图（原图在 originals/ 有备份）",
    "descEn": "Original AI-generated image, light gray background, not cut out (backup kept in originals/)"
@@ -101,6 +116,13 @@
     "透明",
     "小人"
    ],
+   "tagsEn": [
+    "Gucck Alien",
+    "extraterrestrial",
+    "character art",
+    "transparent",
+    "little figure"
+   ],
    "desc": "绿色大头外星小人，透明 PNG，512×512",
    "descEn": "A green big-headed little alien, transparent PNG, 512×512"
   },
@@ -127,6 +149,11 @@
     "外星人",
     "alien",
     "原图"
+   ],
+   "tagsEn": [
+    "Gucck Alien",
+    "extraterrestrial",
+    "original"
    ],
    "desc": "AI 原始生成图，未抠图",
    "descEn": "Original AI-generated image, not cut out"
@@ -156,6 +183,13 @@
     "透明",
     "小人"
    ],
+   "tagsEn": [
+    "Lady Engineer",
+    "character art",
+    "engineer",
+    "transparent",
+    "little figure"
+   ],
    "desc": "技能验证时生成的漫画风女工程师，透明 PNG，512×512",
    "descEn": "A comic-style lady engineer generated during skill validation, transparent PNG, 512×512"
   },
@@ -183,6 +217,13 @@
     "bass",
     "透明",
     "小图"
+   ],
+   "tagsEn": [
+    "badge",
+    "bass core",
+    "bass",
+    "transparent",
+    "small"
    ],
    "desc": "霓虹线稿小徽章，音区标识之一",
    "descEn": "Neon line-art badge, one of the zone markers"
@@ -212,6 +253,13 @@
     "透明",
     "小图"
    ],
+   "tagsEn": [
+    "badge",
+    "crystal bell",
+    "bell",
+    "transparent",
+    "small"
+   ],
    "desc": "霓虹线稿小徽章，音区标识之一",
    "descEn": "Neon line-art badge, one of the zone markers"
   },
@@ -239,6 +287,13 @@
     "lead",
     "透明",
     "小图"
+   ],
+   "tagsEn": [
+    "badge",
+    "plasma",
+    "lead",
+    "transparent",
+    "small"
    ],
    "desc": "霓虹线稿小徽章，音区标识之一",
    "descEn": "Neon line-art badge, one of the zone markers"

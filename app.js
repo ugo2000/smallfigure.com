@@ -31,6 +31,7 @@
   function locName(im) { return (SF.lang() === 'en' && im.nameEn) ? im.nameEn : im.name; }
   function locDesc(im) { return (SF.lang() === 'en' && im.descEn) ? im.descEn : im.desc; }
   function locCat(im) { return (SF.lang() === 'en' && im.categoryLabelEn) ? im.categoryLabelEn : im.categoryLabel; }
+  function locTags(im) { return (SF.lang() === 'en' && im.tagsEn) ? im.tagsEn : im.tags; }
   function sizeBucket(w, h) {
     var m = Math.max(w, h);
     if (m <= 400) return 's';
@@ -207,8 +208,10 @@
       if (state.cat !== 'all' && im.category !== state.cat) return false;
       if (state.size !== 'all' && sizeBucket(im.width, im.height) !== state.size) return false;
       if (q) {
+        /* 中英文名/简介/标签全部进 haystack：两种语言的关键词都能搜到 */
         var hay = (im.name + ' ' + locName(im) + ' ' + im.desc + ' ' + locDesc(im) + ' ' +
-          im.tags.join(' ') + ' ' + im.categoryLabel + ' ' + locCat(im)).toLowerCase();
+          im.tags.join(' ') + ' ' + (im.tagsEn || []).join(' ') + ' ' +
+          im.categoryLabel + ' ' + locCat(im)).toLowerCase();
         if (hay.indexOf(q) === -1) return false;
       }
       return true;
@@ -333,7 +336,7 @@
     $('lbCat').textContent = locCat(im) + (im.transparent ? SF.t('cat.transparent') : '');
     $('lbName').textContent = locName(im);
     $('lbDesc').textContent = locDesc(im);
-    $('lbTags').innerHTML = im.tags.map(function (t) { return '<span>' + esc(t) + '</span>'; }).join('');
+    $('lbTags').innerHTML = locTags(im).map(function (t) { return '<span>' + esc(t) + '</span>'; }).join('');
     var dl = $('lbDownload');
     dl.href = im.file;
     dl.setAttribute('download', im.id + '.png');
