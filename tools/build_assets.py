@@ -52,14 +52,16 @@ CAT_LABELS = {
     "castles": {"zh": "城堡建筑", "en": "Castles"},
     "furniture": {"zh": "古旧家具", "en": "Old Furniture"},
     "techdev": {"zh": "奇械科技", "en": "Odd Devices"},
+    "xenohorror": {"zh": "异星猎食", "en": "Alien Predation"},
     "badges": {"zh": "小徽章", "en": "Badges"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 徽章",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Badges"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
-          "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技）"
+          "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
+          "异星猎食）"
           " + 早期《音弹》游戏美术资产 + 果克星人系列（据张祥前《果克星球奇遇》描述 AI 生成）")
 
 # 每项：源文件, id, 中文名, 英文名, 分类, 标签, 中文简介, 英文简介, 透明, 动画效果
@@ -579,6 +581,44 @@ ITEMS = [
      "tags_en": ["original", "odd device", "force field", "generator", "lime glow", "carry handle", "transparent"],
      "desc_zh": "原创系列：矮壮便携发生器取深板岩复合材料立于四短脚，顶部穹顶发射器向上一拢，罩住上半身的半球形淡绿透明力场，场表荡着细密同心涟漪，器身三处散热口泛浅绿光，顶上一道厚重提手，外壳磕凹带使用包浆，场沿接地处积一小滩绿光，器械图鉴风，透明 PNG，1024×1024",
      "desc_en": "Original series: a stubby portable generator of dark slate composite material on four short feet, a domed emitter on top projecting a broad translucent hemispherical force field of pale lime green light surrounding the upper part of the device, the field rippling with faint concentric distortion rings, three cooling vents glowing faint lime on the sides, a heavy carry handle arched over the top, the body dented and scratched with a patina of use, a small pool of green light where the field meets the ground, device catalogue style, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    # ---- 异星猎食（刻意避开异形/铁血战士/触手怪等一切已知外星原型，
+    #      用「错误对称性」制造陌生感：三条腿的反关节、螺旋状肋骨、无头三足）----
+    {"src": "processed/xeno-prism-stalker_t.png", "id": "xeno-prism-stalker", "name_zh": "折光伏击者 · 异星猎食", "name_en": "Prism Stalker · Alien Predation",
+     "cat": "xenohorror", "tags": ["原创", "异星猎食", "折光", "伏击", "琥珀诱饵", "三足", "透明"],
+     "tags_en": ["original", "alien predation", "light refraction", "ambush", "amber lure", "tripodal", "transparent"],
+     "desc_zh": "原创系列：无眼无面的伏击型掠食者。躯干是一叠竖向折起的半透明硅质晶板，边缘泛油膜般虹彩而中心近乎透明，像一枚收拢待发的弹簧陷阱；三条反关节长腿撑起身体，趾爪张开，基部由数根苍白须根锚进地面；肩部伸出一根细柄，末端垂着一枚多棱面琥珀诱饵果，正滴落一滴黏液。体表干燥、纸质、矿物感，绝不湿滑。骨白、灰烬、虹彩与病态琥珀四色。异星生物图鉴风，透明 PNG，1024×1024",
+     "desc_en": "Original series: an eyeless faceless ambush predator. Its torso is a vertical accordion-fold of translucent crystalline silica plates, edges shimmering with oil-slick iridescence while the centre stays almost invisible, held compact like a cocked spring trap. Three long reverse-jointed legs brace the body, toes splayed, anchored to the ground by pale tendril roots. A slender stalk rises from the shoulder, ending in a faceted amber lure-fruit dripping a single sticky drop. Texture is dry, papery and mineral, never slimy. Bone white, ash grey, iridescent film and sickly amber. Alien creature catalogue style, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/xeno-rib-lurker_t.png", "id": "xeno-rib-lurker", "name_zh": "鸣骨吸附者 · 异星猎食", "name_en": "Resonant Rib-Cage · Alien Predation",
+     "cat": "xenohorror", "tags": ["原创", "异星猎食", "螺旋肋骨", "吸盘", "共振膜", "扁平", "透明"],
+     "tags_en": ["original", "alien predation", "spiral ribs", "suction pores", "resonant membrane", "flattened", "transparent"],
+     "desc_zh": "原创系列：扁平如鳐的寄生型掠食者。身体由一具敞开的螺旋状湿骨肋笼构成——十二根肋骨自中央铰点向外旋出而非对称弯曲，每根肋骨末端环生一圈细小吸盘，肋骨能像手指那样屈伸抓握；无口、无眼、无面。螺旋中心悬着一片共振膜，淤紫半透明，可见同心波纹在膜上荡开；腹面是布满毛细孔的多孔海绵层。质感是湿骨、软骨与潮膜。蜡黄象牙、淤紫膜、锈褐污渍三色。异星生物图鉴风，透明 PNG，1024×1024",
+     "desc_en": "Original series: a parasitic predator flattened like a stingray. Its body is an open spiral cage of wet yellowed bone: twelve ribs spiralling outward from a central hinge instead of curving symmetrically, each rib tipped with a ring of tiny suction pores, the ribs articulating like fingers to grip and walk. No mouth, no eyes, no face. A resonant membrane hangs at the centre of the spiral, bruised violet and translucent, with concentric ripples visibly spreading across it; the underside is a porous sponge of capillary pores. Texture of wet bone, gristle and damp membrane. Jaundiced ivory, bruised violet and rust-brown stains. Alien creature catalogue style, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/xeno-mycelial-weaver_t.png", "id": "xeno-mycelial-weaver", "name_zh": "孢丝织者 · 异星猎食", "name_en": "Mycelial Weaver · Alien Predation",
+     "cat": "xenohorror", "tags": ["原创", "异星猎食", "菌丝", "孢囊", "孢丝", "猎茧", "透明"],
+     "tags_en": ["original", "alien predation", "mycelium", "spore sac", "hyphae threads", "prey cocoon", "transparent"],
+     "desc_zh": "原创系列：低伏蹲踞的真菌型掠食者，三足反关节，没有头。本该是脸的位置，一枚孢囊裂成五片湿毡质瓣，瓣缝间藏着一簇细小的珠状眼。肩部不生手臂而是两束苍白菌丝，正甩出孢丝，其中一束末端缠着一只拳头大小的猎物茧，丝线正往茧缝里钻。背部覆满会搏动的细纤毛与潮湿菌毡，撒着淡紫孢子粉。质感是湿毡、菌丝与湿土。白垩、湿板岩灰、淡紫孢子粉与一颗湿琥珀珠。异星生物图鉴风，透明 PNG，1024×1024",
+     "desc_en": "Original series: a hunched low-slung fungal predator, tripedal and reverse-jointed, with no head. Where a face would be, a spore sac splits open into five flaps of wet felt, a cluster of small bead-like eyes hidden in the seams between them. Instead of arms, two bundles of pale hyphae extend from the shoulders, mid-casting; one thread ends in a fist-sized prey cocoon, the filaments visibly sinking into its seams. Its back is covered in pulsing fine cilia and damp mycelial felt, dusted with lilac spore powder. Texture of wet felt, mycelium and damp soil. Chalk white, wet slate grey, lilac dust and one wet amber bead. Alien creature catalogue style, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/flora-pulse-pod_t.png", "id": "flora-pulse-pod", "name_zh": "脉孢囊壶 · 异星猎食", "name_en": "Pulsing Pitcher Pod · Alien Predation",
+     "cat": "xenohorror", "tags": ["原创", "异星猎食", "食人植物", "囊壶", "消化液", "倒刺", "透明"],
+     "tags_en": ["original", "alien predation", "carnivorous plant", "bladder pod", "digestive fluid", "barbs", "transparent"],
+     "desc_zh": "原创系列：异星食人植物。一根粗壮的肉质柄自一团根瘤隆起，顶端是一枚半透明囊壶，壶身一道竖直的括约肌式裂缝半开着；壶内可见猎物的半溶解残影悬在琥珀色消化液中，壶壁上爬着搏动的脉管；三根僵硬的倒刺须像护肋那样拱在壶顶，光合质地的墨绿蜡光。整株像在呼吸，壶壁微微鼓胀。无花、无瓣、无叶。墨绿、半透明琥珀与蜡黄脉管三色。异星植被图鉴风，透明 PNG，1024×1024",
+     "desc_en": "Original series: an alien carnivorous plant. A thick fleshy stalk rises from a burl of root-nodes and ends in a translucent bladder-pod with a vertical sphincter slit, half-open. Inside the pod, half-dissolved prey remains hang as dark silhouettes suspended in amber digestive fluid, and pulsing veins crawl across the pod wall. Three stiff barbed tendrils arch over the pod like protective ribs, photosynthetic and green-black with a waxy sheen. The whole plant appears to breathe, the pod walls slightly distended. No flowers, no petals, no leaves. Green-black, translucent amber and jaundiced yellow veins. Alien flora catalogue style, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/flora-gland-stake_t.png", "id": "flora-gland-stake", "name_zh": "血蕊诱桩 · 异星猎食", "name_en": "Gland Lure Stake · Alien Predation",
+     "cat": "xenohorror", "tags": ["原创", "异星猎食", "食人植物", "诱饵", "腺果", "倒刺", "透明"],
+     "tags_en": ["original", "alien predation", "carnivorous plant", "lure", "gland fruit", "barbs", "transparent"],
+     "desc_zh": "原创系列：异星食人植物。一根硬直的柄，外表像昆虫胸板那样分节，自浅根瘤升起，顶端是一枚多棱面琥珀腺果，正往下淌着浓稠的诱引液，沿柄凝成一道道硬化的流痕；基座周围六根僵硬的光合须向内勾着倒刺，每根须尖有一个小孔，正呼出淡淡可见的蒸汽。无花、无瓣、无叶，柄身微妙地像一根饲管。骨白、钙化米白、琥珀腺果与墨绿倒刺。异星植被图鉴风，透明 PNG，1024×1024",
+     "desc_en": "Original series: an alien carnivorous lure-plant. A tall rigid stalk, ribbed like an insect sternum, rises from a shallow burl of root-nodes and ends in a faceted amber gland-fruit that weeps thick glistening attractant down the stalk in hardened rivulets. Around the base, six stiff photosynthetic tendrils bristle with inward-curving barbs, each tipped with a tiny pore exhaling a faint visible vapor. No flowers, no petals, no leaves; the stalk subtly resembles a feeding tube. Bone, calcified off-white, amber gland and black-green barbs. Alien flora catalogue style, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/xeno-strike-scene_t.png", "id": "xeno-strike-scene", "name_zh": "折光出击 · 异星猎食", "name_en": "Prism Strike · Alien Predation",
+     "cat": "xenohorror", "tags": ["原创", "异星猎食", "折光", "出击", "捕食瞬间", "诱饵", "透明"],
+     "tags_en": ["original", "alien predation", "light refraction", "strike", "mid-attack", "lure", "transparent"],
+     "desc_zh": "原创系列：捕食瞬间。折光伏击者自收拢姿态向上弹开，半透明晶板叠成的躯干伸到静止时的两倍长，板片张开把光折射成一圈圈油膜光带；三条反关节腿死死撑住，趾爪张开抓地；肩柄上的琥珀诱饵果甩到前方，柄腱绷直，正滴落黏液；一圈折射激波环在伸长的躯干外围扩散。无眼、无面、无口。干燥纸质的矿物质感。骨白、灰烬、虹彩与琥珀。异星生物图鉴风，透明 PNG，1024×1024",
+     "desc_en": "Original series: the moment of the strike. The prism stalker has unfolded upward from its cocked posture, its accordion torso of translucent crystalline plates extended to twice its resting length, the plates splayed and refracting light into bands of oil-slick colour. Its three reverse-jointed legs brace hard, toes splayed and gripping. The amber lure-fruit on its shoulder stalk swings forward, snapped taut on a strained tendon, dripping. A shock-ring of refracted light spreads around the extended torso. No eyes, no face, no mouth. Dry papery mineral texture. Bone white, ash grey, iridescent film and amber. Alien creature catalogue style, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
     # ---- 小徽章 ----
     {"src": "img/zone_bass.png", "id": "zone-bass", "name_zh": "徽章 · 低音核", "name_en": "Badge · Bass Core",
