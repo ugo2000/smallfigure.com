@@ -8,10 +8,10 @@
   /* ---------- 字典 ---------- */
   var DICT = {
     zh: {
-      'site.title': 'smallfigure · 原创小人图鉴',
-      'meta.desc': '原创小人图库：老张、果克星人、女工程师的角色立绘，加上女巫、精灵、原创武器装备与小徽章，支持分类、尺寸筛选与名称搜索。',
-      'hero.subtitle': '每个人都有自己的故事，就像 smallfigure 里的每个小人',
-      'search.placeholder': '搜小人 / 标签：老张、果克星人、透明、徽章…',
+      'site.title': 'smallfigure · 原创素材图鉴',
+      'meta.desc': 'smallfigure 原创素材图鉴：角色立绘、武器装备、徽章、动物……每件素材都有自己的故事，不限题材。支持分类、尺寸筛选与名称搜索。',
+      'hero.subtitle': '万物皆有自己的故事，smallfigure 收集这些故事',
+      'search.placeholder': '搜素材 / 标签：角色、武器、动物、透明、徽章…',
       'toolbar.cats': '分类筛选',
       'filter.size': '尺寸',
       'size.all': '全部尺寸',
@@ -59,10 +59,10 @@
       'lang.label': '语言'
     },
     en: {
-      'site.title': 'smallfigure · Little Figure Gallery',
-      'meta.desc': 'A gallery of original little figures: Laozhang, the Gucck alien, the lady engineer, plus original witches, elves, weapons & gear, and small badges. Filter by category and size, search by name.',
-      'hero.subtitle': 'Everyone has a story, just like every little figure in smallfigure',
-      'search.placeholder': 'Search figures / tags: Laozhang, alien, transparent, badge…',
+      'site.title': 'smallfigure · Original Asset Gallery',
+      'meta.desc': 'smallfigure is an original asset gallery: character art, weapons and gear, badges, creatures — every piece has its own story, no subject limits. Filter by category and size, search by name.',
+      'hero.subtitle': 'Everything has its own story — smallfigure collects them',
+      'search.placeholder': 'Search art / tags: character, weapon, animal, transparent, badge…',
       'toolbar.cats': 'Category filter',
       'filter.size': 'Size',
       'size.all': 'All sizes',

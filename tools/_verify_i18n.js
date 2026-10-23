@@ -28,10 +28,10 @@ const BASE = process.env.SF_URL || 'http://127.0.0.1:8788';
 
   await pg.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
   await pg.waitForTimeout(1200);
-  check('A1 默认英文标题', (await T(pg, 'title')) === 'smallfigure · Little Figure Gallery', await T(pg, 'title'));
+  check('A1 默认英文标题', (await T(pg, 'title')) === 'smallfigure · Original Asset Gallery', await T(pg, 'title'));
   check('A2 html lang=en', (await T(pg, 'html', 'lang')) === 'en', await T(pg, 'html', 'lang'));
-  check('A3 副标题英文', (await T(pg, '.subtitle')) === 'Everyone has a story, just like every little figure in smallfigure', await T(pg, '.subtitle'));
-  check('A4 搜索占位符英文', (await T(pg, '#search', 'placeholder')).indexOf('Search figures') === 0, await T(pg, '#search', 'placeholder'));
+  check('A3 副标题英文', (await T(pg, '.subtitle')) === 'Everything has its own story — smallfigure collects them', await T(pg, '.subtitle'));
+  check('A4 搜索占位符英文', (await T(pg, '#search', 'placeholder')).indexOf('Search art') === 0, await T(pg, '#search', 'placeholder'));
   check('A5 筛选标签英文', (await T(pg, '.sel span')) === 'Size', await T(pg, '.sel span'));
   check('A6 全部尺寸英文', (await T(pg, '#sizeFilter option')) === 'All sizes', await T(pg, '#sizeFilter option'));
   const a7 = await T(pg, '.site-footer .dim:last-child');
@@ -41,15 +41,15 @@ const BASE = process.env.SF_URL || 'http://127.0.0.1:8788';
   // ---------- B. 切到中文 ----------
   await pg.click('.lang-btn[data-lang="zh"]');
   await pg.waitForTimeout(600);
-  check('B1 中文标题', (await T(pg, 'title')) === 'smallfigure · 原创小人图鉴', await T(pg, 'title'));
+  check('B1 中文标题', (await T(pg, 'title')) === 'smallfigure · 原创素材图鉴', await T(pg, 'title'));
   check('B2 html lang=zh-CN', (await T(pg, 'html', 'lang')) === 'zh-CN', await T(pg, 'html', 'lang'));
-  check('B3 副标题中文', (await T(pg, '.subtitle')) === '每个人都有自己的故事，就像 smallfigure 里的每个小人', await T(pg, '.subtitle'));
-  check('B4 搜索占位符中文', (await T(pg, '#search', 'placeholder')).indexOf('搜小人') === 0, await T(pg, '#search', 'placeholder'));
+  check('B3 副标题中文', (await T(pg, '.subtitle')) === '万物皆有自己的故事，smallfigure 收集这些故事', await T(pg, '.subtitle'));
+  check('B4 搜索占位符中文', (await T(pg, '#search', 'placeholder')).indexOf('搜素材') === 0, await T(pg, '#search', 'placeholder'));
   check('B5 尺寸标签中文', (await T(pg, '.sel span')) === '尺寸', await T(pg, '.sel span'));
   check('B6 音乐按钮中文 title', BGM_TITLES.zh.indexOf(await T(pg, '#bgmBtn', 'title')) > -1, await T(pg, '#bgmBtn', 'title'));
 
   // ---------- C. 动态渲染跟随语言 ----------
-  check('C1 chips 全部中文', (await T(pg, '.chip')) === '全部8', await T(pg, '.chip'));
+  check('C1 chips 全部中文', /^全部\d+$/.test(await T(pg, '.chip')), await T(pg, '.chip'));
   check('C2 分类 chip 中文', (await T(pg, '.chip:nth-child(2)')).indexOf('人物立绘') === 0, await T(pg, '.chip:nth-child(2)'));
   check('C3 计数行中文', (await T(pg, '#countLine')).indexOf('共') === 0, await T(pg, '#countLine'));
   check('C4 卡片名中文', (await T(pg, '.card-meta h3')) === '老张 · 立绘', await T(pg, '.card-meta h3'));
@@ -88,7 +88,7 @@ const BASE = process.env.SF_URL || 'http://127.0.0.1:8788';
   check('F1 localStorage 记住 zh', stored === 'zh', 'stored=' + stored);
   await pg.reload({ waitUntil: 'networkidle' });
   await pg.waitForTimeout(1000);
-  check('F2 刷新后仍是中文', (await T(pg, 'title')) === 'smallfigure · 原创小人图鉴', await T(pg, 'title'));
+  check('F2 刷新后仍是中文', (await T(pg, 'title')) === 'smallfigure · 原创素材图鉴', await T(pg, 'title'));
   check('F3 刷新后切换按钮状态', (await pg.getAttribute('.lang-btn[data-lang="zh"]', 'class')).indexOf('active') > -1);
 
   // ---------- G. 无遗漏 key / 无模板残留 ----------
