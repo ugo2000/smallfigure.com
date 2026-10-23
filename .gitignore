@@ -10,6 +10,12 @@ _site/
 # 本地验证截图与临时预览图（_verify*.js / analyze_eng.py 等脚本保留）
 tools/_*.png
 
+# 本地凭据文件（绝不进公开仓库）
+.gh_token
+.cf_token
+.env
+.env.*
+
 # 依赖与系统文件
 node_modules/
 .DS_Store
