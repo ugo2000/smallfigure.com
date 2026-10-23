@@ -22,3 +22,4 @@ node_modules/
 Thumbs.db
 *.log
 .wrangler/
+generated-images/
