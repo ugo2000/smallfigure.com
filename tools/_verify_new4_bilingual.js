@@ -88,7 +88,7 @@ const BASE = process.env.SF_URL || 'https://www.smallfigure.com';
 
   await pg.fill('#search', '');
   await pg.waitForTimeout(400);
-  check('Q9 清空搜索后回到 69 张', (await cards()) === 69, String(await cards()));
+  check('Q9 清空搜索后回到 85 张', (await cards()) === 85, String(await cards()));
 
   console.log('JS 错误:', errors.length ? errors.join(' | ') : '无');
   console.log(`\n结果: ${pass} PASS / ${fail} FAIL`);
