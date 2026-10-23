@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>smallfigure · 原创小人图鉴</title>
-<meta name="description" content="原创小人图库：老张、果克星人、女工程师的角色立绘与小徽章，支持分类、尺寸筛选与名称搜索。">
+<title data-i18n="site.title">smallfigure · 原创小人图鉴</title>
+<meta name="description" data-i18n-content="meta.desc" content="原创小人图库：老张、果克星人、女工程师的角色立绘与小徽章，支持分类、尺寸筛选与名称搜索。">
 <link rel="icon" type="image/webp" href="assets/img/thumbs/hero_t.webp">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -18,38 +18,42 @@
       </span>
       <div class="brand-text">
         <h1>smallfigure</h1>
-        <p class="subtitle">每个人都有自己的故事，就像 smallfigure 里的每个小人</p>
+        <p class="subtitle" data-i18n="hero.subtitle">每个人都有自己的故事，就像 smallfigure 里的每个小人</p>
       </div>
     </div>
     <div class="search-box">
       <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M21 21l-4.35-4.35M17 10.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-      <input id="search" type="search" placeholder="搜小人 / 标签：老张、果克星人、透明、徽章…" autocomplete="off">
+      <input id="search" type="search" data-i18n-ph="search.placeholder" placeholder="搜小人 / 标签：老张、果克星人、透明、徽章…" autocomplete="off">
       <kbd>/</kbd>
+    </div>
+    <div class="lang-toggle" id="langToggle" role="group" data-i18n-aria="lang.label" aria-label="语言">
+      <button class="lang-btn" type="button" data-lang="zh" aria-pressed="true">中文</button>
+      <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
     </div>
   </div>
 </header>
 
 <nav class="toolbar" id="toolbar">
   <div class="wrap toolbar-inner">
-    <div class="chips" id="chips" role="tablist" aria-label="分类筛选"></div>
+    <div class="chips" id="chips" role="tablist" data-i18n-aria="toolbar.cats" aria-label="分类筛选"></div>
     <div class="filters">
       <label class="sel">
-        <span>尺寸</span>
+        <span data-i18n="filter.size">尺寸</span>
         <select id="sizeFilter">
-          <option value="all">全部尺寸</option>
-          <option value="s">≤ 400 px</option>
-          <option value="m">401 – 800 px</option>
-          <option value="l">801 – 1600 px</option>
-          <option value="xl">&gt; 1600 px</option>
+          <option value="all" data-i18n="size.all">全部尺寸</option>
+          <option value="s" data-i18n="size.s">≤ 400 px</option>
+          <option value="m" data-i18n="size.m">401 – 800 px</option>
+          <option value="l" data-i18n="size.l">801 – 1600 px</option>
+          <option value="xl" data-i18n="size.xl">&gt; 1600 px</option>
         </select>
       </label>
       <label class="sel">
-        <span>排序</span>
+        <span data-i18n="filter.sort">排序</span>
         <select id="sortBy">
-          <option value="default">默认</option>
-          <option value="size-desc">尺寸从大到小</option>
-          <option value="bytes-desc">体积从大到小</option>
-          <option value="name">名称</option>
+          <option value="default" data-i18n="sort.default">默认</option>
+          <option value="size-desc" data-i18n="sort.size-desc">尺寸从大到小</option>
+          <option value="bytes-desc" data-i18n="sort.bytes-desc">体积从大到小</option>
+          <option value="name" data-i18n="sort.name">名称</option>
         </select>
       </label>
     </div>
@@ -61,22 +65,22 @@
   <div class="grid" id="grid"></div>
   <div class="empty" id="empty" hidden>
     <div class="empty-icon">🔍</div>
-    <p>没有匹配的图片</p>
-    <button class="btn ghost" id="resetBtn">清空筛选条件</button>
+    <p data-i18n="empty.title">没有匹配的图片</p>
+    <button class="btn ghost" id="resetBtn" data-i18n="empty.reset">清空筛选条件</button>
   </div>
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="dim">联系：<a href="mailto:ugo2000@126.com">ugo2000@126.com</a></p>
-    <p class="dim">© 2026 smallfigure.com · Cloudflare Pages 托管 · GitHub 开源</p>
+    <p class="dim"><span data-i18n="footer.contact">联系：</span><a href="mailto:ugo2000@126.com">ugo2000@126.com</a></p>
+    <p class="dim" data-i18n="footer.hosted">© 2026 smallfigure.com · Cloudflare Pages 托管 · GitHub 开源</p>
   </div>
 </footer>
 
 <div class="lightbox" id="lightbox" hidden>
   <div class="lb-mask" data-close></div>
   <div class="lb-panel" role="dialog" aria-modal="true">
-    <button class="lb-close" data-close aria-label="关闭">×</button>
+    <button class="lb-close" data-close data-i18n-aria="lb.close" aria-label="关闭">×</button>
     <div class="lb-stage" id="lbStage"></div>
     <aside class="lb-info">
       <p class="lb-cat" id="lbCat"></p>
@@ -85,21 +89,26 @@
       <dl class="lb-meta" id="lbMeta"></dl>
       <div class="lb-tags" id="lbTags"></div>
       <div class="lb-actions">
-        <a class="btn primary" id="lbDownload" download>下载大图</a>
-        <button class="btn ghost" id="lbPlay" hidden>暂停</button>
+        <a class="btn primary" id="lbDownload" download data-i18n="lb.download">下载大图</a>
+        <button class="btn ghost" id="lbPlay" hidden data-i18n="lb.pause">暂停</button>
+        <div class="lang-toggle lang-toggle-sm" role="group" data-i18n-aria="lang.label" aria-label="语言">
+          <button class="lang-btn" type="button" data-lang="zh" aria-pressed="true">中文</button>
+          <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
       </div>
       <div class="lb-nav">
-        <button class="btn ghost" id="lbPrev">‹ 上一张</button>
+        <button class="btn ghost" id="lbPrev" data-i18n="lb.prev">‹ 上一张</button>
         <span id="lbPos"></span>
-        <button class="btn ghost" id="lbNext">下一张 ›</button>
+        <button class="btn ghost" id="lbNext" data-i18n="lb.next">下一张 ›</button>
       </div>
     </aside>
   </div>
 </div>
 
 <audio id="bgm" src="assets/audio/bgm.mp3" loop preload="auto"></audio>
-<button class="bgm-btn" id="bgmBtn" type="button" title="背景音乐" aria-label="背景音乐开关"></button>
+<button class="bgm-btn" id="bgmBtn" type="button" data-i18n-title="bgm.title" title="背景音乐" aria-label="背景音乐开关"></button>
 
+<script src="i18n.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

@@ -28,11 +28,15 @@ smallfigure = 小人的图。
   （`↓ 137` 金色徽章 / 「下载次数 137 次」）。不到 100 次只统计、不展示
 - **背景音乐**：默认开启（浏览器拦截自动播放时，访客首次点页面即响起），右下角圆形按钮随时开关，
   选择记在 localStorage，刷新不丢
+- **中英双语**：顶栏（及灯箱内）一键切换全站文案，默认跟随浏览器语言，选择记在 localStorage。
+  界面文案在 `i18n.js` 字典里，图片的中英文名/简介/分类标签在 `data/images.json`（`nameEn`/`descEn`/`categoryLabelEn`），
+  搜索时中英文关键词都能命中
 
 ## 目录结构
 
 ```
 ├── index.html / styles.css / app.js   # 站点本体（零依赖原生三件套）
+├── i18n.js                            # 中英双语字典 + 语言切换（须在 app.js 前加载）
 ├── functions/api/                     # Pages Functions：下载计数后端
 │   ├── counts.js                      #   GET  /api/counts     全量计数
 │   └── download/[id].js               #   POST /api/download/:id  自增并返回最新值
@@ -91,8 +95,8 @@ npx wrangler pages deploy _site --project-name=smallfigure --branch=main
 npx wrangler d1 execute smallfigure_downloads --remote --file migrations/0001_init.sql
 ```
 
-自定义域名 `smallfigure.com` 已绑定（Cloudflare DNS CNAME → smallfigure.pages.dev，已 proxied，
-SSL 自动签发）。当前状态：线上 https://smallfigure.com 正常运行。
+自定义域名 `smallfigure.com` 与 `www.smallfigure.com` 均已绑定（Cloudflare DNS CNAME → smallfigure.pages.dev，
+已 proxied，SSL 自动签发）。当前状态：线上 https://smallfigure.com 与 https://www.smallfigure.com 正常运行。
 
 ## 背景音乐
 

@@ -8,7 +8,7 @@ smallfigure.com 素材构建脚本
 2. assets/img/full/   —— 网站展示用大图（最长边压到 1024，PNG）
 3. assets/img/thumbs/ —— 网格缩略图（最长边 400，WebP，带透明通道）
 4. assets/img/anim/   —— 入场动画精灵图（22 帧纵向拼接，WebP）
-5. data/images.json   —— 全站元数据（名称/分类/尺寸/字节数/标签/主色）
+5. data/images.json   —— 全站元数据（中英文名称/简介/分类标签、尺寸、字节数、标签、主色）
 
 可重复跑：幂等，输出覆盖旧文件。用法：
     python tools/build_assets.py
@@ -33,33 +33,59 @@ THUMB_MAX = 400
 FULL_MAX = 1024
 BG_RGB = (13, 17, 23)  # 站点暗色底色，用于算主色和合成预览
 
-CAT_LABEL = {
-    "characters": "人物立绘",
-    "badges": "小徽章",
+CAT_LABELS = {
+    "characters": {"zh": "人物立绘", "en": "Character Art"},
+    "badges": {"zh": "小徽章", "en": "Badges"},
 }
 
-# (源文件, id, 中文名, 分类, 标签, 简介, 透明, 动画效果)
+SUBTITLE = {"zh": "原创小人图鉴 · 立绘 / 小徽章", "en": "Original Little Figure Gallery · Character Art / Badges"}
+
+# 每项：源文件, id, 中文名, 英文名, 分类, 标签, 中文简介, 英文简介, 透明, 动画效果
 # 透明立绘的来源：processed/ 下的是用 character-art 技能脚本从 AI 原图重抠的干净版
 # （游戏里的旧处理版带奶白 veil 箱子，已弃用；原图在 originals/ 有备份）
 ITEMS = [
     # ---- 人物立绘 ----
-    ("processed/hero_t.png", "hero-t", "老张 · 立绘", "characters",
-     ["老张", "主角", "立绘", "hero", "透明", "小人"], "本站看板小人：棕夹克工装男，AI 生成后抠成透明 PNG，512×512", True, None),
-    ("img/hero.png", "hero", "老张 · 立绘原图", "characters",
-     ["老张", "主角", "立绘", "hero", "原图"], "AI 原始生成图，浅灰底未抠图（原图在 originals/ 有备份）", False, None),
-    ("processed/alien_t.png", "alien-t", "果克星人 · 立绘", "characters",
-     ["果克星人", "外星人", "立绘", "alien", "透明", "小人"], "绿色大头外星小人，透明 PNG，512×512", True, None),
-    ("img/alien.png", "alien", "果克星人 · 立绘原图", "characters",
-     ["果克星人", "外星人", "alien", "原图"], "AI 原始生成图，未抠图", False, None),
-    ("processed/hero_new.png", "engineer", "女工程师 · 立绘", "characters",
-     ["女工程师", "立绘", "engineer", "透明", "小人"], "技能验证时生成的漫画风女工程师，透明 PNG，512×512", True, None),
+    {"src": "processed/hero_t.png", "id": "hero-t", "name_zh": "老张 · 立绘", "name_en": "Laozhang · Character Art",
+     "cat": "characters", "tags": ["老张", "主角", "立绘", "hero", "透明", "小人"],
+     "desc_zh": "本站看板小人：棕夹克工装男，AI 生成后抠成透明 PNG，512×512",
+     "desc_en": "The mascot of this site: a brown-jacket workwear man, AI-generated and cut out to a transparent PNG, 512×512",
+     "transparent": True, "effect": None},
+    {"src": "img/hero.png", "id": "hero", "name_zh": "老张 · 立绘原图", "name_en": "Laozhang · Original Artwork",
+     "cat": "characters", "tags": ["老张", "主角", "立绘", "hero", "原图"],
+     "desc_zh": "AI 原始生成图，浅灰底未抠图（原图在 originals/ 有备份）",
+     "desc_en": "Original AI-generated image, light gray background, not cut out (backup kept in originals/)",
+     "transparent": False, "effect": None},
+    {"src": "processed/alien_t.png", "id": "alien-t", "name_zh": "果克星人 · 立绘", "name_en": "Gucck Alien · Character Art",
+     "cat": "characters", "tags": ["果克星人", "外星人", "立绘", "alien", "透明", "小人"],
+     "desc_zh": "绿色大头外星小人，透明 PNG，512×512",
+     "desc_en": "A green big-headed little alien, transparent PNG, 512×512",
+     "transparent": True, "effect": None},
+    {"src": "img/alien.png", "id": "alien", "name_zh": "果克星人 · 立绘原图", "name_en": "Gucck Alien · Original Artwork",
+     "cat": "characters", "tags": ["果克星人", "外星人", "alien", "原图"],
+     "desc_zh": "AI 原始生成图，未抠图",
+     "desc_en": "Original AI-generated image, not cut out",
+     "transparent": False, "effect": None},
+    {"src": "processed/hero_new.png", "id": "engineer", "name_zh": "女工程师 · 立绘", "name_en": "Lady Engineer · Character Art",
+     "cat": "characters", "tags": ["女工程师", "立绘", "engineer", "透明", "小人"],
+     "desc_zh": "技能验证时生成的漫画风女工程师，透明 PNG，512×512",
+     "desc_en": "A comic-style lady engineer generated during skill validation, transparent PNG, 512×512",
+     "transparent": True, "effect": None},
     # ---- 小徽章 ----
-    ("img/zone_bass.png", "zone-bass", "徽章 · 低音核", "badges",
-     ["徽章", "低音核", "bass", "透明", "小图"], "霓虹线稿小徽章，音区标识之一", True, None),
-    ("img/zone_bell.png", "zone-bell", "徽章 · 晶铃", "badges",
-     ["徽章", "晶铃", "bell", "透明", "小图"], "霓虹线稿小徽章，音区标识之一", True, None),
-    ("img/zone_lead.png", "zone-lead", "徽章 · 等离子", "badges",
-     ["徽章", "等离子", "lead", "透明", "小图"], "霓虹线稿小徽章，音区标识之一", True, None),
+    {"src": "img/zone_bass.png", "id": "zone-bass", "name_zh": "徽章 · 低音核", "name_en": "Badge · Bass Core",
+     "cat": "badges", "tags": ["徽章", "低音核", "bass", "透明", "小图"],
+     "desc_zh": "霓虹线稿小徽章，音区标识之一",
+     "desc_en": "Neon line-art badge, one of the zone markers",
+     "transparent": True, "effect": None},
+    {"src": "img/zone_bell.png", "id": "zone-bell", "name_zh": "徽章 · 晶铃", "name_en": "Badge · Crystal Bell",
+     "cat": "badges", "tags": ["徽章", "晶铃", "bell", "透明", "小图"],
+     "desc_zh": "霓虹线稿小徽章，音区标识之一",
+     "desc_en": "Neon line-art badge, one of the zone markers",
+     "transparent": True, "effect": None},
+    {"src": "img/zone_lead.png", "id": "zone-lead", "name_zh": "徽章 · 等离子", "name_en": "Badge · Plasma",
+     "cat": "badges", "tags": ["徽章", "等离子", "lead", "透明", "小图"],
+     "desc_zh": "霓虹线稿小徽章，音区标识之一",
+     "desc_en": "Neon line-art badge, one of the zone markers",
+     "transparent": True, "effect": None},
 ]
 
 # 原图片（AI 生成）→ originals/ 单独存放，网站不直接用这些文件
@@ -127,7 +153,9 @@ def main():
     # ---------- 2. 单图处理 ----------
     print("== 处理网站图片 ==")
     images = []
-    for src_rel, iid, name, cat, tags, desc, transparent, effect in ITEMS:
+    for it in ITEMS:
+        src_rel, iid = it["src"], it["id"]
+        cat, tags = it["cat"], it["tags"]
         src = resolve_src(src_rel)
         if not os.path.exists(src):
             print("  [缺失]", src_rel)
@@ -135,7 +163,7 @@ def main():
         im = Image.open(src)
         w, h = im.size
 
-        full = resize_max(im.convert("RGBA" if transparent else "RGB"), FULL_MAX)
+        full = resize_max(im.convert("RGBA" if it["transparent"] else "RGB"), FULL_MAX)
         full_path = os.path.join(OUT_FULL, os.path.splitext(os.path.basename(src_rel))[0] + ".png")
         full.save(full_path, optimize=True)
 
@@ -147,9 +175,11 @@ def main():
         color = dominant_color(im)
         images.append({
             "id": iid,
-            "name": name,
+            "name": it["name_zh"],
+            "nameEn": it["name_en"],
             "category": cat,
-            "categoryLabel": CAT_LABEL[cat],
+            "categoryLabel": CAT_LABELS[cat]["zh"],
+            "categoryLabelEn": CAT_LABELS[cat]["en"],
             "file": "assets/img/full/" + os.path.basename(full_path),
             "thumb": "assets/img/thumbs/" + thumb_name,
             "width": full.size[0],
@@ -157,12 +187,13 @@ def main():
             "srcWidth": w,
             "srcHeight": h,
             "bytes": os.path.getsize(full_path),
-            "transparent": transparent,
-            "animated": effect is not None,
-            "effect": effect,
+            "transparent": it["transparent"],
+            "animated": it["effect"] is not None,
+            "effect": it["effect"],
             "color": color,
             "tags": tags,
-            "desc": desc,
+            "desc": it["desc_zh"],
+            "descEn": it["desc_en"],
         })
         print("  %-28s %4dx%-4d full=%3dKB thumb=%3dKB %s" % (
             os.path.basename(src_rel), full.size[0], full.size[1],
@@ -171,11 +202,12 @@ def main():
     # ---------- 3. 元数据 ----------
     meta = {
         "site": "smallfigure.com",
-        "subtitle": "原创小人图鉴 · 立绘 / 小徽章",
+        "subtitle": SUBTITLE["zh"],
+        "subtitleEn": SUBTITLE["en"],
         "generated": datetime.now(timezone(timedelta(hours=8))).isoformat(timespec="seconds"),
         "source": "game-ball1（游戏《音弹》角色美术，本站只收单体小人与徽章）",
         "count": len(images),
-        "categories": [{"key": k, "label": v} for k, v in CAT_LABEL.items()],
+        "categories": [{"key": k, "label": v["zh"], "labelEn": v["en"]} for k, v in CAT_LABELS.items()],
         "images": images,
     }
     data_path = os.path.join(OUT_DATA, "images.json")

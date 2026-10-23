@@ -1,25 +1,30 @@
 {
  "site": "smallfigure.com",
  "subtitle": "原创小人图鉴 · 立绘 / 小徽章",
- "generated": "2026-10-22T21:59:40+08:00",
+ "subtitleEn": "Original Little Figure Gallery · Character Art / Badges",
+ "generated": "2026-10-23T08:25:15+08:00",
  "source": "game-ball1（游戏《音弹》角色美术，本站只收单体小人与徽章）",
  "count": 8,
  "categories": [
   {
    "key": "characters",
-   "label": "人物立绘"
+   "label": "人物立绘",
+   "labelEn": "Character Art"
   },
   {
    "key": "badges",
-   "label": "小徽章"
+   "label": "小徽章",
+   "labelEn": "Badges"
   }
  ],
  "images": [
   {
    "id": "hero-t",
    "name": "老张 · 立绘",
+   "nameEn": "Laozhang · Character Art",
    "category": "characters",
    "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
    "file": "assets/img/full/hero_t.png",
    "thumb": "assets/img/thumbs/hero_t.webp",
    "width": 512,
@@ -39,13 +44,16 @@
     "透明",
     "小人"
    ],
-   "desc": "本站看板小人：棕夹克工装男，AI 生成后抠成透明 PNG，512×512"
+   "desc": "本站看板小人：棕夹克工装男，AI 生成后抠成透明 PNG，512×512",
+   "descEn": "The mascot of this site: a brown-jacket workwear man, AI-generated and cut out to a transparent PNG, 512×512"
   },
   {
    "id": "hero",
    "name": "老张 · 立绘原图",
+   "nameEn": "Laozhang · Original Artwork",
    "category": "characters",
    "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
    "file": "assets/img/full/hero.png",
    "thumb": "assets/img/thumbs/hero.webp",
    "width": 1024,
@@ -64,13 +72,16 @@
     "hero",
     "原图"
    ],
-   "desc": "AI 原始生成图，浅灰底未抠图（原图在 originals/ 有备份）"
+   "desc": "AI 原始生成图，浅灰底未抠图（原图在 originals/ 有备份）",
+   "descEn": "Original AI-generated image, light gray background, not cut out (backup kept in originals/)"
   },
   {
    "id": "alien-t",
    "name": "果克星人 · 立绘",
+   "nameEn": "Gucck Alien · Character Art",
    "category": "characters",
    "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
    "file": "assets/img/full/alien_t.png",
    "thumb": "assets/img/thumbs/alien_t.webp",
    "width": 512,
@@ -90,13 +101,16 @@
     "透明",
     "小人"
    ],
-   "desc": "绿色大头外星小人，透明 PNG，512×512"
+   "desc": "绿色大头外星小人，透明 PNG，512×512",
+   "descEn": "A green big-headed little alien, transparent PNG, 512×512"
   },
   {
    "id": "alien",
    "name": "果克星人 · 立绘原图",
+   "nameEn": "Gucck Alien · Original Artwork",
    "category": "characters",
    "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
    "file": "assets/img/full/alien.png",
    "thumb": "assets/img/thumbs/alien.webp",
    "width": 1024,
@@ -114,13 +128,16 @@
     "alien",
     "原图"
    ],
-   "desc": "AI 原始生成图，未抠图"
+   "desc": "AI 原始生成图，未抠图",
+   "descEn": "Original AI-generated image, not cut out"
   },
   {
    "id": "engineer",
    "name": "女工程师 · 立绘",
+   "nameEn": "Lady Engineer · Character Art",
    "category": "characters",
    "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
    "file": "assets/img/full/hero_new.png",
    "thumb": "assets/img/thumbs/hero_new.webp",
    "width": 512,
@@ -139,13 +156,16 @@
     "透明",
     "小人"
    ],
-   "desc": "技能验证时生成的漫画风女工程师，透明 PNG，512×512"
+   "desc": "技能验证时生成的漫画风女工程师，透明 PNG，512×512",
+   "descEn": "A comic-style lady engineer generated during skill validation, transparent PNG, 512×512"
   },
   {
    "id": "zone-bass",
    "name": "徽章 · 低音核",
+   "nameEn": "Badge · Bass Core",
    "category": "badges",
    "categoryLabel": "小徽章",
+   "categoryLabelEn": "Badges",
    "file": "assets/img/full/zone_bass.png",
    "thumb": "assets/img/thumbs/zone_bass.webp",
    "width": 384,
@@ -164,13 +184,16 @@
     "透明",
     "小图"
    ],
-   "desc": "霓虹线稿小徽章，音区标识之一"
+   "desc": "霓虹线稿小徽章，音区标识之一",
+   "descEn": "Neon line-art badge, one of the zone markers"
   },
   {
    "id": "zone-bell",
    "name": "徽章 · 晶铃",
+   "nameEn": "Badge · Crystal Bell",
    "category": "badges",
    "categoryLabel": "小徽章",
+   "categoryLabelEn": "Badges",
    "file": "assets/img/full/zone_bell.png",
    "thumb": "assets/img/thumbs/zone_bell.webp",
    "width": 384,
@@ -189,13 +212,16 @@
     "透明",
     "小图"
    ],
-   "desc": "霓虹线稿小徽章，音区标识之一"
+   "desc": "霓虹线稿小徽章，音区标识之一",
+   "descEn": "Neon line-art badge, one of the zone markers"
   },
   {
    "id": "zone-lead",
    "name": "徽章 · 等离子",
+   "nameEn": "Badge · Plasma",
    "category": "badges",
    "categoryLabel": "小徽章",
+   "categoryLabelEn": "Badges",
    "file": "assets/img/full/zone_lead.png",
    "thumb": "assets/img/thumbs/zone_lead.webp",
    "width": 384,
@@ -214,7 +240,8 @@
     "透明",
     "小图"
    ],
-   "desc": "霓虹线稿小徽章，音区标识之一"
+   "desc": "霓虹线稿小徽章，音区标识之一",
+   "descEn": "Neon line-art badge, one of the zone markers"
   }
  ]
 }
