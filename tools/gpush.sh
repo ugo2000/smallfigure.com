@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# allsoft.asia GitHub 推送脚本（2026-10-23 打通）
+# smallfigure.com GitHub 推送脚本（2026-10-23 打通）
 #
 # 背景：本机有三重障碍，普通 `git push` 必失败：
 #   1. 沙箱代理（127.0.0.1:60676）掐断 github.com:443 的 POST
