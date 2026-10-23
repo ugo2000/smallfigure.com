@@ -34,7 +34,8 @@ const BASE = process.env.SF_URL || 'http://127.0.0.1:8788';
   check('A4 搜索占位符英文', (await T(pg, '#search', 'placeholder')).indexOf('Search figures') === 0, await T(pg, '#search', 'placeholder'));
   check('A5 筛选标签英文', (await T(pg, '.sel span')) === 'Size', await T(pg, '.sel span'));
   check('A6 全部尺寸英文', (await T(pg, '#sizeFilter option')) === 'All sizes', await T(pg, '#sizeFilter option'));
-  check('A7 页脚英文', (await T(pg, '.site-footer .dim:last-child')).indexOf('Hosted on Cloudflare Pages') > -1, await T(pg, '.site-footer .dim:last-child'));
+  const a7 = await T(pg, '.site-footer .dim:last-child');
+  check('A7 页脚英文已去掉托管声明', a7.indexOf('Hosted on Cloudflare Pages') === -1 && a7.indexOf('© 2026 smallfigure.com') > -1, a7);
   check('A8 音乐按钮英文 title', BGM_TITLES.en.indexOf(await T(pg, '#bgmBtn', 'title')) > -1, await T(pg, '#bgmBtn', 'title'));
 
   // ---------- B. 切到中文 ----------
