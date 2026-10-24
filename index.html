@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title data-i18n="site.title">smallfigure · 原创素材图鉴</title>
-<meta name="description" data-i18n-content="meta.desc" content="smallfigure 原创素材图鉴：角色立绘、武器装备、弹药军械、徽章、动物、食物美食、载具机械、异星生物、异星植物、石器原始、奇色液体、魔法书籍、魔法法器、城堡建筑、古旧家具、奇械科技、异星猎食、星球徽志、小人动图……每件素材都有自己的故事，不限题材。支持分类、尺寸筛选与名称搜索。">
+<meta name="description" data-i18n-content="meta.desc" content="smallfigure 原创素材图鉴：角色立绘、武器装备、弹药军械、徽章、动物、食物美食、载具机械、异星生物、异星植物、石器原始、奇色液体、魔法书籍、魔法法器、城堡建筑、古旧家具、奇械科技、异星猎食、星球徽志、小人动图、古怪乐器、物理武器、变异稻草人、多牙生物、古怪外星石头……每件素材都有自己的故事，不限题材。支持分类、尺寸筛选与名称搜索。">
 <link rel="icon" type="image/webp" href="assets/img/thumbs/hero_t.webp">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -23,7 +23,7 @@
     </div>
     <div class="search-box">
       <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M21 21l-4.35-4.35M17 10.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-      <input id="search" type="search" data-i18n-ph="search.placeholder" placeholder="搜素材 / 标签：角色、武器、弹药、动物、食物、载具、异星生物、异星植物、石器、液体、法典、法器、城堡、家具、科技、猎食、星球、透明、徽章、动图…" autocomplete="off">
+      <input id="search" type="search" data-i18n-ph="search.placeholder" placeholder="搜素材 / 标签：角色、武器、弹药、动物、食物、载具、异星生物、异星植物、石器、液体、法典、法器、城堡、家具、科技、猎食、星球、透明、徽章、动图、乐器、稻草人、尖牙、石头…" autocomplete="off">
       <kbd>/</kbd>
     </div>
     <div class="lang-toggle" id="langToggle" role="group" data-i18n-aria="lang.label" aria-label="语言">
@@ -79,6 +79,7 @@
 <main class="wrap">
   <p class="count-line" id="countLine"></p>
   <div class="grid" id="grid"></div>
+  <div class="pager" id="pager" hidden></div>
   <div class="empty" id="empty" hidden>
     <div class="empty-icon">🔍</div>
     <p data-i18n="empty.title">没有匹配的图片</p>

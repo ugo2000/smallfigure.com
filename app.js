@@ -8,16 +8,18 @@
   var DL_THRESHOLD = 100;              // 下载满 100 次才开始亮出计数
   var DL_POST_TIMEOUT = 2000;          // 上报最多等 2 秒，不堵下载
   var SHEET_MS = 3000; /* 精灵图循环周期，跟游戏 3 秒入场对齐 */
-  var state = { q: '', cat: 'all', size: 'all', sort: 'default' };
+  var state = { q: '', cat: 'all', size: 'all', sort: 'default', page: 0 };
+  var PAGE_SIZE = 100;   // 每页最多显示 100 张，超出则翻页
   var all = [];       // 全量
   var view = [];      // 当前筛选结果
   var counts = {};    // id -> 下载次数（未达标不展示）
-  var lbIndex = 0;    // 灯箱当前位置
+  var lbViewIndex = 0; // 灯箱当前在「当前筛选结果 view」中的位置
+  var lbIm = null;     // 灯箱当前展示的素材对象
   var lbPlayer = null; // 灯箱里的精灵图播放器
   var lbFxEl = null;   // 灯箱里的 CSS 动效元素
 
   var $ = function (id) { return document.getElementById(id); };
-  var grid = $('grid'), empty = $('empty'), countLine = $('countLine');
+  var grid = $('grid'), empty = $('empty'), countLine = $('countLine'), pagerEl = $('pager');
   var chipsEl = $('chips'), searchEl = $('search');
   var sizeEl = $('sizeFilter'), sortEl = $('sortBy');
   var metaRef = null;   // 最近一次加载的元数据（语言切换时重建用）
@@ -79,9 +81,8 @@
       applyCardCount(card, card.dataset.id);
     });
     var lb = $('lightbox');
-    if (lb && !lb.hidden) {
-      var im = all[lbIndex];
-      if (im) $('lbMeta').innerHTML = lbMetaHtml(im);
+    if (lb && !lb.hidden && lbIm) {
+      $('lbMeta').innerHTML = lbMetaHtml(lbIm);
     }
   }
 
@@ -200,6 +201,7 @@
     var btn = e.target.closest('.chip');
     if (!btn) return;
     state.cat = btn.dataset.cat;
+    state.page = 0;
     chipsEl.querySelectorAll('.chip').forEach(function (c) {
       var on = c === btn;
       c.classList.toggle('active', on);
@@ -262,7 +264,7 @@
       '<p class="dims">' + im.width + ' × ' + im.height + ' · ' + fmtBytes(im.bytes) + '</p>' +
       '<p class="cat">' + esc(locCat(im)) + '</p>' +
       '</div>';
-    el.addEventListener('click', function () { openLightbox(all.indexOf(im)); });
+    el.addEventListener('click', function () { openLightbox(im); });
     return el;
   }
 
@@ -276,14 +278,51 @@
 
   function render() {
     applyFilters();
+    var totalPages = Math.max(1, Math.ceil(view.length / PAGE_SIZE));
+    if (state.page > totalPages - 1) state.page = totalPages - 1;
+    if (state.page < 0) state.page = 0;
+    var start = state.page * PAGE_SIZE;
+    var pageItems = view.slice(start, start + PAGE_SIZE);
+
     grid.innerHTML = '';
     var frag = document.createDocumentFragment();
-    view.forEach(function (im) { frag.appendChild(cardEl(im)); });
+    pageItems.forEach(function (im) { frag.appendChild(cardEl(im)); });
     grid.appendChild(frag);
-    empty.hidden = view.length > 0;
-    countLine.innerHTML = SF.t('count.line', { total: all.length, n: view.length }) +
-      (state.q ? SF.t('count.searching', { q: esc(state.q) }) : '');
     startSheets(grid);
+
+    var hasResults = view.length > 0;
+    empty.hidden = hasResults;
+    countLine.innerHTML = SF.t('count.line', { total: all.length, n: view.length }) +
+      (state.q ? SF.t('count.searching', { q: esc(state.q) }) : '') +
+      (totalPages > 1 ? SF.t('count.page', { p: state.page + 1, t: totalPages }) : '');
+    renderPager(totalPages);
+  }
+
+  /* 翻页器：每页最多 PAGE_SIZE 张，超出才出现 */
+  function renderPager(totalPages) {
+    if (!pagerEl) return;
+    if (totalPages <= 1 || view.length === 0) { pagerEl.innerHTML = ''; pagerEl.hidden = true; return; }
+    pagerEl.hidden = false;
+    var cur = state.page;
+    var html = '<button class="pg-btn" data-pg="prev" ' + (cur === 0 ? 'disabled' : '') + '>' + SF.t('pager.prev') + '</button>';
+    var pages = [];
+    var maxShow = 7;
+    if (totalPages <= maxShow) {
+      for (var i = 0; i < totalPages; i++) pages.push(i);
+    } else {
+      pages.push(0);
+      var s = Math.max(1, cur - 2), e = Math.min(totalPages - 2, cur + 2);
+      if (s > 1) pages.push('…');
+      for (var j = s; j <= e; j++) pages.push(j);
+      if (e < totalPages - 2) pages.push('…');
+      pages.push(totalPages - 1);
+    }
+    pages.forEach(function (p) {
+      if (p === '…') { html += '<span class="pg-ellipsis">…</span>'; return; }
+      html += '<button class="pg-btn' + (p === cur ? ' active' : '') + '" data-pg="' + p + '">' + (p + 1) + '</button>';
+    });
+    html += '<button class="pg-btn" data-pg="next" ' + (cur === totalPages - 1 ? 'disabled' : '') + '>' + SF.t('pager.next') + '</button>';
+    pagerEl.innerHTML = html;
   }
 
   /* 灯箱元数据（下载次数满 100 才露出） */
@@ -302,9 +341,9 @@
   }
 
   /* ---------- 灯箱 ---------- */
-  function openLightbox(idx) {
-    lbIndex = idx;
-    var im = all[idx];
+  function openLightbox(im) {
+    lbIm = im;
+    lbViewIndex = view.indexOf(im);
     var lb = $('lightbox');
     var stage = $('lbStage');
 
@@ -349,8 +388,7 @@
     dl.href = assetUrl(im, 'file');
     dl.setAttribute('download', im.id + '.png');
     $('lbMeta').innerHTML = lbMetaHtml(im);
-    var pos = view.indexOf(im);
-    $('lbPos').textContent = ((pos >= 0 ? pos : lbIndex) + 1) + ' / ' + all.length;
+    $('lbPos').textContent = ((lbViewIndex >= 0 ? lbViewIndex : 0) + 1) + ' / ' + view.length;
 
     lb.hidden = false;
     document.body.style.overflow = 'hidden';
@@ -363,20 +401,34 @@
   }
 
   function stepLightbox(d) {
-    var n = all.length;
-    openLightbox((lbIndex + d + n) % n);
+    var n = view.length;
+    if (n === 0) return;
+    var ni = (lbViewIndex + d + n) % n;
+    openLightbox(view[ni]);
   }
 
   /* ---------- 事件 ---------- */
   var searchTimer = null;
   searchEl.addEventListener('input', function () {
     clearTimeout(searchTimer);
-    searchTimer = setTimeout(function () { state.q = searchEl.value; render(); }, 120);
+    searchTimer = setTimeout(function () { state.q = searchEl.value; state.page = 0; render(); }, 120);
   });
-  sizeEl.addEventListener('change', function () { state.size = sizeEl.value; render(); });
-  sortEl.addEventListener('change', function () { state.sort = sortEl.value; render(); });
+  sizeEl.addEventListener('change', function () { state.size = sizeEl.value; state.page = 0; render(); });
+  sortEl.addEventListener('change', function () { state.sort = sortEl.value; state.page = 0; render(); });
+  /* 翻页：改变 view 的筛选操作已经把 state.page 归零，这里只负责切页 */
+  pagerEl.addEventListener('click', function (e) {
+    var btn = e.target.closest('.pg-btn');
+    if (!btn || btn.disabled) return;
+    var a = btn.dataset.pg;
+    if (a === 'prev') state.page = Math.max(0, state.page - 1);
+    else if (a === 'next') state.page = Math.min(Math.max(1, Math.ceil(view.length / PAGE_SIZE)) - 1, state.page + 1);
+    else state.page = parseInt(a, 10);
+    render();
+    var g = $('grid');
+    if (g) g.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
   $('resetBtn').addEventListener('click', function () {
-    state = { q: '', cat: 'all', size: 'all', sort: 'default' };
+    state = { q: '', cat: 'all', size: 'all', sort: 'default', page: 0 };
     searchEl.value = ''; sizeEl.value = 'all'; sortEl.value = 'default';
     chipsEl.querySelectorAll('.chip').forEach(function (c, i) {
       c.classList.toggle('active', i === 0);
@@ -427,7 +479,7 @@
   }
 
   $('lbDownload').addEventListener('click', function (e) {
-    var im = all[lbIndex];
+    var im = lbIm;
     if (!im) return;
     e.preventDefault();
     downloadWithCount(im);
@@ -460,7 +512,7 @@
         if (metaRef) buildChips(metaRef);
         render();
         var lb = $('lightbox');
-        if (lb && !lb.hidden) openLightbox(lbIndex);
+        if (lb && !lb.hidden) openLightbox(lbIm);
         bgmIcon(bgmWanted && !bgm.paused, bgmBtn.classList.contains('waiting'));
       });
     })
