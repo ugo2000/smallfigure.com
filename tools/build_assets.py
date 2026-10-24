@@ -84,10 +84,11 @@ CAT_LABELS = {
     "hairyboot": {"zh": "长毛皮鞋", "en": "Furry Boots"},
     "oddbug": {"zh": "古怪虫豸", "en": "Weird Bugs"},
     "constellation": {"zh": "怪诞星座", "en": "Odd Constellations"},
+    "nonsense": {"zh": "无厘头人物", "en": "Nonsense Folk"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -104,6 +105,7 @@ SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / �
           "（character-art 管线怪诞童话风五分类，heavy ink storybook style）"
           " + 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座"
           "（character-art 管线怪诞童话风续批五分类：仙童为胖娃娃中式仙童、星座为虚构星点连线图案，均与既有角色/行星徽志/飞靴错开）"
+          " + 无厘头人物（character-art 管线 mo-lei-tau 无厘头故事书风，冷脸配荒诞反差物件）"
           " + 早期《音弹》游戏美术资产 + 果克星人系列（据张祥前《果克星球奇遇》描述 AI 生成）")
 
 # 每项：源文件, id, 中文名, 英文名, 分类, 标签, 中文简介, 英文简介, 透明, 动画效果
@@ -1587,6 +1589,44 @@ ITEMS = [
      "tags_en": ["constellation", "lotus", "star", "line", "petals"],
      "desc_zh": "怪诞星座：虚构「莲花座」，星点连线成层瓣绽放莲花，重墨卡通描边，透明 PNG，1024×1024",
      "desc_en": "Odd constellation: an invented Lotus pattern of stars linked by lines, layered blooming petals, heavy ink cartoon outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+
+    # ---- 无厘头人物 ----
+    {"src": "processed/nonsense-1.png", "id": "nonsense-fishhat", "name_zh": "顶鱼礼帽先生 · 无厘头人物", "name_en": "Fish-Hat Gentleman · Nonsense Folk",
+     "cat": "nonsense", "tags": ["无厘头", "礼帽", "炸鱼", "西装", "冷脸"],
+     "tags_en": ["nonsense", "hat", "fried fish", "suit", "deadpan"],
+     "desc_zh": "无厘头人物：灰西装系领带的老派绅士，头顶稳稳顶一条整炸鱼当礼帽，面无表情，重墨卡通描边，透明 PNG，1024×1024",
+     "desc_en": "Nonsense folk: a deadpan gentleman in a grey suit and tie with a whole fried fish balanced on his head like a hat, heavy ink cartoon outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/nonsense-2.png", "id": "nonsense-trombone", "name_zh": "拖号遛弯人 · 无厘头人物", "name_en": "Trombone-Walker · Nonsense Folk",
+     "cat": "nonsense", "tags": ["无厘头", "遛弯", "长号", "牵引绳", "冷脸"],
+     "tags_en": ["nonsense", "walking", "trombone", "leash", "deadpan"],
+     "desc_zh": "无厘头人物：便装男士牵绳遛一只长出小短腿、哒哒跑的长号，一脸淡定，重墨卡通描边，透明 PNG，1024×1024",
+     "desc_en": "Nonsense folk: a deadpan man in a casual jacket walking a trombone on tiny cartoon legs like a dog, heavy ink cartoon outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/nonsense-3.png", "id": "nonsense-raincloud", "name_zh": "随身积雨云 · 无厘头人物", "name_en": "Personal Raincloud · Nonsense Folk",
+     "cat": "nonsense", "tags": ["无厘头", "积雨云", "公文包", "白领", "冷脸"],
+     "tags_en": ["nonsense", "raincloud", "briefcase", "office", "deadpan"],
+     "desc_zh": "无厘头人物：白衬衫领带上班族，头顶一小片只淋他一个人的随身积雨云，夹着公文包，冷脸走雨中，重墨卡通描边，透明 PNG，1024×1024",
+     "desc_en": "Nonsense folk: a deadpan office man with a small personal rain cloud raining only on him, holding a briefcase, heavy ink cartoon outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/nonsense-4.png", "id": "nonsense-balloon", "name_zh": "气球系留人 · 无厘头人物", "name_en": "Balloon-Tethered Person · Nonsense Folk",
+     "cat": "nonsense", "tags": ["无厘头", "气球", "漂浮", "系绳", "淡定"],
+     "tags_en": ["nonsense", "balloon", "floating", "tethered", "calm"],
+     "desc_zh": "无厘头人物：一束彩色气球系在手腕，人被轻轻拽离地面斜飘着，一脸惬意淡定，重墨卡通描边，透明 PNG，1024×1024",
+     "desc_en": "Nonsense folk: a calm person gently lifted and tilted by a bundle of colorful balloons tied to one wrist, heavy ink cartoon outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/nonsense-5.png", "id": "nonsense-mop", "name_zh": "拖把胡哲学家 · 无厘头人物", "name_en": "Mop-Beard Philosopher · Nonsense Folk",
+     "cat": "nonsense", "tags": ["无厘头", "拖把", "哲学家", "茶杯", "说教"],
+     "tags_en": ["nonsense", "mop", "philosopher", "teacup", "pontificate"],
+     "desc_zh": "无厘头人物：富态哲人用一团棉线拖把当胡须和头发，一手高举说教、一手端茶杯，一脸睿智，重墨卡通描边，透明 PNG，1024×1024",
+     "desc_en": "Nonsense folk: a portly philosopher with a string mop for hair and beard, one hand raised pontificating, the other holding a teacup, heavy ink cartoon outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/nonsense-6.png", "id": "nonsense-clock", "name_zh": "钟表舌先生 · 无厘头人物", "name_en": "Clock-Face Mouth · Nonsense Folk",
+     "cat": "nonsense", "tags": ["无厘头", "怀表", "钟面", "西装", "冷脸"],
+     "tags_en": ["nonsense", "pocket watch", "clock face", "suit", "deadpan"],
+     "desc_zh": "无厘头人物：西装革履的男士，胡子以下是一块大怀表钟面，时针分针代替嘴，直瞪眼不眨，重墨卡通描边，透明 PNG，1024×1024",
+     "desc_en": "Nonsense folk: a deadpan man in a suit whose lower face below the mustache is a pocket-watch dial with clock hands, heavy ink cartoon outline, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 
