@@ -87,10 +87,11 @@ CAT_LABELS = {
     "nonsense": {"zh": "无厘头人物", "en": "Nonsense Folk"},
     "retrofolk": {"zh": "复古人物", "en": "Retro Folk"},
     "fusionfolk": {"zh": "古今混搭小人", "en": "Fusion Folk"},
+    "blades": {"zh": "异形兵刃", "en": "Odd Blades"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -1701,6 +1702,42 @@ ITEMS = [
      "tags_en": ["fusion", "ninja", "delivery backpack", "running", "deadpan"],
      "desc_zh": "古今混搭小人：蒙面束带日本忍者背着现代保温外卖箱，脚不沾地凌空狂奔，一脸着急也要保持冷酷，重墨卡通描边，透明 PNG，1024×1024",
      "desc_en": "Fusion folk: a masked Japanese ninja with wrapped bindings carrying a modern insulated food delivery backpack, running on air as if late for a delivery, heavy ink cartoon outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/blades-1.png", "id": "blades-hookscythe", "name_zh": "弯钩齿轮镰 · 异形兵刃", "name_en": "Hook-Gear Scythe · Odd Blades",
+     "cat": "blades", "tags": ["兵刃", "镰刀", "弯钩", "齿轮", "异形"],
+     "tags_en": ["blade", "scythe", "hook", "gears", "odd"],
+     "desc_zh": "异形兵刃：锈迹斑斑的长柄镰刀，刃头弯成一个大问号钩，齿轮咬合处挂着小坠饰，怪诞童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd blades: a rust-stained long scythe whose blade curls into a giant question-mark hook with gears and dangling charms at the joint, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/blades-2.png", "id": "blades-tentmace", "name_zh": "触手球锤 · 异形兵刃", "name_en": "Tentacle Mace · Odd Blades",
+     "cat": "blades", "tags": ["兵刃", "战锤", "触手", "尖刺球", "异形"],
+     "tags_en": ["blade", "war club", "tentacles", "spiked balls", "odd"],
+     "desc_zh": "异形兵刃：黑铁战锤的锤头分裂成数条卷曲金属触手，每条末端坠一颗尖刺锤球，怪诞童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd blades: a black iron war club whose head splits into curling metal tentacles, each dangling a spiked ball, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/blades-3.png", "id": "blades-gearshears", "name_zh": "齿轮巨剪 · 异形兵刃", "name_en": "Gear Shears · Odd Blades",
+     "cat": "blades", "tags": ["兵刃", "巨剪", "齿轮", "咬合", "异形"],
+     "tags_en": ["blade", "shears", "gears", "interlocking", "odd"],
+     "desc_zh": "异形兵刃：一把巨剪刀，两片刃口是互相咬合的锯齿齿轮，剪刀握把却是普通圆环，怪诞童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd blades: a giant pair of shears whose two blades are interlocking toothed gear wheels biting like a jaw, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/blades-4.png", "id": "blades-umbrellaspear", "name_zh": "破伞刺枪 · 异形兵刃", "name_en": "Broken Umbrella Spear · Odd Blades",
+     "cat": "blades", "tags": ["兵刃", "长枪", "破伞", "放射尖刺", "异形"],
+     "tags_en": ["blade", "spear", "broken umbrella", "radiating spikes", "odd"],
+     "desc_zh": "异形兵刃：一杆用破伞改造的长枪，收拢的伞骨向外炸开成一圈放射状尖刺，伞面破布条垂坠，怪诞童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd blades: a long spear rebuilt from a collapsed broken umbrella, its ribs splayed into a crown of radiating spikes with tattered cloth strips, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/blades-5.png", "id": "blades-snakebarb", "name_zh": "蛇形倒刺杆 · 异形兵刃", "name_en": "Serpent Barb Pole · Odd Blades",
+     "cat": "blades", "tags": ["兵刃", "蛇形", "长杆", "倒刺", "异形"],
+     "tags_en": ["blade", "serpentine", "polearm", "barbs", "odd"],
+     "desc_zh": "异形兵刃：金属蛇盘旋而成的长杆兵器，蛇头张口就是矛尖，蛇身分节长满倒刺钩，尾端卷成尖锥，怪诞童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd blades: a pole weapon shaped like a coiling metal snake, its open-mouthed head as the spear tip, segmented body bristling with backward hooks, tail tapering into a spike, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/blades-6.png", "id": "blades-twinaxe", "name_zh": "双斧锯齿戟 · 异形兵刃", "name_en": "Twin Axe Saw Halberd · Odd Blades",
+     "cat": "blades", "tags": ["兵刃", "双斧", "锯齿", "长戟", "异形"],
+     "tags_en": ["blade", "twin axe", "saw teeth", "halberd", "odd"],
+     "desc_zh": "异形兵刃：一杆红绳缠柄的长戟，顶端两侧各一把斧刃，一侧斧背带锯齿，柄尾伸出尖刺，怪诞童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd blades: a red-cord-wrapped halberd with an axe blade on each side, saw teeth backing one blade, and a long spike jutting from the butt, whimsical storybook outline, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 
