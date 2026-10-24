@@ -85,10 +85,11 @@ CAT_LABELS = {
     "oddbug": {"zh": "古怪虫豸", "en": "Weird Bugs"},
     "constellation": {"zh": "怪诞星座", "en": "Odd Constellations"},
     "nonsense": {"zh": "无厘头人物", "en": "Nonsense Folk"},
+    "retrofolk": {"zh": "复古人物", "en": "Retro Folk"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -1627,6 +1628,42 @@ ITEMS = [
      "tags_en": ["nonsense", "pocket watch", "clock face", "suit", "deadpan"],
      "desc_zh": "无厘头人物：西装革履的男士，胡子以下是一块大怀表钟面，时针分针代替嘴，直瞪眼不眨，重墨卡通描边，透明 PNG，1024×1024",
      "desc_en": "Nonsense folk: a deadpan man in a suit whose lower face below the mustache is a pocket-watch dial with clock hands, heavy ink cartoon outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/retrofolk-1.png", "id": "retrofolk-disco", "name_zh": "迪斯科舞王 · 复古人物", "name_en": "Disco King · Retro Folk",
+     "cat": "retrofolk", "tags": ["复古", "迪斯科", "镜面球", "喇叭裤", "冷脸"],
+     "tags_en": ["retro", "disco", "mirror ball", "flares", "deadpan"],
+     "desc_zh": "复古人物：七十年代迪斯科舞王，一颗闪亮的镜面球代替脑袋，亮片衬衫加喇叭裤，单臂高举定格舞步，一脸冷淡，重墨卡通描边，透明 PNG，1024×1024",
+     "desc_en": "Retro folk: a seventies disco dancer with a glittering mirror ball for a head, sequined shirt and flared trousers, one arm frozen mid dance move, heavy ink cartoon outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/retrofolk-2.png", "id": "retrofolk-strongman", "name_zh": "马戏大力士 · 复古人物", "name_en": "Circus Strongman · Retro Folk",
+     "cat": "retrofolk", "tags": ["复古", "马戏", "大力士", "闹钟", "杠铃"],
+     "tags_en": ["retro", "circus", "strongman", "alarm clock", "barbell"],
+     "desc_zh": "复古人物：八字胡马戏团大力士，头顶小礼帽，把两只巨型闹钟当杠铃片高举过头，条纹举重服，一脸淡定，重墨卡通描边，透明 PNG，1024×1024",
+     "desc_en": "Retro folk: a handlebar-mustache circus strongman in a tiny bowler hat and striped singlet, hoisting a barbell with giant alarm clocks as weight plates, heavy ink cartoon outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/retrofolk-3.png", "id": "retrofolk-mime", "name_zh": "默剧艺人 · 复古人物", "name_en": "Mime Artist · Retro Folk",
+     "cat": "retrofolk", "tags": ["复古", "默剧", "橡胶鸡", "贝雷帽", "冷脸"],
+     "tags_en": ["retro", "mime", "rubber chicken", "beret", "deadpan"],
+     "desc_zh": "复古人物：贝雷帽条纹衫默剧艺人，一只手变成巨大的橡胶鸡，正对着空气墙壁较劲，一脸严肃，重墨卡通描边，透明 PNG，1024×1024",
+     "desc_en": "Retro folk: a beret-wearing mime in a striped shirt with one hand replaced by a giant rubber chicken, leaning on an invisible wall, heavy ink cartoon outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/retrofolk-4.png", "id": "retrofolk-spaceman", "name_zh": "复古太空人 · 复古人物", "name_en": "Retro Spaceman · Retro Folk",
+     "cat": "retrofolk", "tags": ["复古", "太空人", "铁皮玩具", "花束射线枪", "漂浮"],
+     "tags_en": ["retro", "spaceman", "tin toy", "bouquet ray gun", "floating"],
+     "desc_zh": "复古人物：五十年代铁皮玩具范儿的圆头盔太空人，手里握一把花束形状的射线枪，小短腿悬空漂着，一脸茫然，重墨卡通描边，透明 PNG，1024×1024",
+     "desc_en": "Retro folk: a fifties tin-toy spaceman in a round glass helmet holding a ray gun shaped like a flower bouquet, tiny legs tucked afloat, heavy ink cartoon outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/retrofolk-5.png", "id": "retrofolk-newsboy", "name_zh": "飞报报童 · 复古人物", "name_en": "Flying Newsboy · Retro Folk",
+     "cat": "retrofolk", "tags": ["复古", "报童", "报纸", "龙卷", "飞行"],
+     "tags_en": ["retro", "newsboy", "newspapers", "tornado", "flying"],
+     "desc_zh": "复古人物：鸭舌帽背带裤报童被自家报纸龙卷风卷上了天，报纸群绕着他盘旋，一脸淡定，重墨卡通描边，透明 PNG，1024×1024",
+     "desc_en": "Retro folk: a flat-capped newsboy in suspenders flung skyward inside a tornado of his own swirling newspapers, heavy ink cartoon outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/retrofolk-6.png", "id": "retrofolk-sodajerk", "name_zh": "点唱子侍应 · 复古人物", "name_en": "Soda Jerk Waiter · Retro Folk",
+     "cat": "retrofolk", "tags": ["复古", "侍应", "滑轮", "松饼塔", "冷脸"],
+     "tags_en": ["retro", "waiter", "roller skates", "pancake stack", "deadpan"],
+     "desc_zh": "复古人物：老式冷饮店侍应脚踩四轮滑轮鞋，单臂托起一摞悬浮松饼塔，纸帽领结齐全，一脸冷淡，重墨卡通描边，透明 PNG，1024×1024",
+     "desc_en": "Retro folk: an old-fashioned soda jerk on roller skates balancing a tall floating stack of pancakes on one tray, paper hat and bow tie, heavy ink cartoon outline, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 
