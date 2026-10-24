@@ -86,10 +86,11 @@ CAT_LABELS = {
     "constellation": {"zh": "怪诞星座", "en": "Odd Constellations"},
     "nonsense": {"zh": "无厘头人物", "en": "Nonsense Folk"},
     "retrofolk": {"zh": "复古人物", "en": "Retro Folk"},
+    "fusionfolk": {"zh": "古今混搭小人", "en": "Fusion Folk"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -1664,6 +1665,42 @@ ITEMS = [
      "tags_en": ["retro", "waiter", "roller skates", "pancake stack", "deadpan"],
      "desc_zh": "复古人物：老式冷饮店侍应脚踩四轮滑轮鞋，单臂托起一摞悬浮松饼塔，纸帽领结齐全，一脸冷淡，重墨卡通描边，透明 PNG，1024×1024",
      "desc_en": "Retro folk: an old-fashioned soda jerk on roller skates balancing a tall floating stack of pancakes on one tray, paper hat and bow tie, heavy ink cartoon outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/fusionfolk-1.png", "id": "fusionfolk-skate", "name_zh": "滑板侠客 · 古今混搭小人", "name_en": "Skateboarding Swordsman · Fusion Folk",
+     "cat": "fusionfolk", "tags": ["古今混搭", "侠客", "电动滑板", "长剑", "冷脸"],
+     "tags_en": ["fusion", "swordsman", "electric skateboard", "long sword", "deadpan"],
+     "desc_zh": "古今混搭小人：长发斗篷古装侠客脚踩电动滑板，长剑往地上一拄当平衡杖，一脸冷淡赶路，重墨卡通描边，透明 PNG，1024×1024",
+     "desc_en": "Fusion folk: a long-haired ancient swordsman in a flowing cape riding an electric skateboard, long sword planted like a walking staff, heavy ink cartoon outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/fusionfolk-2.png", "id": "fusionfolk-djpoet", "name_zh": "打碟诗人 · 古今混搭小人", "name_en": "DJ Poet · Fusion Folk",
+     "cat": "fusionfolk", "tags": ["古今混搭", "唐朝诗人", "耳机", "打碟", "毛笔"],
+     "tags_en": ["fusion", "Tang poet", "headphones", "DJ desk", "calligraphy brush"],
+     "desc_zh": "古今混搭小人：唐朝袍子诗人戴着现代头戴耳机站在 DJ 混音台前，毛笔当唱针搓碟，一脸淡定，重墨卡通描边，透明 PNG，1024×1024",
+     "desc_en": "Fusion folk: a Tang dynasty poet in flowing robes wearing modern over-ear headphones at a DJ mixing desk, calligraphy brush as the stylus, heavy ink cartoon outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/fusionfolk-3.png", "id": "fusionfolk-hologram", "name_zh": "全息秀才 · 古今混搭小人", "name_en": "Hologram Scholar · Fusion Folk",
+     "cat": "fusionfolk", "tags": ["古今混搭", "书生", "全息", "竹简", "悬浮"],
+     "tags_en": ["fusion", "scholar", "hologram", "bamboo slips", "floating"],
+     "desc_zh": "古今混搭小人：发髻汉服书生悬空盘坐，手指点向一块漂浮的空白全息竹简屏，一脸专注，重墨卡通描边，透明 PNG，1024×1024",
+     "desc_en": "Fusion folk: a topknotted Han dynasty scholar sitting cross-legged in mid-air, pointing at a floating holographic bamboo slip screen with a blank surface, heavy ink cartoon outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/fusionfolk-4.png", "id": "fusionfolk-centurion", "name_zh": "奶茶百夫长 · 古今混搭小人", "name_en": "Bubble Tea Centurion · Fusion Folk",
+     "cat": "fusionfolk", "tags": ["古今混搭", "百夫长", "珍珠奶茶", "自拍杆", "铠甲"],
+     "tags_en": ["fusion", "centurion", "bubble tea", "selfie stick", "armor"],
+     "desc_zh": "古今混搭小人：羽冠罗马百夫长一身鳞甲，一手捧现代珍珠奶茶、一手举自拍杆，一脸严肃，重墨卡通描边，透明 PNG，1024×1024",
+     "desc_en": "Fusion folk: a plumed Roman centurion in segmented armor holding a modern cup of bubble tea in one hand and a selfie stick in the other, heavy ink cartoon outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/fusionfolk-5.png", "id": "fusionfolk-pharaoh", "name_zh": "购物车法老 · 古今混搭小人", "name_en": "Shopping Cart Pharaoh · Fusion Folk",
+     "cat": "fusionfolk", "tags": ["古今混搭", "法老", "购物车", "权杖", "冷脸"],
+     "tags_en": ["fusion", "pharaoh", "shopping cart", "staff", "deadpan"],
+     "desc_zh": "古今混搭小人：条纹高头冠埃及法老持仪式权杖，推着一辆现代超市购物车，车里装满无标签包裹，一脸淡定，重墨卡通描边，透明 PNG，1024×1024",
+     "desc_en": "Fusion folk: an Egyptian pharaoh with a tall striped headdress and ceremonial staff, pushing a modern supermarket shopping cart full of unmarked packages, heavy ink cartoon outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/fusionfolk-6.png", "id": "fusionfolk-ninja", "name_zh": "外卖忍者 · 古今混搭小人", "name_en": "Delivery Ninja · Fusion Folk",
+     "cat": "fusionfolk", "tags": ["古今混搭", "忍者", "外卖箱", "奔跑", "冷脸"],
+     "tags_en": ["fusion", "ninja", "delivery backpack", "running", "deadpan"],
+     "desc_zh": "古今混搭小人：蒙面束带日本忍者背着现代保温外卖箱，脚不沾地凌空狂奔，一脸着急也要保持冷酷，重墨卡通描边，透明 PNG，1024×1024",
+     "desc_en": "Fusion folk: a masked Japanese ninja with wrapped bindings carrying a modern insulated food delivery backpack, running on air as if late for a delivery, heavy ink cartoon outline, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 
