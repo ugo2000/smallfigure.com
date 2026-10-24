@@ -1,10 +1,10 @@
 {
  "site": "smallfigure.com",
- "subtitle": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜",
- "subtitleEn": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes",
- "generated": "2026-10-24T11:56:26+08:00",
- "source": "原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 星球徽志） + 小人动图（Remotion 渲染的无缝循环 WebP 小动画） + 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头（角色与器物两路 character-art 管线产出） + 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜（character-art 管线九分类批量产出） + 早期《音弹》游戏美术资产 + 果克星人系列（据张祥前《果克星球奇遇》描述 AI 生成）",
- "count": 153,
+ "subtitle": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样",
+ "subtitleEn": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs",
+ "generated": "2026-10-24T12:34:18+08:00",
+ "source": "原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 星球徽志） + 小人动图（Remotion 渲染的无缝循环 WebP 小动画） + 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头（角色与器物两路 character-art 管线产出） + 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜（character-art 管线九分类批量产出） + 手作纹样（character-art 管线暖土色手作物料系，刻意避开霓虹科技风） + 早期《音弹》游戏美术资产 + 果克星人系列（据张祥前《果克星球奇遇》描述 AI 生成）",
+ "count": 159,
  "categories": [
   {
    "key": "characters",
@@ -170,6 +170,11 @@
    "key": "telescopes",
    "label": "古怪望远镜",
    "labelEn": "Odd Telescopes"
+  },
+  {
+   "key": "crafts",
+   "label": "手作纹样",
+   "labelEn": "Handmade Motifs"
   }
  ],
  "images": [
@@ -208,7 +213,8 @@
     "little figure"
    ],
    "desc": "本站看板小人：棕夹克工装男，AI 生成后抠成透明 PNG，512×512",
-   "descEn": "The mascot of this site: a brown-jacket workwear man, AI-generated and cut out to a transparent PNG, 512×512"
+   "descEn": "The mascot of this site: a brown-jacket workwear man, AI-generated and cut out to a transparent PNG, 512×512",
+   "added": "2026-10-22T22:34:29+08:00"
   },
   {
    "id": "hero",
@@ -243,7 +249,8 @@
     "original"
    ],
    "desc": "AI 原始生成图，浅灰底未抠图（原图在本地备份目录中有留存）",
-   "descEn": "Original AI-generated image, light gray background, not cut out (backup kept in originals/)"
+   "descEn": "Original AI-generated image, light gray background, not cut out (backup kept in originals/)",
+   "added": "2026-10-22T22:34:29+08:00"
   },
   {
    "id": "alien-t",
@@ -279,7 +286,8 @@
     "little figure"
    ],
    "desc": "绿色大头外星小人，透明 PNG，512×512",
-   "descEn": "A green big-headed little alien, transparent PNG, 512×512"
+   "descEn": "A green big-headed little alien, transparent PNG, 512×512",
+   "added": "2026-10-22T22:34:29+08:00"
   },
   {
    "id": "alien",
@@ -311,7 +319,8 @@
     "original"
    ],
    "desc": "AI 原始生成图，未抠图",
-   "descEn": "Original AI-generated image, not cut out"
+   "descEn": "Original AI-generated image, not cut out",
+   "added": "2026-10-22T22:34:29+08:00"
   },
   {
    "id": "engineer",
@@ -346,7 +355,8 @@
     "little figure"
    ],
    "desc": "技能验证时生成的漫画风女工程师，透明 PNG，512×512",
-   "descEn": "A comic-style lady engineer generated during skill validation, transparent PNG, 512×512"
+   "descEn": "A comic-style lady engineer generated during skill validation, transparent PNG, 512×512",
+   "added": "2026-10-22T22:34:29+08:00"
   },
   {
    "id": "gucck-female",
@@ -384,7 +394,8 @@
     "little figure"
    ],
    "desc": "据张祥前描述创作：雪青螺旋发、钻石大眼、粉白发光肌肤，虚拟光膜裙，透明 PNG，512×512",
-   "descEn": "Created from Zhang Xiangqian's account: spiral lilac hair, diamond-bright eyes, pale glowing skin and a virtual light-film dress, transparent PNG, 512×512"
+   "descEn": "Created from Zhang Xiangqian's account: spiral lilac hair, diamond-bright eyes, pale glowing skin and a virtual light-film dress, transparent PNG, 512×512",
+   "added": "2026-10-23T10:02:08+08:00"
   },
   {
    "id": "gucck-male",
@@ -422,7 +433,8 @@
     "little figure"
    ],
    "desc": "据张祥前描述创作：黑亮贴头皮短发、大薄尖耳、粉白精致肌肤，透明 PNG，512×512",
-   "descEn": "Created from Zhang Xiangqian's account: sleek glossy hair, large thin pointed ears and fine pale skin, transparent PNG, 512×512"
+   "descEn": "Created from Zhang Xiangqian's account: sleek glossy hair, large thin pointed ears and fine pale skin, transparent PNG, 512×512",
+   "added": "2026-10-23T10:02:08+08:00"
   },
   {
    "id": "gucck-neutral",
@@ -460,7 +472,8 @@
     "little figure"
    ],
    "desc": "据张祥前描述创作：长相介于男女之间的中性人，无皱粉白肌肤，透明 PNG，512×512",
-   "descEn": "Created from Zhang Xiangqian's account: an androgynous Gucck neutral with wrinkle-free pale skin, transparent PNG, 512×512"
+   "descEn": "Created from Zhang Xiangqian's account: an androgynous Gucck neutral with wrinkle-free pale skin, transparent PNG, 512×512",
+   "added": "2026-10-23T10:02:08+08:00"
   },
   {
    "id": "gucck-virtual",
@@ -498,7 +511,8 @@
     "little figure"
    ],
    "desc": "据张祥前描述创作：人工场生成的虚拟人，只显上半身的全息投影，透明 PNG，512×512",
-   "descEn": "Created from Zhang Xiangqian's account: a field-generated virtual being, a holographic upper-body projection, transparent PNG, 512×512"
+   "descEn": "Created from Zhang Xiangqian's account: a field-generated virtual being, a holographic upper-body projection, transparent PNG, 512×512",
+   "added": "2026-10-23T10:02:08+08:00"
   },
   {
    "id": "gucck-splitter",
@@ -534,7 +548,8 @@
     "little figure"
    ],
    "desc": "据张祥前描述创作：身体可拆成碧玉蓝条状、又能迅速复原的拆分人，透明 PNG，512×512",
-   "descEn": "Created from Zhang Xiangqian's account: a splitter whose body breaks into jade-blue segments and reassembles, transparent PNG, 512×512"
+   "descEn": "Created from Zhang Xiangqian's account: a splitter whose body breaks into jade-blue segments and reassembles, transparent PNG, 512×512",
+   "added": "2026-10-23T10:02:08+08:00"
   },
   {
    "id": "figure-chef",
@@ -570,7 +585,8 @@
     "little figure"
    ],
    "desc": "原创系列：系着围裙的胖厨师，漫画式爆发光晕，细腻美式漫画风，透明 PNG，512×512",
-   "descEn": "Original series: a plump chef in an apron with a comic burst glow, detailed American comic style, transparent PNG, 512×512"
+   "descEn": "Original series: a plump chef in an apron with a comic burst glow, detailed American comic style, transparent PNG, 512×512",
+   "added": "2026-10-23T10:35:00+08:00"
   },
   {
    "id": "figure-grandpa",
@@ -606,7 +622,8 @@
     "little figure"
    ],
    "desc": "原创系列：白胡子老爷爷，皱纹和衣纹细节扎实，细腻美式漫画风，透明 PNG，512×512",
-   "descEn": "Original series: a white-bearded grandpa with rich wrinkle and fabric detail, detailed American comic style, transparent PNG, 512×512"
+   "descEn": "Original series: a white-bearded grandpa with rich wrinkle and fabric detail, detailed American comic style, transparent PNG, 512×512",
+   "added": "2026-10-23T10:35:00+08:00"
   },
   {
    "id": "figure-robot",
@@ -642,7 +659,8 @@
     "little figure"
    ],
    "desc": "原创系列：捧着小花的大眼小机器人，橙色爆发光晕，细腻美式漫画风，透明 PNG，512×512",
-   "descEn": "Original series: a big-eyed little robot holding a flower with an orange burst glow, detailed American comic style, transparent PNG, 512×512"
+   "descEn": "Original series: a big-eyed little robot holding a flower with an orange burst glow, detailed American comic style, transparent PNG, 512×512",
+   "added": "2026-10-23T10:35:00+08:00"
   },
   {
    "id": "figure-musician",
@@ -680,7 +698,8 @@
     "little figure"
    ],
    "desc": "原创系列：抱着木吉他的绿裙歌者，脚下聚光灯晕，细腻美式漫画风，透明 PNG，512×512",
-   "descEn": "Original series: a green-dress singer with an acoustic guitar under a spotlight glow, detailed American comic style, transparent PNG, 512×512"
+   "descEn": "Original series: a green-dress singer with an acoustic guitar under a spotlight glow, detailed American comic style, transparent PNG, 512×512",
+   "added": "2026-10-23T10:35:00+08:00"
   },
   {
    "id": "figure-witch-gray",
@@ -718,7 +737,8 @@
     "little figure"
    ],
    "desc": "原创系列：歪戴紫帽、星纹拼布斗篷、提古董灯的老巫婆，细腻美式漫画风，非任何影视角色，透明 PNG，512×512",
-   "descEn": "Original series: an old witch with a tilted purple hat, a star-patterned patchwork cloak and an antique lantern, detailed American comic style, not based on any film/TV character, transparent PNG, 512×512"
+   "descEn": "Original series: an old witch with a tilted purple hat, a star-patterned patchwork cloak and an antique lantern, detailed American comic style, not based on any film/TV character, transparent PNG, 512×512",
+   "added": "2026-10-23T11:08:46+08:00"
   },
   {
    "id": "figure-witch-mushroom",
@@ -758,7 +778,8 @@
     "little figure"
    ],
    "desc": "原创系列：红伞帽、树叶斗篷、拄琥珀木杖的年轻森林女巫，细腻美式漫画风，非任何影视角色，透明 PNG，512×512",
-   "descEn": "Original series: a young forest witch with a red mushroom cap, a leaf cloak and an amber-topped staff, detailed American comic style, not based on any film/TV character, transparent PNG, 512×512"
+   "descEn": "Original series: a young forest witch with a red mushroom cap, a leaf cloak and an amber-topped staff, detailed American comic style, not based on any film/TV character, transparent PNG, 512×512",
+   "added": "2026-10-23T11:08:46+08:00"
   },
   {
    "id": "figure-elf-woodland",
@@ -800,7 +821,8 @@
     "little figure"
    ],
    "desc": "原创系列：长尖耳、苔绿兜帽束腰外衣、背后小弓的森林精灵，细腻美式漫画风，非任何影视/文学角色，透明 PNG，512×512",
-   "descEn": "Original series: a woodland elf with long pointed ears, a moss-green hooded tunic and a small back-bow, detailed American comic style, not based on any film/TV or literary character, transparent PNG, 512×512"
+   "descEn": "Original series: a woodland elf with long pointed ears, a moss-green hooded tunic and a small back-bow, detailed American comic style, not based on any film/TV or literary character, transparent PNG, 512×512",
+   "added": "2026-10-23T11:08:46+08:00"
   },
   {
    "id": "figure-fairy-lattice",
@@ -841,7 +863,8 @@
     "little figure"
    ],
    "desc": "原创系列：薄荷绿短发、原创几何网纹薄翼、茶叶金线小裙、赤脚漂浮的仙子，刻意避开既有童话仙子的经典造型，细腻美式漫画风，透明 PNG，512×512",
-   "descEn": "Original series: a fairy with mint-green hair, original geometric-lattice gossamer wings, a teal leaf-and-gold dress and bare floating feet, deliberately not a Tinker Bell likeness, detailed American comic style, transparent PNG, 512×512"
+   "descEn": "Original series: a fairy with mint-green hair, original geometric-lattice gossamer wings, a teal leaf-and-gold dress and bare floating feet, deliberately not a Tinker Bell likeness, detailed American comic style, transparent PNG, 512×512",
+   "added": "2026-10-23T11:08:46+08:00"
   },
   {
    "id": "wpn-hammer",
@@ -880,7 +903,8 @@
     "small"
    ],
    "desc": "原创系列：双叉造型锤头 + 同心圆刻纹面 + 红皮缠柄锻造战锤，细腻美式漫画风单件实物立绘，透明 PNG，512×512",
-   "descEn": "Original series: a forged war hammer with a twin-pronged head, concentric engraved rings and a leather-wrapped haft, detailed American comic style single-item art, transparent PNG, 512×512"
+   "descEn": "Original series: a forged war hammer with a twin-pronged head, concentric engraved rings and a leather-wrapped haft, detailed American comic style single-item art, transparent PNG, 512×512",
+   "added": "2026-10-23T11:54:14+08:00"
   },
   {
    "id": "wpn-pistol",
@@ -919,7 +943,8 @@
     "small"
    ],
    "desc": "原创系列：发蓝钢枪管 + 黄铜铆钉 + 压力表 + 排气管的蒸汽手枪，细腻美式漫画风单件实物立绘，透明 PNG，512×512",
-   "descEn": "Original series: a steam-powered pistol with a blued steel barrel, brass rivets, a pressure gauge and an exhaust pipe, detailed American comic style single-item art, transparent PNG, 512×512"
+   "descEn": "Original series: a steam-powered pistol with a blued steel barrel, brass rivets, a pressure gauge and an exhaust pipe, detailed American comic style single-item art, transparent PNG, 512×512",
+   "added": "2026-10-23T11:54:14+08:00"
   },
   {
    "id": "wpn-shield",
@@ -958,7 +983,8 @@
     "small"
    ],
    "desc": "原创系列：铆钉铜边 + 中央盾凸 + 叉形浮雕纹章的圆盾，细腻美式漫画风单件实物立绘，透明 PNG，512×512",
-   "descEn": "Original series: a round heater shield with a riveted brass rim, raised central boss and a forked heraldic crest, detailed American comic style single-item art, transparent PNG, 512×512"
+   "descEn": "Original series: a round heater shield with a riveted brass rim, raised central boss and a forked heraldic crest, detailed American comic style single-item art, transparent PNG, 512×512",
+   "added": "2026-10-23T11:54:14+08:00"
   },
   {
    "id": "wpn-flail",
@@ -997,7 +1023,8 @@
     "small"
    ],
    "desc": "原创系列：可辨识链节 + 带刺铁球的战链锤，链环空隙完整保留，细腻美式漫画风单件实物立绘，透明 PNG，512×512",
-   "descEn": "Original series: a war flail with clearly readable chain links and a spiked iron ball, chain gaps fully preserved, detailed American comic style single-item art, transparent PNG, 512×512"
+   "descEn": "Original series: a war flail with clearly readable chain links and a spiked iron ball, chain gaps fully preserved, detailed American comic style single-item art, transparent PNG, 512×512",
+   "added": "2026-10-23T11:54:14+08:00"
   },
   {
    "id": "wpn-vial",
@@ -1036,7 +1063,8 @@
     "small"
    ],
    "desc": "原创系列：琥珀色内发光液体 + 红蜡封 + 无字羊皮纸吊牌的圆肚玻璃药瓶，细腻美式漫画风单件实物立绘，透明 PNG，512×512",
-   "descEn": "Original series: a round glass flask with glowing amber liquid, a red wax seal and a blank parchment tag, detailed American comic style single-item art, transparent PNG, 512×512"
+   "descEn": "Original series: a round glass flask with glowing amber liquid, a red wax seal and a blank parchment tag, detailed American comic style single-item art, transparent PNG, 512×512",
+   "added": "2026-10-23T11:54:14+08:00"
   },
   {
    "id": "wpn-helmet",
@@ -1077,7 +1105,8 @@
     "small"
    ],
    "desc": "原创系列：横向青色发光面罩 + 天线小红灯 + 铆钉护颊的复古未来战斗盔，细腻美式漫画风单件实物立绘，透明 PNG，512×512",
-   "descEn": "Original series: a retro-futurist combat helmet with a glowing cyan visor slit, a beaded antenna and riveted cheek plates, detailed American comic style single-item art, transparent PNG, 512×512"
+   "descEn": "Original series: a retro-futurist combat helmet with a glowing cyan visor slit, a beaded antenna and riveted cheek plates, detailed American comic style single-item art, transparent PNG, 512×512",
+   "added": "2026-10-23T11:54:14+08:00"
   },
   {
    "id": "ammo-shell",
@@ -1115,7 +1144,8 @@
     "transparent"
    ],
    "desc": "原创系列：立放的黄铜弹壳，顶部压痕环与底火空洞清晰，表面带磨损铜锈，1940 年代复古海报画风，透明 PNG，1024×1024",
-   "descEn": "Original series: an upright brass cartridge case with crimp rings and a hollow primer, scratched and tarnished brass, 1940s retro poster style, transparent PNG, 1024×1024"
+   "descEn": "Original series: an upright brass cartridge case with crimp rings and a hollow primer, scratched and tarnished brass, 1940s retro poster style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T14:52:50+08:00"
   },
   {
    "id": "ammo-shotgun",
@@ -1153,7 +1183,8 @@
     "transparent"
    ],
    "desc": "原创系列：深红纸壳霰弹，顶部黄铜底帽与卷边压痕分明，纸壳带细微磨损，复古狩猎海报画风，透明 PNG，1024×1024",
-   "descEn": "Original series: a deep crimson paper shotgun shell with a brass head cap and visible crimp, slightly worn matte paper, retro hunting poster style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a deep crimson paper shotgun shell with a brass head cap and visible crimp, slightly worn matte paper, retro hunting poster style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T14:52:50+08:00"
   },
   {
    "id": "ammo-cannonball",
@@ -1191,7 +1222,8 @@
     "transparent"
    ],
    "desc": "原创系列：赤道带凸起箍的铸铁炮弹，表面麻点锈蚀与剥落露铁斑，顶部一道宽高光，复古战争海报画风，透明 PNG，1024×1024",
-   "descEn": "Original series: a heavy cast-iron cannonball with a raised driving band, pitted rust and a chipped patch of bare metal, broad highlight across the top, retro war poster style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a heavy cast-iron cannonball with a raised driving band, pitted rust and a chipped patch of bare metal, broad highlight across the top, retro war poster style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T14:52:50+08:00"
   },
   {
    "id": "ammo-energy",
@@ -1231,7 +1263,8 @@
     "transparent"
    ],
    "desc": "原创系列：锥形深灰金属能量弹，抛光铬环中段玻璃罩内透出青色辉光核心，边缘琥珀指示条与微光，1950 年代原子时代科幻海报风，透明 PNG，1024×1024",
-   "descEn": "Original series: a tapered gunmetal energy cell with a glowing cyan core visible through a glass band, chrome collar, amber indicator strips, 1950s atomic-age sci-fi poster style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a tapered gunmetal energy cell with a glowing cyan core visible through a glass band, chrome collar, amber indicator strips, 1950s atomic-age sci-fi poster style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T14:52:50+08:00"
   },
   {
    "id": "cr-cat",
@@ -1269,7 +1302,8 @@
     "little figure"
    ],
    "desc": "原创系列：系红围巾、坐姿卷尾的黑色短毛猫，细腻美式漫画风，透明 PNG，512×512",
-   "descEn": "Original series: a sleek black cat with a red scarf, sitting with its tail curled, detailed American comic style, transparent PNG, 512×512"
+   "descEn": "Original series: a sleek black cat with a red scarf, sitting with its tail curled, detailed American comic style, transparent PNG, 512×512",
+   "added": "2026-10-23T12:11:27+08:00"
   },
   {
    "id": "cr-raven",
@@ -1309,7 +1343,8 @@
     "little figure"
    ],
    "desc": "原创系列：羽色带蓝紫虹彩、歪头审视的渡鸦，腿间缝隙已抠净，细腻美式漫画风，透明 PNG，512×512",
-   "descEn": "Original series: a glossy raven with blue-violet iridescent plumage and a inquisitive tilted head, gap between the legs fully cleared, detailed American comic style, transparent PNG, 512×512"
+   "descEn": "Original series: a glossy raven with blue-violet iridescent plumage and a inquisitive tilted head, gap between the legs fully cleared, detailed American comic style, transparent PNG, 512×512",
+   "added": "2026-10-23T12:11:27+08:00"
   },
   {
    "id": "cr-otter",
@@ -1347,7 +1382,8 @@
     "little figure"
    ],
    "desc": "原创系列：怀抱河石、浓密棕毛配浅色腹毛的水獭，细腻美式漫画风，透明 PNG，512×512",
-   "descEn": "Original series: a plump otter hugging a smooth river stone, dense brown fur with a cream throat, detailed American comic style, transparent PNG, 512×512"
+   "descEn": "Original series: a plump otter hugging a smooth river stone, dense brown fur with a cream throat, detailed American comic style, transparent PNG, 512×512",
+   "added": "2026-10-23T12:11:27+08:00"
   },
   {
    "id": "figure-farmer-sickle",
@@ -1389,7 +1425,8 @@
     "little figure"
    ],
    "desc": "原创系列：东南亚高地农社的年轻男子，靛蓝手织短衫配编织腰封，赤足扛竹柄弯镰，细腻美式漫画风全身立绘，透明 PNG，1024×1024",
-   "descEn": "Original series: a young man from a Southeast Asian highland farming community in a loose indigo hand-woven tunic, barefoot, a bamboo-handled sickle resting on his shoulder, detailed American comic style full-body art, transparent PNG, 1024×1024"
+   "descEn": "Original series: a young man from a Southeast Asian highland farming community in a loose indigo hand-woven tunic, barefoot, a bamboo-handled sickle resting on his shoulder, detailed American comic style full-body art, transparent PNG, 1024×1024",
+   "added": "2026-10-23T14:52:50+08:00"
   },
   {
    "id": "figure-farmer-hoe",
@@ -1431,7 +1468,8 @@
     "little figure"
    ],
    "desc": "原创系列：东非牧社的年轻女子，铁红围裙长裙配米色披肩与串珠饰品，双手扶一把长柄铁锄，赤足戴脚环，细腻美式漫画风全身立绘，透明 PNG，1024×1024",
-   "descEn": "Original series: a young woman from an East African pastoral community in a rust-red wrap skirt and cream shawl, holding a long-handled iron hoe, barefoot with anklets, detailed American comic style full-body art, transparent PNG, 1024×1024"
+   "descEn": "Original series: a young woman from an East African pastoral community in a rust-red wrap skirt and cream shawl, holding a long-handled iron hoe, barefoot with anklets, detailed American comic style full-body art, transparent PNG, 1024×1024",
+   "added": "2026-10-23T14:52:50+08:00"
   },
   {
    "id": "figure-farmer-pitchfork",
@@ -1474,7 +1512,8 @@
     "little figure"
    ],
    "desc": "原创系列：中亚草原村落的农工，褪色橄榄绿帆布工装外套配皮质腰带与旧皮靴，一手扶四齿干草叉，一手抱一捆收割麦子，细腻美式漫画风全身立绘，透明 PNG，1024×1024",
-   "descEn": "Original series: a farmer from a Central Asian steppe village in a faded olive canvas work coat, holding a four-tine hay fork and a bundle of cut wheat, detailed American comic style full-body art, transparent PNG, 1024×1024"
+   "descEn": "Original series: a farmer from a Central Asian steppe village in a faded olive canvas work coat, holding a four-tine hay fork and a bundle of cut wheat, detailed American comic style full-body art, transparent PNG, 1024×1024",
+   "added": "2026-10-23T14:52:50+08:00"
   },
   {
    "id": "figure-farmer-pole",
@@ -1517,7 +1556,8 @@
     "little figure"
    ],
    "desc": "原创系列：南美高原农村的年轻女子，芥末黄长裙配条纹织带与灰绿披肩，绿色织带头环束起长辫，背小竹篓手扶长竹竿顶端扎着谷穗，细腻美式漫画风全身立绘，透明 PNG，1024×1024",
-   "descEn": "Original series: a young woman from a South American highland village in a mustard-yellow skirt and grey-green poncho, braided hair with a woven headband, a bamboo pole with harvested grain, detailed American comic style full-body art, transparent PNG, 1024×1024"
+   "descEn": "Original series: a young woman from a South American highland village in a mustard-yellow skirt and grey-green poncho, braided hair with a woven headband, a bamboo pole with harvested grain, detailed American comic style full-body art, transparent PNG, 1024×1024",
+   "added": "2026-10-23T14:52:50+08:00"
   },
   {
    "id": "food-ramen",
@@ -1555,7 +1595,8 @@
     "transparent"
    ],
    "desc": "原创系列：青花纹瓷大碗盛着金黄豚骨汤、溏心蛋、叉烧与葱花，配海苔与升腾热气，细腻美式漫画风，透明 PNG，1024×1024",
-   "descEn": "Original series: a blue-and-white porcelain bowl of golden tonkotsu broth with soft-boiled egg, chashu pork, shredded scallion and nori, steam curling upward, detailed American comic style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a blue-and-white porcelain bowl of golden tonkotsu broth with soft-boiled egg, chashu pork, shredded scallion and nori, steam curling upward, detailed American comic style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T14:15:22+08:00"
   },
   {
    "id": "food-burger",
@@ -1591,7 +1632,8 @@
     "transparent"
    ],
    "desc": "原创系列：芝麻面包夹厚牛肉饼、融化的芝士、生菜番茄与酸黄瓜，边缘露出番茄酱蛋黄酱，细腻美式漫画风，透明 PNG，1024×1024",
-   "descEn": "Original series: a sesame-seeded bun stacked with a thick beef patty, melted cheese, lettuce, tomato and pickles, ketchup and mustard peeking at the edge, detailed American comic style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a sesame-seeded bun stacked with a thick beef patty, melted cheese, lettuce, tomato and pickles, ketchup and mustard peeking at the edge, detailed American comic style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T14:15:22+08:00"
   },
   {
    "id": "food-pizza",
@@ -1627,7 +1669,8 @@
     "transparent"
    ],
    "desc": "原创系列：厚边焦香饼底、卷边萨拉米、融化拉丝的莫扎里拉与罗勒叶，尖端垂着奶酪丝，细腻美式漫画风，透明 PNG，1024×1024",
-   "descEn": "Original series: a thick blistered crust, curled pepperoni, stretchy mozzarella pulling from the tip and basil leaves, detailed American comic style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a thick blistered crust, curled pepperoni, stretchy mozzarella pulling from the tip and basil leaves, detailed American comic style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T14:15:22+08:00"
   },
   {
    "id": "food-cake",
@@ -1665,7 +1708,8 @@
     "transparent"
    ],
    "desc": "原创系列：三层海绵夹粉色草莓奶油、切面淋着草莓酱，顶上一颗带叶草莓，配白瓷盘与薄荷，细腻美式漫画风，透明 PNG，1024×1024",
-   "descEn": "Original series: three sponge layers with pink strawberry cream, sauce dripping down the cut face, a glossy strawberry on top, served on a white plate with mint, detailed American comic style, transparent PNG, 1024×1024"
+   "descEn": "Original series: three sponge layers with pink strawberry cream, sauce dripping down the cut face, a glossy strawberry on top, served on a white plate with mint, detailed American comic style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T14:15:22+08:00"
   },
   {
    "id": "food-dumpling",
@@ -1703,7 +1747,8 @@
     "transparent"
    ],
    "desc": "原创系列：竹编圆蒸笼里六只带褶小笼包，缝隙间升起热气，旁边配深色酱油碟与葱花，细腻美式漫画风，透明 PNG，1024×1024",
-   "descEn": "Original series: six pleated soup dumplings in a woven bamboo steamer, steam rising from the gaps, a dark soy sauce dish and chopped scallion beside it, detailed American comic style, transparent PNG, 1024×1024"
+   "descEn": "Original series: six pleated soup dumplings in a woven bamboo steamer, steam rising from the gaps, a dark soy sauce dish and chopped scallion beside it, detailed American comic style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T14:15:22+08:00"
   },
   {
    "id": "veh-spaceship",
@@ -1741,7 +1786,8 @@
     "transparent"
    ],
    "desc": "原创系列：镀铬子弹形舰体配铆钉蒙皮与后掠双翼，中段一排青色发光舷窗，红色尾翼喷出橙黄尾焰，1960 年代通俗科幻海报风，透明 PNG，1024×1024",
-   "descEn": "Original series: a chrome bullet-shaped hull with riveted panels and swept fins, a row of glowing cyan portholes, a red tail fin with an orange flame, 1960s pulp space poster style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a chrome bullet-shaped hull with riveted panels and swept fins, a row of glowing cyan portholes, a red tail fin with an orange flame, 1960s pulp space poster style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T14:52:50+08:00"
   },
   {
    "id": "veh-propeller",
@@ -1779,7 +1825,8 @@
     "transparent"
    ],
    "desc": "原创系列：奶白与深红圆机身单发轻型机，前方螺旋桨画成半透明旋转盘，玻璃座舱罩与带翼肋高翼，固定起落架配粗橡胶轮，怀旧航空海报风，透明 PNG，1024×1024",
-   "descEn": "Original series: a cream and crimson single-engine light aircraft, spinning propeller drawn as a translucent disc, a glazed cockpit bubble, a ribbed high wing and fixed landing gear, golden age aviation poster style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a cream and crimson single-engine light aircraft, spinning propeller drawn as a translucent disc, a glazed cockpit bubble, a ribbed high wing and fixed landing gear, golden age aviation poster style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T14:52:50+08:00"
   },
   {
    "id": "veh-robot",
@@ -1818,7 +1865,8 @@
     "transparent"
    ],
    "desc": "原创系列：铆钉青灰工业机械臂，粗壮肩关节带液压杆与波纹线管，腕部黄黑警示条，末端三指夹爪微张，肩头琥珀指示灯亮起，中世纪工业海报风，透明 PNG，1024×1024",
-   "descEn": "Original series: a riveted teal-grey industrial robot arm, hydraulic pistons and ribbed cable conduits, a yellow-black warning band on the wrist, a three-fingered gripper and an amber indicator lamp, mid-century industrial poster style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a riveted teal-grey industrial robot arm, hydraulic pistons and ribbed cable conduits, a yellow-black warning band on the wrist, a three-fingered gripper and an amber indicator lamp, mid-century industrial poster style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T14:52:50+08:00"
   },
   {
    "id": "veh-engine",
@@ -1858,7 +1906,8 @@
     "transparent"
    ],
    "desc": "原创系列：横置铸铁锅炉主机，密排铆钉与加强箍带，侧面大飞轮与三组活塞连杆，顶部黄铜阀组带手轮，一端烟囱冒出淡烟，蒸汽朋克工业海报风，透明 PNG，1024×1024",
-   "descEn": "Original series: a horizontal cast-iron boiler engine with banding straps, a large spoked flywheel, three pistons with connecting rods, a brass valve manifold and a smokestack trailing pale steam, steampunk industrial poster style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a horizontal cast-iron boiler engine with banding straps, a large spoked flywheel, three pistons with connecting rods, a brass valve manifold and a smokestack trailing pale steam, steampunk industrial poster style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T14:52:50+08:00"
   },
   {
    "id": "aliens-crystal-crawler",
@@ -1897,7 +1946,8 @@
     "transparent"
    ],
    "desc": "原创系列：覆满半透明水晶甲片的四足爬行兽，背脊竖起一排尖刺，节肢末端泛着青绿荧光，粗壮尾巴拖地，异星生物图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a four-legged crawler sheathed in translucent crystal plates, a ridge of sharp spikes along its back, green bioluminescence glowing at the limb joints, a heavy tail dragging behind, alien bestiary art style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a four-legged crawler sheathed in translucent crystal plates, a ridge of sharp spikes along its back, green bioluminescence glowing at the limb joints, a heavy tail dragging behind, alien bestiary art style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T16:59:36+08:00"
   },
   {
    "id": "aliens-jelly",
@@ -1936,7 +1986,8 @@
     "transparent"
    ],
    "desc": "原创系列：半透明粉紫伞盖水母悬于水中，伞下伸出十余条细长触须末端各缀一枚金色小球，边缘晕开淡紫光晕，深海生物图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a translucent pink-violet jellyfish suspended in water, a dozen slender tentacles trailing beneath with a small golden bead at each tip, a soft purple halo along the rim, deep sea creature study style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a translucent pink-violet jellyfish suspended in water, a dozen slender tentacles trailing beneath with a small golden bead at each tip, a soft purple halo along the rim, deep sea creature study style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T16:59:36+08:00"
   },
   {
    "id": "aliens-six-eye",
@@ -1973,7 +2024,8 @@
     "transparent"
    ],
    "desc": "原创系列：枯瘦佝偻的外星拾荒者，浑身缠着破布条与捡来的金属碎片，颈后伸出六只大小不一的苍白眼球，关节处透出微弱蓝光，异星种族设定风，透明 PNG，1024×1024",
-   "descEn": "Original series: a gaunt, hunched alien scavenger wrapped in torn cloth strips and salvaged metal shards, six pale eyes of varying sizes sprouting from the back of the neck, faint blue light glowing at the joints, alien species design style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a gaunt, hunched alien scavenger wrapped in torn cloth strips and salvaged metal shards, six pale eyes of varying sizes sprouting from the back of the neck, faint blue light glowing at the joints, alien species design style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T16:59:36+08:00"
   },
   {
    "id": "aliens-deep-space-hunter",
@@ -2012,7 +2064,8 @@
     "transparent"
    ],
    "desc": "原创系列：暗红甲壳外星猎手，肩背展开镰刀状骨刃，胸口嵌一颗发绿光的六棱核心，节肢末端锋利如钩，赛博朋克异星机械风，透明 PNG，1024×1024",
-   "descEn": "Original series: a dark crimson armoured alien hunter with scythe-like blades fanning from its back, a hexagonal core glowing green in the chest, hooked and razor-sharp limbs, cyberpunk alien mecha style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a dark crimson armoured alien hunter with scythe-like blades fanning from its back, a hexagonal core glowing green in the chest, hooked and razor-sharp limbs, cyberpunk alien mecha style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T16:59:36+08:00"
   },
   {
    "id": "flora-spiral-vine",
@@ -2050,7 +2103,8 @@
     "transparent"
    ],
    "desc": "原创系列：深绿螺旋藤蔓盘旋而上，沿途开出五瓣猩红星形花，花心镶金黄蕊丝，藤身带细密绒毛与淡绿光点，异星植物图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a deep green vine coiling upward, five-petalled crimson star blooms opening along its length with golden stamens at the centre, fine fuzz and pale green light dots along the stem, alien botanical study style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a deep green vine coiling upward, five-petalled crimson star blooms opening along its length with golden stamens at the centre, fine fuzz and pale green light dots along the stem, alien botanical study style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T16:59:36+08:00"
   },
   {
    "id": "flora-crystal-fungus",
@@ -2089,7 +2143,8 @@
     "transparent"
    ],
    "desc": "原创系列：三层冰蓝半透菌盖层层叠生，边缘垂下晶莹露珠，菌褶间透出柔和青光，下方菌柄细长缠绕根系，异星菌类图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: three tiers of translucent ice-blue mushroom caps stacked together, crystal droplets hanging from the rims, soft cyan light glowing through the gills, a slender stalk wrapped in root filaments, alien mycology study style, transparent PNG, 1024×1024"
+   "descEn": "Original series: three tiers of translucent ice-blue mushroom caps stacked together, crystal droplets hanging from the rims, soft cyan light glowing through the gills, a slender stalk wrapped in root filaments, alien mycology study style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T16:59:36+08:00"
   },
   {
    "id": "flora-floating-pod",
@@ -2128,7 +2183,8 @@
     "transparent"
    ],
    "desc": "原创系列：金色球形种荚悬浮半空，外壳分片镶满发光籽粒，下方垂出数条卷曲藤须，整体泛着温润金光，异星植物图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a golden spherical seed pod suspended in mid-air, its segmented shell studded with glowing seeds, several curling tendrils dangling beneath, radiating a warm golden light, alien botanical study style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a golden spherical seed pod suspended in mid-air, its segmented shell studded with glowing seeds, several curling tendrils dangling beneath, radiating a warm golden light, alien botanical study style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T16:59:36+08:00"
   },
   {
    "id": "flora-iron-tree",
@@ -2167,7 +2223,8 @@
     "transparent"
    ],
    "desc": "原创系列：虬结的铁骨圣树，深色铁木质树干，扇形青绿叶片对称展开如冠，枝桠间托着一枚发光橙色种核，异星森林插画风，透明 PNG，1024×1024",
-   "descEn": "Original series: a gnarled alien tree with a dark ironwood trunk, symmetric teal fan-shaped leaves spreading like a crown, a glowing orange seed core cradled in the branches, alien forest illustration style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a gnarled alien tree with a dark ironwood trunk, symmetric teal fan-shaped leaves spreading like a crown, a glowing orange seed core cradled in the branches, alien forest illustration style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T16:59:36+08:00"
   },
   {
    "id": "stone-flint-axe",
@@ -2206,7 +2263,8 @@
     "transparent"
    ],
    "desc": "原创系列：巨型燧石刃绑在弯木柄上，石面带天然贝壳状断口，柄身缠绕皮条与骨钉，斧头泛冷白光泽，史前石器图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a giant flint blade lashed to a curved wooden haft, the stone showing natural conchoidal fracture, hide strips and bone spikes binding the shaft, the head with a cold white sheen, prehistoric artefact study style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a giant flint blade lashed to a curved wooden haft, the stone showing natural conchoidal fracture, hide strips and bone spikes binding the shaft, the head with a cold white sheen, prehistoric artefact study style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T16:59:36+08:00"
   },
   {
    "id": "stone-bone-hammer",
@@ -2244,7 +2302,8 @@
     "transparent"
    ],
    "desc": "原创系列：灰白石锤头凿出粗糙凿痕，中央穿孔绑着一根打磨光滑的长骨柄，柄尾系着几缕麻绳，史前工具图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a grey stone hammer head with rough chisel marks, a hole bored through the centre lashed to a smoothly polished long bone handle, a few hemp fibres tied at the tail, prehistoric tool study style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a grey stone hammer head with rough chisel marks, a hole bored through the centre lashed to a smoothly polished long bone handle, a few hemp fibres tied at the tail, prehistoric tool study style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T16:59:36+08:00"
   },
   {
    "id": "stone-mortar",
@@ -2282,7 +2341,8 @@
     "transparent"
    ],
    "desc": "原创系列：厚重玄武岩凿成的石臼，内壁被研磨出光滑凹面，臼底躺着几粒黑色谷物与白色粉末，边缘散落碎石与木杵，史前工具图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a heavy basalt mortar hewn from rock, the inner wall worn smooth by grinding, a few black grains and pale powder resting at the bottom, chips of stone and a wooden pestle scattered around the rim, prehistoric tool study style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a heavy basalt mortar hewn from rock, the inner wall worn smooth by grinding, a few black grains and pale powder resting at the bottom, chips of stone and a wooden pestle scattered around the rim, prehistoric tool study style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T16:59:36+08:00"
   },
   {
    "id": "figure-primitive-hunter",
@@ -2321,7 +2381,8 @@
     "transparent"
    ],
    "desc": "原创系列：赤膊原始人立绘，乱发扎着兽骨饰，肩披红白兽皮披风，下着兽皮短裙，长矛斜握在手，脚下有淡色投影，史前人物图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a bare-chested primitive figure with bone ornaments in the tangled hair, a red-and-white fur mantle over the shoulder, a hide loincloth, a long spear gripped in one hand, a pale ground shadow beneath, prehistoric character study style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a bare-chested primitive figure with bone ornaments in the tangled hair, a red-and-white fur mantle over the shoulder, a hide loincloth, a long spear gripped in one hand, a pale ground shadow beneath, prehistoric character study style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T16:59:36+08:00"
   },
   {
    "id": "figure-primitive-gatherer",
@@ -2360,7 +2421,8 @@
     "transparent"
    ],
    "desc": "原创系列：微笑的原始人女性立绘，编发缀着羽毛与骨珠，背负编织藤篮，肩披带叶羽饰，手捧一把刚采的红果并挂着一只小葫芦，史前人物图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a smiling primitive woman with feathers and bone beads woven into her braids, a woven basket carried on her back, a leafy feathered shoulder piece, cradling freshly picked red berries with a small gourd hanging beside them, prehistoric character study style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a smiling primitive woman with feathers and bone beads woven into her braids, a woven basket carried on her back, a leafy feathered shoulder piece, cradling freshly picked red berries with a small gourd hanging beside them, prehistoric character study style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T16:59:36+08:00"
   },
   {
    "id": "potion-magenta-cone",
@@ -2399,7 +2461,8 @@
     "transparent"
    ],
    "desc": "原创系列：细长锥形玻璃瓶盛满品红色药液，液面微微晃动透出内辉，瓶口塞着软木塞，瓶身贴着一枚手写标签，药水图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a slender conical glass flask filled with magenta potion, the liquid surface glowing faintly from within, a cork stopper in the neck, a handwritten label on the body, potion catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a slender conical glass flask filled with magenta potion, the liquid surface glowing faintly from within, a cork stopper in the neck, a handwritten label on the body, potion catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T16:59:36+08:00"
   },
   {
    "id": "potion-teal-round",
@@ -2438,7 +2501,8 @@
     "transparent"
    ],
    "desc": "原创系列：圆肚玻璃瓶盛着通透青绿色液体，瓶中细密气泡不断上升，瓶肩缠一圈麻绳，瓶塞为削平的软木，药水图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a round-bellied glass bottle of clear teal liquid, fine bubbles streaming upward inside, a coil of hemp twine around the shoulder, a flattened cork stopper, potion catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a round-bellied glass bottle of clear teal liquid, fine bubbles streaming upward inside, a coil of hemp twine around the shoulder, a flattened cork stopper, potion catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T16:59:36+08:00"
   },
   {
    "id": "potion-gold-square",
@@ -2477,7 +2541,8 @@
     "transparent"
    ],
    "desc": "原创系列：方正厚玻璃方瓶盛满琥珀色药液，瓶壁厚处透出温暖橙光，四角因年代久远而磨损，瓶口缠着封蜡麻绳，药水图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a square thick-walled glass bottle filled with amber potion, warm orange light glowing through the heavy glass, corners worn smooth with age, waxed twine wrapped around the neck, potion catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a square thick-walled glass bottle filled with amber potion, warm orange light glowing through the heavy glass, corners worn smooth with age, waxed twine wrapped around the neck, potion catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T16:59:36+08:00"
   },
   {
    "id": "potion-violet-slender",
@@ -2516,7 +2581,8 @@
     "transparent"
    ],
    "desc": "原创系列：修长高瓶盛着通透幽紫药液，瓶底嵌着发光晶核，瓶口是一枚尖头水晶塞，瓶身凝着几滴冷雾，药水图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a slender tall vial of clear violet potion, a glowing crystal core embedded in the base, a pointed crystal stopper in the neck, cold mist beading on the glass, potion catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a slender tall vial of clear violet potion, a glowing crystal core embedded in the base, a pointed crystal stopper in the neck, cold mist beading on the glass, potion catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T16:59:36+08:00"
   },
   {
    "id": "book-grimoire",
@@ -2556,7 +2622,8 @@
     "transparent"
    ],
    "desc": "原创系列：厚重的血红皮革法典立于封面，封面刻着一枚由纯虚构几何符号与棱角符文组成的圆形印记，青蓝色光芒从刻痕里渗出，四角包着磨损的铜护片，正面横着一道沉重铜扣，魔典图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a thick crimson leather grimoire standing upright, its cover carved with a circular emblem of purely invented geometric symbols and angular runes, cyan-blue light seeping from the carved grooves, worn brass corner protectors, a heavy brass clasp across the front, arcane book catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a thick crimson leather grimoire standing upright, its cover carved with a circular emblem of purely invented geometric symbols and angular runes, cyan-blue light seeping from the carved grooves, worn brass corner protectors, a heavy brass clasp across the front, arcane book catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T17:40:06+08:00"
   },
   {
    "id": "book-open-tome",
@@ -2596,7 +2663,8 @@
     "transparent"
    ],
    "desc": "原创系列：摊开平放的古老魔典，两页泛黄羊皮纸上写满纯虚构的抽象符号与几何图形，紫金双色墨迹，右页若干符号发亮浮离纸面，紫色细烟袅袅升起，魔典图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: an ancient tome lying open, both yellowed parchment pages covered with purely invented abstract glyphs and geometric diagrams in violet and gold ink, several marks on the right page glowing and lifting off the page, thin violet wisps rising above, arcane book catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: an ancient tome lying open, both yellowed parchment pages covered with purely invented abstract glyphs and geometric diagrams in violet and gold ink, several marks on the right page glowing and lifting off the page, thin violet wisps rising above, arcane book catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T17:40:06+08:00"
   },
   {
    "id": "book-scroll",
@@ -2636,7 +2704,8 @@
     "transparent"
    ],
    "desc": "原创系列：半展的魔法卷轴立于木轴之上，羊皮纸面排满纯虚构的抽象刻痕与几何图形，焦橙与深青墨色，其中一带符号隐隐泛着琥珀色火光，几点余烬飘散向上，魔典图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a partially unrolled magical scroll standing on its wooden rod, the parchment covered in rows of purely invented abstract marks and geometric diagrams in burnt orange and dark teal ink, one band of glyphs glowing faintly amber as if smoldering, a few embers drifting upward, arcane book catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a partially unrolled magical scroll standing on its wooden rod, the parchment covered in rows of purely invented abstract marks and geometric diagrams in burnt orange and dark teal ink, one band of glyphs glowing faintly amber as if smoldering, a few embers drifting upward, arcane book catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T17:40:06+08:00"
   },
   {
    "id": "book-crystal",
@@ -2676,7 +2745,8 @@
     "transparent"
    ],
    "desc": "原创系列：嵌着淡蓝水晶的封闭法典悬浮在半空，细银黑金属框以爪状卡扣咬住书脊边缘，水晶面上刻着纯虚构的锐角符号与交错几何线条，冷蓝白光从刻纹里透出，框缘结着一圈霜光，浮冰晶在四周漂移，魔典图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a closed codex with a pale ice-blue crystal set into its cover, held by a thin dark-silver metal frame with claw-like prongs gripping the edges, the crystal face engraved with purely invented sharp angular strokes and intersecting geometric lines, cold blue-white light glowing from the engravings, a rim of frosty light along the frame, tiny ice crystals drifting around, arcane book catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a closed codex with a pale ice-blue crystal set into its cover, held by a thin dark-silver metal frame with claw-like prongs gripping the edges, the crystal face engraved with purely invented sharp angular strokes and intersecting geometric lines, cold blue-white light glowing from the engravings, a rim of frosty light along the frame, tiny ice crystals drifting around, arcane book catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T17:40:06+08:00"
   },
   {
    "id": "book-bone",
@@ -2716,7 +2786,8 @@
     "transparent"
    ],
    "desc": "原创系列：灰骨板装帧的黑暗禁书立于封面，脊背拱起数根雕骨肋条，正面一枚锡扣，封面竖排一枚由纯虚构钩状符号与骨形印记组成的纹章，泛着病态绿光，底缘绕着冷雾，页面染成深褐，魔典图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a blackened occult tome bound in dark grey bone plates, small carved bone ribs arching over the spine, a tarnished pewter clasp on the front, a single emblem in a tight vertical column built from purely invented hooked strokes and bone-shaped sigils, glowing a dim sickly green, cold mist curling along the base, page edges stained dark umber, arcane book catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a blackened occult tome bound in dark grey bone plates, small carved bone ribs arching over the spine, a tarnished pewter clasp on the front, a single emblem in a tight vertical column built from purely invented hooked strokes and bone-shaped sigils, glowing a dim sickly green, cold mist curling along the base, page edges stained dark umber, arcane book catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T17:40:06+08:00"
   },
   {
    "id": "impl-wand",
@@ -2756,7 +2827,8 @@
     "transparent"
    ],
    "desc": "原创系列：细长白桦木魔杖立于底座，下半截缠紧铜线，杖头嵌一枚整块半透明琥珀雕成的月牙，暖琥珀光沿木纹上行，杖尖飘散细小光尘，法器图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a slender tapered birch wand standing on its base, its lower half wrapped in tight copper wire, tipped with a crescent moon carved from a single piece of translucent pale amber, a thin warm amber glow running up the wood grain, tiny amber motes drifting off the tip, arcane implement catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a slender tapered birch wand standing on its base, its lower half wrapped in tight copper wire, tipped with a crescent moon carved from a single piece of translucent pale amber, a thin warm amber glow running up the wood grain, tiny amber motes drifting off the tip, arcane implement catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T18:37:29+08:00"
   },
   {
    "id": "impl-staff",
@@ -2796,7 +2868,8 @@
     "transparent"
    ],
    "desc": "原创系列：高过画框的瘤节浮木法杖插地而立，下三分之一入土，杖头三股木叉托着一枚缓缓悬浮的抛光黑曜石球，一道细紫光环绕着球体公转，杖身螺旋刻着浅槽，法器图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a tall gnarled staff of knotted grey driftwood planted in the ground, its upper end cradling a slowly hovering sphere of polished dark obsidian held by three wood prongs, a thin ring of violet light orbiting the sphere, the wood spiralled with a band of shallow carved grooves, arcane implement catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a tall gnarled staff of knotted grey driftwood planted in the ground, its upper end cradling a slowly hovering sphere of polished dark obsidian held by three wood prongs, a thin ring of violet light orbiting the sphere, the wood spiralled with a band of shallow carved grooves, arcane implement catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T18:37:29+08:00"
   },
   {
    "id": "impl-orb",
@@ -2836,7 +2909,8 @@
     "transparent"
    ],
    "desc": "原创系列：通透水晶球安在青铜三足爪脚架上，球面光洁，内部泛柔和青碧色微光，一团细小光云缓缓流转，左下一抹青碧反光，铜架缝隙里生出铜绿，法器图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a clear translucent crystal ball resting in a small three-legged bronze stand with claw feet, a soft inner glow of pale turquoise, a swirl of tiny luminous clouds turning slowly inside, a faint turquoise reflection on the lower left, verdigris in the crevices of the bronze stand, arcane implement catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a clear translucent crystal ball resting in a small three-legged bronze stand with claw feet, a soft inner glow of pale turquoise, a swirl of tiny luminous clouds turning slowly inside, a faint turquoise reflection on the lower left, verdigris in the crevices of the bronze stand, arcane implement catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T18:37:29+08:00"
   },
   {
    "id": "impl-amulet",
@@ -2876,7 +2950,8 @@
     "transparent"
    ],
    "desc": "原创系列：沉重石质护符由细链悬于画框顶端，菱形暗灰石板正面嵌一道轮廓锐利的淡金几何纹章，纹路由纯虚构的抽象符号与棱角刻痕组成，金纹缓缓脉动暖光，坠底漏落细碎金屑，法器图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a heavy pendant amulet suspended from a fine chain rising to the top of the frame, a flat vertical lozenge of dull slate-grey stone with a sharply defined pale gold geometric emblem inlaid into its face, the emblem composed of purely invented abstract glyphs and angular marks belonging to no real-world writing system, the inlay pulsing a slow warm gold light, fine gold sparks falling from the bottom edge, arcane implement catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a heavy pendant amulet suspended from a fine chain rising to the top of the frame, a flat vertical lozenge of dull slate-grey stone with a sharply defined pale gold geometric emblem inlaid into its face, the emblem composed of purely invented abstract glyphs and angular marks belonging to no real-world writing system, the inlay pulsing a slow warm gold light, fine gold sparks falling from the bottom edge, arcane implement catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T18:37:29+08:00"
   },
   {
    "id": "castle-cloud",
@@ -2916,7 +2991,8 @@
     "transparent"
    ],
    "desc": "原创系列：小巧石堡踞于宽厚浮岩之上，四座修长灰石塔顶着蓝板岩尖锥顶，正面一道拱形城门与窄条窗，塔尖立小旗，岩底收成嶙峋石锥，散落数块浮石，薄云缭绕岩基，建筑图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a compact stone castle perched on a broad chunk of floating rock, four slender towers of pale grey ashlar masonry topped with tall conical blue-slate roofs, a single arched gate and narrow slit windows, small pennants on the tower tips, the rock underside tapering into jagged stone shards with loose boulders drifting beneath, thin cloud wisps around the base, castle catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a compact stone castle perched on a broad chunk of floating rock, four slender towers of pale grey ashlar masonry topped with tall conical blue-slate roofs, a single arched gate and narrow slit windows, small pennants on the tower tips, the rock underside tapering into jagged stone shards with loose boulders drifting beneath, thin cloud wisps around the base, castle catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T18:37:29+08:00"
   },
   {
    "id": "castle-valley",
@@ -2956,7 +3032,8 @@
     "transparent"
    ],
    "desc": "原创系列：质朴丘顶要塞踞于低圆土石丘上，方形主堡一角立起一方高望塔，暖赭砂岩墙脚压一圈深色石，前沿木栅栏插着尖桩，拱形木门包铁皮，墙顶一条窄木步道，塔屋顶竖一根旗杆，丘面覆短干草，建筑图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a modest hilltop fortress on a low rounded mound, a squat rectangular keep with a single tall square watchtower at one corner, warm ochre sandstone walls with a darker stone base band, a timber palisade with pointed stakes along the front, an arched wooden gate with iron banding, a narrow wooden walkway on the wall top, one banner pole on the tower roof, short dry grass on the mound, castle catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a modest hilltop fortress on a low rounded mound, a squat rectangular keep with a single tall square watchtower at one corner, warm ochre sandstone walls with a darker stone base band, a timber palisade with pointed stakes along the front, an arched wooden gate with iron banding, a narrow wooden walkway on the wall top, one banner pole on the tower roof, short dry grass on the mound, castle catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T18:37:29+08:00"
   },
   {
    "id": "castle-crystal",
@@ -2996,7 +3073,8 @@
     "transparent"
    ],
    "desc": "原创系列：修长城堡由半透明淡紫与冰蓝水晶筑成，一道主尖塔高耸，基座环立四座小尖塔，晶壁切面通透透出内辉，尖塔间以精巧晶桥相连，尖拱晶门，紫光在塔底积成一滩，空中浮着细小晶屑，建筑图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a tall slender castle built from translucent pale violet and ice-blue crystal, one dominant central spire with four smaller spires around its base, faceted translucent walls with a soft inner glow, delicate crystal bridges arching between spires, a pointed crystal arch entrance, a soft violet light pooling beneath the structure, tiny crystal splinters floating in the air, castle catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a tall slender castle built from translucent pale violet and ice-blue crystal, one dominant central spire with four smaller spires around its base, faceted translucent walls with a soft inner glow, delicate crystal bridges arching between spires, a pointed crystal arch entrance, a soft violet light pooling beneath the structure, tiny crystal splinters floating in the air, castle catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T18:37:29+08:00"
   },
   {
    "id": "castle-ruins",
@@ -3036,7 +3114,8 @@
     "transparent"
    ],
    "desc": "原创系列：古堡残迹立于平地，两截深灰花岗岩断塔顶作锯齿状坍塌，一段残墙仍立着缺口，拱门倾颓半埋碎石，厚藤蔓与苔藓爬满每块残石，蕨草与树苗从石缝钻出，基座散落塌石，建筑图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: the crumbling remains of an old stone castle, two broken tower stumps of dark weathered granite with jagged collapsed tops, a partial curtain wall with gaps, a leaning arched gateway half filled with rubble, thick ivy and moss crawling over every stone, ferns and saplings growing from the cracks, fallen stone blocks scattered at the base, castle catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: the crumbling remains of an old stone castle, two broken tower stumps of dark weathered granite with jagged collapsed tops, a partial curtain wall with gaps, a leaning arched gateway half filled with rubble, thick ivy and moss crawling over every stone, ferns and saplings growing from the cracks, fallen stone blocks scattered at the base, castle catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T18:37:29+08:00"
   },
   {
    "id": "furn-table",
@@ -3076,7 +3155,8 @@
     "transparent"
    ],
    "desc": "原创系列：敦实旧橡木方桌四腿直立，厚桌面边缘磨损不齐，深棕木面满是划痕与几处刻字，腿近地处以一根简单横撑相连，桌面一角磕破露出浅色新木，器物图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a squat old oak dining table on four straight legs, a thick rectangular tabletop with a worn uneven edge, dark brown wood covered in decades of scratches and a few carved initials, legs braced with a simple cross stretcher near the floor, one corner of the tabletop chipped showing lighter wood beneath, furniture catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a squat old oak dining table on four straight legs, a thick rectangular tabletop with a worn uneven edge, dark brown wood covered in decades of scratches and a few carved initials, legs braced with a simple cross stretcher near the floor, one corner of the tabletop chipped showing lighter wood beneath, furniture catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T18:37:29+08:00"
   },
   {
    "id": "furn-chair",
@@ -3116,7 +3196,8 @@
     "transparent"
    ],
    "desc": "原创系列：深染胡桃木高背旧椅，窄高靠背顶一道圆弧顶板，座面为磨旧的草编，四根收分细腿由低撑环相连，一侧扶手缺失只余两个木栓孔，座前沿漆面磨透露出浅木，器物图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: an old high-backed chair of dark stained walnut, a tall narrow backrest topped with a rounded crest rail, a worn rush seat, four slim tapering legs joined by a low stretcher ring, one armrest missing leaving two bare peg holes, the varnish worn through to pale wood along the front edge of the seat, the crest rail carved with a simple shallow groove pattern, furniture catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: an old high-backed chair of dark stained walnut, a tall narrow backrest topped with a rounded crest rail, a worn rush seat, four slim tapering legs joined by a low stretcher ring, one armrest missing leaving two bare peg holes, the varnish worn through to pale wood along the front edge of the seat, the crest rail carved with a simple shallow groove pattern, furniture catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T18:37:29+08:00"
   },
   {
    "id": "furn-stool",
@@ -3156,7 +3237,8 @@
     "transparent"
    ],
    "desc": "原创系列：小巧旧三腿圆凳取风化的浅色白蜡木，圆座微凹磨得油亮，三根外撇直腿以近顶处一枚铁箍相连而非横撑，一腿略短使凳子微倾，座缘磕伤泛灰，座面还留几颗钉头，器物图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a small old three-legged stool of pale weathered ash wood, a round slightly dished seat worn smooth and darker at the centre, three straight splayed legs braced near the top with a simple iron collar ring instead of a stretcher, one leg shorter so the stool sits at a slight tilt, the seat edge chipped and greyed by weather, small nail heads visible on the seat, furniture catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a small old three-legged stool of pale weathered ash wood, a round slightly dished seat worn smooth and darker at the centre, three straight splayed legs braced near the top with a simple iron collar ring instead of a stretcher, one leg shorter so the stool sits at a slight tilt, the seat edge chipped and greyed by weather, small nail heads visible on the seat, furniture catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T18:37:29+08:00"
   },
   {
    "id": "furn-bench",
@@ -3196,7 +3278,8 @@
     "transparent"
    ],
    "desc": "原创系列：低矮长条旧板凳取深栗木，座面一整条长板分三块拼成、露明缝铁钉，靠背为两根圆头立柱间立三根车木柱，顶面木色经年灰白，一柱中段开裂，短粗腿，器物图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a long low wooden bench of dark chestnut wood with a slight backward lean, a single long plank seat split into three boards with visible seams and iron nails, a backrest of three vertical turned spindles between two rounded end posts topped with simple ball finials, the wood greyed and silvered by weather along the top surfaces, one spindle cracked near the middle, short stubby legs, furniture catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a long low wooden bench of dark chestnut wood with a slight backward lean, a single long plank seat split into three boards with visible seams and iron nails, a backrest of three vertical turned spindles between two rounded end posts topped with simple ball finials, the wood greyed and silvered by weather along the top surfaces, one spindle cracked near the middle, short stubby legs, furniture catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T18:37:29+08:00"
   },
   {
    "id": "tech-holo",
@@ -3236,7 +3319,8 @@
     "transparent"
    ],
    "desc": "原创系列：台式投影仪立于短圆柱底座，哑光白瓷外壳顶前部一枚深色玻璃镜头，镜头射出一道浅青光环，环中悬浮着由简单几何板与环构成的抽象三维示意物，器身中段一道镀铬赤道线，正面一道浅凹槽，壳缝渗出冷蓝微光，器械图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a compact desktop projector standing on a short cylindrical base, matte off-white ceramic shell with a single dark glass lens at the top front, a shallow ring of cyan light emitted from the lens forming a small hovering three-dimensional schematic of an abstract object made of simple geometric plates and rings, a thin chrome equator line, a small recessed slot on the front face, faint cool blue glow leaking from the shell seam, device catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a compact desktop projector standing on a short cylindrical base, matte off-white ceramic shell with a single dark glass lens at the top front, a shallow ring of cyan light emitted from the lens forming a small hovering three-dimensional schematic of an abstract object made of simple geometric plates and rings, a thin chrome equator line, a small recessed slot on the front face, faint cool blue glow leaking from the shell seam, device catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T18:37:29+08:00"
   },
   {
    "id": "tech-scanner",
@@ -3276,7 +3360,8 @@
     "transparent"
    ],
    "desc": "原创系列：手枪握式手持扫描仪直立，深炮铜机身顶部一片宽平传感头，传感面下射一扇暖琥珀细光束，在下方地面投出一个抽象物件的小小浮像，握把缠棱纹橡胶，侧面一枚琥珀状态灯，底部拖一卷短线，器身带使用磨痕，器械图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a pistol-gripped handheld scanner held upright, dark gunmetal body with a wide flat sensor head at the top, the sensor face emitting a fan of thin scanning light beams in warm amber projecting downward onto a small floating rendered image of an abstract object, ribbed rubber grip, a small amber status light on the side, a short coiled cable trailing from the base, the body scuffed with use, device catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a pistol-gripped handheld scanner held upright, dark gunmetal body with a wide flat sensor head at the top, the sensor face emitting a fan of thin scanning light beams in warm amber projecting downward onto a small floating rendered image of an abstract object, ribbed rubber grip, a small amber status light on the side, a short coiled cable trailing from the base, the body scuffed with use, device catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T18:37:29+08:00"
   },
   {
    "id": "tech-grav",
@@ -3316,7 +3401,8 @@
     "transparent"
    ],
    "desc": "原创系列：宽平六角拉丝钢平台悬于地面之上，底面环列三只均匀分布的发射喷口泛稳定青光，一道柔和青光垫从喷口铺向地面，台面覆浅凸网格纹，中央一个圆形凹口，钢边磨损微凹，光垫里漂着细微尘埃，器械图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a broad flat hexagonal platform of brushed steel hovering a short distance above the ground, its underside ringed with three evenly spaced emitter nozzles glowing a steady teal, a soft cushion of teal light spreading down from the nozzles onto the ground, the platform surface covered with a shallow raised grid pattern and a single circular recessed port at its centre, steel edges worn and slightly dented, dust particles drifting in the light cushion, device catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a broad flat hexagonal platform of brushed steel hovering a short distance above the ground, its underside ringed with three evenly spaced emitter nozzles glowing a steady teal, a soft cushion of teal light spreading down from the nozzles onto the ground, the platform surface covered with a shallow raised grid pattern and a single circular recessed port at its centre, steel edges worn and slightly dented, dust particles drifting in the light cushion, device catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T18:37:29+08:00"
   },
   {
    "id": "tech-shield",
@@ -3356,7 +3442,8 @@
     "transparent"
    ],
    "desc": "原创系列：矮壮便携发生器取深板岩复合材料立于四短脚，顶部穹顶发射器向上一拢，罩住上半身的半球形淡绿透明力场，场表荡着细密同心涟漪，器身三处散热口泛浅绿光，顶上一道厚重提手，外壳磕凹带使用包浆，场沿接地处积一小滩绿光，器械图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a stubby portable generator of dark slate composite material on four short feet, a domed emitter on top projecting a broad translucent hemispherical force field of pale lime green light surrounding the upper part of the device, the field rippling with faint concentric distortion rings, three cooling vents glowing faint lime on the sides, a heavy carry handle arched over the top, the body dented and scratched with a patina of use, a small pool of green light where the field meets the ground, device catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a stubby portable generator of dark slate composite material on four short feet, a domed emitter on top projecting a broad translucent hemispherical force field of pale lime green light surrounding the upper part of the device, the field rippling with faint concentric distortion rings, three cooling vents glowing faint lime on the sides, a heavy carry handle arched over the top, the body dented and scratched with a patina of use, a small pool of green light where the field meets the ground, device catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T18:37:29+08:00"
   },
   {
    "id": "xeno-prism-stalker",
@@ -3396,7 +3483,8 @@
     "transparent"
    ],
    "desc": "原创系列：无眼无面的伏击型掠食者。躯干是一叠竖向折起的半透明硅质晶板，边缘泛油膜般虹彩而中心近乎透明，像一枚收拢待发的弹簧陷阱；三条反关节长腿撑起身体，趾爪张开，基部由数根苍白须根锚进地面；肩部伸出一根细柄，末端垂着一枚多棱面琥珀诱饵果，正滴落一滴黏液。体表干燥、纸质、矿物感，绝不湿滑。骨白、灰烬、虹彩与病态琥珀四色。异星生物图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: an eyeless faceless ambush predator. Its torso is a vertical accordion-fold of translucent crystalline silica plates, edges shimmering with oil-slick iridescence while the centre stays almost invisible, held compact like a cocked spring trap. Three long reverse-jointed legs brace the body, toes splayed, anchored to the ground by pale tendril roots. A slender stalk rises from the shoulder, ending in a faceted amber lure-fruit dripping a single sticky drop. Texture is dry, papery and mineral, never slimy. Bone white, ash grey, iridescent film and sickly amber. Alien creature catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: an eyeless faceless ambush predator. Its torso is a vertical accordion-fold of translucent crystalline silica plates, edges shimmering with oil-slick iridescence while the centre stays almost invisible, held compact like a cocked spring trap. Three long reverse-jointed legs brace the body, toes splayed, anchored to the ground by pale tendril roots. A slender stalk rises from the shoulder, ending in a faceted amber lure-fruit dripping a single sticky drop. Texture is dry, papery and mineral, never slimy. Bone white, ash grey, iridescent film and sickly amber. Alien creature catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T19:40:33+08:00"
   },
   {
    "id": "xeno-rib-lurker",
@@ -3436,7 +3524,8 @@
     "transparent"
    ],
    "desc": "原创系列：扁平如鳐的寄生型掠食者。身体由一具敞开的螺旋状湿骨肋笼构成——十二根肋骨自中央铰点向外旋出而非对称弯曲，每根肋骨末端环生一圈细小吸盘，肋骨能像手指那样屈伸抓握；无口、无眼、无面。螺旋中心悬着一片共振膜，淤紫半透明，可见同心波纹在膜上荡开；腹面是布满毛细孔的多孔海绵层。质感是湿骨、软骨与潮膜。蜡黄象牙、淤紫膜、锈褐污渍三色。异星生物图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a parasitic predator flattened like a stingray. Its body is an open spiral cage of wet yellowed bone: twelve ribs spiralling outward from a central hinge instead of curving symmetrically, each rib tipped with a ring of tiny suction pores, the ribs articulating like fingers to grip and walk. No mouth, no eyes, no face. A resonant membrane hangs at the centre of the spiral, bruised violet and translucent, with concentric ripples visibly spreading across it; the underside is a porous sponge of capillary pores. Texture of wet bone, gristle and damp membrane. Jaundiced ivory, bruised violet and rust-brown stains. Alien creature catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a parasitic predator flattened like a stingray. Its body is an open spiral cage of wet yellowed bone: twelve ribs spiralling outward from a central hinge instead of curving symmetrically, each rib tipped with a ring of tiny suction pores, the ribs articulating like fingers to grip and walk. No mouth, no eyes, no face. A resonant membrane hangs at the centre of the spiral, bruised violet and translucent, with concentric ripples visibly spreading across it; the underside is a porous sponge of capillary pores. Texture of wet bone, gristle and damp membrane. Jaundiced ivory, bruised violet and rust-brown stains. Alien creature catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T19:40:33+08:00"
   },
   {
    "id": "xeno-mycelial-weaver",
@@ -3476,7 +3565,8 @@
     "transparent"
    ],
    "desc": "原创系列：低伏蹲踞的真菌型掠食者，三足反关节，没有头。本该是脸的位置，一枚孢囊裂成五片湿毡质瓣，瓣缝间藏着一簇细小的珠状眼。肩部不生手臂而是两束苍白菌丝，正甩出孢丝，其中一束末端缠着一只拳头大小的猎物茧，丝线正往茧缝里钻。背部覆满会搏动的细纤毛与潮湿菌毡，撒着淡紫孢子粉。质感是湿毡、菌丝与湿土。白垩、湿板岩灰、淡紫孢子粉与一颗湿琥珀珠。异星生物图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: a hunched low-slung fungal predator, tripedal and reverse-jointed, with no head. Where a face would be, a spore sac splits open into five flaps of wet felt, a cluster of small bead-like eyes hidden in the seams between them. Instead of arms, two bundles of pale hyphae extend from the shoulders, mid-casting; one thread ends in a fist-sized prey cocoon, the filaments visibly sinking into its seams. Its back is covered in pulsing fine cilia and damp mycelial felt, dusted with lilac spore powder. Texture of wet felt, mycelium and damp soil. Chalk white, wet slate grey, lilac dust and one wet amber bead. Alien creature catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: a hunched low-slung fungal predator, tripedal and reverse-jointed, with no head. Where a face would be, a spore sac splits open into five flaps of wet felt, a cluster of small bead-like eyes hidden in the seams between them. Instead of arms, two bundles of pale hyphae extend from the shoulders, mid-casting; one thread ends in a fist-sized prey cocoon, the filaments visibly sinking into its seams. Its back is covered in pulsing fine cilia and damp mycelial felt, dusted with lilac spore powder. Texture of wet felt, mycelium and damp soil. Chalk white, wet slate grey, lilac dust and one wet amber bead. Alien creature catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T19:40:33+08:00"
   },
   {
    "id": "flora-pulse-pod",
@@ -3516,7 +3606,8 @@
     "transparent"
    ],
    "desc": "原创系列：异星食人植物。一根粗壮的肉质柄自一团根瘤隆起，顶端是一枚半透明囊壶，壶身一道竖直的括约肌式裂缝半开着；壶内可见猎物的半溶解残影悬在琥珀色消化液中，壶壁上爬着搏动的脉管；三根僵硬的倒刺须像护肋那样拱在壶顶，光合质地的墨绿蜡光。整株像在呼吸，壶壁微微鼓胀。无花、无瓣、无叶。墨绿、半透明琥珀与蜡黄脉管三色。异星植被图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: an alien carnivorous plant. A thick fleshy stalk rises from a burl of root-nodes and ends in a translucent bladder-pod with a vertical sphincter slit, half-open. Inside the pod, half-dissolved prey remains hang as dark silhouettes suspended in amber digestive fluid, and pulsing veins crawl across the pod wall. Three stiff barbed tendrils arch over the pod like protective ribs, photosynthetic and green-black with a waxy sheen. The whole plant appears to breathe, the pod walls slightly distended. No flowers, no petals, no leaves. Green-black, translucent amber and jaundiced yellow veins. Alien flora catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: an alien carnivorous plant. A thick fleshy stalk rises from a burl of root-nodes and ends in a translucent bladder-pod with a vertical sphincter slit, half-open. Inside the pod, half-dissolved prey remains hang as dark silhouettes suspended in amber digestive fluid, and pulsing veins crawl across the pod wall. Three stiff barbed tendrils arch over the pod like protective ribs, photosynthetic and green-black with a waxy sheen. The whole plant appears to breathe, the pod walls slightly distended. No flowers, no petals, no leaves. Green-black, translucent amber and jaundiced yellow veins. Alien flora catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T19:40:33+08:00"
   },
   {
    "id": "flora-gland-stake",
@@ -3556,7 +3647,8 @@
     "transparent"
    ],
    "desc": "原创系列：异星食人植物。一根硬直的柄，外表像昆虫胸板那样分节，自浅根瘤升起，顶端是一枚多棱面琥珀腺果，正往下淌着浓稠的诱引液，沿柄凝成一道道硬化的流痕；基座周围六根僵硬的光合须向内勾着倒刺，每根须尖有一个小孔，正呼出淡淡可见的蒸汽。无花、无瓣、无叶，柄身微妙地像一根饲管。骨白、钙化米白、琥珀腺果与墨绿倒刺。异星植被图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: an alien carnivorous lure-plant. A tall rigid stalk, ribbed like an insect sternum, rises from a shallow burl of root-nodes and ends in a faceted amber gland-fruit that weeps thick glistening attractant down the stalk in hardened rivulets. Around the base, six stiff photosynthetic tendrils bristle with inward-curving barbs, each tipped with a tiny pore exhaling a faint visible vapor. No flowers, no petals, no leaves; the stalk subtly resembles a feeding tube. Bone, calcified off-white, amber gland and black-green barbs. Alien flora catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: an alien carnivorous lure-plant. A tall rigid stalk, ribbed like an insect sternum, rises from a shallow burl of root-nodes and ends in a faceted amber gland-fruit that weeps thick glistening attractant down the stalk in hardened rivulets. Around the base, six stiff photosynthetic tendrils bristle with inward-curving barbs, each tipped with a tiny pore exhaling a faint visible vapor. No flowers, no petals, no leaves; the stalk subtly resembles a feeding tube. Bone, calcified off-white, amber gland and black-green barbs. Alien flora catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T19:40:33+08:00"
   },
   {
    "id": "xeno-strike-scene",
@@ -3596,7 +3688,8 @@
     "transparent"
    ],
    "desc": "原创系列：捕食瞬间。折光伏击者自收拢姿态向上弹开，半透明晶板叠成的躯干伸到静止时的两倍长，板片张开把光折射成一圈圈油膜光带；三条反关节腿死死撑住，趾爪张开抓地；肩柄上的琥珀诱饵果甩到前方，柄腱绷直，正滴落黏液；一圈折射激波环在伸长的躯干外围扩散。无眼、无面、无口。干燥纸质的矿物质感。骨白、灰烬、虹彩与琥珀。异星生物图鉴风，透明 PNG，1024×1024",
-   "descEn": "Original series: the moment of the strike. The prism stalker has unfolded upward from its cocked posture, its accordion torso of translucent crystalline plates extended to twice its resting length, the plates splayed and refracting light into bands of oil-slick colour. Its three reverse-jointed legs brace hard, toes splayed and gripping. The amber lure-fruit on its shoulder stalk swings forward, snapped taut on a strained tendon, dripping. A shock-ring of refracted light spreads around the extended torso. No eyes, no face, no mouth. Dry papery mineral texture. Bone white, ash grey, iridescent film and amber. Alien creature catalogue style, transparent PNG, 1024×1024"
+   "descEn": "Original series: the moment of the strike. The prism stalker has unfolded upward from its cocked posture, its accordion torso of translucent crystalline plates extended to twice its resting length, the plates splayed and refracting light into bands of oil-slick colour. Its three reverse-jointed legs brace hard, toes splayed and gripping. The amber lure-fruit on its shoulder stalk swings forward, snapped taut on a strained tendon, dripping. A shock-ring of refracted light spreads around the extended torso. No eyes, no face, no mouth. Dry papery mineral texture. Bone white, ash grey, iridescent film and amber. Alien creature catalogue style, transparent PNG, 1024×1024",
+   "added": "2026-10-23T19:40:33+08:00"
   },
   {
    "id": "zone-bass",
@@ -3631,7 +3724,8 @@
     "small"
    ],
    "desc": "霓虹线稿小徽章，喇叭形低音盆造型，透明 PNG，384×384",
-   "descEn": "Neon line-art badge shaped like a horn speaker cone, transparent PNG, 384×384"
+   "descEn": "Neon line-art badge shaped like a horn speaker cone, transparent PNG, 384×384",
+   "added": "2026-10-22T22:34:29+08:00"
   },
   {
    "id": "zone-bell",
@@ -3666,7 +3760,8 @@
     "small"
    ],
    "desc": "霓虹线稿小徽章，悬挂式水晶铃铛造型，透明 PNG，384×384",
-   "descEn": "Neon line-art badge shaped like a hanging crystal bell, transparent PNG, 384×384"
+   "descEn": "Neon line-art badge shaped like a hanging crystal bell, transparent PNG, 384×384",
+   "added": "2026-10-22T22:34:29+08:00"
   },
   {
    "id": "zone-lead",
@@ -3701,7 +3796,8 @@
     "small"
    ],
    "desc": "霓虹线稿小徽章，等离子球与环形电弧造型，透明 PNG，384×384",
-   "descEn": "Neon line-art badge shaped like a plasma orb with an electric arc ring, transparent PNG, 384×384"
+   "descEn": "Neon line-art badge shaped like a plasma orb with an electric arc ring, transparent PNG, 384×384",
+   "added": "2026-10-22T22:34:29+08:00"
   },
   {
    "id": "planet-shard-ring",
@@ -3739,7 +3835,8 @@
     "weird"
    ],
    "desc": "奇怪星球图标：球体被一圈不连续的碎岩星环环绕，环上有缺口而非平滑，透明 PNG，1024×1024",
-   "descEn": "A weird planet icon: a sphere encircled by a discontinuous ring of broken floating rock shards with visible gaps, not a smooth ring, transparent PNG, 1024×1024"
+   "descEn": "A weird planet icon: a sphere encircled by a discontinuous ring of broken floating rock shards with visible gaps, not a smooth ring, transparent PNG, 1024×1024",
+   "added": "2026-10-23T21:36:18+08:00"
   },
   {
    "id": "planet-nested",
@@ -3778,7 +3875,8 @@
     "weird"
    ],
    "desc": "奇怪星球图标：半透明蛋壳状外壳星球内，浮着一颗更小的发光行星，透明 PNG，1024×1024",
-   "descEn": "A weird planet icon: a translucent eggshell-like shell planet with a smaller glowing planet floating inside it, transparent PNG, 1024×1024"
+   "descEn": "A weird planet icon: a translucent eggshell-like shell planet with a smaller glowing planet floating inside it, transparent PNG, 1024×1024",
+   "added": "2026-10-23T21:36:18+08:00"
   },
   {
    "id": "planet-eye",
@@ -3817,7 +3915,8 @@
     "weird"
    ],
    "desc": "奇怪星球图标：整个表面是一只巨眼，瞳孔是漩涡星系，诡异而令人不安，透明 PNG，1024×1024",
-   "descEn": "A weird planet icon: a sphere whose whole face is one enormous eye, the iris a tiny spiral galaxy, uncanny and unsettling, transparent PNG, 1024×1024"
+   "descEn": "A weird planet icon: a sphere whose whole face is one enormous eye, the iris a tiny spiral galaxy, uncanny and unsettling, transparent PNG, 1024×1024",
+   "added": "2026-10-23T21:36:18+08:00"
   },
   {
    "id": "planet-molten-core",
@@ -3856,7 +3955,8 @@
     "weird"
    ],
    "desc": "奇怪星球图标：地表龟裂，裂缝透出炽热熔核，仿佛即将炸开，透明 PNG，1024×1024",
-   "descEn": "A weird planet icon: a rocky sphere with deep fissures glowing molten from within, looking about to burst, transparent PNG, 1024×1024"
+   "descEn": "A weird planet icon: a rocky sphere with deep fissures glowing molten from within, looking about to burst, transparent PNG, 1024×1024",
+   "added": "2026-10-23T21:36:18+08:00"
   },
   {
    "id": "planet-cube",
@@ -3895,7 +3995,8 @@
     "weird"
    ],
    "desc": "奇怪星球图标：不是球，而是一颗带圆角的立方体行星，低多边形玩具质感，透明 PNG，1024×1024",
-   "descEn": "A weird planet icon: not a sphere but a rounded cube planet with beveled edges, low-poly toy look, transparent PNG, 1024×1024"
+   "descEn": "A weird planet icon: not a sphere but a rounded cube planet with beveled edges, low-poly toy look, transparent PNG, 1024×1024",
+   "added": "2026-10-23T21:36:18+08:00"
   },
   {
    "id": "planet-twin",
@@ -3934,7 +4035,8 @@
     "weird"
    ],
    "desc": "奇怪星球图标：两颗大小不一的星球部分融合，被一条发光脐带状光带相连，透明 PNG，1024×1024",
-   "descEn": "A weird planet icon: two spheres of different sizes partly merged, joined by a glowing umbilical band of light, transparent PNG, 1024×1024"
+   "descEn": "A weird planet icon: two spheres of different sizes partly merged, joined by a glowing umbilical band of light, transparent PNG, 1024×1024",
+   "added": "2026-10-23T21:36:18+08:00"
   },
   {
    "id": "motion-mining",
@@ -3976,7 +4078,8 @@
     "transparent"
    ],
    "desc": "无缝循环小动画：小人抢起镐头砸向矿石，撞击瞬间火花四溅、碎石飞散，512×512 透明底 WebP，2 秒一轮",
-   "descEn": "A seamless loop: a little figure swinging a pickaxe into rock, sparks and rubble bursting on impact, 512×512 transparent WebP, 2s per cycle"
+   "descEn": "A seamless loop: a little figure swinging a pickaxe into rock, sparks and rubble bursting on impact, 512×512 transparent WebP, 2s per cycle",
+   "added": "2026-10-24T08:43:58+08:00"
   },
   {
    "id": "motion-fishing",
@@ -4018,7 +4121,8 @@
     "transparent"
    ],
    "desc": "无缝循环小动画：小人水岸垂钓，浮漂轻点、鱼线绷紧，一尾小鱼抢食跳出水面，512×512 透明底 WebP，3 秒一轮",
-   "descEn": "A seamless loop: a little figure fishing by the water, bobber dipping, line tightening, a small fish leaping for the bait, 512×512 transparent WebP, 3s per cycle"
+   "descEn": "A seamless loop: a little figure fishing by the water, bobber dipping, line tightening, a small fish leaping for the bait, 512×512 transparent WebP, 3s per cycle",
+   "added": "2026-10-24T08:43:58+08:00"
   },
   {
    "id": "motion-shooting",
@@ -4062,7 +4166,8 @@
     "transparent"
    ],
    "desc": "无缝循环小动画：小人抬手开枪，枪口焰一亮、弹道拖着弹痕命中木靶，弹壳抛飞、硝烟未散，512×512 透明底 WebP，2.5 秒一轮",
-   "descEn": "A seamless loop: a little figure firing a pistol, muzzle flash, a tracer hitting the wooden target, shell ejecting, smoke lingering, 512×512 transparent WebP, 2.5s per cycle"
+   "descEn": "A seamless loop: a little figure firing a pistol, muzzle flash, a tracer hitting the wooden target, shell ejecting, smoke lingering, 512×512 transparent WebP, 2.5s per cycle",
+   "added": "2026-10-24T08:43:58+08:00"
   },
   {
    "id": "inst-snail-horn",
@@ -4100,7 +4205,8 @@
     "weird"
    ],
    "desc": "古怪乐器：整只巨型螺壳就是号身，壳口焊了一截远古青铜吹嘴，壳沿还铆着风干的木板条与皮绳，透明 PNG，1024×1024",
-   "descEn": "A weird instrument: a giant snail shell is the body, with an ancient bronze mouthpiece welded to the opening, dried wood slats and leather straps riveted along the rim, transparent PNG, 1024×1024"
+   "descEn": "A weird instrument: a giant snail shell is the body, with an ancient bronze mouthpiece welded to the opening, dried wood slats and leather straps riveted along the rim, transparent PNG, 1024×1024",
+   "added": "2026-10-24T10:05:02+08:00"
   },
   {
    "id": "inst-fishbone-harp",
@@ -4138,7 +4244,8 @@
     "weird"
    ],
    "desc": "古怪乐器：用一头深海巨鱼的肋骨搭成琴框、头骨做共鸣箱，牛筋做弦，下面还坠了几枚贝壳和浮木珠子，透明 PNG，1024×1024",
-   "descEn": "A weird instrument: a harp framed with the rib bones of a deep-sea fish, its skull as the resonator, sinew strings, seashells and driftwood beads hanging below, transparent PNG, 1024×1024"
+   "descEn": "A weird instrument: a harp framed with the rib bones of a deep-sea fish, its skull as the resonator, sinew strings, seashells and driftwood beads hanging below, transparent PNG, 1024×1024",
+   "added": "2026-10-24T10:05:02+08:00"
   },
   {
    "id": "inst-tentacle-organ",
@@ -4178,7 +4285,8 @@
     "weird"
    ],
    "desc": "古怪乐器：管风琴的八根音管是八条活过来的章鱼触手，铜吸盘沿管身排布，风箱一鼓，管口就泛出幽幽的青光，透明 PNG，1024×1024",
-   "descEn": "A weird instrument: a pipe organ whose eight pipes are eight living octopus tentacles with brass suckers, faint teal glow seeping from the pipe openings when the bellows swell, transparent PNG, 1024×1024"
+   "descEn": "A weird instrument: a pipe organ whose eight pipes are eight living octopus tentacles with brass suckers, faint teal glow seeping from the pipe openings when the bellows swell, transparent PNG, 1024×1024",
+   "added": "2026-10-24T10:05:02+08:00"
   },
   {
    "id": "inst-crystal-drum",
@@ -4218,7 +4326,8 @@
     "weird"
    ],
    "desc": "古怪乐器：鼓面是一整张半透明的琥珀晶膜，敲一下就有暖光在皮下脉动一圈，鼓沿刻满同心符文，皮绳穿过骨钉勒紧晶膜，透明 PNG，1024×1024",
-   "descEn": "A weird instrument: a frame drum with a translucent amber crystal skin, a warm pulse of light rippling under the membrane with every beat, concentric runes carved on the rim, leather cords drawn tight through bone pegs, transparent PNG, 1024×1024"
+   "descEn": "A weird instrument: a frame drum with a translucent amber crystal skin, a warm pulse of light rippling under the membrane with every beat, concentric runes carved on the rim, leather cords drawn tight through bone pegs, transparent PNG, 1024×1024",
+   "added": "2026-10-24T10:05:02+08:00"
   },
   {
    "id": "phys-ballista",
@@ -4256,7 +4365,8 @@
     "transparent"
    ],
    "desc": "物理武器：不靠魔法靠绳劲，两束绞紧的麻绳当扭力簧，橡木架包铁，轨道上一支铁簇弩箭已经上膛，旁边还留着绞盘手柄，透明 PNG，1024×1024",
-   "descEn": "A physics weapon: no magic, just rope force, two twisted rope skeins as torsion springs, iron-banded oak frame, an iron-tipped bolt loaded on the track, winch handle still in place, transparent PNG, 1024×1024"
+   "descEn": "A physics weapon: no magic, just rope force, two twisted rope skeins as torsion springs, iron-banded oak frame, an iron-tipped bolt loaded on the track, winch handle still in place, transparent PNG, 1024×1024",
+   "added": "2026-10-24T10:05:02+08:00"
   },
   {
    "id": "phys-powerfist",
@@ -4294,7 +4404,8 @@
     "transparent"
    ],
    "desc": "物理武器：一副纯机械的增压拳套，指节是黄铜墩，手背架着两根粗钢弹簧和活塞杆，出拳全靠弹簧回弹加速，透明 PNG，1024×1024",
-   "descEn": "A physics weapon: a purely mechanical power glove, brass-knuckle fist, two thick steel springs and piston rods mounted on the back of the hand, punch speed comes from spring rebound alone, transparent PNG, 1024×1024"
+   "descEn": "A physics weapon: a purely mechanical power glove, brass-knuckle fist, two thick steel springs and piston rods mounted on the back of the hand, punch speed comes from spring rebound alone, transparent PNG, 1024×1024",
+   "added": "2026-10-24T10:05:02+08:00"
   },
   {
    "id": "phys-flail",
@@ -4332,7 +4443,8 @@
     "transparent"
    ],
    "desc": "物理武器：中世纪老链锤，碗口大的铁球钉满方锥，几节沉甸甸的铁链接在铁箍木柄上，缠着防滑的皮握条，透明 PNG，1024×1024",
-   "descEn": "A physics weapon: a medieval flail, an iron ball the size of a bowl studded with square pyramid spikes, heavy chain links to an iron-collared wooden haft wrapped with a leather grip, transparent PNG, 1024×1024"
+   "descEn": "A physics weapon: a medieval flail, an iron ball the size of a bowl studded with square pyramid spikes, heavy chain links to an iron-collared wooden haft wrapped with a leather grip, transparent PNG, 1024×1024",
+   "added": "2026-10-24T10:05:02+08:00"
   },
   {
    "id": "phys-slingstaff",
@@ -4370,7 +4482,8 @@
     "transparent"
    ],
    "desc": "物理武器：一根加长的 Y 形弹弓杖，皮兜绷紧兜着一颗浑圆的河石，叉尖包铁，杖身缠满麻绳握把，甩出去全是离心力，透明 PNG，1024×1024",
-   "descEn": "A physics weapon: an elongated Y-shaped staff sling, taut leather pouch cradling a round river stone, iron-capped fork tips, twine-wrapped grip, pure centrifugal force on the release, transparent PNG, 1024×1024"
+   "descEn": "A physics weapon: an elongated Y-shaped staff sling, taut leather pouch cradling a round river stone, iron-capped fork tips, twine-wrapped grip, pure centrifugal force on the release, transparent PNG, 1024×1024",
+   "added": "2026-10-24T10:05:02+08:00"
   },
   {
    "id": "scare-pumpkin",
@@ -4408,7 +4521,8 @@
     "monster"
    ],
    "desc": "变异稻草人：南瓜头刻着夸张的咧嘴笑，四条塞满稻草的麻袋手臂从补丁外套里伸出来，安全别针别着衣襟，稻草从缝里爆出来，透明 PNG，1024×1024",
-   "descEn": "A mutant scarecrow: a carved grinning pumpkin head, four straw-stuffed burlap arms sprouting from a safety-pinned patchwork coat, straw bursting from every seam, transparent PNG, 1024×1024"
+   "descEn": "A mutant scarecrow: a carved grinning pumpkin head, four straw-stuffed burlap arms sprouting from a safety-pinned patchwork coat, straw bursting from every seam, transparent PNG, 1024×1024",
+   "added": "2026-10-24T10:05:02+08:00"
   },
   {
    "id": "scare-sack",
@@ -4446,7 +4560,8 @@
     "monster"
    ],
    "desc": "变异稻草人：脑袋是一只粗麻袋，缝着一张大嘴和四颗歪歪扭扭的纽扣眼，四肢一长一短，法兰兰衬衫和破裤子上到处往外钻稻草，透明 PNG，1024×1024",
-   "descEn": "A mutant scarecrow: a coarse burlap sack for a head, a crude stitched mouth and four crooked button eyes, mismatched lanky limbs, straw poking out of a ragged flannel shirt and torn trousers, transparent PNG, 1024×1024"
+   "descEn": "A mutant scarecrow: a coarse burlap sack for a head, a crude stitched mouth and four crooked button eyes, mismatched lanky limbs, straw poking out of a ragged flannel shirt and torn trousers, transparent PNG, 1024×1024",
+   "added": "2026-10-24T10:05:02+08:00"
   },
   {
    "id": "scare-crow",
@@ -4484,7 +4599,8 @@
     "monster"
    ],
    "desc": "变异稻草人：一颗光秃秃的乌鸦头骨当了脑袋，黑羽毛从塞满稻草的衬衫里穿透出来，双手是尖利的鸟爪，还披了一条破烂黑斗篷，透明 PNG，1024×1024",
-   "descEn": "A mutant scarecrow: a bare crow skull for a head, glossy black feathers piercing through the straw-stuffed shirt, sharp talon hands, draped in a tattered black cloak, transparent PNG, 1024×1024"
+   "descEn": "A mutant scarecrow: a bare crow skull for a head, glossy black feathers piercing through the straw-stuffed shirt, sharp talon hands, draped in a tattered black cloak, transparent PNG, 1024×1024",
+   "added": "2026-10-24T10:05:02+08:00"
   },
   {
    "id": "scare-sunflower",
@@ -4522,7 +4638,8 @@
     "monster"
    ],
    "desc": "变异稻草人：脑袋是一朵开歪了的向日葵，蔫花瓣往下垂，两条胳膊换成扭动的绿藤蔓，指头是荆棘刺，胸口裂开往外涌稻草，透明 PNG，1024×1024",
-   "descEn": "A mutant scarecrow: a lopsided blooming sunflower for a head with wilting petals, twisting green vines for arms with thorny twig fingers, straw gushing from a split chest, transparent PNG, 1024×1024"
+   "descEn": "A mutant scarecrow: a lopsided blooming sunflower for a head with wilting petals, twisting green vines for arms with thorny twig fingers, straw gushing from a split chest, transparent PNG, 1024×1024",
+   "added": "2026-10-24T10:05:02+08:00"
   },
   {
    "id": "fang-maw",
@@ -4560,7 +4677,8 @@
     "many-toothed"
    ],
    "desc": "多牙生物：鲨形怪长了一张巨型圆口，一圈圈同心针牙从喉咙一直排到唇边，破烂的鳍、疤疤赖赖的灰蓝皮，张嘴朝着你，透明 PNG，1024×1024",
-   "descEn": "A many-fanged beast: a shark-like monster with a gigantic circular maw, dozens of concentric rings of needle teeth from throat to lips, ragged torn fins and scarred gray-blue hide, jaws wide open, transparent PNG, 1024×1024"
+   "descEn": "A many-fanged beast: a shark-like monster with a gigantic circular maw, dozens of concentric rings of needle teeth from throat to lips, ragged torn fins and scarred gray-blue hide, jaws wide open, transparent PNG, 1024×1024",
+   "added": "2026-10-24T10:05:02+08:00"
   },
   {
    "id": "fang-lamprey",
@@ -4598,7 +4716,8 @@
     "many-toothed"
    ],
    "desc": "多牙生物：鳗形怪的圆吸盘嘴上镶满几百颗细角牙，橄榄褐色的黏滑皮上开了七个鳃孔，带蹼的尾巴盘在身前，嘴正对着你，透明 PNG，1024×1024",
-   "descEn": "A many-fanged beast: an eel-like monster with a round sucker mouth ringed with hundreds of tiny horn teeth, slimy mottled olive-brown hide with seven gill holes, finned tail coiled forward, mouth facing you, transparent PNG, 1024×1024"
+   "descEn": "A many-fanged beast: an eel-like monster with a round sucker mouth ringed with hundreds of tiny horn teeth, slimy mottled olive-brown hide with seven gill holes, finned tail coiled forward, mouth facing you, transparent PNG, 1024×1024",
+   "added": "2026-10-24T10:05:02+08:00"
   },
   {
    "id": "fang-croc",
@@ -4636,7 +4755,8 @@
     "many-toothed"
    ],
    "desc": "多牙生物：鳄形怪的上下颌挤满一圈圈参差不齐的叠牙，长短歪斜全不守规矩，疤痢痢的鳞甲皮、短粗腿、一道棱脊长尾，嘴朝着你，透明 PNG，1024×1024",
-   "descEn": "A many-fanged beast: a crocodile-like monster with overlapping rows of mismatched jagged teeth jutting crookedly from its gaping jaws, scabbed armored hide, short powerful legs and a thick ridged tail, jaws facing you, transparent PNG, 1024×1024"
+   "descEn": "A many-fanged beast: a crocodile-like monster with overlapping rows of mismatched jagged teeth jutting crookedly from its gaping jaws, scabbed armored hide, short powerful legs and a thick ridged tail, jaws facing you, transparent PNG, 1024×1024",
+   "added": "2026-10-24T10:05:02+08:00"
   },
   {
    "id": "fang-spider",
@@ -4674,7 +4794,8 @@
     "many-toothed"
    ],
    "desc": "多牙生物：蛛形怪八只眼簇成一排，底下盘着一圈弯牙，螯牙滴着黏液，毛腿关节分明，鼓囊囊的肚子上立着一撮撮刚毛，前身高抬，透明 PNG，1024×1024",
-   "descEn": "A many-fanged beast: a spider-like monster with eight clustered eyes and a coiled jaw of curved fangs above dripping mandibles, hairy jointed legs, a bulbous abdomen bristling with tufts, front raised, transparent PNG, 1024×1024"
+   "descEn": "A many-fanged beast: a spider-like monster with eight clustered eyes and a coiled jaw of curved fangs above dripping mandibles, hairy jointed legs, a bulbous abdomen bristling with tufts, front raised, transparent PNG, 1024×1024",
+   "added": "2026-10-24T10:05:02+08:00"
   },
   {
    "id": "astone-levi",
@@ -4712,7 +4833,8 @@
     "weird"
    ],
    "desc": "古怪外星石头：一块自己悬在空中的焦炭壳巨石，被一道熔岩裂缝劈开，几片尖碎的石片已经漂离母体，缝里透出灼热的橙光，透明 PNG，1024×1024",
-   "descEn": "A weird alien stone: a charcoal-crusted boulder hovering in empty space, split by a molten crack, jagged shards already drifting from the main mass, glowing orange light seeping from the fissure, transparent PNG, 1024×1024"
+   "descEn": "A weird alien stone: a charcoal-crusted boulder hovering in empty space, split by a molten crack, jagged shards already drifting from the main mass, glowing orange light seeping from the fissure, transparent PNG, 1024×1024",
+   "added": "2026-10-24T10:05:02+08:00"
   },
   {
    "id": "astone-ringed",
@@ -4750,7 +4872,8 @@
     "weird"
    ],
    "desc": "古怪外星石头：一块被风磨光的石头，从极到极刻满一圈圈同心环纹，沟槽里泛着幽幽的青磷光，脊线上还冒出几颗畸形的晶疙瘩，透明 PNG，1024×1024",
-   "descEn": "A weird alien stone: a weather-polished stone covered in concentric carved rings from pole to pole, faint teal glow in the grooves, odd crystalline bumps along the ridges, transparent PNG, 1024×1024"
+   "descEn": "A weird alien stone: a weather-polished stone covered in concentric carved rings from pole to pole, faint teal glow in the grooves, odd crystalline bumps along the ridges, transparent PNG, 1024×1024",
+   "added": "2026-10-24T10:05:02+08:00"
   },
   {
    "id": "astone-geode",
@@ -4788,7 +4911,8 @@
     "weird"
    ],
    "desc": "古怪外星石头：一块其貌不扬的灰壳晶洞石，裂口处却透出半透明的琥珀光泽，里面插着一簇尖利的紫色晶柱，透明 PNG，1024×1024",
-   "descEn": "A weird alien stone: a dull-looking geode stone, translucent amber glow seeping from a broken opening, a sharp cluster of violet crystals glittering inside, transparent PNG, 1024×1024"
+   "descEn": "A weird alien stone: a dull-looking geode stone, translucent amber glow seeping from a broken opening, a sharp cluster of violet crystals glittering inside, transparent PNG, 1024×1024",
+   "added": "2026-10-24T10:05:02+08:00"
   },
   {
    "id": "astone-honey",
@@ -4826,7 +4950,8 @@
     "weird"
    ],
    "desc": "古怪外星石头：一块外星浮石，密密麻麻的深孔全是从前熔岩里逃出来的气泡留下的，孔沿磨得玻璃一样滑，缝里渗出淡青色的矿脉，透明 PNG，1024×1024",
-   "descEn": "A weird alien stone: an alien pumice riddled with deep honeycomb holes left by escaping lava bubbles, glassy smooth rims, faint teal mineral veins in the crevices, transparent PNG, 1024×1024"
+   "descEn": "A weird alien stone: an alien pumice riddled with deep honeycomb holes left by escaping lava bubbles, glassy smooth rims, faint teal mineral veins in the crevices, transparent PNG, 1024×1024",
+   "added": "2026-10-24T10:05:02+08:00"
   },
   {
    "id": "char-ayan",
@@ -4869,7 +4994,8 @@
     "little figure"
    ],
    "desc": "比老张更细腻的原创小人：阿岩，一位风尘仆仆的仿古旅人，身着做旧皮外套、黄铜护目镜，手持地图，透明 PNG，1024×1024",
-   "descEn": "A more detailed original little figure than Laozhang: A-Yan, a weathered vintage traveler in a worn leather coat with brass goggles, holding a map, transparent PNG, 1024×1024"
+   "descEn": "A more detailed original little figure than Laozhang: A-Yan, a weathered vintage traveler in a worn leather coat with brass goggles, holding a map, transparent PNG, 1024×1024",
+   "added": "2026-10-24T11:11:01+08:00"
   },
   {
    "id": "char-xuanye",
@@ -4912,7 +5038,8 @@
     "little figure"
    ],
    "desc": "比老张更细腻的原创小人：玄夜，星轨工程师，身着发光线条的未来工装、半透明护目镜投出全息 HUD，透明 PNG，1024×1024",
-   "descEn": "A more detailed original little figure than Laozhang: Xuan-Ye, a star-track engineer in a glowing futuristic work suit with a holographic HUD visor, transparent PNG, 1024×1024"
+   "descEn": "A more detailed original little figure than Laozhang: Xuan-Ye, a star-track engineer in a glowing futuristic work suit with a holographic HUD visor, transparent PNG, 1024×1024",
+   "added": "2026-10-24T11:11:01+08:00"
   },
   {
    "id": "char-laoshuan",
@@ -4955,7 +5082,8 @@
     "little figure"
    ],
    "desc": "比老张更细腻的原创小人：老栓，山野药师，身着层叠土布长袍、背着草药师竹篮，透明 PNG，1024×1024",
-   "descEn": "A more detailed original little figure than Laozhang: Lao-Shuan, a mountain herbalist in layered earthy linen robes with a woven herb basket, transparent PNG, 1024×1024"
+   "descEn": "A more detailed original little figure than Laozhang: Lao-Shuan, a mountain herbalist in layered earthy linen robes with a woven herb basket, transparent PNG, 1024×1024",
+   "added": "2026-10-24T11:11:01+08:00"
   },
   {
    "id": "char-qingluan",
@@ -4998,7 +5126,8 @@
     "little figure"
    ],
    "desc": "比老张更细腻的原创小人：青鸾，机械舞者，铬银网纱舞衣缀满品红与青色 LED 光带，透明 PNG，1024×1024",
-   "descEn": "A more detailed original little figure than Laozhang: Qing-Luan, a mech dancer in a chrome mesh outfit traced with magenta and cyan LED strips, transparent PNG, 1024×1024"
+   "descEn": "A more detailed original little figure than Laozhang: Qing-Luan, a mech dancer in a chrome mesh outfit traced with magenta and cyan LED strips, transparent PNG, 1024×1024",
+   "added": "2026-10-24T11:11:01+08:00"
   },
   {
    "id": "char-aluo",
@@ -5041,7 +5170,8 @@
     "little figure"
    ],
    "desc": "比老张更细腻的原创小人：阿萝，古风绣娘，身着精美汉服、手执绣绷，透明 PNG，1024×1024",
-   "descEn": "A more detailed original little figure than Laozhang: A-Luo, an ancient-style embroideress in an elegant hanfu holding an embroidery hoop, transparent PNG, 1024×1024"
+   "descEn": "A more detailed original little figure than Laozhang: A-Luo, an ancient-style embroideress in an elegant hanfu holding an embroidery hoop, transparent PNG, 1024×1024",
+   "added": "2026-10-24T11:11:01+08:00"
   },
   {
    "id": "char-lin",
@@ -5084,7 +5214,8 @@
     "little figure"
    ],
    "desc": "比老张更细腻的原创小人：凛，赛博巡员，流线型装甲制服、琥珀色 HUD 护目镜、手持能量警棍，透明 PNG，1024×1024",
-   "descEn": "A more detailed original little figure than Laozhang: Lin, a cyber patrol officer in a streamlined armored suit with an amber HUD visor and an energy baton, transparent PNG, 1024×1024"
+   "descEn": "A more detailed original little figure than Laozhang: Lin, a cyber patrol officer in a streamlined armored suit with an amber HUD visor and an energy baton, transparent PNG, 1024×1024",
+   "added": "2026-10-24T11:11:01+08:00"
   },
   {
    "id": "cur-glyph",
@@ -5120,7 +5251,8 @@
     "engraved"
    ],
    "desc": "外星货币：一枚幻彩蓝紫金属圆币，浮雕花瓣纹与尖刺齿边，中心一枚菱形眼纹，虹彩流转，透明 PNG，1024×1024",
-   "descEn": "Alien currency: an iridescent blue-violet coin with embossed petal-glyph relief, spiked rim and a diamond eye motif at the center, transparent PNG, 1024×1024"
+   "descEn": "Alien currency: an iridescent blue-violet coin with embossed petal-glyph relief, spiked rim and a diamond eye motif at the center, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "cur-hexcore",
@@ -5156,7 +5288,8 @@
     "glowing"
    ],
    "desc": "外星货币：黑曜镶边的六边币，中心嵌一颗蓝白水晶圆球，缝隙里透出青色发光纹路，透明 PNG，1024×1024",
-   "descEn": "Alien currency: a hexagonal coin with obsidian filigree rims, a blue-white crystal orb set in the center and cyan glow seeping through the seams, transparent PNG, 1024×1024"
+   "descEn": "Alien currency: a hexagonal coin with obsidian filigree rims, a blue-white crystal orb set in the center and cyan glow seeping through the seams, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "cur-gearquartz",
@@ -5192,7 +5325,8 @@
     "translucent"
    ],
    "desc": "外星货币：三枚透亮的水晶齿轮币叠在一起，齿圈与刻面折出细碎光，中心各嵌一个深色晶核，透明 PNG，1024×1024",
-   "descEn": "Alien currency: three translucent quartz gear-coins stacked together, toothed rims and facets scattering light, each with a dark crystal core, transparent PNG, 1024×1024"
+   "descEn": "Alien currency: three translucent quartz gear-coins stacked together, toothed rims and facets scattering light, each with a dark crystal core, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "sym-bronze",
@@ -5228,7 +5362,8 @@
     "invented script"
    ],
    "desc": "古怪符号：一块深青铜色符碑，浮雕螺旋纹与三角符纹样，属于世上不存在的文字体系，透明 PNG，1024×1024",
-   "descEn": "Odd symbol: a deep bronze tablet embossed with spiral and triangle glyph patterns, an invented script belonging to no real-world writing system, transparent PNG, 1024×1024"
+   "descEn": "Odd symbol: a deep bronze tablet embossed with spiral and triangle glyph patterns, an invented script belonging to no real-world writing system, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "sym-halo",
@@ -5264,7 +5399,8 @@
     "invented script"
    ],
    "desc": "古怪符号：一圈紫粉青三色发光的曼陀罗符印环，环内排满虚构符文纹样，中心一颗紫星，透明 PNG，1024×1024",
-   "descEn": "Odd symbol: a mandala sigil ring glowing violet-pink-cyan, rows of invented glyph patterns inside and a violet star at the center, transparent PNG, 1024×1024"
+   "descEn": "Odd symbol: a mandala sigil ring glowing violet-pink-cyan, rows of invented glyph patterns inside and a violet star at the center, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "sym-hologeom",
@@ -5300,7 +5436,8 @@
     "shards"
    ],
    "desc": "古怪符号：青色发光的立方几何符，四周绕着品红色三角碎片与光珠，像一枚悬浮的全息印记，透明 PNG，1024×1024",
-   "descEn": "Odd symbol: a glowing cyan cubic glyph orbited by magenta triangle shards and light beads, like a floating holographic mark, transparent PNG, 1024×1024"
+   "descEn": "Odd symbol: a glowing cyan cubic glyph orbited by magenta triangle shards and light beads, like a floating holographic mark, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "ship-saucer",
@@ -5336,7 +5473,8 @@
     "retro"
    ],
    "desc": "飞船：经典碟形 UFO，舷窗一圈青紫灯带，底部射出白色光束，复古科幻海报风，透明 PNG，1024×1024",
-   "descEn": "Spaceship: a classic saucer UFO with a ring of cyan-violet porthole lights and a white beam from beneath, retro sci-fi poster style, transparent PNG, 1024×1024"
+   "descEn": "Spaceship: a classic saucer UFO with a ring of cyan-violet porthole lights and a white beam from beneath, retro sci-fi poster style, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "ship-crystalftr",
@@ -5372,7 +5510,8 @@
     "sci-fi"
    ],
    "desc": "飞船：白色晶体质感的折叠翼战机，多片锐利翼面向后掠开，尾部紫色引擎舱幽幽发光，透明 PNG，1024×1024",
-   "descEn": "Spaceship: a white crystal-textured fighter with sharp folded wings swept back, violet engine pods glowing faintly at the tail, transparent PNG, 1024×1024"
+   "descEn": "Spaceship: a white crystal-textured fighter with sharp folded wings swept back, violet engine pods glowing faintly at the tail, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "ship-orbpod",
@@ -5408,7 +5547,8 @@
     "portholes"
    ],
    "desc": "飞船：一颗青铜质感的球形母舰舱，表面布满圆形舷窗、铆钉与触须状凸起，沉甸甸地悬浮着，透明 PNG，1024×1024",
-   "descEn": "Spaceship: a bronze spherical mothership pod studded with round portholes, rivets and tentacle-like protrusions, hovering heavily, transparent PNG, 1024×1024"
+   "descEn": "Spaceship: a bronze spherical mothership pod studded with round portholes, rivets and tentacle-like protrusions, hovering heavily, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "wp-rifle",
@@ -5444,7 +5584,8 @@
     "sci-fi"
    ],
    "desc": "空间武器：一支青色能量条纹的科幻步枪，顶部瞄准镜、多管枪口与散热孔俱全，枪身线条硬朗，透明 PNG，1024×1024",
-   "descEn": "Space weapon: a sci-fi rifle traced with cyan energy stripes, topped with a scope, a multi-barrel muzzle and cooling vents, transparent PNG, 1024×1024"
+   "descEn": "Space weapon: a sci-fi rifle traced with cyan energy stripes, topped with a scope, a multi-barrel muzzle and cooling vents, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "wp-hoverrev",
@@ -5480,7 +5621,8 @@
     "glowing"
    ],
    "desc": "空间武器：一把铬银左轮式能量枪，竖直悬浮，腰间套着一圈紫色悬浮光环，弹舱六孔分明，透明 PNG，1024×1024",
-   "descEn": "Space weapon: a chrome revolver-style energy gun hovering upright, wrapped by a violet levitation ring, six cylinder chambers clearly readable, transparent PNG, 1024×1024"
+   "descEn": "Space weapon: a chrome revolver-style energy gun hovering upright, wrapped by a violet levitation ring, six cylinder chambers clearly readable, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "wp-amberstaff",
@@ -5516,7 +5658,8 @@
     "brass"
    ],
    "desc": "空间武器：一柄黄铜四叉权杖，顶端四只爪齿环抱一颗琥珀色宝珠，长柄缠着磨旧的深色握把，透明 PNG，1024×1024",
-   "descEn": "Space weapon: a brass staff with four prongs cradling an amber orb at the top, the long haft wrapped in a worn dark grip, transparent PNG, 1024×1024"
+   "descEn": "Space weapon: a brass staff with four prongs cradling an amber orb at the top, the long haft wrapped in a worn dark grip, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "boot-jet",
@@ -5552,7 +5695,8 @@
     "flame"
    ],
    "desc": "飞行靴子：棕色皮质高帮靴，银色机械脚踝环亮着青色光圈，后跟喷口正喷出橙色火焰，透明 PNG，1024×1024",
-   "descEn": "Flying boot: a brown leather high-top with a silver mechanical ankle ring glowing cyan, the heel jet spitting orange flame, transparent PNG, 1024×1024"
+   "descEn": "Flying boot: a brown leather high-top with a silver mechanical ankle ring glowing cyan, the heel jet spitting orange flame, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "boot-maglev",
@@ -5588,7 +5732,8 @@
     "hovering"
    ],
    "desc": "飞行靴子：白色科幻战靴，鞋底一圈青色反重力光晕托着整只靴子悬浮，两侧还各藏了一具小螺旋桨，透明 PNG，1024×1024",
-   "descEn": "Flying boot: a white sci-fi combat boot hovering on a cyan anti-gravity glow beneath the sole, a small propeller tucked on each side, transparent PNG, 1024×1024"
+   "descEn": "Flying boot: a white sci-fi combat boot hovering on a cyan anti-gravity glow beneath the sole, a small propeller tucked on each side, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "boot-wingturbo",
@@ -5624,7 +5769,8 @@
     "high-top"
    ],
    "desc": "飞行靴子：黑色高筒飞行靴，侧面张开一片银色机械翼，外挂双筒推进器，金属管路与铆钉细节扎实，透明 PNG，1024×1024",
-   "descEn": "Flying boot: a black high-top with a silver mechanical wing fanned out on the side and twin thrusters strapped on, rich pipework and rivet detail, transparent PNG, 1024×1024"
+   "descEn": "Flying boot: a black high-top with a silver mechanical wing fanned out on the side and twin thrusters strapped on, rich pipework and rivet detail, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "shield-woodround",
@@ -5660,7 +5806,8 @@
     "retro"
    ],
    "desc": "复古盾牌：一面木纹圆盾，外圈一道黄铜铆钉环，中央铁凸磨损发亮，边缘皮扣与旧痕分明，透明 PNG，1024×1024",
-   "descEn": "Retro shield: a wooden round shield with a brass riveted ring, a worn bright iron boss at the center, leather buckles and old scars along the rim, transparent PNG, 1024×1024"
+   "descEn": "Retro shield: a wooden round shield with a brass riveted ring, a worn bright iron boss at the center, leather buckles and old scars along the rim, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "shield-heraldic",
@@ -5696,7 +5843,8 @@
     "red-white"
    ],
    "desc": "复古盾牌：红白菱形分格的六角纹章盾，中央一只金鹰浮雕，一圈圆头铆钉钉满盾缘，漆面斑驳，透明 PNG，1024×1024",
-   "descEn": "Retro shield: a hexagonal heraldic shield with red-white quartering, a golden eagle relief at the center and round-headed rivets ringing the edge, paint chipped with age, transparent PNG, 1024×1024"
+   "descEn": "Retro shield: a hexagonal heraldic shield with red-white quartering, a golden eagle relief at the center and round-headed rivets ringing the edge, paint chipped with age, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "shield-tower",
@@ -5732,7 +5880,8 @@
     "iron crest"
    ],
    "desc": "复古盾牌：一面粉色皮带的木质塔盾，中央嵌着黑铁拱窗徽记，横竖皮带扣把盾面包得结结实实，透明 PNG，1024×1024",
-   "descEn": "Retro shield: a wooden tower shield crossed with leather straps, a black iron arched crest set in the middle, buckled tight across the face, transparent PNG, 1024×1024"
+   "descEn": "Retro shield: a wooden tower shield crossed with leather straps, a black iron arched crest set in the middle, buckled tight across the face, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "eblk-starcube",
@@ -5768,7 +5917,8 @@
     "glowing"
    ],
    "desc": "变身能量块：一块青粉双色半透明晶石立方，内部一颗青色星形核心正发光，外圈绕着粉色碎晶，透明 PNG，1024×1024",
-   "descEn": "Energy block: a cyan-pink translucent crystal cube with a glowing cyan star core inside, pink crystal shards orbiting around it, transparent PNG, 1024×1024"
+   "descEn": "Energy block: a cyan-pink translucent crystal cube with a glowing cyan star core inside, pink crystal shards orbiting around it, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "eblk-blade",
@@ -5804,7 +5954,8 @@
     "magenta"
    ],
    "desc": "变身能量块：一块品红色晶格长方体正在变形，两端已伸出弯月状紫刃，碎晶沿着刃口飞散，透明 PNG，1024×1024",
-   "descEn": "Energy block: a magenta lattice block caught mid-morph, crescent violet blades already extending from both ends, shards scattering along the edges, transparent PNG, 1024×1024"
+   "descEn": "Energy block: a magenta lattice block caught mid-morph, crescent violet blades already extending from both ends, shards scattering along the edges, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "eblk-burst",
@@ -5840,7 +5991,8 @@
     "sparks"
    ],
    "desc": "变身能量块：一块琥珀金色多面能量石正在爆裂，金色火花与尖刺向外飞溅，核心亮得灼眼，透明 PNG，1024×1024",
-   "descEn": "Energy block: an amber-gold faceted energy stone bursting apart, golden sparks and spikes flying outward, the core blazing bright, transparent PNG, 1024×1024"
+   "descEn": "Energy block: an amber-gold faceted energy stone bursting apart, golden sparks and spikes flying outward, the core blazing bright, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "mmon-gel",
@@ -5876,7 +6028,8 @@
     "alien"
    ],
    "desc": "变形怪兽：一团深绿色半透明凝胶兽，体内浮着黄绿光斑，一侧已凝出一张凶脸，粘液正往下滴，透明 PNG，1024×1024",
-   "descEn": "Morph monster: a translucent dark-green gel beast with glowing lime patches inside, a snarling face already congealed on one side, slime dripping down, transparent PNG, 1024×1024"
+   "descEn": "Morph monster: a translucent dark-green gel beast with glowing lime patches inside, a snarling face already congealed on one side, slime dripping down, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "mmon-bonewolf",
@@ -5912,7 +6065,8 @@
     "gel"
    ],
    "desc": "变形怪兽：一头骨白色的多刺狼形兽，背脊竖满尖刺，鬃毛像凝胶一样往下淌，四足稳稳踏地，透明 PNG，1024×1024",
-   "descEn": "Morph monster: a bone-white wolf-like beast bristling with dorsal spikes, its mane dripping like gel, four paws planted firmly, transparent PNG, 1024×1024"
+   "descEn": "Morph monster: a bone-white wolf-like beast bristling with dorsal spikes, its mane dripping like gel, four paws planted firmly, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "mmon-chrome",
@@ -5948,7 +6102,8 @@
     "crystal shards"
    ],
    "desc": "变形怪兽：一只铬银色机械兽人蜷身而立，橙红大眼、触手状的嘴，身后一圈碎晶正从它身上剥落，透明 PNG，1024×1024",
-   "descEn": "Morph monster: a chrome mechanical beast crouched upright with glowing orange-red eyes and a tentacled mouth, crystal shards peeling off its back, transparent PNG, 1024×1024"
+   "descEn": "Morph monster: a chrome mechanical beast crouched upright with glowing orange-red eyes and a tentacled mouth, crystal shards peeling off its back, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "tel-watch",
@@ -5984,7 +6139,8 @@
     "pocket watch"
    ],
    "desc": "古怪望远镜：绿铜管弯成一个 U 字的怪镜，一端红铜喇叭口，管身上还挂着黄铜怀表坠，透明 PNG，1024×1024",
-   "descEn": "Odd telescope: a weird scope with green copper pipe bent into a U, a red-copper horn at one end and a brass pocket watch dangling from the tube, transparent PNG, 1024×1024"
+   "descEn": "Odd telescope: a weird scope with green copper pipe bent into a U, a red-copper horn at one end and a brass pocket watch dangling from the tube, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "tel-starmap",
@@ -6020,7 +6176,8 @@
     "glowing"
    ],
    "desc": "古怪望远镜：黄铜立式望远镜，顶部圆筒朝天，中段悬浮着一圈紫色星云全息环，两侧各探出一只小目镜，透明 PNG，1024×1024",
-   "descEn": "Odd telescope: an upright brass scope with its top tube pointing skyward, a violet nebula hologram ring hovering mid-body and a small eyepiece on each side, transparent PNG, 1024×1024"
+   "descEn": "Odd telescope: an upright brass scope with its top tube pointing skyward, a violet nebula hologram ring hovering mid-body and a small eyepiece on each side, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
   },
   {
    "id": "tel-foldscope",
@@ -6056,7 +6213,230 @@
     "strap"
    ],
    "desc": "古怪望远镜：黄铜折叠单筒镜，筒身收成风箱般的褶皱，琥珀色物镜，黑皮背带随意搭在镜身上，透明 PNG，1024×1024",
-   "descEn": "Odd telescope: a brass folding spyglass collapsed into bellows-like segments, an amber objective lens, a black leather strap draped over the body, transparent PNG, 1024×1024"
+   "descEn": "Odd telescope: a brass folding spyglass collapsed into bellows-like segments, an amber objective lens, a black leather strap draped over the body, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:03:35+08:00"
+  },
+  {
+   "id": "pat-brooch",
+   "name": "手绣花布胸针 · 手作纹样",
+   "nameEn": "Embroidered Floral Brooch · Handmade Motif",
+   "category": "crafts",
+   "categoryLabel": "手作纹样",
+   "categoryLabelEn": "Handmade Motifs",
+   "file": "assets/img/full/pat-1.png",
+   "thumb": "assets/img/thumbs/pat-1.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 726141,
+   "ver": "882a8590",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#1c1d1f",
+   "tags": [
+    "刺绣",
+    "胸针",
+    "布艺",
+    "拼布",
+    "花纹"
+   ],
+   "tagsEn": [
+    "embroidery",
+    "brooch",
+    "textile",
+    "patchwork",
+    "floral"
+   ],
+   "desc": "手作纹样：多层布片叠绣成的花朵胸针，赭红与姜黄绣线走针清晰，麻布底衬，顶端一个小铜环，透明 PNG，1024×1024",
+   "descEn": "Handmade motif: a floral brooch stitched from layered fabric petals, terracotta and mustard thread over linen backing, a small brass loop on top, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:34:18+08:00"
+  },
+  {
+   "id": "pat-porcelain",
+   "name": "青花瓷残片 · 手作纹样",
+   "nameEn": "Blue-and-White Porcelain Shard · Handmade Motif",
+   "category": "crafts",
+   "categoryLabel": "手作纹样",
+   "categoryLabelEn": "Handmade Motifs",
+   "file": "assets/img/full/pat-2.png",
+   "thumb": "assets/img/thumbs/pat-2.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1419133,
+   "ver": "a392de4a",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#23292e",
+   "tags": [
+    "瓷器",
+    "青花",
+    "残片",
+    "釉面",
+    "草纹"
+   ],
+   "tagsEn": [
+    "porcelain",
+    "cobalt",
+    "shard",
+    "glaze",
+    "scroll"
+   ],
+   "desc": "手作纹样：一块青花白瓷残片，釉面绘靛蓝缠枝花，边缘崩口并带细密开片纹，透明 PNG，1024×1024",
+   "descEn": "Handmade motif: a broken blue-and-white porcelain shard painted with a cobalt floral scroll, chipped edges and fine crackle, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:34:18+08:00"
+  },
+  {
+   "id": "pat-macrame",
+   "name": "波西米亚编绳挂饰 · 手作纹样",
+   "nameEn": "Macrame Wall Hanging · Handmade Motif",
+   "category": "crafts",
+   "categoryLabel": "手作纹样",
+   "categoryLabelEn": "Handmade Motifs",
+   "file": "assets/img/full/pat-3.png",
+   "thumb": "assets/img/thumbs/pat-3.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 818099,
+   "ver": "21dc5c6e",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#242121",
+   "tags": [
+    "编绳",
+    "挂饰",
+    "流苏",
+    "棉麻",
+    "手工"
+   ],
+   "tagsEn": [
+    "macrame",
+    "wall hanging",
+    "tassel",
+    "cotton",
+    "handmade"
+   ],
+   "desc": "手作纹样：手工编织的棉绳挂带，燕麦色与铁锈橙两色打结编织，底部流苏垂落，绳股纹理清晰，透明 PNG，1024×1024",
+   "descEn": "Handmade motif: a hand-woven macrame hanging band in oatmeal and rust orange, knotted cord with braided fringe tassels, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:34:18+08:00"
+  },
+  {
+   "id": "pat-block",
+   "name": "木刻印花木版 · 手作纹样",
+   "nameEn": "Woodcut Printing Block · Handmade Motif",
+   "category": "crafts",
+   "categoryLabel": "手作纹样",
+   "categoryLabelEn": "Handmade Motifs",
+   "file": "assets/img/full/pat-4.png",
+   "thumb": "assets/img/thumbs/pat-4.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1048767,
+   "ver": "5a3bdbc3",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#302b27",
+   "tags": [
+    "木版",
+    "雕刻",
+    "印花",
+    "橡木",
+    "版画"
+   ],
+   "tagsEn": [
+    "woodblock",
+    "carving",
+    "printmaking",
+    "oak",
+    "relief"
+   ],
+   "desc": "手作纹样：一块手工雕刻的橡木印花版，版面为叶果浮雕，刻痕与木纹清晰，凹槽染着深胡桃色油墨，透明 PNG，1024×1024",
+   "descEn": "Handmade motif: a hand-carved oak printing block with a leaf-and-berry relief face, visible chisel marks and wood grain, dark walnut ink in the grooves, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:34:18+08:00"
+  },
+  {
+   "id": "pat-stained",
+   "name": "彩色玻璃拼片 · 手作纹样",
+   "nameEn": "Stained-Glass Mosaic Piece · Handmade Motif",
+   "category": "crafts",
+   "categoryLabel": "手作纹样",
+   "categoryLabelEn": "Handmade Motifs",
+   "file": "assets/img/full/pat-5.png",
+   "thumb": "assets/img/thumbs/pat-5.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1239602,
+   "ver": "94dfab42",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#28281d",
+   "tags": [
+    "琉璃",
+    "玻璃",
+    "镶嵌",
+    "铅条",
+    "装饰"
+   ],
+   "tagsEn": [
+    "stained glass",
+    "mosaic",
+    "leaded",
+    "amber",
+    "ornament"
+   ],
+   "desc": "手作纹样：一片铅条拼接的彩色玻璃饰品，琥珀、橄榄绿与暖棕拼成抽象叶形，铅条接缝清晰，透明 PNG，1024×1024",
+   "descEn": "Handmade motif: a leaded stained-glass ornament, amber, olive and warm brown segments forming an abstract leaf, dark solder lines visible, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:34:18+08:00"
+  },
+  {
+   "id": "pat-batik",
+   "name": "靛蓝蜡染方巾 · 手作纹样",
+   "nameEn": "Indigo Batik Cloth · Handmade Motif",
+   "category": "crafts",
+   "categoryLabel": "手作纹样",
+   "categoryLabelEn": "Handmade Motifs",
+   "file": "assets/img/full/pat-6.png",
+   "thumb": "assets/img/thumbs/pat-6.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1443193,
+   "ver": "5f688b24",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#445158",
+   "tags": [
+    "蜡染",
+    "扎染",
+    "棉布",
+    "靛蓝",
+    "方巾"
+   ],
+   "tagsEn": [
+    "batik",
+    "tie-dye",
+    "cotton",
+    "indigo",
+    "cloth"
+   ],
+   "desc": "手作纹样：一方折叠的靛蓝蜡染棉布，扎染形成不规则防染白斑，边缘带流苏，织物纹理与褶皱自然，透明 PNG，1024×1024",
+   "descEn": "Handmade motif: a folded indigo batik cloth with organic tie-dye resist blotches, fringed edges, visible weave and soft folds, transparent PNG, 1024×1024",
+   "added": "2026-10-24T12:34:18+08:00"
   }
  ]
 }
