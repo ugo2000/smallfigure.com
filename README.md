@@ -44,6 +44,8 @@ smallfigure = 小人的图。
 ├── wrangler.toml                      # Pages 项目配置 + D1 绑定（DB）
 ├── data/images.json                   # 素材元数据（构建产物）
 ├── assets/img/
+│   ├── hero_bg.webp                   # 主页宣传横幅背景（桌面 2400×860， tools/make_hero_bg.py 产出）
+│   ├── hero_bg_m.webp                 # 主页宣传横幅背景（移动 1100×1180）
 │   ├── full/                          # 站内大图（最长边 1024，PNG）
 │   └── thumbs/                        # 网格缩略图（最长边 400，WebP）
 ├── assets/audio/bgm.mp3               # 背景音乐（Meditation · Arulo，Mixkit 免费曲库）
@@ -97,6 +99,24 @@ npx wrangler d1 execute smallfigure_downloads --remote --file migrations/0001_in
 
 自定义域名 `smallfigure.com` 与 `www.smallfigure.com` 均已绑定（Cloudflare DNS CNAME → smallfigure.pages.dev，
 已 proxied，SSL 自动签发）。当前状态：线上 https://smallfigure.com 与 https://www.smallfigure.com 正常运行。
+
+## 主页宣传横幅
+
+首页顶部是一条宣传横幅：背景图 `assets/img/hero_bg.webp`（桌面 2400×860）/
+`assets/img/hero_bg_m.webp`（移动 1100×1180），用站内原创小人拼成「夜空收集册」构图——
+老张、果克星人、巫女、徽章、小动物们都出镜，底部渐隐进页面底色，和下方素材网格无缝衔接。
+横幅文字（标题 / 简介 / 数据胶囊 / 按钮）不烤进图里，由 `index.html` 的 `.hero` 区块负责，
+文案走 `i18n.js` 字典，中英切换不掉链子。
+
+改图：编辑 `tools/make_hero_bg.py` 顶部的 `DESKTOP` / `MOBILE` 布局表
+（文件名, 横坐标, 纵坐标, 高度, 旋转, 透明度，均为画幅比例），重跑：
+
+```bash
+python tools/make_hero_bg.py
+```
+
+会同时更新站点 webp 与 `originals/hero/` 下的 PNG 母版（本地存档，不进仓库）；
+`alien.png` 这类白底原图会在生成时自动裁底（副本缓存于 `originals/hero/cut/`），不动站点文件。
 
 ## 背景音乐
 
