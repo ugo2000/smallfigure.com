@@ -72,10 +72,11 @@ CAT_LABELS = {
     "telescopes": {"zh": "古怪望远镜", "en": "Odd Telescopes"},
     "crafts": {"zh": "手作纹样", "en": "Handmade Motifs"},
     "riders": {"zh": "骑兽武者", "en": "Beast Riders"},
+    "bgun": {"zh": "怪异枪械", "en": "Bizarre Firearms"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -86,6 +87,7 @@ SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / �
           "（character-art 管线九分类批量产出）"
           " + 手作纹样（character-art 管线暖土色手作物料系，刻意避开霓虹科技风）"
           " + 骑兽武者（character-art 管线：古人骑怪兽执奇怪兵器，古风暖调）"
+          " + 怪异枪械（character-art 管线：怪奇手作风枪械，材质奇诡避开现代战术枪）"
           " + 早期《音弹》游戏美术资产 + 果克星人系列（据张祥前《果克星球奇遇》描述 AI 生成）")
 
 # 每项：源文件, id, 中文名, 英文名, 分类, 标签, 中文简介, 英文简介, 透明, 动画效果
@@ -1126,6 +1128,43 @@ ITEMS = [
      "tags_en": ["beast rider", "shaman", "wolf", "bronze mirror", "clay ladle"],
      "desc_zh": "骑兽武者：披毛皮、戴狐首冠的草原萨满，骑在鬃毛蓬起的巨狼上，左手举起斑驳铜镜，右手执陶汤勺，透明 PNG，1024×1024",
      "desc_en": "Beast rider: a steppe shaman in a fur-trimmed coat and fox-head headdress astride a shaggy grey wolf, holding up a battered bronze mirror and a clay soup ladle, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+
+    {"src": "processed/bgun-1.png", "id": "bgun-horn", "name_zh": "兽角喇叭铳 · 怪异枪械", "name_en": "Horn Blunderbuss · Bizarre Firearm",
+     "cat": "bgun", "tags": ["枪械", "兽角", "喇叭铳", "苔藓", "火药"],
+     "tags_en": ["firearm", "animal horn", "blunderbuss", "moss", "gunpowder"],
+     "desc_zh": "怪异枪械：喇叭口用一整段兽角做成的铳，铜丝与皮绳捆扎，角身裹着开裂的绿苔与干草，粗糙木柄雕出握纹，垂着一只陶制火药瓶，透明 PNG，1024×1024",
+     "desc_en": "Bizarre firearm: a blunderbuss with a flared barrel made from a whole animal horn, bound with brass wire and leather, wrapped in cracked green moss, a carved wooden grip and a clay powder flask on a cord, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/bgun-2.png", "id": "bgun-lantern", "name_zh": "纸罩灯笼铳 · 怪异枪械", "name_en": "Paper-Lantern Pistol · Bizarre Firearm",
+     "cat": "bgun", "tags": ["枪械", "灯笼", "纸", "竹骨", "手炮"],
+     "tags_en": ["firearm", "lantern", "rice paper", "bamboo ribs", "pistol"],
+     "desc_zh": "怪异枪械：整个枪身就是一只鼓起的暖橙纸灯笼，竹骨清晰可见，顶部伸出一根细铜嘴，底部接着木质扳机握把，纸面带几处焦痕并透出微光，透明 PNG，1024×1024",
+     "desc_en": "Bizarre firearm: the whole body is a swollen warm-orange paper lantern with visible bamboo ribs, a thin copper nozzle rising from the top, a wooden trigger grip at the base, scorch marks and a faint glow inside, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/bgun-3.png", "id": "bgun-vine", "name_zh": "活藤缠枝铳 · 怪异枪械", "name_en": "Living Vine Musket · Bizarre Firearm",
+     "cat": "bgun", "tags": ["枪械", "活藤", "花枝", "木质", "奇幻"],
+     "tags_en": ["firearm", "living vine", "blossom", "wood", "fantasy"],
+     "desc_zh": "怪异枪械：由粗藤与木质茎纠缠成枪形的活体枪械，枪口是中空枝条并像花一样绽开，枪身沿路生着淡紫小花，握把盘成一圈树根，森林绿配灰紫花色，透明 PNG，1024×1024",
+     "desc_en": "Bizarre firearm: a living musket woven from thick vines and woody stems, the hollow twig muzzle splitting open like a blossom, pale lavender flowers along the barrel, the grip spiraling into woody roots, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/bgun-4.png", "id": "bgun-chain", "name_zh": "铁环链节铳 · 怪异枪械", "name_en": "Iron-Ring Chain Gun · Bizarre Firearm",
+     "cat": "bgun", "tags": ["枪械", "铁环", "链节", "铜管", "锈蚀"],
+     "tags_en": ["firearm", "iron rings", "segments", "brass tubes", "rust"],
+     "desc_zh": "怪异枪械：一串锈铁环与小黄铜管像脊椎一样串成的怪异枪械，前端散开成钟形喇叭口，后端是缠皮握把并垂着磨散的绳头，锈橙与暗黄铜配色，透明 PNG，1024×1024",
+     "desc_en": "Bizarre firearm: an absurd gun made of rusted iron rings and small brass tubes linked like a spine, opening at the front into a wide bell-shaped cluster, a leather-wrapped grip with frayed cord, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/bgun-5.png", "id": "bgun-pot", "name_zh": "陶壶闷药铳 · 怪异枪械", "name_en": "Clay Pot Firearm · Bizarre Firearm",
+     "cat": "bgun", "tags": ["枪械", "陶壶", "闷药", "烟囱", "粗陶"],
+     "tags_en": ["firearm", "clay jar", "gunpowder", "smoke", "earthenware"],
+     "desc_zh": "怪异枪械：圆滚滚的灰色陶壶改成的怪异枪械，肩部焊着一根细铁嘴，壶腹釉面开裂并沾着黑灰，侧面装着木制扳杆，通风孔里飘出一缕青烟，透明 PNG，1024×1024",
+     "desc_en": "Bizarre firearm: a squat bulbous firearm made from a round grey clay jar with a narrow iron spout welded to its shoulder, cracked glaze and soot stains, a carved wooden trigger lever and a wisp of smoke from a vent hole, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/bgun-6.png", "id": "bgun-abacus", "name_zh": "算盘弹仓铳 · 怪异枪械", "name_en": "Abacus Magazine Rifle · Bizarre Firearm",
+     "cat": "bgun", "tags": ["枪械", "算盘", "弹仓", "竹管", "珠串"],
+     "tags_en": ["firearm", "abacus", "magazine", "bamboo", "beads"],
+     "desc_zh": "怪异枪械：弹仓是一副串着墨玉与骨珠的木算盘，珠子被锈弹簧推着往前走，细竹管枪身用蜡线绑在框架上，下方用绳吊着一只象牙色火药角，蜜色木配翠绿珠，透明 PNG，1024×1024",
+     "desc_en": "Bizarre firearm: a rifle whose magazine is a wooden abacus strung with dark jade and bone beads pushed forward by a rusted spring, a thin bamboo barrel lashed on with waxed twine, an ivory powder horn dangling below, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 
