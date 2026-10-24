@@ -45,7 +45,7 @@ DESKTOP = [
     ("planet_eye_t.png",          .720, .520, .78,  0, .13),
     ("planet_shard_ring_t.png",   .300, .230, .42,  0, .10),
     # 主角们（右侧成星座，左侧留白给 HTML 文案）
-    ("hero_t.png",                .600, .575, .50, -2, 1.0),     # 老张（看板小人）
+    ("hero_t.png",                .635, .575, .48, -2, 1.0),     # 老张（看板小人）
     ("alien.png",                 .820, .300, .35,  2, 1.0),     # 果克星人
     ("figure_witch_mushroom_t.png", .770, .660, .25, -3, 1.0),   # 蘑菇帽巫女
     ("figure_robot_t.png",        .930, .600, .24,  2, 1.0),     # 小机器人
@@ -71,15 +71,15 @@ DESKTOP = [
 MOBILE = [
     ("planet_eye_t.png",          .640, .260, .48,  0, .10),
     ("planet_shard_ring_t.png",   .164, .520, .30,  0, .10),
-    ("hero_t.png",                .660, .300, .24, -2, 1.0),
+    ("hero_t.png",                .720, .420, .24, -2, 1.0),   # 老张：右下挪，给顶部文字让位
     ("alien.png",                 .280, .580, .21,  2, 1.0),
-    ("figure_witch_mushroom_t.png", .760, .560, .19, -3, 1.0),
-    ("figure_robot_t.png",        .870, .740, .16,  2, 1.0),
+    ("figure_witch_mushroom_t.png", .780, .620, .19, -3, 1.0),
+    ("figure_robot_t.png",        .880, .780, .16,  2, 1.0),
     ("figure_grandpa_t.png",      .360, .840, .17,  3, 1.0),
     ("figure_elf_woodland_t.png", .540, .760, .16,  3, 1.0),
     ("figure_musician_t.png",     .170, .440, .15, -2, 1.0),
     ("figure_chef_t.png",         .130, .640, .13, -2, 1.0),
-    ("figure_fairy_lattice_t.png", .880, .900, .12,  2, 1.0),
+    ("figure_fairy_lattice_t.png", .920, .940, .12,  2, 1.0),
     ("gucck_male_t.png",          .060, .860, .10, -4, 1.0),
     ("gucck_female_t.png",        .150, .910, .095, 3, 1.0),
     ("cr_cat_t.png",              .820, .240, .10, -3, 1.0),
@@ -87,7 +87,6 @@ MOBILE = [
     ("potion_teal_round_t.png",   .780, .100, .10,  0, 1.0),
     ("tech_holo_t.png",           .880, .400, .11, -2, 1.0),
     ("food_dumpling_t.png",       .250, .940, .09,  0, 1.0),
-    ("xeno-prism-stalker_t.png",  .620, .660, .10, -2, 1.0),
     ("zone_bass.png",             .473, .300, .12,  0, 1.0),
     ("zone_bell.png",             .930, .120, .10,  0, 1.0),
     ("zone_lead.png",             .080, .560, .10,  0, 1.0),

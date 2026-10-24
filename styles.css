@@ -94,8 +94,8 @@ body {
 .hero-scrim {
   position: absolute; inset: 0;
   background: linear-gradient(100deg,
-    rgba(11, 14, 20, .92) 0%, rgba(11, 14, 20, .66) 26%,
-    rgba(11, 14, 20, .20) 46%, rgba(11, 14, 20, 0) 62%);
+    rgba(11, 14, 20, .86) 0%, rgba(11, 14, 20, .60) 24%,
+    rgba(11, 14, 20, .18) 40%, rgba(11, 14, 20, 0) 52%);
 }
 .hero-inner { position: relative; padding: 64px 20px; }
 .hero-kicker {
@@ -103,12 +103,12 @@ body {
   color: var(--accent); text-transform: uppercase; margin-bottom: 14px;
 }
 .hero-title {
-  font-size: clamp(30px, 4.4vw, 54px); line-height: 1.22;
-  font-weight: 700; letter-spacing: .5px;
+  font-size: clamp(26px, 3.4vw, 44px); line-height: 1.25;
+  font-weight: 700; letter-spacing: .5px; max-width: 480px;
   text-shadow: 0 2px 18px rgba(11, 14, 20, .65);
 }
 .hero-sub {
-  margin-top: 14px; max-width: 470px;
+  margin-top: 14px; max-width: 430px;
   color: var(--muted); font-size: 15px;
   text-shadow: 0 1px 10px rgba(11, 14, 20, .85);
 }
@@ -312,7 +312,12 @@ body {
   .lb-stage img { max-height: 46vh; }
   .toolbar { top: 117px; }
 }
-/* 宣传横幅移动端：换竖版构图，文字置顶，暗角从上往下压 */
+/* 中宽屏（721–1080）：桌面图横向取景稍偏右，让果克星人那几位少被裁掉 */
+@media (max-width: 1080px) {
+  .hero-bg { background-position: 62% 62%; }
+}
+/* 宣传横幅移动端：换竖版构图，文字置顶且精简（副标题收起，关键信息看数据胶囊），
+   暗角从上往下压，给老张和下方小人留出不被文字盖住的区域 */
 @media (max-width: 720px) {
   .hero { min-height: 480px; align-items: flex-start; }
   .hero-bg {
@@ -321,13 +326,15 @@ body {
   }
   .hero-scrim {
     background: linear-gradient(180deg,
-      rgba(11, 14, 20, .94) 0%, rgba(11, 14, 20, .74) 32%,
-      rgba(11, 14, 20, .28) 60%, rgba(11, 14, 20, 0) 86%);
+      rgba(11, 14, 20, .90) 0%, rgba(11, 14, 20, .58) 28%,
+      rgba(11, 14, 20, .16) 48%, rgba(11, 14, 20, 0) 72%);
   }
-  .hero-inner { padding: 46px 20px 64px; }
-  .hero-sub { font-size: 14px; }
-  .hero-pills { margin-top: 18px; }
-  .hero-cta { margin-top: 22px; }
+  .hero-inner { padding: 40px 20px 56px; }
+  .hero-kicker { margin-bottom: 8px; }
+  .hero-title { font-size: 26px; max-width: 260px; }
+  .hero-sub { display: none; }
+  .hero-pills { margin-top: 14px; }
+  .hero-cta { margin-top: 16px; }
 }
 @media (max-width: 560px) {
   .grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
