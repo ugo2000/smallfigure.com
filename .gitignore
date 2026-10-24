@@ -29,6 +29,7 @@ tools/_diag_*
 .cf_token
 .env
 .env.*
+.dev.vars
 
 # 依赖与系统文件
 node_modules/

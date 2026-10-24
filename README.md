@@ -24,6 +24,8 @@ smallfigure = 小人的图。
 - **尺寸筛选**：≤400px / 401–800px / 801–1600px / >1600px 四档
 - **排序**：默认 / 尺寸 / 体积 / 名称
 - **灯箱**：大图 + 元数据 + 标签 + 下载，支持 ←/→ 切换、ESC 关闭
+- **登录后下载**：下载需注册登录（邮箱 + 密码，PBKDF2 加盐哈希 + httpOnly 会话 Cookie，30 天）。
+  未登录点下载会弹登录/注册窗，登录成功后自动补下载；卡片大图和灯箱图拦右键另存与拖拽保存
 - **下载计数**：每张图的后台下载次数存在 Cloudflare D1，**满 100 次才在卡片右上角和灯箱里亮出计数**
   （`↓ 137` 金色徽章 / 「下载次数 137 次」）。不到 100 次只统计、不展示
 - **背景音乐**：默认开启（浏览器拦截自动播放时，访客首次点页面即响起），右下角圆形按钮随时开关，
@@ -37,10 +39,19 @@ smallfigure = 小人的图。
 ```
 ├── index.html / styles.css / app.js   # 站点本体（零依赖原生三件套）
 ├── i18n.js                            # 中英双语字典 + 语言切换（须在 app.js 前加载）
-├── functions/api/                     # Pages Functions：下载计数后端
-│   ├── counts.js                      #   GET  /api/counts     全量计数
-│   └── download/[id].js               #   POST /api/download/:id  自增并返回最新值
-├── migrations/0001_init.sql           # D1 建表脚本（downloads 表）
+├── functions/api/                     # Pages Functions：下载计数 + 用户认证后端
+│   ├── counts.js                      #   GET  /api/counts        全量计数
+│   ├── download/[id].js               #   POST /api/download/:id  自增并返回最新值（需登录）
+│   └── auth/                          #   注册 / 登录 / 注销 / me / stats
+│       ├── register.js                #   POST /api/auth/register
+│       ├── login.js                   #   POST /api/auth/login
+│       ├── logout.js                  #   POST /api/auth/logout
+│       ├── me.js                      #   GET  /api/auth/me       当前登录用户
+│       └── stats.js                   #   GET  /api/auth/stats    注册统计（需 X-Admin-Token）
+├── functions/_lib/auth.js             # 认证共享库：PBKDF2 哈希 / 会话 / 限流
+├── migrations/                        # D1 建表脚本（按序号执行）
+│   ├── 0001_init.sql                  #   downloads 表
+│   └── 0002_auth.sql                  #   users / sessions / user_downloads
 ├── wrangler.toml                      # Pages 项目配置 + D1 绑定（DB）
 ├── data/images.json                   # 素材元数据（构建产物）
 ├── assets/img/
@@ -91,14 +102,52 @@ npx wrangler pages deploy _site --project-name=smallfigure --branch=main
 ```
 
 下载计数依赖 D1 数据库 `smallfigure_downloads`（已在 wrangler.toml 绑定为 `DB`），
-建表语句在 `migrations/0001_init.sql`；换账号/换库时改 wrangler.toml 里的 `database_id` 并重跑：
+建表语句在 `migrations/0001_init.sql`（downloads）与 `migrations/0002_auth.sql`（users / sessions / user_downloads）；
+换账号/换库时改 wrangler.toml 里的 `database_id` 并按序号重跑：
 
 ```bash
 npx wrangler d1 execute smallfigure_downloads --remote --file migrations/0001_init.sql
+npx wrangler d1 execute smallfigure_downloads --remote --file migrations/0002_auth.sql
 ```
 
 自定义域名 `smallfigure.com` 与 `www.smallfigure.com` 均已绑定（Cloudflare DNS CNAME → smallfigure.pages.dev，
 已 proxied，SSL 自动签发）。当前状态：线上 https://smallfigure.com 与 https://www.smallfigure.com 正常运行。
+
+## 登录门控与用户统计
+
+下载动作需注册登录，链路全在 Pages Functions + D1（`functions/api/auth/*`，共享库 `functions/_lib/auth.js`）：
+
+- 密码 PBKDF2-SHA256 加盐哈希（默认 5000 次迭代，适配 Workers 免费档 10ms CPU；可用
+  `npx wrangler pages secret put PBKDF2_ITER --project-name=smallfigure` 调高，付费档建议 120000）
+- 会话：32 字节随机令牌，httpOnly + SameSite=Lax Cookie（https 下自动加 Secure），
+  库里只存 SHA-256 哈希，有效期 30 天，退出即删
+- 注册/登录按 IP 内存限流（注册 5 次/小时、登录 10 次/分钟， isolate 重建即重置）
+- 下载计数三路落库：全局 `downloads`、用户归属 `user_downloads`、`users.download_count`
+
+注册用户统计（只读，需管理员令牌）：
+
+```bash
+# 设置管理员令牌（一次性，设置后接口才开启）
+npx wrangler pages secret put ADMIN_TOKEN --project-name=smallfigure
+# 查询
+curl -H "X-Admin-Token: <令牌>" https://smallfigure.com/api/auth/stats
+```
+
+返回注册总数 / 今日新增 / 近 7 日新增 / 有下载行为的用户数 / 用户下载总次数 / 最近 20 个注册用户。
+未登录下载、失效会话都会返回 401，前端据此拉起登录弹窗。
+
+全链路回归测试（本地 dev + playwright）：
+
+```bash
+npx wrangler pages dev _site --port 8788 --ip 127.0.0.1   # 另一个终端
+NODE_PATH=<node workspace>/node_modules node tools/_test_auth_flow.js
+```
+
+覆盖：匿名态入口 / 下载按钮引导 / 未登录拦截 / 注册 / 登录后补下载 / 右键拦截 / 已登录下载 / 退出。
+注意注册限流 5 次/小时，复跑前先重启 dev 服务。
+
+> 说明：卡片与灯箱里的图仍是公开静态文件（浏览体验所需），右键防护与登录门控挡的是「顺手保存」，
+> 无法阻止从浏览器网络面板直接取图；如需彻底保护，得把大图改走签名 URL 后端代理（会牺牲浏览体验，暂未做）。
 
 ## 主页宣传横幅
 

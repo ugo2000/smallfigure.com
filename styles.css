@@ -77,6 +77,56 @@ body {
 .lang-toggle-sm { border-radius: 9px; }
 .lang-toggle-sm .lang-btn { font-size: 11.5px; padding: 7px 10px; }
 
+/* ---------- 头部登录入口 ---------- */
+.auth-box { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.auth-user {
+  color: var(--muted); font-size: 12.5px; max-width: 120px;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.auth-btn {
+  border: 1px solid var(--accent); background: var(--accent); color: #06231e;
+  border-radius: 10px; padding: 8px 16px; font-size: 12.5px; font-weight: 600;
+  cursor: pointer; font-family: inherit; white-space: nowrap; transition: all .18s;
+}
+.auth-btn:hover { filter: brightness(1.08); }
+.auth-btn.ghost { background: var(--panel); border-color: var(--line); color: var(--muted); font-weight: 400; }
+.auth-btn.ghost:hover { color: var(--text); border-color: #3a4763; }
+
+/* ---------- 登录 / 注册弹窗 ---------- */
+.auth-modal .lb-panel { display: block; width: min(400px, 100%); }
+.auth-body { padding: 30px 28px 26px; }
+.auth-title { font-size: 19px; margin-bottom: 18px; }
+.auth-tabs {
+  display: flex; gap: 4px; background: var(--panel-2); border-radius: 10px;
+  padding: 4px; margin-bottom: 20px;
+}
+.auth-tab {
+  flex: 1; border: none; background: none; color: var(--muted);
+  font-size: 13.5px; padding: 8px 0; border-radius: 8px; cursor: pointer;
+  font-family: inherit; transition: all .18s;
+}
+.auth-tab.active { background: var(--panel); color: var(--text); font-weight: 600; }
+.auth-field { display: block; margin-bottom: 14px; }
+.auth-field span { display: block; font-size: 12.5px; color: var(--muted); margin-bottom: 6px; }
+.auth-field input {
+  width: 100%; box-sizing: border-box;
+  background: var(--bg-soft); border: 1px solid var(--line); border-radius: 9px;
+  padding: 9px 12px; color: var(--text); font-size: 14px; font-family: inherit;
+  outline: none; transition: border-color .2s;
+}
+.auth-field input:focus { border-color: var(--accent); }
+.auth-error {
+  color: #fca5a5; font-size: 12.5px; background: rgba(248, 113, 113, .08);
+  border: 1px solid rgba(248, 113, 113, .25); border-radius: 8px;
+  padding: 8px 12px; margin-bottom: 14px;
+}
+.auth-submit { width: 100%; padding: 10px 0; font-size: 14px; }
+.auth-submit:disabled { opacity: .6; cursor: not-allowed; }
+.auth-hint { color: var(--muted); font-size: 12px; margin-top: 16px; line-height: 1.6; }
+@media (max-width: 860px) {
+  .auth-user { display: none; } /* 手机端只留登录/退出按钮，邮箱太长排不下 */
+}
+
 /* ---------- 主页宣传横幅 ---------- */
 .hero {
   position: relative;

@@ -30,6 +30,7 @@
       <button class="lang-btn" type="button" data-lang="zh" aria-pressed="true">中文</button>
       <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
     </div>
+    <div class="auth-box" id="authBox"></div>
   </div>
 </header>
 
@@ -129,6 +130,33 @@
         <button class="btn ghost" id="lbNext" data-i18n="lb.next">下一张 ›</button>
       </div>
     </aside>
+  </div>
+</div>
+
+<div class="lightbox auth-modal" id="authModal" hidden>
+  <div class="lb-mask" data-close></div>
+  <div class="lb-panel auth-panel" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+    <button class="lb-close" data-close data-i18n-aria="lb.close" aria-label="关闭">×</button>
+    <div class="auth-body">
+      <h2 class="auth-title" id="authTitle" data-i18n="auth.title">登录后下载</h2>
+      <div class="auth-tabs" role="tablist">
+        <button class="auth-tab active" type="button" data-tab="login" role="tab" aria-selected="true" data-i18n="auth.tab.login">登录</button>
+        <button class="auth-tab" type="button" data-tab="register" role="tab" aria-selected="false" data-i18n="auth.tab.register">注册</button>
+      </div>
+      <form class="auth-form" id="authForm" novalidate>
+        <label class="auth-field">
+          <span data-i18n="auth.email">邮箱</span>
+          <input type="email" id="authEmail" autocomplete="email" required placeholder="you@example.com">
+        </label>
+        <label class="auth-field">
+          <span data-i18n="auth.password">密码</span>
+          <input type="password" id="authPass" autocomplete="current-password" required minlength="8" placeholder="••••••••">
+        </label>
+        <p class="auth-error" id="authError" hidden></p>
+        <button class="btn primary auth-submit" type="submit" id="authSubmit" data-i18n="auth.submit.login">登录</button>
+      </form>
+      <p class="auth-hint" data-i18n="auth.hint">下载需要注册登录；密码至少 8 位，仅用于本站账号。</p>
+    </div>
   </div>
 </div>
 

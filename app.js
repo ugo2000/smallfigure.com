@@ -387,6 +387,8 @@
     var dl = $('lbDownload');
     dl.href = assetUrl(im, 'file');
     dl.setAttribute('download', im.id + '.png');
+    /* 未登录时按钮改成引导登录的文案，点了照样弹登录框 */
+    dl.textContent = currentUser ? SF.t('lb.download') : SF.t('lb.download.login');
     $('lbMeta').innerHTML = lbMetaHtml(im);
     $('lbPos').textContent = ((lbViewIndex >= 0 ? lbViewIndex : 0) + 1) + ' / ' + view.length;
 
@@ -465,17 +467,32 @@
   }
 
   function downloadWithCount(im) {
+    /* 下载门控：未登录先弹登录/注册，登录成功后自动补下载 */
+    if (!currentUser) {
+      pendingDownload = im;
+      openAuthModal('login');
+      return;
+    }
     var posted = fetch(DL_URL + encodeURIComponent(im.id), { method: 'POST' })
       .then(function (r) { return r.json(); })
       .then(function (d) {
         if (d && d.ok && typeof d.count === 'number') {
           counts[im.id] = d.count;
           refreshCounts(); /* 万一这次下载跨过 100，徽章立刻亮 */
+          return true;
         }
+        if (d && d.error === 'no-session') {
+          /* 会话中途过期：退回未登录态，弹登录框，登录后补下载 */
+          currentUser = null;
+          renderAuthBox();
+          pendingDownload = im;
+          openAuthModal('login');
+        }
+        return false;
       })
-      .catch(function () { /* 上报失败也不堵下载 */ });
+      .catch(function () { return true; }); /* 上报失败也不堵下载 */
     var cap = new Promise(function (res) { setTimeout(res, DL_POST_TIMEOUT); });
-    Promise.race([posted, cap]).then(function () { triggerDownload(im); });
+    Promise.race([posted, cap]).then(function (ok) { if (ok !== false) triggerDownload(im); });
   }
 
   $('lbDownload').addEventListener('click', function (e) {
@@ -483,6 +500,132 @@
     if (!im) return;
     e.preventDefault();
     downloadWithCount(im);
+  });
+
+  /* ---------- 登录 / 注册 / 注销 ---------- */
+  var AUTH_ME_URL = 'api/auth/me';
+  var currentUser = null;      /* { id, email } | null */
+  var pendingDownload = null;  /* 未登录时点的下载，登录成功后补上 */
+  var authTab = 'login';
+  var authModal = $('authModal');
+
+  function renderAuthBox() {
+    var box = $('authBox');
+    if (!box) return;
+    box.innerHTML = currentUser
+      ? '<span class="auth-user" title="' + esc(currentUser.email) + '">' +
+        esc(currentUser.email.split('@')[0]) + '</span>' +
+        '<button class="auth-btn ghost" type="button" id="logoutBtn">' + SF.t('auth.logout') + '</button>'
+      : '<button class="auth-btn" type="button" id="loginBtn">' + SF.t('auth.login') + '</button>';
+    var login = $('loginBtn'), logout = $('logoutBtn');
+    if (login) login.addEventListener('click', function () { openAuthModal('login'); });
+    if (logout) logout.addEventListener('click', doLogout);
+  }
+
+  function loadMe() {
+    fetch(AUTH_ME_URL, { cache: 'no-store' })
+      .then(function (r) {
+        if (r.status === 401) return null;
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      })
+      .then(function (d) { if (d && d.ok) currentUser = d.user; })
+      .catch(function () { /* 接口不可用就当未登录，不打扰浏览 */ })
+      .then(function () { renderAuthBox(); });
+  }
+
+  function openAuthModal(tab) {
+    setAuthTab(tab || 'login');
+    var err = $('authError');
+    err.hidden = true;
+    err.textContent = '';
+    authModal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    setTimeout(function () { $('authEmail').focus(); }, 30);
+  }
+
+  function closeAuthModal() {
+    authModal.hidden = true;
+    if ($('lightbox').hidden) document.body.style.overflow = '';
+    $('authPass').value = '';
+    pendingDownload = null;
+  }
+
+  function setAuthTab(tab) {
+    authTab = tab;
+    authModal.querySelectorAll('.auth-tab').forEach(function (b) {
+      var on = b.dataset.tab === tab;
+      b.classList.toggle('active', on);
+      b.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    $('authSubmit').textContent = SF.t(tab === 'login' ? 'auth.submit.login' : 'auth.submit.register');
+    $('authPass').setAttribute('autocomplete', tab === 'login' ? 'current-password' : 'new-password');
+  }
+
+  function showAuthError(code) {
+    var err = $('authError');
+    err.textContent = SF.t('auth.err.' + code);
+    err.hidden = false;
+  }
+
+  function doLogout() {
+    fetch('api/auth/logout', { method: 'POST' })
+      .catch(function () { /* 失败也照样本地退出 */ })
+      .then(function () {
+        currentUser = null;
+        renderAuthBox();
+        if (!$('lightbox').hidden) openLightbox(lbIm); /* 灯箱开着就刷新下载按钮文案 */
+      });
+  }
+
+  /* 弹窗交互：tab 切换 / 遮罩关闭 / 表单提交 */
+  authModal.querySelectorAll('.auth-tab').forEach(function (b) {
+    b.addEventListener('click', function () { setAuthTab(b.dataset.tab); });
+  });
+  authModal.addEventListener('click', function (e) { if (e.target.hasAttribute('data-close')) closeAuthModal(); });
+
+  $('authForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var email = $('authEmail').value.trim();
+    var password = $('authPass').value;
+    var btn = $('authSubmit');
+    btn.disabled = true;
+    fetch('api/auth/' + authTab, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email, password: password })
+    })
+      .then(function (r) {
+        return r.json().then(function (d) { return { status: r.status, body: d }; })
+          .catch(function () { return { status: r.status, body: null }; });
+      })
+      .then(function (res) {
+        btn.disabled = false;
+        if (res.body && res.body.ok && res.body.user) {
+          currentUser = res.body.user;
+          renderAuthBox();
+          /* 先取待下载再关弹窗：closeAuthModal 会清 pendingDownload */
+          var pend = pendingDownload;
+          pendingDownload = null;
+          closeAuthModal();
+          if (pend) downloadWithCount(pend); /* 登录成功，补上刚才点的下载 */
+        } else {
+          showAuthError((res.body && res.body.error) || 'server-error');
+        }
+      })
+      .catch(function () { btn.disabled = false; showAuthError('network'); });
+  });
+
+  /* ---------- 防右键另存 / 拖拽保存（只挡顺手操作，浏览体验不变） ---------- */
+  document.addEventListener('contextmenu', function (e) {
+    if (e.target && e.target.closest && e.target.closest('img, .stage, .lb-stage, .fx-sheet')) {
+      e.preventDefault();
+    }
+  });
+  document.addEventListener('dragstart', function (e) {
+    if (e.target && e.target.closest && e.target.closest('img, .fx-sheet')) {
+      e.preventDefault();
+    }
   });
 
   document.addEventListener('keydown', function (e) {
@@ -505,12 +648,14 @@
       buildChips(meta);
       render();
       loadCounts(); /* 计数后到，拉到了再补徽章 */
+      loadMe();     /* 登录态：恢复会话或保持匿名 */
       initBgm();    /* 背景音乐：默认开，被浏览器拦了就等首次交互 */
-      /* 语言切换：标题 / chips / 网格 / 灯箱 / 音乐提示 全部重绘 */
+      /* 语言切换：标题 / chips / 网格 / 灯箱 / 音乐提示 / 登录入口 全部重绘 */
       SF.onChange(function () {
         document.title = SF.t('site.title');
         if (metaRef) buildChips(metaRef);
         render();
+        renderAuthBox();
         var lb = $('lightbox');
         if (lb && !lb.hidden) openLightbox(lbIm);
         bgmIcon(bgmWanted && !bgm.paused, bgmBtn.classList.contains('waiting'));
