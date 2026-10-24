@@ -105,7 +105,7 @@ const BASE = process.env.SF_URL || 'https://www.smallfigure.com';
 
   await pg.fill('#search', '');
   await pg.waitForTimeout(400);
-  check('S2 清空搜索后回到 97 张', (await cards()) === 97, String(await cards()));
+  check('S2 清空搜索后回到 100 张', (await cards()) === 100, String(await cards()));
 
   console.log('JS 错误:', errors.length ? errors.join(' | ') : '无');
   console.log(`\n结果: ${pass} PASS / ${fail} FAIL`);
