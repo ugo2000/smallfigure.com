@@ -55,14 +55,16 @@ CAT_LABELS = {
     "xenohorror": {"zh": "异星猎食", "en": "Alien Predation"},
     "badges": {"zh": "小徽章", "en": "Badges"},
     "planets": {"zh": "星球徽志", "en": "Planet Sigils"},
+    "motion": {"zh": "小人动图", "en": "Mini Animations"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
           "异星猎食 / 星球徽志）"
+          " + 小人动图（Remotion 渲染的无缝循环 WebP 小动画）"
           " + 早期《音弹》游戏美术资产 + 果克星人系列（据张祥前《果克星球奇遇》描述 AI 生成）")
 
 # 每项：源文件, id, 中文名, 英文名, 分类, 标签, 中文简介, 英文简介, 透明, 动画效果
@@ -677,6 +679,31 @@ ITEMS = [
      "desc_zh": "奇怪星球图标：两颗大小不一的星球部分融合，被一条发光脐带状光带相连，透明 PNG，1024×1024",
      "desc_en": "A weird planet icon: two spheres of different sizes partly merged, joined by a glowing umbilical band of light, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
+    # ---- 小人动图（Remotion 渲染的无缝循环 WebP 小动画；src=动图本体相对站点根，poster=动作帧海报）----
+    {"src": "motion/mining.webp", "poster": "processed/motion_poster/mining.png", "id": "motion-mining",
+     "name_zh": "小人挖矿 · 动图", "name_en": "Mining Loop · Mini Animation",
+     "cat": "motion", "motion": True,
+     "tags": ["动图", "循环", "挖矿", "镐", "火花", "小人", "动画", "透明"],
+     "tags_en": ["animation", "loop", "mining", "pickaxe", "sparks", "little figure", "animated", "transparent"],
+     "desc_zh": "无缝循环小动画：小人抢起镐头砸向矿石，撞击瞬间火花四溅、碎石飞散，512×512 透明底 WebP，2 秒一轮",
+     "desc_en": "A seamless loop: a little figure swinging a pickaxe into rock, sparks and rubble bursting on impact, 512×512 transparent WebP, 2s per cycle",
+     "transparent": True, "effect": None},
+    {"src": "motion/fishing.webp", "poster": "processed/motion_poster/fishing.png", "id": "motion-fishing",
+     "name_zh": "小人钓鱼 · 动图", "name_en": "Fishing Loop · Mini Animation",
+     "cat": "motion", "motion": True,
+     "tags": ["动图", "循环", "钓鱼", "鱼竿", "浮漂", "小人", "动画", "透明"],
+     "tags_en": ["animation", "loop", "fishing", "rod", "bobber", "little figure", "animated", "transparent"],
+     "desc_zh": "无缝循环小动画：小人水岸垂钓，浮漂轻点、鱼线绷紧，一尾小鱼抢食跳出水面，512×512 透明底 WebP，3 秒一轮",
+     "desc_en": "A seamless loop: a little figure fishing by the water, bobber dipping, line tightening, a small fish leaping for the bait, 512×512 transparent WebP, 3s per cycle",
+     "transparent": True, "effect": None},
+    {"src": "motion/shooting.webp", "poster": "processed/motion_poster/shooting.png", "id": "motion-shooting",
+     "name_zh": "小人射击 · 动图", "name_en": "Shooting Loop · Mini Animation",
+     "cat": "motion", "motion": True,
+     "tags": ["动图", "循环", "射击", "手枪", "枪口焰", "弹壳", "小人", "动画", "透明"],
+     "tags_en": ["animation", "loop", "shooting", "pistol", "muzzle flash", "shell", "little figure", "animated", "transparent"],
+     "desc_zh": "无缝循环小动画：小人抬手开枪，枪口焰一亮、弹道拖着弹痕命中木靶，弹壳抛飞、硝烟未散，512×512 透明底 WebP，2.5 秒一轮",
+     "desc_en": "A seamless loop: a little figure firing a pistol, muzzle flash, a tracer hitting the wooden target, shell ejecting, smoke lingering, 512×512 transparent WebP, 2.5s per cycle",
+     "transparent": True, "effect": None},
 ]
 
 # 原图片（AI 生成）→ originals/ 单独存放，网站不直接用这些文件
@@ -735,6 +762,51 @@ def zh_tags(tags):
     return [t for t in tags if re.search(r"[\u4e00-\u9fff]", t)]
 
 
+def process_motion_item(it):
+    """动图条目：WebP 动图本体进 assets/img/anim/，动作帧海报生成缩略图（不走静态 resize 流程）"""
+    webp_src = os.path.join(ROOT, it["src"])
+    poster_path = os.path.join(ROOT, it["poster"])
+    for p in (webp_src, poster_path):
+        if not os.path.exists(p):
+            print("  [缺失]", p)
+            sys.exit(1)
+    anim_name = os.path.basename(it["src"])
+    dst_anim = os.path.join(OUT_ANIM, anim_name)
+    shutil.copy2(webp_src, dst_anim)
+
+    poster = Image.open(poster_path).convert("RGBA")
+    sw, sh = poster.size
+    thumb = resize_max(poster.copy(), THUMB_MAX)
+    thumb_name = "motion_" + os.path.splitext(anim_name)[0] + "_t.webp"
+    thumb_path = os.path.join(OUT_THUMB, thumb_name)
+    thumb.save(thumb_path, "WEBP", quality=82, method=6)
+
+    return {
+        "id": it["id"],
+        "name": it["name_zh"],
+        "nameEn": it["name_en"],
+        "category": it["cat"],
+        "categoryLabel": CAT_LABELS[it["cat"]]["zh"],
+        "categoryLabelEn": CAT_LABELS[it["cat"]]["en"],
+        "file": "assets/img/anim/" + anim_name,
+        "thumb": "assets/img/thumbs/" + thumb_name,
+        "width": sw,
+        "height": sh,
+        "srcWidth": sw,
+        "srcHeight": sh,
+        "bytes": os.path.getsize(dst_anim),
+        "ver": file_ver(dst_anim),
+        "transparent": it["transparent"],
+        "animated": True,
+        "effect": None,
+        "color": dominant_color(poster),
+        "tags": zh_tags(it["tags"]),
+        "tagsEn": it["tags_en"],
+        "desc": it["desc_zh"],
+        "descEn": it["desc_en"],
+    }
+
+
 def main():
     for d in (OUT_FULL, OUT_THUMB, OUT_ANIM, OUT_ORIG, OUT_DATA):
         os.makedirs(d, exist_ok=True)
@@ -764,6 +836,14 @@ def main():
     print("== 处理网站图片 ==")
     images = []
     for it in ITEMS:
+        if it.get("motion"):
+            entry = process_motion_item(it)
+            images.append(entry)
+            print("  %-28s %4dx%-4d anim=%3dKB thumb=%3dKB %s [动图]" % (
+                os.path.basename(it["src"]), entry["width"], entry["height"],
+                entry["bytes"] // 1024, os.path.getsize(os.path.join(OUT_THUMB, os.path.basename(entry["thumb"]))) // 1024,
+                entry["color"]))
+            continue
         src_rel, iid = it["src"], it["id"]
         cat = it["cat"]
         tags = zh_tags(it["tags"])
