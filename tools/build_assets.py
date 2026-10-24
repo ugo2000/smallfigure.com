@@ -73,10 +73,11 @@ CAT_LABELS = {
     "crafts": {"zh": "手作纹样", "en": "Handmade Motifs"},
     "riders": {"zh": "骑兽武者", "en": "Beast Riders"},
     "bgun": {"zh": "怪异枪械", "en": "Bizarre Firearms"},
+    "modern": {"zh": "都市小民", "en": "Modern Folk"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -88,6 +89,7 @@ SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / �
           " + 手作纹样（character-art 管线暖土色手作物料系，刻意避开霓虹科技风）"
           " + 骑兽武者（character-art 管线：古人骑怪兽执奇怪兵器，古风暖调）"
           " + 怪异枪械（character-art 管线：怪奇手作风枪械，材质奇诡避开现代战术枪）"
+          " + 都市小民（character-art 管线：现代日常职业装束小人，扁平矢量风）"
           " + 早期《音弹》游戏美术资产 + 果克星人系列（据张祥前《果克星球奇遇》描述 AI 生成）")
 
 # 每项：源文件, id, 中文名, 英文名, 分类, 标签, 中文简介, 英文简介, 透明, 动画效果
@@ -1165,6 +1167,42 @@ ITEMS = [
      "tags_en": ["firearm", "abacus", "magazine", "bamboo", "beads"],
      "desc_zh": "怪异枪械：弹仓是一副串着墨玉与骨珠的木算盘，珠子被锈弹簧推着往前走，细竹管枪身用蜡线绑在框架上，下方用绳吊着一只象牙色火药角，蜜色木配翠绿珠，透明 PNG，1024×1024",
      "desc_en": "Bizarre firearm: a rifle whose magazine is a wooden abacus strung with dark jade and bone beads pushed forward by a rusted spring, a thin bamboo barrel lashed on with waxed twine, an ivory powder horn dangling below, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/mod-1.png", "id": "mod-rider", "name_zh": "外卖骑手 · 都市小民", "name_en": "Delivery Rider · Modern Folk",
+     "cat": "modern", "tags": ["现代人", "外卖", "骑手", "制服", "保温箱"],
+     "tags_en": ["modern", "delivery", "courier", "uniform", "backpack"],
+     "desc_zh": "都市小民：现代外卖骑手，亮黄蓝冲锋衣配反光马甲，白色头盔，一手持手机一手抓背包肩带，脚上是磨旧跑鞋，透明 PNG，1024×1024",
+     "desc_en": "Modern folk: a food-delivery rider in a bright yellow and blue windbreaker with reflective vest and white helmet, one hand holding a smartphone, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/mod-2.png", "id": "mod-barista", "name_zh": "咖啡师 · 都市小民", "name_en": "Coffee Barista · Modern Folk",
+     "cat": "modern", "tags": ["现代人", "咖啡师", "围裙", "手冲壶", "上班"],
+     "tags_en": ["modern", "barista", "apron", "coffee", "worker"],
+     "desc_zh": "都市小民：现代咖啡师，深绿围裙罩白衬衫卷袖，一手提不锈钢手冲壶一手端小杯，丸子头，神情专注，透明 PNG，1024×1024",
+     "desc_en": "Modern folk: a barista in a dark green apron over a white rolled-sleeve shirt, holding a steel pour-over kettle and a small cup, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/mod-3.png", "id": "mod-trainer", "name_zh": "健身教练 · 都市小民", "name_en": "Fitness Coach · Modern Folk",
+     "cat": "modern", "tags": ["现代人", "健身", "教练", "哑铃", "运动"],
+     "tags_en": ["modern", "fitness", "coach", "dumbbell", "sport"],
+     "desc_zh": "都市小民：现代健身教练，橙色运动背心配黑色紧身裤，肩上扛一只哑铃，另一手竖大拇指，短马尾，笑容爽朗，透明 PNG，1024×1024",
+     "desc_en": "Modern folk: a fitness coach in an orange tank top and black leggings, a dumbbell on her shoulder and a thumbs up, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/mod-4.png", "id": "mod-commuter", "name_zh": "通勤白领 · 都市小民", "name_en": "Office Commuter · Modern Folk",
+     "cat": "modern", "tags": ["现代人", "白领", "西装", "公文包", "通勤"],
+     "tags_en": ["modern", "commuter", "suit", "briefcase", "office"],
+     "desc_zh": "都市小民：现代通勤白领，藏青西装配白衬衫灰领带，黑色皮鞋，一手提棕色皮公文包戴着白色无线耳机，透明 PNG，1024×1024",
+     "desc_en": "Modern folk: an office commuter in a navy suit with white shirt and grey tie, holding a brown leather briefcase, white wireless earphones in, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/mod-5.png", "id": "mod-skater", "name_zh": "滑板青年 · 都市小民", "name_en": "Street Skater · Modern Folk",
+     "cat": "modern", "tags": ["现代人", "滑板", "卫衣", "街头", "潮流"],
+     "tags_en": ["modern", "skateboard", "hoodie", "street", "youth"],
+     "desc_zh": "都市小民：现代街头滑板青年，宽松淡紫卫衣配卡其工装裤，脚踩红白旧板鞋，一手拎着竖起的滑板，另一手插兜，透明 PNG，1024×1024",
+     "desc_en": "Modern folk: a street skater in an oversized lilac hoodie and khaki cargo pants, one foot on a worn red-and-white skateboard, other hand in pocket, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/mod-6.png", "id": "mod-driver", "name_zh": "夜班司机 · 都市小民", "name_en": "Night-Shift Driver · Modern Folk",
+     "cat": "modern", "tags": ["现代人", "司机", "夜班", "保温杯", "充电线"],
+     "tags_en": ["modern", "driver", "night", "thermos", "charger"],
+     "desc_zh": "都市小民：现代夜班网约车司机，墨绿飞行夹克罩灰色连帽卫衣，一手拿不锈钢保温杯一手拎充电线，有点困但友善，透明 PNG，1024×1024",
+     "desc_en": "Modern folk: a night-shift ride-hailing driver in a dark teal bomber jacket over a grey hoodie, holding a steel thermos and a phone charger cable, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 

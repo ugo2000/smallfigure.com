@@ -38,3 +38,6 @@ Thumbs.db
 *.log
 .wrangler/
 generated-images/
+
+# character-art 抠图脚本本地副本（skill 目录已有，不入库）
+tools/_cut/
