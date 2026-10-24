@@ -21,6 +21,8 @@
   var $ = function (id) { return document.getElementById(id); };
   var grid = $('grid'), empty = $('empty'), countLine = $('countLine'), pagerEl = $('pager');
   var chipsEl = $('chips'), searchEl = $('search');
+  var chipsMoreEl = $('chipsMore'), chipsMoreLabelEl = $('chipsMoreLabel');
+  var chipsExpanded = false;   // 分类是否展开：默认只显示一行，点右侧箭头展开
   var sizeEl = $('sizeFilter'), sortEl = $('sortBy');
   var metaRef = null;   // 最近一次加载的元数据（语言切换时重建用）
 
@@ -194,7 +196,52 @@
         esc(label) + '<span class="n">' + (catCounts[c.key] || 0) + '</span></button>';
     });
     chipsEl.innerHTML = html;
+    applyChipsClamp();
   }
+
+  /* 分类行折叠控制：默认只显示第一行，放不下才出现「更多」箭头；
+     展开态在语言切换重建后保持（选中项不能因收起而看不见） */
+  function applyChipsClamp() {
+    var chips = chipsEl.querySelectorAll('.chip');
+    if (chips.length < 2) {
+      chipsMoreEl.hidden = true;
+      chipsExpanded = false;
+      chipsEl.classList.remove('clamped', 'expanded');
+      chipsEl.style.maxHeight = '';
+      return;
+    }
+    var rowH = chips[0].offsetHeight;            /* 一行的高度（chips 均为单行） */
+    var need = chipsEl.scrollHeight > rowH + 2;  /* 内容超出一行才需要折叠 */
+    chipsMoreEl.hidden = !need;
+    if (!need) chipsExpanded = false;
+    if (chipsExpanded) {
+      chipsEl.classList.remove('clamped');
+      chipsEl.classList.add('expanded');
+      chipsEl.style.maxHeight = '';
+    } else if (need) {
+      chipsEl.classList.add('clamped');
+      chipsEl.classList.remove('expanded');
+      chipsEl.style.maxHeight = rowH + 'px';
+    } else {
+      chipsEl.classList.remove('clamped', 'expanded');
+      chipsEl.style.maxHeight = '';
+    }
+    chipsMoreEl.classList.toggle('open', chipsExpanded);
+    chipsMoreEl.setAttribute('aria-expanded', chipsExpanded ? 'true' : 'false');
+    chipsMoreLabelEl.textContent = SF.t(chipsExpanded ? 'chips.less' : 'chips.more');
+  }
+
+  chipsMoreEl.addEventListener('click', function () {
+    chipsExpanded = !chipsExpanded;
+    applyChipsClamp();
+  });
+
+  /* 窗口尺寸变化后重新判断一行放不放得下 */
+  var chipsRzTimer = null;
+  window.addEventListener('resize', function () {
+    clearTimeout(chipsRzTimer);
+    chipsRzTimer = setTimeout(applyChipsClamp, 150);
+  });
 
   /* chips 点击委托：只绑一次，语言切换重建 HTML 不会重复绑 */
   chipsEl.addEventListener('click', function (e) {

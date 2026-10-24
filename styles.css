@@ -189,6 +189,20 @@ body {
 .chip.active { background: var(--accent); border-color: var(--accent); color: #06231e; font-weight: 600; }
 .chip .n { opacity: .65; font-size: 11px; margin-left: 3px; }
 
+/* 分类默认只显示一行，超出部分收起来，点右侧「更多」箭头展开 */
+.chips.clamped { overflow: hidden; }
+.chips.expanded { max-height: 40vh; overflow-y: auto; overscroll-behavior: contain; }
+.chips-more {
+  display: inline-flex; align-items: center; gap: 5px; flex: none; align-self: center;
+  border: 1px solid var(--line); background: var(--panel); color: var(--muted);
+  border-radius: 999px; padding: 5px 13px; font-size: 13px; cursor: pointer;
+  font-family: inherit; transition: all .18s; white-space: nowrap;
+}
+.chips-more:hover { color: var(--text); border-color: #33405a; }
+.chips-more[hidden] { display: none; }
+.chips-more .arrow { font-style: normal; font-size: 11px; line-height: 1; transition: transform .2s; }
+.chips-more.open .arrow { transform: rotate(180deg); }
+
 .filters { display: flex; gap: 10px; }
 .sel { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 12.5px; }
 .sel select {
