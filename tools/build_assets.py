@@ -70,10 +70,11 @@ CAT_LABELS = {
     "energyblocks": {"zh": "变身能量块", "en": "Morphing Energy Blocks"},
     "morphmonsters": {"zh": "变形怪兽", "en": "Morph Monsters"},
     "telescopes": {"zh": "古怪望远镜", "en": "Odd Telescopes"},
+    "crafts": {"zh": "手作纹样", "en": "Handmade Motifs"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -82,6 +83,7 @@ SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / �
           " + 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头（角色与器物两路 character-art 管线产出）"
           " + 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜"
           "（character-art 管线九分类批量产出）"
+          " + 手作纹样（character-art 管线暖土色手作物料系，刻意避开霓虹科技风）"
           " + 早期《音弹》游戏美术资产 + 果克星人系列（据张祥前《果克星球奇遇》描述 AI 生成）")
 
 # 每项：源文件, id, 中文名, 英文名, 分类, 标签, 中文简介, 英文简介, 透明, 动画效果
@@ -1048,6 +1050,43 @@ ITEMS = [
      "tags_en": ["telescope", "folding", "portable", "brass", "strap"],
      "desc_zh": "古怪望远镜：黄铜折叠单筒镜，筒身收成风箱般的褶皱，琥珀色物镜，黑皮背带随意搭在镜身上，透明 PNG，1024×1024",
      "desc_en": "Odd telescope: a brass folding spyglass collapsed into bellows-like segments, an amber objective lens, a black leather strap draped over the body, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+
+    {"src": "processed/pat-1.png", "id": "pat-brooch", "name_zh": "手绣花布胸针 · 手作纹样", "name_en": "Embroidered Floral Brooch · Handmade Motif",
+     "cat": "crafts", "tags": ["刺绣", "胸针", "布艺", "拼布", "花纹"],
+     "tags_en": ["embroidery", "brooch", "textile", "patchwork", "floral"],
+     "desc_zh": "手作纹样：多层布片叠绣成的花朵胸针，赭红与姜黄绣线走针清晰，麻布底衬，顶端一个小铜环，透明 PNG，1024×1024",
+     "desc_en": "Handmade motif: a floral brooch stitched from layered fabric petals, terracotta and mustard thread over linen backing, a small brass loop on top, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/pat-2.png", "id": "pat-porcelain", "name_zh": "青花瓷残片 · 手作纹样", "name_en": "Blue-and-White Porcelain Shard · Handmade Motif",
+     "cat": "crafts", "tags": ["瓷器", "青花", "残片", "釉面", "草纹"],
+     "tags_en": ["porcelain", "cobalt", "shard", "glaze", "scroll"],
+     "desc_zh": "手作纹样：一块青花白瓷残片，釉面绘靛蓝缠枝花，边缘崩口并带细密开片纹，透明 PNG，1024×1024",
+     "desc_en": "Handmade motif: a broken blue-and-white porcelain shard painted with a cobalt floral scroll, chipped edges and fine crackle, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/pat-3.png", "id": "pat-macrame", "name_zh": "波西米亚编绳挂饰 · 手作纹样", "name_en": "Macrame Wall Hanging · Handmade Motif",
+     "cat": "crafts", "tags": ["编绳", "挂饰", "流苏", "棉麻", "手工"],
+     "tags_en": ["macrame", "wall hanging", "tassel", "cotton", "handmade"],
+     "desc_zh": "手作纹样：手工编织的棉绳挂带，燕麦色与铁锈橙两色打结编织，底部流苏垂落，绳股纹理清晰，透明 PNG，1024×1024",
+     "desc_en": "Handmade motif: a hand-woven macrame hanging band in oatmeal and rust orange, knotted cord with braided fringe tassels, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/pat-4.png", "id": "pat-block", "name_zh": "木刻印花木版 · 手作纹样", "name_en": "Woodcut Printing Block · Handmade Motif",
+     "cat": "crafts", "tags": ["木版", "雕刻", "印花", "橡木", "版画"],
+     "tags_en": ["woodblock", "carving", "printmaking", "oak", "relief"],
+     "desc_zh": "手作纹样：一块手工雕刻的橡木印花版，版面为叶果浮雕，刻痕与木纹清晰，凹槽染着深胡桃色油墨，透明 PNG，1024×1024",
+     "desc_en": "Handmade motif: a hand-carved oak printing block with a leaf-and-berry relief face, visible chisel marks and wood grain, dark walnut ink in the grooves, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/pat-5.png", "id": "pat-stained", "name_zh": "彩色玻璃拼片 · 手作纹样", "name_en": "Stained-Glass Mosaic Piece · Handmade Motif",
+     "cat": "crafts", "tags": ["琉璃", "玻璃", "镶嵌", "铅条", "装饰"],
+     "tags_en": ["stained glass", "mosaic", "leaded", "amber", "ornament"],
+     "desc_zh": "手作纹样：一片铅条拼接的彩色玻璃饰品，琥珀、橄榄绿与暖棕拼成抽象叶形，铅条接缝清晰，透明 PNG，1024×1024",
+     "desc_en": "Handmade motif: a leaded stained-glass ornament, amber, olive and warm brown segments forming an abstract leaf, dark solder lines visible, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/pat-6.png", "id": "pat-batik", "name_zh": "靛蓝蜡染方巾 · 手作纹样", "name_en": "Indigo Batik Cloth · Handmade Motif",
+     "cat": "crafts", "tags": ["蜡染", "扎染", "棉布", "靛蓝", "方巾"],
+     "tags_en": ["batik", "tie-dye", "cotton", "indigo", "cloth"],
+     "desc_zh": "手作纹样：一方折叠的靛蓝蜡染棉布，扎染形成不规则防染白斑，边缘带流苏，织物纹理与褶皱自然，透明 PNG，1024×1024",
+     "desc_en": "Handmade motif: a folded indigo batik cloth with organic tie-dye resist blotches, fringed edges, visible weave and soft folds, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 

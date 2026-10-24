@@ -8,7 +8,7 @@
   var DL_THRESHOLD = 100;              // 下载满 100 次才开始亮出计数
   var DL_POST_TIMEOUT = 2000;          // 上报最多等 2 秒，不堵下载
   var SHEET_MS = 3000; /* 精灵图循环周期，跟游戏 3 秒入场对齐 */
-  var state = { q: '', cat: 'all', size: 'all', sort: 'default', page: 0 };
+  var state = { q: '', cat: 'all', size: 'all', sort: 'newest', page: 0 };
   var PAGE_SIZE = 100;   // 每页最多显示 100 张，超出则翻页
   var all = [];       // 全量
   var view = [];      // 当前筛选结果
@@ -226,7 +226,16 @@
       }
       return true;
     });
-    if (state.sort === 'size-desc') {
+    if (state.sort === 'newest') {
+      /* 最新入库的排在最前面；added 缺失的沉到末尾 */
+      view.sort(function (a, b) {
+        var ta = a.added || '', tb = b.added || '';
+        if (ta === tb) return String(a.id).localeCompare(String(b.id));
+        if (!ta) return 1;
+        if (!tb) return -1;
+        return ta < tb ? 1 : -1;
+      });
+    } else if (state.sort === 'size-desc') {
       view.sort(function (a, b) { return b.width * b.height - a.width * a.height; });
     } else if (state.sort === 'bytes-desc') {
       view.sort(function (a, b) { return b.bytes - a.bytes; });
@@ -428,8 +437,8 @@
     if (g) g.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
   $('resetBtn').addEventListener('click', function () {
-    state = { q: '', cat: 'all', size: 'all', sort: 'default', page: 0 };
-    searchEl.value = ''; sizeEl.value = 'all'; sortEl.value = 'default';
+    state = { q: '', cat: 'all', size: 'all', sort: 'newest', page: 0 };
+    searchEl.value = ''; sizeEl.value = 'all'; sortEl.value = 'newest';
     chipsEl.querySelectorAll('.chip').forEach(function (c, i) {
       c.classList.toggle('active', i === 0);
       c.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
