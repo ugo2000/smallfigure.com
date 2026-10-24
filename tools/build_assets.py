@@ -89,10 +89,11 @@ CAT_LABELS = {
     "fusionfolk": {"zh": "古今混搭小人", "en": "Fusion Folk"},
     "blades": {"zh": "异形兵刃", "en": "Odd Blades"},
     "giantfolk": {"zh": "怪异巨人", "en": "Bizarre Giants"},
+    "skulls": {"zh": "怪异骷髅", "en": "Bizarre Skulls"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -1775,6 +1776,42 @@ ITEMS = [
      "tags_en": ["giant", "bizarre", "star banner", "thin fingers", "violet eyes", "glaive"],
      "desc_zh": "怪异巨人：背上一面破烂星纹旗、手指细长如星轨的瘦高巨人，穿打满补丁的流浪者长袍和宽檐帽，双眼深紫，握一柄巨刃长戟，怪诞童话风描边，透明 PNG，1024×1024",
      "desc_en": "Bizarre giant: a towering lanky shepherd with a tattered star-patterned banner on his back and long thin star-trail fingers, mended wanderer's robe and wide-brimmed hat, deep violet eyes, gripping a huge glaive polearm, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/skulls-1.png", "id": "skulls-gearwork", "name_zh": "齿轮骷髅 · 怪异骷髅", "name_en": "Gearwork Skull · Bizarre Skulls",
+     "cat": "skulls", "tags": ["骷髅", "怪诞", "齿轮", "黄铜", "表盘", "机械"],
+     "tags_en": ["skull", "bizarre", "gears", "brass", "gauge", "clockwork"],
+     "desc_zh": "怪异骷髅：黄铜齿轮与金属板拼成的骷髅，下颚是一枚大齿轮，一只眼是圆形表盘、另一只是琥珀色透镜，接缝处缀满螺丝弹簧，怪诞童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Bizarre skull: a skull assembled from polished brass clockwork gears and metal plates, lower jaw a large turning cogwheel, one eye socket a round gauge dial and the other a glowing amber lens, tiny screws and springs along the seams, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/skulls-2.png", "id": "skulls-crystal", "name_zh": "晶髓骷髅 · 怪异骷髅", "name_en": "Crystal Skull · Bizarre Skulls",
+     "cat": "skulls", "tags": ["骷髅", "怪诞", "水晶", "半透明", "紫晶", "发光"],
+     "tags_en": ["skull", "bizarre", "crystal", "translucent", "violet gem", "glowing"],
+     "desc_zh": "怪异骷髅：半透明多面水晶雕成的骷髅，柔光从颅芯透出，双眼是两颗紫水晶宝石，光线在切面上折射，怪诞童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Bizarre skull: a skull carved from translucent faceted crystal, a soft inner glow shining through the cranium, two gleaming violet gemstone eyes, light refracting across the facets, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/skulls-3.png", "id": "skulls-gourd", "name_zh": "南瓜灯骷髅 · 怪异骷髅", "name_en": "Gourd Skull · Bizarre Skulls",
+     "cat": "skulls", "tags": ["骷髅", "怪诞", "南瓜灯", "刻纹", "藤蔓", "秋色"],
+     "tags_en": ["skull", "bizarre", "gourd", "jack-o-lantern", "vines", "autumn"],
+     "desc_zh": "怪异骷髅：刻成南瓜灯笑脸的瓜形骷髅，顶部冒出卷曲的绿藤蔓与带叶瓜蒂，秋意暖调，怪诞童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Bizarre skull: a skull shaped like a carved gourd with a jack-o-lantern grin, curling green vine tendrils and a leafy stem sprouting from the top, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/skulls-4.png", "id": "skulls-coral", "name_zh": "珊瑚骷髅 · 怪异骷髅", "name_en": "Coral Skull · Bizarre Skulls",
+     "cat": "skulls", "tags": ["骷髅", "怪诞", "珊瑚", "贝壳", "藤壶", "海草"],
+     "tags_en": ["skull", "bizarre", "coral", "seashells", "barnacles", "seaweed"],
+     "desc_zh": "怪异骷髅：镶满粉橙珊瑚枝、贝壳、藤壶并垂落海草的骷髅，两只小蟹趴在眼窝里，礁石暖调，怪诞童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Bizarre skull: a skull encrusted with pink and orange coral branches, seashells, barnacles and trailing seaweed, two tiny crabs perched in the eye sockets, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/skulls-5.png", "id": "skulls-ember", "name_zh": "熔岩骷髅 · 怪异骷髅", "name_en": "Ember Skull · Bizarre Skulls",
+     "cat": "skulls", "tags": ["骷髅", "怪诞", "火山岩", "熔岩", "裂纹", "火眼"],
+     "tags_en": ["skull", "bizarre", "volcanic rock", "lava", "cracks", "ember eyes"],
+     "desc_zh": "怪异骷髅：粗糙火山岩颅骨，熔岩橙裂纹蛛网般爬满颅芯，双眼是两团炽热余烬，岩浆暖调，怪诞童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Bizarre skull: a skull of rough volcanic rock with glowing molten-orange lava cracks spidering across the cranium, two burning ember eyes glowing hot, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/skulls-6.png", "id": "skulls-bloom", "name_zh": "菌花骷髅 · 怪异骷髅", "name_en": "Bloom Skull · Bizarre Skulls",
+     "cat": "skulls", "tags": ["骷髅", "怪诞", "蘑菇", "菌丝", "野花", "露珠"],
+     "tags_en": ["skull", "bizarre", "mushrooms", "mycelium", "blossoms", "dew"],
+     "desc_zh": "怪异骷髅：长满斑点蘑菇、小野花的骷髅，苍白菌丝从颅顶扇形铺开，菌盖挂着露珠，林间调，怪诞童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Bizarre skull: a skull overgrown with speckled mushrooms, tiny blossoms and pale mycelium threads fanning out from the crown, dewdrops on the caps, whimsical storybook outline, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 
