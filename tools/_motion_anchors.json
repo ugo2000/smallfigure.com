@@ -1,0 +1,194 @@
+{
+ "motion_char_miner": {
+  "file": "motion_char_miner_t.png",
+  "size": [
+   1024,
+   1024
+  ],
+  "opaque_%": 22.18,
+  "semi_%": 0.08,
+  "cream_residue_%of_opaque": 1.932,
+  "subject_bbox_rel": [
+   0.238,
+   0.116,
+   0.761,
+   0.888
+  ],
+  "subject_px": 232567,
+  "corner_junk": {
+   "TL": 0,
+   "TR": 0,
+   "BL": 0,
+   "BR": 0
+  },
+  "anchors": {
+   "hand": [
+    0.5017,
+    0.1335
+   ],
+   "head_top": [
+    0.5,
+    0.1162
+   ]
+  }
+ },
+ "motion_char_fisher": {
+  "file": "motion_char_fisher_t.png",
+  "size": [
+   1024,
+   1024
+  ],
+  "opaque_%": 19.58,
+  "semi_%": 0.13,
+  "cream_residue_%of_opaque": 4.192,
+  "subject_bbox_rel": [
+   0.248,
+   0.06,
+   0.805,
+   0.937
+  ],
+  "subject_px": 205361,
+  "corner_junk": {
+   "TL": 0,
+   "TR": 0,
+   "BL": 0,
+   "BR": 0
+  },
+  "anchors": {
+   "hand": [
+    0.8011,
+    0.3982
+   ],
+   "front_x": 0.8047
+  }
+ },
+ "motion_char_shooter": {
+  "file": "motion_char_shooter_t.png",
+  "size": [
+   1024,
+   1024
+  ],
+  "opaque_%": 22.14,
+  "semi_%": 0.06,
+  "cream_residue_%of_opaque": 1.091,
+  "subject_bbox_rel": [
+   0.137,
+   0.052,
+   0.726,
+   0.954
+  ],
+  "subject_px": 232163,
+  "corner_junk": {
+   "TL": 0,
+   "TR": 0,
+   "BL": 0,
+   "BR": 0
+  },
+  "anchors": {
+   "hand": [
+    0.7216,
+    0.4293
+   ],
+   "front_x": 0.7256
+  }
+ },
+ "motion_prop_pickaxe": {
+  "file": "motion_prop_pickaxe_t.png",
+  "size": [
+   1024,
+   1024
+  ],
+  "opaque_%": 9.62,
+  "semi_%": 0.04,
+  "cream_residue_%of_opaque": 3.824,
+  "subject_bbox_rel": [
+   0.199,
+   0.038,
+   0.761,
+   0.961
+  ],
+  "subject_px": 100914,
+  "corner_junk": {
+   "TL": 0,
+   "TR": 0,
+   "BL": 0,
+   "BR": 0
+  },
+  "anchors": {
+   "grip": [
+    0.4805,
+    0.9609
+   ],
+   "head": [
+    0.4805,
+    0.0381
+   ]
+  }
+ },
+ "motion_prop_rod": {
+  "file": "motion_prop_rod_t.png",
+  "size": [
+   1024,
+   1024
+  ],
+  "opaque_%": 2.43,
+  "semi_%": 0.03,
+  "cream_residue_%of_opaque": 3.808,
+  "subject_bbox_rel": [
+   0.043,
+   0.118,
+   0.961,
+   0.872
+  ],
+  "subject_px": 25500,
+  "corner_junk": {
+   "TL": 0,
+   "TR": 0,
+   "BL": 0,
+   "BR": 0
+  },
+  "anchors": {
+   "grip": [
+    0.0481,
+    0.8562
+   ],
+   "tip": [
+    0.8438,
+    0.1719
+   ]
+  }
+ },
+ "motion_prop_pistol": {
+  "file": "motion_prop_pistol_t.png",
+  "size": [
+   1024,
+   1024
+  ],
+  "opaque_%": 23.28,
+  "semi_%": 0.03,
+  "cream_residue_%of_opaque": 0.218,
+  "subject_bbox_rel": [
+   0.082,
+   0.132,
+   0.924,
+   0.803
+  ],
+  "subject_px": 244079,
+  "corner_junk": {
+   "TL": 0,
+   "TR": 0,
+   "BL": 0,
+   "BR": 0
+  },
+  "anchors": {
+   "grip": [
+    0.0919,
+    0.7142
+   ],
+   "muzzle": [
+    0.9238,
+    0.3347
+   ]
+  }
+ }
+}

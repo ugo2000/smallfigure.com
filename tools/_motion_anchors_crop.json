@@ -1,0 +1,104 @@
+{
+ "motion_char_miner": {
+  "crop_size": [
+   578,
+   853
+  ],
+  "aspect": 0.6776,
+  "anchors_crop": {
+   "hand": [
+    0.503,
+    0.0571
+   ],
+   "head_top": [
+    0.5,
+    0.0363
+   ]
+  },
+  "kb": 690
+ },
+ "motion_char_fisher": {
+  "crop_size": [
+   615,
+   969
+  ],
+  "aspect": 0.6347,
+  "anchors_crop": {
+   "hand": [
+    0.9566,
+    0.394
+   ],
+   "front_x": 0.9626
+  },
+  "kb": 746
+ },
+ "motion_char_shooter": {
+  "crop_size": [
+   652,
+   999
+  ],
+  "aspect": 0.6527,
+  "anchors_crop": {
+   "hand": [
+    0.9554,
+    0.424
+   ],
+   "front_x": 0.9617
+  },
+  "kb": 854
+ },
+ "motion_prop_pickaxe": {
+  "crop_size": [
+   622,
+   1020
+  ],
+  "aspect": 0.6098,
+  "anchors_crop": {
+   "grip": [
+    0.5001,
+    0.9627
+   ],
+   "head": [
+    0.5001,
+    0.0363
+   ]
+  },
+  "kb": 720
+ },
+ "motion_prop_rod": {
+  "crop_size": [
+   1015,
+   833
+  ],
+  "aspect": 1.2185,
+  "anchors_crop": {
+   "grip": [
+    0.0416,
+    0.9433
+   ],
+   "tip": [
+    0.8444,
+    0.1021
+   ]
+  },
+  "kb": 833
+ },
+ "motion_prop_pistol": {
+  "crop_size": [
+   931,
+   742
+  ],
+  "aspect": 1.2547,
+  "anchors_crop": {
+   "grip": [
+    0.0474,
+    0.8401
+   ],
+   "muzzle": [
+    0.9624,
+    0.3164
+   ]
+  },
+  "kb": 801
+ }
+}
