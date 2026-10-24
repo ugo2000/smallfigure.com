@@ -71,10 +71,11 @@ CAT_LABELS = {
     "morphmonsters": {"zh": "变形怪兽", "en": "Morph Monsters"},
     "telescopes": {"zh": "古怪望远镜", "en": "Odd Telescopes"},
     "crafts": {"zh": "手作纹样", "en": "Handmade Motifs"},
+    "riders": {"zh": "骑兽武者", "en": "Beast Riders"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -84,6 +85,7 @@ SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / �
           " + 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜"
           "（character-art 管线九分类批量产出）"
           " + 手作纹样（character-art 管线暖土色手作物料系，刻意避开霓虹科技风）"
+          " + 骑兽武者（character-art 管线：古人骑怪兽执奇怪兵器，古风暖调）"
           " + 早期《音弹》游戏美术资产 + 果克星人系列（据张祥前《果克星球奇遇》描述 AI 生成）")
 
 # 每项：源文件, id, 中文名, 英文名, 分类, 标签, 中文简介, 英文简介, 透明, 动画效果
@@ -1087,6 +1089,43 @@ ITEMS = [
      "tags_en": ["batik", "tie-dye", "cotton", "indigo", "cloth"],
      "desc_zh": "手作纹样：一方折叠的靛蓝蜡染棉布，扎染形成不规则防染白斑，边缘带流苏，织物纹理与褶皱自然，透明 PNG，1024×1024",
      "desc_en": "Handmade motif: a folded indigo batik cloth with organic tie-dye resist blotches, fringed edges, visible weave and soft folds, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+
+    {"src": "processed/rider-1.png", "id": "rider-centipede", "name_zh": "青铜面具武士 · 骑六足蜈蚣", "name_en": "Bronze-Mask Warrior · Riding the Six-Legged Centipede",
+     "cat": "riders", "tags": ["骑兽", "武士", "青铜面具", "蜈蚣", "铁渔叉"],
+     "tags_en": ["beast rider", "warrior", "bronze mask", "centipede", "fishing spear"],
+     "desc_zh": "骑兽武者：戴青铜半面具、披鳞甲的古代武士，骑在六足甲壳蜈蚣兽上，一手缰绳一手竖持弯曲铁渔叉，透明 PNG，1024×1024",
+     "desc_en": "Beast rider: an ancient warrior in a bronze half-mask and scale armor astride a six-legged armored centipede, holding reins and a long curved iron fishing spear, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/rider-2.png", "id": "rider-tiger", "name_zh": "绿袍乐师 · 骑白额虎", "name_en": "Green-Robe Musician · Riding the White Tiger",
+     "cat": "riders", "tags": ["骑兽", "乐师", "白虎", "铜磬", "唐代"],
+     "tags_en": ["beast rider", "musician", "white tiger", "bronze chimes", "Tang dynasty"],
+     "desc_zh": "骑兽武者：戴高冠、穿宽袖绿袍的唐代宫廷乐师，骑在斑纹白虎上，双手各擎一枚铜磬，另执铜锤，透明 PNG，1024×1024",
+     "desc_en": "Beast rider: a Tang-dynasty court musician in a tall scholar cap and green silk robe astride a striped white tiger, holding up a bronze chime in each hand with a mallet, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/rider-3.png", "id": "rider-crane", "name_zh": "白须道士 · 骑单足鹤", "name_en": "Grey-Beard Taoist · Riding the One-Legged Crane",
+     "cat": "riders", "tags": ["骑兽", "道士", "仙鹤", "罗盘", "拂尘"],
+     "tags_en": ["beast rider", "taoist", "crane", "compass", "horsehair whisk"],
+     "desc_zh": "骑兽武者：白须宽袖的宋代道士，骑在单足白鹤上，左手托铜罗盘，右手执白拂尘，神情沉静，透明 PNG，1024×1024",
+     "desc_en": "Beast rider: a grey-bearded Song-dynasty Taoist with wide sleeves astride a one-legged white crane, holding a brass compass and a white horsehair whisk, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/rider-4.png", "id": "rider-serpent", "name_zh": "骨珠巫女 · 骑双头蛇", "name_en": "Bone-Bead Shamaness · Riding the Two-Headed Serpent",
+     "cat": "riders", "tags": ["骑兽", "巫女", "双头蛇", "骨笛", "羽披肩"],
+     "tags_en": ["beast rider", "shamaness", "two-headed serpent", "bone flute", "feather cape"],
+     "desc_zh": "骑兽武者：发辫缀骨珠、披羽毛肩披的古代巫女，盘坐于昂首的双头绿蛇之上，双手持兽骨笛吹奏，透明 PNG，1024×1024",
+     "desc_en": "Beast rider: an ancient shamaness with bone beads in her braids and a feathered shoulder cape, coiled upon a rearing two-headed green serpent, playing a carved animal bone flute, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/rider-5.png", "id": "rider-rhino", "name_zh": "红甲校尉 · 骑铁甲犀", "name_en": "Red-Armored Guard · Riding the Armored Rhinoceros",
+     "cat": "riders", "tags": ["骑兽", "校尉", "犀牛", "钉头锤", "铁尺"],
+     "tags_en": ["beast rider", "imperial guard", "rhinoceros", "spiked mace", "iron rule"],
+     "desc_zh": "骑兽武者：戴带翅乌纱盔、披朱漆鳞甲的明代校尉，端坐于厚甲犀牛之上，一手钉头锤一手铁尺，姿态端严，透明 PNG，1024×1024",
+     "desc_en": "Beast rider: a Ming-dynasty guard in a winged black helmet and vermilion lacquered scale armor, seated on an armored rhinoceros, holding a spiked iron mace and a flat iron measuring rule, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/rider-6.png", "id": "rider-wolf", "name_zh": "狐裘萨满 · 骑巨狼", "name_en": "Fox-Fur Shaman · Riding the Giant Wolf",
+     "cat": "riders", "tags": ["骑兽", "萨满", "巨狼", "铜镜", "陶汤勺"],
+     "tags_en": ["beast rider", "shaman", "wolf", "bronze mirror", "clay ladle"],
+     "desc_zh": "骑兽武者：披毛皮、戴狐首冠的草原萨满，骑在鬃毛蓬起的巨狼上，左手举起斑驳铜镜，右手执陶汤勺，透明 PNG，1024×1024",
+     "desc_en": "Beast rider: a steppe shaman in a fur-trimmed coat and fox-head headdress astride a shaggy grey wolf, holding up a battered bronze mirror and a clay soup ladle, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 
