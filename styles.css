@@ -305,6 +305,17 @@ body {
 .site-footer a:hover { text-decoration: underline; }
 .site-footer code { background: var(--panel-2); border-radius: 5px; padding: 1px 6px; font-size: 12px; color: var(--accent); }
 
+/* ---------- 页脚：合作与支持 ---------- */
+.footer-coop { margin-bottom: 16px; }
+.site-footer .footer-coop-title { color: var(--text); font-size: 13px; font-weight: 600; letter-spacing: .04em; margin-bottom: 10px; }
+.footer-coop-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+.footer-coop-tags span {
+  border: 1px solid var(--line); background: var(--panel); color: var(--muted);
+  border-radius: 999px; padding: 4px 13px; font-size: 12px; white-space: nowrap;
+}
+.site-footer .footer-coop-mail { color: var(--text); font-size: 13px; margin-bottom: 0; }
+.site-footer .footer-coop-mail a { color: var(--accent); font-weight: 600; }
+
 /* ---------- 响应式 ---------- */
 @media (max-width: 860px) {
   .lb-panel { grid-template-columns: 1fr; max-height: calc(100vh - 32px); overflow-y: auto; }
