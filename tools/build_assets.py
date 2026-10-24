@@ -88,10 +88,11 @@ CAT_LABELS = {
     "retrofolk": {"zh": "复古人物", "en": "Retro Folk"},
     "fusionfolk": {"zh": "古今混搭小人", "en": "Fusion Folk"},
     "blades": {"zh": "异形兵刃", "en": "Odd Blades"},
+    "giantfolk": {"zh": "怪异巨人", "en": "Bizarre Giants"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -1738,6 +1739,42 @@ ITEMS = [
      "tags_en": ["blade", "twin axe", "saw teeth", "halberd", "odd"],
      "desc_zh": "异形兵刃：一杆红绳缠柄的长戟，顶端两侧各一把斧刃，一侧斧背带锯齿，柄尾伸出尖刺，怪诞童话风描边，透明 PNG，1024×1024",
      "desc_en": "Odd blades: a red-cord-wrapped halberd with an axe blade on each side, saw teeth backing one blade, and a long spike jutting from the butt, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/giantfolk-1.png", "id": "giantfolk-twisthorn", "name_zh": "弯角杂货巨人 · 怪异巨人", "name_en": "Twist-Horn Grocer Giant · Bizarre Giants",
+     "cat": "giantfolk", "tags": ["巨人", "怪诞", "弯角", "围裙", "琥珀眼", "肉钩"],
+     "tags_en": ["giant", "bizarre", "bull horns", "apron", "amber eyes", "meat hook"],
+     "desc_zh": "怪异巨人：头顶一对弯曲牛角、肚皮鼓胀的巨型杂货商，穿油渍粗布围裙和条纹长衫，双眼琥珀金，提一柄巨大的锈肉钩，怪诞童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Bizarre giant: a towering grotesque grocer with curved bull horns and a bulging belly, oil-stained apron over a striped shirt, amber-gold eyes, hefting an enormous rusted butcher's meat hook, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/giantfolk-2.png", "id": "giantfolk-foglamp", "name_zh": "雾灯水手巨人 · 怪异巨人", "name_en": "Fog-Lamp Sailor Giant · Bizarre Giants",
+     "cat": "giantfolk", "tags": ["巨人", "怪诞", "雾灯", "冰凌", "冰蓝眼", "流星锤"],
+     "tags_en": ["giant", "bizarre", "fog lamp", "icicles", "ice-blue eyes", "flail"],
+     "desc_zh": "怪异巨人：头颅是一盏起雾船用雾灯的水手巨人，披油布斗篷、衣缘挂冰凌、脚蹬高筒雨靴，双眼冰蓝，挥舞一柄系长链的提灯流星锤，怪诞童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Bizarre giant: a towering sailor whose head is a mist-spewing ship's fog lamp, icicles along his oilcloth cloak hem, tall rubber boots, ice-blue eyes, swinging a heavy lantern flail on a long chain, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/giantfolk-3.png", "id": "giantfolk-brasscrown", "name_zh": "黄铜脑壳巨人 · 怪异巨人", "name_en": "Brass-Crown Giant · Bizarre Giants",
+     "cat": "giantfolk", "tags": ["巨人", "怪诞", "齿轮脑", "开瓢", "黄铜眼", "扳手"],
+     "tags_en": ["giant", "bizarre", "gear brain", "open skull", "brass eyes", "wrench"],
+     "desc_zh": "怪异巨人：天灵盖敞开、露出里面转动黄铜齿轮的机械脑巨人，穿帆布背带裤和皮工作围裙，双眼黄铜色，双手握一柄超大铁扳手，怪诞童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Bizarre giant: a towering oddity with the crown of his skull open to reveal turning brass gears, canvas overalls and a leather work apron, brass-yellow eyes, wielding an oversized iron wrench, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/giantfolk-4.png", "id": "giantfolk-mossfoot", "name_zh": "苔脚园丁巨人 · 怪异巨人", "name_en": "Moss-Foot Gardener Giant · Bizarre Giants",
+     "cat": "giantfolk", "tags": ["巨人", "怪诞", "树根腿", "树皮肤", "苔绿眼", "巨锄"],
+     "tags_en": ["giant", "bizarre", "root legs", "bark skin", "moss-green eyes", "hoe"],
+     "desc_zh": "怪异巨人：双腿扭成盘绕树根、皮肤像老树皮的园丁巨人，披草编斗篷、内着补丁园艺背带裤，双眼苔藓绿，肩扛一柄巨大锄头，怪诞童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Bizarre giant: a towering gardener with legs twisting into gnarled tree roots and bark-like skin, woven grass cloak over patched overalls, moss-green eyes, carrying a huge garden hoe over his shoulder, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/giantfolk-5.png", "id": "giantfolk-chimneycook", "name_zh": "烟囱厨巨人 · 怪异巨人", "name_en": "Chimney-Cook Giant · Bizarre Giants",
+     "cat": "giantfolk", "tags": ["巨人", "怪诞", "烟囱头", "冒烟", "炭火橙眼", "长柄勺"],
+     "tags_en": ["giant", "bizarre", "chimney head", "smoke", "ember-orange eyes", "ladle"],
+     "desc_zh": "怪异巨人：头顶一截砖砌小烟囱、往外冒灰烟的主厨巨人，系油腻围裙、戴高帽，双眼炭火橙，抡一柄巨型长柄烹饪勺，怪诞童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Bizarre giant: a towering cook with a small brick chimney on his head puffing grey smoke, greasy chef apron and tall hat, ember-orange eyes, brandishing an enormous long-handled ladle, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/giantfolk-6.png", "id": "giantfolk-starvex", "name_zh": "星帜牧者巨人 · 怪异巨人", "name_en": "Star-Vex Shepherd Giant · Bizarre Giants",
+     "cat": "giantfolk", "tags": ["巨人", "怪诞", "星纹旗", "细长指", "深紫眼", "长戟"],
+     "tags_en": ["giant", "bizarre", "star banner", "thin fingers", "violet eyes", "glaive"],
+     "desc_zh": "怪异巨人：背上一面破烂星纹旗、手指细长如星轨的瘦高巨人，穿打满补丁的流浪者长袍和宽檐帽，双眼深紫，握一柄巨刃长戟，怪诞童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Bizarre giant: a towering lanky shepherd with a tattered star-patterned banner on his back and long thin star-trail fingers, mended wanderer's robe and wide-brimmed hat, deep violet eyes, gripping a huge glaive polearm, whimsical storybook outline, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 
