@@ -97,10 +97,11 @@ CAT_LABELS = {
     "oddbirds": {"zh": "怪鸟", "en": "Odd Birds"},
     "hardware": {"zh": "钥匙锁具", "en": "Keys & Locks"},
     "toyfolk": {"zh": "立体公仔", "en": "Toy Figures"},
+    "fairytale": {"zh": "童话人物", "en": "Fairytale"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔 / 童话人物",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures / Fairytale"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -2071,6 +2072,42 @@ ITEMS = [
      "tags_en": ["toy", "cake", "strawberry", "cream", "choco eyes"],
      "desc_zh": "立体公仔：一个胖嘟嘟的小人身体是白色奶油裱花漩涡，头戴一颗大红草莓帽、顶着绿叶子冠，巧克力纽扣眼，胸前一颗小红樱桃，光滑软胶质感、裱花褶里藏着柔和环境光，立体 PVC 公仔风，透明 PNG，1024×1024",
      "desc_en": "Toy Figures: a chubby little figure whose body is a white cream-swirl frosting, wearing a bright red strawberry hat with a green leaf crown, chocolate button eyes and a little red cherry on the chest, smooth glossy vinyl with soft ambient occlusion in the piping creases, 3D PVC toy-figure style, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/fairytale-1.png", "id": "fairytale-redcloak", "name_zh": "红斗篷女孩 · 童话人物", "name_en": "Red Cloak Girl · Fairytale",
+     "cat": "fairytale", "tags": ["童话", "红斗篷", "篮子", "森林", "女孩"],
+     "tags_en": ["fairytale", "red cloak", "basket", "forest", "girl"],
+     "desc_zh": "童话人物：一个戴着兜帽红斗篷的小女孩，怀里抱着一篮面包，睁着好奇的大眼睛独自站着，19 世纪欧洲故事书水彩插画风，纤细墨线配柔和水彩，暖调克制配色，透明 PNG，1024×1024",
+     "desc_en": "Fairytale: a little girl in a hooded red traveling cloak holding a woven basket of bread, wide curious eyes, standing alone, vintage 19th-century European storybook watercolor illustration with delicate ink linework and soft washes, warm muted palette, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/fairytale-2.png", "id": "fairytale-tinsoldier", "name_zh": "锡皮单腿兵 · 童话人物", "name_en": "Tin One-Legged Soldier · Fairytale",
+     "cat": "fairytale", "tags": ["童话", "锡兵", "单腿", "筒帽", "玩具"],
+     "tags_en": ["fairytale", "tin soldier", "one leg", "shako", "toy"],
+     "desc_zh": "童话人物：一个黄铜色锡皮铸造的小玩具兵，单腿笔直立正，戴着高筒军帽、短夹克只钉一颗圆钮，肩扛一把小玩具枪，19 世纪欧洲故事书水彩插画风，纤细墨线配柔和水彩，金属哑光配色，透明 PNG，1024×1024",
+     "desc_en": "Fairytale: an antique burnished-tin toy soldier standing stiffly at attention on a single leg, tall shako hat and a short jacket with one round button, a tiny toy musket at his shoulder, vintage 19th-century European storybook watercolor illustration with delicate ink linework and soft washes, muted metallic palette, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/fairytale-3.png", "id": "fairytale-bootcat", "name_zh": "长靴猫绅士 · 童话人物", "name_en": "Booted Cat Gentleman · Fairytale",
+     "cat": "fairytale", "tags": ["童话", "猫", "长靴", "三角帽", "绅士"],
+     "tags_en": ["fairytale", "cat", "boots", "tricorn", "gentleman"],
+     "desc_zh": "童话人物：一只直立的两足拟人绅士猫，穿着长尾礼服、高筒皮靴，头戴插羽毛的三角帽，一只爪子叉腰、派头十足，19 世纪欧洲故事书水彩插画风，纤细墨线配柔和水彩，暖调雅致配色，透明 PNG，1024×1024",
+     "desc_en": "Fairytale: an anthropomorphic gentleman cat standing upright, in a long tailcoat and tall polished boots with a plumed tricorn hat, one paw on hip, dapper and confident, vintage 19th-century European storybook watercolor illustration with delicate ink linework and soft washes, warm refined palette, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/fairytale-4.png", "id": "fairytale-thumbelina", "name_zh": "拇指姑娘 · 童话人物", "name_en": "Thumbelina · Fairytale",
+     "cat": "fairytale", "tags": ["童话", "拇指", "蘑菇", "花瓣裙", "露珠"],
+     "tags_en": ["fairytale", "thumb", "mushroom", "petal dress", "dew"],
+     "desc_zh": "童话人物：一个只有拇指大的小姑娘坐在蘑菇盖上，穿着花瓣做的裙子，背着蒲公英种子的薄翅，身边绕着放大的晶莹露珠，19 世纪欧洲故事书水彩插画风，纤细墨线配柔和水彩，淡雅粉调配色，透明 PNG，1024×1024",
+     "desc_en": "Fairytale: a tiny girl no bigger than a thumb sitting on a large mushroom cap, a dress of a flower petal and delicate dandelion-seed wings, oversized glistening dewdrops around her, vintage 19th-century European storybook watercolor illustration with delicate ink linework and soft washes, gentle pastel palette, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/fairytale-5.png", "id": "fairytale-snowqueen", "name_zh": "雪之女王 · 童话人物", "name_en": "Snow Queen · Fairytale",
+     "cat": "fairytale", "tags": ["童话", "雪", "冰冠", "银蓝", "女王"],
+     "tags_en": ["fairytale", "snow", "ice crown", "silver blue", "queen"],
+     "desc_zh": "童话人物：一位高挑沉静的冬之女王，头戴尖冰晶王冠，长裙缀满霜雪，肤色清冷透亮，冷蓝银调，神态庄严宁静，19 世纪欧洲故事书水彩插画风，纤细墨线配柔和水彩，清冷冰调配色，透明 PNG，1024×1024",
+     "desc_en": "Fairytale: a tall serene queen of winter with a crown of sharp ice crystals and a frost-and-snowflake gown, pale luminous skin, cool blue and silver tones, regal calm, vintage 19th-century European storybook watercolor illustration with delicate ink linework and soft washes, cool icy palette, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/fairytale-6.png", "id": "fairytale-lanternpuppet", "name_zh": "提灯木偶 · 童话人物", "name_en": "Lantern Puppet · Fairytale",
+     "cat": "fairytale", "tags": ["童话", "木偶", "提灯", "关节", "暖光"],
+     "tags_en": ["fairytale", "puppet", "lantern", "jointed", "warm glow"],
+     "desc_zh": "童话人物：一个木偶小男孩，四肢带关节、头戴尖帽，雕出的脸上神情生动，手提一盏发暖光的小纸灯笼，头顶牵着细线，19 世纪欧洲故事书水彩插画风，纤细墨线配柔和水彩，暖木与灯光配色，透明 PNG，1024×1024",
+     "desc_en": "Fairytale: a wooden marionette puppet boy with jointed limbs and a pointed hat, a carved expressive face, carrying a small glowing paper lantern, control strings above his head, vintage 19th-century European storybook watercolor illustration with delicate ink linework and soft washes, warm wood-and-lamplight palette, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 
