@@ -92,10 +92,11 @@ CAT_LABELS = {
     "skulls": {"zh": "怪异骷髅", "en": "Bizarre Skulls"},
     "oddweapons": {"zh": "奇门兵器", "en": "Odd Weapons"},
     "monstertoys": {"zh": "怪兽玩具", "en": "Monster Toys"},
+    "oddbeasts": {"zh": "古怪走兽", "en": "Odd Beasts"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -1886,6 +1887,42 @@ ITEMS = [
      "tags_en": ["monster toy", "plush", "patchwork", "button eyes", "zipper", "patches"],
      "desc_zh": "怪兽玩具：一只拼布缝出来的毛绒小怪兽，灰粉、芥末和灰格纹布拼了一身，两颗大黑纽扣眼一颗松了垂着线头，背上一根黄铜拉链半开着冒出棉花，缝线粗大醒目，吐着布舌头，边缘磨得发白还有一块漂白渍，无厘头童话风描边，透明 PNG，1024×1024",
      "desc_en": "Monster toy: a soft stitched plush monster sewn from mismatched fabric patches in dusty pink, mustard and grey plaid, two big black button eyes with one loose and dangling threads, a brass zipper running down its back half-open with stuffing poking out, coarse visible stitching, a cloth tongue sticking out, worn fuzzy edges and a bleach stain, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddbeasts-1.png", "id": "oddbeasts-jitterstag", "name_zh": "长颈抖环兽 · 古怪走兽", "name_en": "Jitterstag · Odd Beasts",
+     "cat": "oddbeasts", "tags": ["走兽", "古怪", "长颈", "铁环", "独角", "补丁毛皮"],
+     "tags_en": ["beast", "odd", "long neck", "iron rings", "one horn", "patchy fur"],
+     "desc_zh": "古怪走兽：一头瘦骨嶙峋的长颈怪，脖子长得没道理还套了几十个锈铁环，一走就哗啦乱响，呆滞长脸半睁着眼，头顶一根歪独角，毛皮斑秃处缝着布补丁，四根牙签细腿膝盖外翻，细尾巴上拴个瘪铁罐，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd beast: a scrawny mangy giraffe-like creature with an absurdly long wobbly neck stacked with dozens of rusty iron rings that rattle as it walks, a dopey long face with half-closed eyes, one crooked horn, patchy fur with bald spots and sewn cloth patches, four spindly toothpick legs with knobby knees, a thin tail with a bent tin can tied to the end, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddbeasts-2.png", "id": "oddbeasts-umbrellnail", "name_zh": "伞骨蜗牛 · 古怪走兽", "name_en": "Umbrellnail · Odd Beasts",
+     "cat": "oddbeasts", "tags": ["走兽", "古怪", "蜗牛", "伞骨", "铃铛", "黏液"],
+     "tags_en": ["beast", "odd", "snail", "umbrella ribs", "bells", "slime"],
+     "desc_zh": "古怪走兽：一只胖大的灰褐蜗牛，壳是一把收拢的破雨伞铁骨架，伞骨放射如轮辐，一根弯了两根断，布面早就没了，两根眼柄顶端各挂一只瘪铃铛，宽肉蹼拖出黏涎痕，斜着眼一脸怯生生的样，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd beast: a fat glossy grey-brown garden snail whose shell is the broken metal skeleton of a closed umbrella with ribs radiating like spokes, one bent rib and two snapped spokes, two wobbly eyestalks each tipped with a tiny dented bell, a wide slimy foot with wavy ripples, a shy side-eye glance and a slime trail, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddbeasts-3.png", "id": "oddbeasts-stitchmutt", "name_zh": "缝嘴走犬 · 古怪走兽", "name_en": "Stitchmutt · Odd Beasts",
+     "cat": "oddbeasts", "tags": ["走兽", "古怪", "缝线", "拼布", "拉链嘴", "线团尾"],
+     "tags_en": ["beast", "odd", "stitched", "patchwork", "zipper muzzle", "yarn tail"],
+     "desc_zh": "古怪走兽：一只愁眉苦脸的小杂犬，全身像布偶一样用粗大十字针脚缝成，赭、锈红与灰的拼布布片东一块西一块，嘴被一根小黄铜拉链缝死，拉环垂在鼻子旁，耳朵一竖一耷，尾巴是个松散毛线球拖着线，四爪缝合处还蹦出几根线头，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd beast: a small sad-eyed mutt whose whole body is sewn together with big crude cross-stitches like a patchwork of mismatched fabric panels in ochre, rust and grey, its muzzle zipped shut with a tiny brass zipper pull dangling at the nose, mismatched ears with one flopping, a tail that is a loose ball of yarn with a trailing thread, popped threads at the paw seams, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddbeasts-4.png", "id": "oddbeasts-stackhound", "name_zh": "三头叠叠犬 · 古怪走兽", "name_en": "Stackhound · Odd Beasts",
+     "cat": "oddbeasts", "tags": ["走兽", "古怪", "三头", "叠罗汉", "六条腿", "咬尾巴"],
+     "tags_en": ["beast", "odd", "three heads", "stacked", "six legs", "tail bite"],
+     "desc_zh": "古怪走兽：一只灰粉色毛乱蓬蓬的三头猎犬垒成三层，上头叼住下头的尾巴，整摞狗咬着自己的尾巴成一个循环，六条瘦腿分两排，三张脸各摆各的呆相，耳朵耷向不同角度，中层的脖子挂只生满跳蚤的项圈，毛里缠着树枝，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd beast: a shaggy dusty-pink three-headed hound stacked in three layers, the top head holding the bottom head's tail in its mouth so the whole stack bites itself in a loop, six scrawny legs in two rows, each head with a different dopey expression and floppy ears at different angles, matted fur with twigs and a flea collar on the middle neck, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddbeasts-5.png", "id": "oddbeasts-bellowsaur", "name_zh": "风箱鼓气蜥 · 古怪走兽", "name_en": "Bellowsaur · Odd Beasts",
+     "cat": "oddbeasts", "tags": ["走兽", "古怪", "蜥蜴", "皱皮", "风箱", "吸盘脚"],
+     "tags_en": ["beast", "odd", "lizard", "wrinkled skin", "bellows", "suction feet"],
+     "desc_zh": "古怪走兽：一只苔绿色胖蜥蜴，皮褶深得像把手风琴，腰侧绑着一只裂皮风箱囊，铜嘴里噗噗吐着小云团，四只脚是矮吸盘，眼珠子懒洋洋地斜瞟，颈鳍断了一根刺，身上干皮鳞片，尾巴尖磨秃了，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd beast: a plump moss-green lizard with deep folded wrinkled skin like an old accordion, a cracked leather bellows pouch strapped to its flank with a brass nozzle puffing tiny clouds, four squat suction-cup feet, a lazy side-glancing eye, a frilled neck ruff with one torn spike, dry scaly patches and a scuffed tail tip, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddbeasts-6.png", "id": "oddbeasts-candystag", "name_zh": "糖杖驯鹿 · 古怪走兽", "name_en": "Candystag · Odd Beasts",
+     "cat": "oddbeasts", "tags": ["走兽", "古怪", "驯鹿", "拐杖糖", "糖果鹿角", "糖霜"],
+     "tags_en": ["beast", "odd", "deer", "candy cane", "candy antlers", "sugar frost"],
+     "desc_zh": "古怪走兽：一只粉玫瑰色胖驯鹿，四条腿是红白拐杖糖条纹，疙瘩鹿角上挂着用绳吊着的各色包装糖果，一身浅斑，鼻子沾着糖霜还被舔过一口，一根鹿角尖断了，脖铃裂了缝，糖纸角磕掉了几块，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd beast: a plump dusty-rose deer with four legs striped red and white like candy canes, knobbly antlers hung with dangling wrapped candies on bits of string, pale spots on its coat, a frosted sugar-dusted nose with a lick mark, one antler tip snapped off, a bell collar with a cracked bell and chipped candy shells, whimsical storybook outline, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 
