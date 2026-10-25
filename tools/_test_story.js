@@ -30,16 +30,16 @@ const OUT = require('path').resolve(__dirname, '..');
   const storyVisible = await page.locator('#lbStory').isVisible();
   const labelText = await page.locator('.lb-story-label').textContent();
   const storyText = await page.locator('#lbStoryText').textContent();
-  const catStoryText = await page.locator('#lbStoryCat').textContent();
   const noBadge = await page.locator('.lb-story-badge').count() === 0;
   const noNote = await page.locator('.lb-story-note').count() === 0;
+  const noCatStory = await page.locator('#lbStoryCat').count() === 0;
   ok('灯箱打开：' + lbName, !!lbName);
   ok('故事块可见', storyVisible);
   ok('标签为「故事由来」', labelText.includes('故事由来'));
   ok('灯箱故事块无虚构徽章（声明不逐图重复）', noBadge);
   ok('灯箱故事块无每图 AI 声明（声明不逐图重复）', noNote);
+  ok('灯箱不含分类故事段（分类解说只在主页）', noCatStory);
   ok('素材故事正文不含篇末虚构标识', !storyText.includes('本站虚构设定') && storyText.length > 10);
-  ok('分类故事作为铺垫显示', catStoryText.length > 10 && !catStoryText.includes('本站虚构设定'));
   await page.screenshot({ path: OUT + '/_story_lightbox_zh.png' });
   await page.keyboard.press('Escape');
 

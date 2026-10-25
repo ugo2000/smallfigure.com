@@ -457,15 +457,10 @@
     $('lbCat').textContent = locCat(im) + (im.transparent ? SF.t('cat.transparent') : '');
     $('lbName').textContent = locName(im);
     $('lbDesc').textContent = locDesc(im);
-    /* 故事由来：分类故事（灰字铺垫）+ 素材故事；两者都没有就整块隐藏 */
-    var cs = catStory(im.category), is = itemStory(im);
-    if (cs || is) {
-      var catStoryEl = $('lbStoryCat');
-      if (cs) { catStoryEl.textContent = cs; catStoryEl.hidden = false; }
-      else catStoryEl.hidden = true;
-      var itemStoryEl = $('lbStoryText');
-      if (is) { itemStoryEl.textContent = is; itemStoryEl.hidden = false; }
-      else itemStoryEl.hidden = true;
+    /* 故事由来：只放每张图专属的素材故事（分类解说在主页 catIntro 面板，不进灯箱） */
+    var is = itemStory(im);
+    if (is) {
+      $('lbStoryText').textContent = is;
       $('lbStory').hidden = false;
     } else {
       $('lbStory').hidden = true;

@@ -2096,9 +2096,24 @@ def process_motion_item(it):
         "color": dominant_color(poster),
         "tags": zh_tags(it["tags"]),
         "tagsEn": it["tags_en"],
-        "desc": it["desc_zh"],
-        "descEn": it["desc_en"],
+        "desc": clean_desc(it["desc_zh"]),
+        "descEn": clean_desc(it["desc_en"]),
     }
+
+
+def clean_desc(t):
+    """产出层清理：剥离 desc 尾部的「透明 PNG，宽×高」模板串。
+
+    规格尺寸在灯箱参数区已展示，desc 里逐条重复会进入 noscript/JSON-LD，
+    造成大量雷同文本；这里统一剥离，源数据（ASSETS 表）不动，
+    远端重建 images.json 时走同一逻辑不会回退。
+    """
+    t = re.sub(r'[，,]?\s*透明\s*PNG[，,]?\s*\d{3,4}\s*×\s*\d{3,4}\s*$', '', t.strip())
+    t = re.sub(r',?\s*transparent\s*PNG,?\s*\d{3,4}\s*×\s*\d{3,4}\s*$', '', t.strip(), flags=re.I)
+    # 动图句式：剥尺寸，保留「透明底 WebP / transparent WebP」格式说明
+    t = re.sub(r'\d{3,4}\s*×\s*\d{3,4}\s*(透明底|transparent)', r'\1', t.strip(), flags=re.I)
+    t = re.sub(r'[，,]\s*$', '', t.strip())
+    return t
 
 
 def main():
@@ -2179,8 +2194,8 @@ def main():
             "color": color,
             "tags": tags,
             "tagsEn": it["tags_en"],
-            "desc": it["desc_zh"],
-            "descEn": it["desc_en"],
+            "desc": clean_desc(it["desc_zh"]),
+            "descEn": clean_desc(it["desc_en"]),
         })
         print("  %-28s %4dx%-4d full=%3dKB thumb=%3dKB %s" % (
             os.path.basename(src_rel), full.size[0], full.size[1],
