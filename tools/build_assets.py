@@ -96,10 +96,11 @@ CAT_LABELS = {
     "deepfish": {"zh": "深海怪鱼", "en": "Odd Fish"},
     "oddbirds": {"zh": "怪鸟", "en": "Odd Birds"},
     "hardware": {"zh": "钥匙锁具", "en": "Keys & Locks"},
+    "toyfolk": {"zh": "立体公仔", "en": "Toy Figures"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -2034,6 +2035,42 @@ ITEMS = [
      "tags_en": ["hinge", "ironmongery", "wrought iron", "scrollwork", "rust"],
      "desc_zh": "钥匙锁具：一条竖挂的黑铁艺铰链，笔直的扁铁条旁伸出一大蓬卷草涡纹，顶端一个圆轴盘带着小吊环，铆钉孔里缺了一颗只剩黑洞，铁面哑光却溅着星星点点的锈斑，涡纹边缘划痕累累，无厘头童话风描边，透明 PNG，1024×1024",
      "desc_en": "Keys & Locks: a vertical wrought-iron strap hinge with a straight flat bar trailing a lush spill of scrollwork tendrils, a round pivot boss with a little hanging ring at the top, one rivet hole empty leaving just a black dot, matte black iron freckled with rust spots and scratches worn along the scroll edges, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/toyfolk-1.png", "id": "toyfolk-astrokid", "name_zh": "宇航头盔娃 · 立体公仔", "name_en": "Helmet Astro Kid · Toy Figures",
+     "cat": "toyfolk", "tags": ["公仔", "宇航", "头盔", "橙蓝", "靴子"],
+     "tags_en": ["toy", "astronaut", "helmet", "orange-navy", "boots"],
+     "desc_zh": "立体公仔：一个圆头圆脑的小男孩宇航员，脑袋罩着淡蓝 tint 的透明泡泡头盔，橙蓝撞色宇航服鼓着圆乎乎的四肢，脚踩厚底白月靴，胸口控制板亮着一颗小点，光滑软胶质感、折角处泛着柔和环境光，立体 PVC 公仔风，透明 PNG，1024×1024",
+     "desc_en": "Toy Figures: a round-headed little boy astronaut in a clear bubble space helmet with a soft blue tint, a bright orange and navy puffy spacesuit with rounded limbs, chunky white moon boots and a chest panel glowing a single dot, smooth glossy vinyl with soft ambient occlusion in the creases, 3D PVC toy-figure style, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/toyfolk-2.png", "id": "toyfolk-sharkgirl", "name_zh": "抱鲨鱼女孩 · 立体公仔", "name_en": "Shark-Hug Girl · Toy Figures",
+     "cat": "toyfolk", "tags": ["公仔", "女孩", "鲨鱼", "雨衣", "双马尾"],
+     "tags_en": ["toy", "girl", "shark", "raincoat", "pigtails"],
+     "desc_zh": "立体公仔：一个圆滚滚的小女孩扎着两根侧马尾，穿着淡黄小雨衣、袖口圆鼓鼓，怀里紧紧搂着一只胖乎乎的卡通鲨鱼玩偶，鲨鱼咧着小嘴、鳍圆滚滚，光滑软胶质感、缝隙里藏着柔和环境光，立体 PVC 公仔风，透明 PNG，1024×1024",
+     "desc_en": "Toy Figures: a chubby little girl with two side pigtails in a pastel-yellow raincoat with rounded sleeves, hugging a plump cartoon shark plush with a tiny smile and rounded fins, smooth glossy vinyl with soft ambient occlusion in the crevices, 3D PVC toy-figure style, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/toyfolk-3.png", "id": "toyfolk-bot", "name_zh": "小机器人工程师 · 立体公仔", "name_en": "Bot Engineer · Toy Figures",
+     "cat": "toyfolk", "tags": ["公仔", "机器人", "青绿", "圆眼", "天线"],
+     "tags_en": ["toy", "robot", "teal", "round eye", "antenna"],
+     "desc_zh": "立体公仔：一个方头圆角的小机器人，独只圆眼睛，头顶短天线顶着个圆球，青绿色桶身亮着一颗大圆按钮，四肢是圆滚滚的短桩，金属漆面泛着光泽、接缝处柔和环境光，立体 PVC 公仔风，透明 PNG，1024×1024",
+     "desc_en": "Toy Figures: a rounded-square headed little robot with a single round eye, a short antenna tipped with a ball, a chunky teal tubular body glowing a big round button, stubby rounded limbs, glossy metallic paint with soft ambient occlusion at the seams, 3D PVC toy-figure style, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/toyfolk-4.png", "id": "toyfolk-dino", "name_zh": "王冠小恐龙 · 立体公仔", "name_en": "Crown Dino · Toy Figures",
+     "cat": "toyfolk", "tags": ["公仔", "恐龙", "王冠", "青绿", "蛋壳纹"],
+     "tags_en": ["toy", "dino", "crown", "teal-green", "eggshell"],
+     "desc_zh": "立体公仔：一只青绿色圆身子小恐龙，短尾巴、矮墩墩的腿、小不点的手，咧嘴笑露出圆牙，头顶歪顶一顶小金冠，肚皮是蛋壳纹，光滑软胶质感、褶皱里藏着柔和环境光，立体 PVC 公仔风，透明 PNG，1024×1024",
+     "desc_en": "Toy Figures: a chubby teal-green little dinosaur with a short tail, stubby legs and tiny arms, a happy snout with rounded teeth, a small golden crown tilted on its head and an eggshell-pattern belly, smooth glossy vinyl with soft ambient occlusion in the folds, 3D PVC toy-figure style, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/toyfolk-5.png", "id": "toyfolk-sleepstar", "name_zh": "梦游抱星娃 · 立体公仔", "name_en": "Sleepwalker Star · Toy Figures",
+     "cat": "toyfolk", "tags": ["公仔", "梦游", "星星", "奶白", "睡帽"],
+     "tags_en": ["toy", "sleepwalker", "star", "milky", "nightcap"],
+     "desc_zh": "立体公仔：一个奶白色圆润的小人闭着眼、歪戴一顶淡蓝睡帽，踮脚飘在空中，怀里抱着一颗发光的淡黄星星，柔润软胶质感、折角处泛着柔和环境光，立体 PVC 公仔风，透明 PNG，1024×1024",
+     "desc_en": "Toy Figures: a soft milky-white rounded child with closed sleepy eyes and a slightly tilted pale-blue nightcap, floating on tiptoe and cradling a luminous pale-yellow star, gentle glossy vinyl with soft ambient occlusion in the creases, 3D PVC toy-figure style, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/toyfolk-6.png", "id": "toyfolk-cake", "name_zh": "草莓蛋糕娃 · 立体公仔", "name_en": "Strawberry Cake · Toy Figures",
+     "cat": "toyfolk", "tags": ["公仔", "蛋糕", "草莓", "奶油", "巧克力眼"],
+     "tags_en": ["toy", "cake", "strawberry", "cream", "choco eyes"],
+     "desc_zh": "立体公仔：一个胖嘟嘟的小人身体是白色奶油裱花漩涡，头戴一颗大红草莓帽、顶着绿叶子冠，巧克力纽扣眼，胸前一颗小红樱桃，光滑软胶质感、裱花褶里藏着柔和环境光，立体 PVC 公仔风，透明 PNG，1024×1024",
+     "desc_en": "Toy Figures: a chubby little figure whose body is a white cream-swirl frosting, wearing a bright red strawberry hat with a green leaf crown, chocolate button eyes and a little red cherry on the chest, smooth glossy vinyl with soft ambient occlusion in the piping creases, 3D PVC toy-figure style, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 
