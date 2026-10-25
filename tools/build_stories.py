@@ -34,10 +34,22 @@ def main():
     stale_items = sorted(set(ITEM_STORIES) - all_ids)      # 故事里有但数据里没了的 id
     stale_cats = sorted(set(CAT_STORIES) - all_cats)
 
+    # 重复查重：素材故事全文（zh）两两比对，防止同分类图点开都是同一段话
+    dup = {}
+    for sid, v in ITEM_STORIES.items():
+        dup.setdefault(v['zh'], []).append(sid)
+    dups = {k: v for k, v in dup.items() if len(v) > 1}
+
     print('[stories] %s 已生成：%d 条素材故事 + %d 条分类故事'
           % (out_path, len(ITEM_STORIES), len(CAT_STORIES)))
     print('[stories] 覆盖率：素材 %d/%d，分类 %d/%d'
           % (len(ITEM_STORIES), len(all_ids), len(CAT_STORIES), len(all_cats)))
+    if dups:
+        print('[stories] ⚠ 素材故事有重复（每张图必须不同）：')
+        for k, v in dups.items():
+            print('    %s => %s' % (', '.join(v), k[:40] + '…'))
+    else:
+        print('[stories] 素材故事零重复（每张图都不同）✓')
     if missing_cats:
         print('[stories] 缺故事的分类：%s' % ', '.join(missing_cats))
     if stale_items:
