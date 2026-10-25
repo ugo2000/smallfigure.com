@@ -90,10 +90,11 @@ CAT_LABELS = {
     "blades": {"zh": "异形兵刃", "en": "Odd Blades"},
     "giantfolk": {"zh": "怪异巨人", "en": "Bizarre Giants"},
     "skulls": {"zh": "怪异骷髅", "en": "Bizarre Skulls"},
+    "oddweapons": {"zh": "奇门兵器", "en": "Odd Weapons"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -1812,6 +1813,42 @@ ITEMS = [
      "tags_en": ["skull", "bizarre", "mushrooms", "mycelium", "blossoms", "dew"],
      "desc_zh": "怪异骷髅：长满斑点蘑菇、小野花的骷髅，苍白菌丝从颅顶扇形铺开，菌盖挂着露珠，林间调，怪诞童话风描边，透明 PNG，1024×1024",
      "desc_en": "Bizarre skull: a skull overgrown with speckled mushrooms, tiny blossoms and pale mycelium threads fanning out from the crown, dewdrops on the caps, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddweapons-1.png", "id": "oddweapons-wrenchmace", "name_zh": "扳手权杖 · 奇门兵器", "name_en": "Wrench Mace · Odd Weapons",
+     "cat": "oddweapons", "tags": ["兵器", "奇门", "黄铜", "扳手", "权杖", "齿轮"],
+     "tags_en": ["weapon", "odd", "brass", "wrench", "mace", "gear"],
+     "desc_zh": "奇门兵器：一柄顶天立地的黄铜巨扳手当杖用，朝上的月牙钳口夹着半块断齿轮，橡木长柄缠裂皮绳与麻线，接缝处铜绿斑驳，缺了几颗螺栓，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd weapon: an enormous brass wrench wielded as a ceremonial mace, its upward crescent jaw clamped around half of a broken iron gear, long oak shaft wrapped with cracked leather strips and frayed hemp cord, greenish patina along the seams, a couple of missing bolts, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddweapons-2.png", "id": "oddweapons-chainstar", "name_zh": "锁链流星锤 · 奇门兵器", "name_en": "Chain Morning Star · Odd Weapons",
+     "cat": "oddweapons", "tags": ["兵器", "奇门", "锁链", "流星锤", "带刺铁球", "锈蚀"],
+     "tags_en": ["weapon", "odd", "chain", "flail", "spiked ball", "rusty"],
+     "desc_zh": "奇门兵器：裂木短柄垂下三节锈蚀铁链，末端一颗深灰带刺铁球，刺钝得东倒西歪有一根还弯了，球面上莫名其妙长着一张笑脸，链扣松脱锈迹斑斑，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd weapon: a cracked wooden grip with three thick tarnished chain links dangling down to a dark iron ball studded with short blunt rust-red spikes, one spike bent, a ridiculous smug smiley face somehow embossed on the ball, loose rusty links, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddweapons-3.png", "id": "oddweapons-gearcross", "name_zh": "齿轮连弩 · 奇门兵器", "name_en": "Gearwind Crossbow · Odd Weapons",
+     "cat": "oddweapons", "tags": ["兵器", "奇门", "连弩", "机械", "齿轮", "黄铜"],
+     "tags_en": ["weapon", "odd", "crossbow", "clockwork", "gears", "brass"],
+     "desc_zh": "奇门兵器：一侧面裸露三只大小齿轮互相咬合的黄铜机械连弩，弦绷得紧紧的却没有箭，木托缠着裂皮与布条，一颗齿轮崩了齿，铆钉缝里泛着铜绿，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd weapon: an odd mechanical crossbow of tarnished brass with three visible meshing cogwheels of different sizes on its side, a taut dark string with no arrow nocked, worn wooden stock with cracked leather and cloth-wrapped grip, one gear with a chipped tooth, dull green patina on the riveted seams, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddweapons-4.png", "id": "oddweapons-steamgonne", "name_zh": "蒸汽手炮 · 奇门兵器", "name_en": "Steam Handgonne · Odd Weapons",
+     "cat": "oddweapons", "tags": ["兵器", "奇门", "手炮", "蒸汽", "黄铜", "压力表"],
+     "tags_en": ["weapon", "odd", "handgonne", "steam", "brass", "pressure dial"],
+     "desc_zh": "奇门兵器：一根粗短黄铜炮管箍着铆钉铁环，侧面焊着圆压力表（表盘光溜溜什么刻度都没有），尾部铜锅炉阀门嘶嘶漏着一缕蒸汽，黑木托裂了缝，炮口熏黑还瘪了一块，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd weapon: a stubby brass handgonne with riveted iron bands around the barrel, a small round pressure dial on the side with a plain needle and no markings at all, a rounded copper boiler at the rear leaking a wisp of steam from its valve, a cracked dark wooden stock, soot smudges and a dented muzzle, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddweapons-5.png", "id": "oddweapons-twinmaul", "name_zh": "双头磨盘锤 · 奇门兵器", "name_en": "Twin-Millstone Maul · Odd Weapons",
+     "cat": "oddweapons", "tags": ["兵器", "奇门", "巨锤", "双头", "石磨盘", "铁齿"],
+     "tags_en": ["weapon", "odd", "maul", "double-headed", "millstone", "iron teeth"],
+     "desc_zh": "奇门兵器：短粗橡木柄两头各嵌一只灰白石磨盘，盘沿钉满钝铁齿，一盘崩了三颗齿、另一盘缺了一颗，石头裂纹里卡着深色石粉，柄中一根锈螺栓穿过，缠着磨旧的布握把，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd weapon: an absurd double-headed maul with a short thick oak handle fitted at both ends into heavy grey millstone discs ringed with blunt iron teeth, three teeth broken off one wheel and one missing from the other, dark stone dust in the cracks, a single rusty bolt pinning the middle of the handle with a worn cloth grip wrap, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddweapons-6.png", "id": "oddweapons-sawdisc", "name_zh": "锯齿飞轮 · 奇门兵器", "name_en": "Saw Disc · Odd Weapons",
+     "cat": "oddweapons", "tags": ["兵器", "奇门", "飞轮", "锯刃", "环锯", "缺齿"],
+     "tags_en": ["weapon", "odd", "disc", "saw blade", "ring", "broken teeth"],
+     "desc_zh": "奇门兵器：一面钢蓝色巨型环刃飞轮立在地上，外圈锯齿在一弧上崩掉了三颗露出光滑缺口，轮面划痕累累锈迹斑斑还有一小块卷了边，中心毂孔穿着一根帆布缠柄的短木棍，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd weapon: an oversized steel-blue circular saw disc standing upright, jagged teeth around the rim with three broken off in one smooth arc, scratched rusty surface with a bent section of the rim, a central hub hole threaded with a short wooden handle wrapped in off-white canvas cloth, whimsical storybook outline, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 
