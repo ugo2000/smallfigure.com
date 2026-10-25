@@ -13,6 +13,7 @@
   var all = [];       // 全量
   var view = [];      // 当前筛选结果
   var counts = {};    // id -> 下载次数（未达标不展示）
+  var stories = { items: {}, cats: {} };  // 故事解说数据（data/stories.json，与 images.json 分离）
   var lbViewIndex = 0; // 灯箱当前在「当前筛选结果 view」中的位置
   var lbIm = null;     // 灯箱当前展示的素材对象
   var lbPlayer = null; // 灯箱里的精灵图播放器
@@ -58,6 +59,25 @@
   /* ---------- 下载计数 ---------- */
   function fmtCount(n) { return n.toLocaleString(SF.locale()); }
   function countOf(id) { return counts[id] || 0; }
+
+  /* ---------- 故事解说 ---------- */
+  /* 故事数据单独一个文件：远端素材管线重建 images.json 时不会冲掉这里的内容 */
+  function loadStories() {
+    return fetch('data/stories.json')
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) { if (d && d.items) stories = d; })
+      .catch(function () { /* 没有故事数据就静默降级：只显示 desc */ });
+  }
+  function itemStory(im) {
+    var s = stories.items[im.id];
+    if (!s) return null;
+    return (SF.lang() === 'en' && s.en) ? s.en : s.zh;
+  }
+  function catStory(catKey) {
+    var s = stories.cats[catKey];
+    if (!s) return null;
+    return (SF.lang() === 'en' && s.en) ? s.en : s.zh;
+  }
 
   /* 卡片右上角的下载徽章：只有满 100 次才出现 */
   function dlBadgeHtml(id) {
@@ -350,6 +370,11 @@
     countLine.innerHTML = SF.t('count.line', { total: all.length, n: view.length }) +
       (state.q ? SF.t('count.searching', { q: esc(state.q) }) : '') +
       (totalPages > 1 ? SF.t('count.page', { p: state.page + 1, t: totalPages }) : '');
+    /* 分类解说面板：选中具体分类且有故事时出现在计数行上方 */
+    var catIntro = $('catIntro');
+    var intro = state.cat !== 'all' ? catStory(state.cat) : null;
+    if (intro) { $('catIntroText').textContent = intro; catIntro.hidden = false; }
+    else catIntro.hidden = true;
     renderPager(totalPages);
   }
 
@@ -387,7 +412,8 @@
       '<dt>' + SF.t('meta.siteSize') + '</dt><dd>' + im.width + ' × ' + im.height + ' px</dd>' +
       '<dt>' + SF.t('meta.bytes') + '</dt><dd>' + fmtBytes(im.bytes) + '</dd>' +
       '<dt>' + SF.t('meta.type') + '</dt><dd>' + (im.effect === 'sheet' ? SF.t('type.sheet', { n: im.frames })
-        : (im.animated ? SF.t('type.anim') : SF.t('type.still'))) + '</dd>';
+        : (im.animated ? SF.t('type.anim') : SF.t('type.still'))) + '</dd>' +
+      '<dt>' + SF.t('meta.generation') + '</dt><dd>' + SF.t('meta.generation.ai') + '</dd>';
     var n = countOf(im.id);
     if (n >= DL_THRESHOLD) {
       html += '<dt>' + SF.t('meta.downloads') + '</dt><dd>' + fmtCount(n) + SF.t('meta.times') + '</dd>';
@@ -431,6 +457,19 @@
     $('lbCat').textContent = locCat(im) + (im.transparent ? SF.t('cat.transparent') : '');
     $('lbName').textContent = locName(im);
     $('lbDesc').textContent = locDesc(im);
+    /* 故事由来：分类故事（灰字铺垫）+ 素材故事；两者都没有就整块隐藏 */
+    var cs = catStory(im.category), is = itemStory(im);
+    if (cs || is) {
+      var catStoryEl = $('lbStoryCat');
+      if (cs) { catStoryEl.textContent = cs; catStoryEl.hidden = false; }
+      else catStoryEl.hidden = true;
+      var itemStoryEl = $('lbStoryText');
+      if (is) { itemStoryEl.textContent = is; itemStoryEl.hidden = false; }
+      else itemStoryEl.hidden = true;
+      $('lbStory').hidden = false;
+    } else {
+      $('lbStory').hidden = true;
+    }
     $('lbTags').innerHTML = locTags(im).map(function (t) { return '<span>' + esc(t) + '</span>'; }).join('');
     var dl = $('lbDownload');
     dl.href = assetUrl(im, 'file');
@@ -682,6 +721,12 @@
       document.title = SF.t('site.title');
       buildChips(meta);
       render();
+      /* 故事数据后到：到了补一次渲染（分类解说面板），灯箱开着就补上故事块 */
+      loadStories().then(function () {
+        render();
+        var lb = $('lightbox');
+        if (lb && !lb.hidden && lbIm) openLightbox(lbIm);
+      });
       loadCounts(); /* 计数后到，拉到了再补徽章 */
       loadMe();     /* 登录态：恢复会话或保持匿名 */
       initBgm();    /* 背景音乐：默认开，被浏览器拦了就等首次交互 */

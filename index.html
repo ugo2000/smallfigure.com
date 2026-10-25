@@ -82,6 +82,10 @@
 </nav>
 
 <main class="wrap">
+  <div class="cat-intro" id="catIntro" hidden>
+    <p class="cat-intro-label" data-i18n="cat.intro">分类解说</p>
+    <p class="cat-intro-text" id="catIntroText"></p>
+  </div>
   <p class="count-line" id="countLine"></p>
   <div class="grid" id="grid"></div>
   <div class="pager" id="pager" hidden></div>
@@ -104,6 +108,7 @@
       </div>
       <p class="footer-coop-mail"><span data-i18n="footer.coop.desc">以上任意一项，邮件直接聊：</span><a href="mailto:info@zhuaotech.com">info@zhuaotech.com</a></p>
     </div>
+    <p class="dim" data-i18n="footer.ai">本站素材图片均由 AI 生成；「故事由来」为 AI 辅助创作的虚构设定，非真实事件。</p>
     <p class="dim"><span data-i18n="footer.contact">联系：</span><a href="mailto:ugo2000@126.com">ugo2000@126.com</a></p>
     <p class="dim" data-i18n="footer.hosted">© 2026 smallfigure.com</p>
   </div>
@@ -118,6 +123,12 @@
       <p class="lb-cat" id="lbCat"></p>
       <h2 id="lbName"></h2>
       <p class="lb-desc" id="lbDesc"></p>
+      <div class="lb-story" id="lbStory" hidden>
+        <p class="lb-story-label"><span data-i18n="lb.story">故事由来</span><span class="lb-story-badge" data-i18n="lb.story.fiction">虚构创作</span></p>
+        <p class="lb-story-note" data-i18n="lb.story.note">以下为素材配套的 AI 辅助虚构设定，非事实陈述；规格以参数区为准。</p>
+        <p class="lb-story-cat" id="lbStoryCat" hidden></p>
+        <p class="lb-story-text" id="lbStoryText"></p>
+      </div>
       <dl class="lb-meta" id="lbMeta"></dl>
       <div class="lb-tags" id="lbTags"></div>
       <div class="lb-actions">

@@ -3,7 +3,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-cp index.html styles.css app.js i18n.js _headers README.md _site/
+cp index.html styles.css app.js i18n.js _headers README.md og-1200x630.jpg _site/
 rm -rf _site/data _site/assets _site/functions
 cp -r data assets _site/
 cp -r functions _site/functions
