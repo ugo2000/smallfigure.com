@@ -16,7 +16,6 @@
   var lbViewIndex = 0; // 灯箱当前在「当前筛选结果 view」中的位置
   var lbIm = null;     // 灯箱当前展示的素材对象
   var lbPlayer = null; // 灯箱里的精灵图播放器
-  var lbFxEl = null;   // 灯箱里的 CSS 动效元素
 
   var $ = function (id) { return document.getElementById(id); };
   var grid = $('grid'), empty = $('empty'), countLine = $('countLine'), pagerEl = $('pager');
@@ -404,7 +403,6 @@
     var stage = $('lbStage');
 
     if (lbPlayer) { lbPlayer.pause(); lbPlayer = null; }
-    lbFxEl = null;
     stage.innerHTML = '';
     stage.classList.toggle('checker', !!im.transparent);
 
@@ -422,18 +420,12 @@
       stage.appendChild(div);
       lbPlayer = makeSheetPlayer(div, im.frames, framePx);
       lbPlayer.play();
-      $('lbPlay').hidden = false;
-      $('lbPlay').textContent = SF.t('lb.pause');
     } else {
       var img = document.createElement('img');
       img.src = assetUrl(im, 'file');
       img.alt = locName(im);
-      if (im.effect) {
-        img.className = 'fx-' + im.effect;
-        lbFxEl = img;
-      }
+      if (im.effect) img.className = 'fx-' + im.effect;
       stage.appendChild(img);
-      $('lbPlay').hidden = true;
     }
 
     $('lbCat').textContent = locCat(im) + (im.transparent ? SF.t('cat.transparent') : '');
@@ -498,19 +490,6 @@
   $('lightbox').addEventListener('click', function (e) { if (e.target.hasAttribute('data-close')) closeLightbox(); });
   $('lbPrev').addEventListener('click', function () { stepLightbox(-1); });
   $('lbNext').addEventListener('click', function () { stepLightbox(1); });
-  $('lbPlay').addEventListener('click', function () {
-    var playing;
-    if (lbPlayer) {
-      /* 当前文案是「播放」= 已暂停 */
-      playing = $('lbPlay').textContent === SF.t('lb.play');
-      if (playing) lbPlayer.play(); else lbPlayer.pause();
-      $('lbPlay').textContent = playing ? SF.t('lb.pause') : SF.t('lb.play');
-    } else if (lbFxEl) {
-      playing = lbFxEl.style.animationPlayState !== 'paused';
-      lbFxEl.style.animationPlayState = playing ? 'paused' : 'running';
-      $('lbPlay').textContent = playing ? SF.t('lb.play') : SF.t('lb.pause');
-    }
-  });
 
   /* ---------- 下载：先上报计数（最多等 2 秒），再触发文件下载 ---------- */
   function triggerDownload(im) {

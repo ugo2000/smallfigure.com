@@ -17,6 +17,10 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* 作者样式的 display（如 .btn 的 inline-flex）会盖掉浏览器默认的 [hidden]{display:none}，
+   导致 JS 设了 hidden 的元素照样显示；这里用 !important 兜底 */
+[hidden] { display: none !important; }
+
 html { scroll-behavior: smooth; }
 
 body {
@@ -199,7 +203,6 @@ body {
   font-family: inherit; transition: all .18s; white-space: nowrap;
 }
 .chips-more:hover { color: var(--text); border-color: #33405a; }
-.chips-more[hidden] { display: none; }
 .chips-more .arrow { font-style: normal; font-size: 11px; line-height: 1; transition: transform .2s; }
 .chips-more.open .arrow { transform: rotate(180deg); }
 
