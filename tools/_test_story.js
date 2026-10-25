@@ -29,15 +29,15 @@ const OUT = require('path').resolve(__dirname, '..');
   const lbName = await page.locator('#lbName').textContent();
   const storyVisible = await page.locator('#lbStory').isVisible();
   const labelText = await page.locator('.lb-story-label').textContent();
-  const badgeText = await page.locator('.lb-story-badge').textContent();
-  const noteText = await page.locator('.lb-story-note').textContent();
   const storyText = await page.locator('#lbStoryText').textContent();
   const catStoryText = await page.locator('#lbStoryCat').textContent();
+  const noBadge = await page.locator('.lb-story-badge').count() === 0;
+  const noNote = await page.locator('.lb-story-note').count() === 0;
   ok('灯箱打开：' + lbName, !!lbName);
   ok('故事块可见', storyVisible);
   ok('标签为「故事由来」', labelText.includes('故事由来'));
-  ok('虚构创作徽章在位', badgeText.includes('虚构创作'));
-  ok('AI 虚构声明常驻', noteText.includes('AI 辅助') && noteText.includes('虚构'));
+  ok('灯箱故事块无虚构徽章（声明不逐图重复）', noBadge);
+  ok('灯箱故事块无每图 AI 声明（声明不逐图重复）', noNote);
   ok('素材故事含篇末（本站虚构设定）', storyText.includes('（本站虚构设定）'));
   ok('分类故事作为铺垫显示', catStoryText.length > 10 && catStoryText.includes('虚构设定'));
   await page.screenshot({ path: OUT + '/_story_lightbox_zh.png' });
@@ -52,12 +52,8 @@ const OUT = require('path').resolve(__dirname, '..');
   await page.locator('.lightbox .lang-btn[data-lang="en"]').click();
   await page.waitForTimeout(400);
   const labelEn = await page.locator('.lb-story-label').textContent();
-  const badgeEn = await page.locator('.lb-story-badge').textContent();
-  const noteEn = await page.locator('.lb-story-note').textContent();
   const storyEn = await page.locator('#lbStoryText').textContent();
   ok('英文标签 Backstory', labelEn.includes('Backstory'));
-  ok('英文徽章 Fiction', badgeEn.includes('Fiction'));
-  ok('英文声明在位', noteEn.toLowerCase().includes('fictional'));
   ok('英文故事篇末 (Fictional lore.)', storyEn.includes('(Fictional lore.)'));
   await page.screenshot({ path: OUT + '/_story_lightbox_en.png' });
   await page.keyboard.press('Escape');
@@ -124,9 +120,11 @@ const OUT = require('path').resolve(__dirname, '..');
   ok('meta 含生成方式: AI 生成', metaHtml.includes('生成方式') && metaHtml.includes('AI 生成'));
   await page.keyboard.press('Escape');
 
-  /* ---------- 6. 页脚 AI 披露 ---------- */
-  const footerAi = await page.locator('.site-footer').innerHTML();
-  ok('页脚有 AI 生成披露', footerAi.includes('AI 生成') && footerAi.includes('虚构'));
+  /* ---------- 6. 页脚统一声明（全站唯一声明处） ---------- */
+  const footerNoteCount = await page.locator('.site-footer .footer-note').count();
+  const footerNote = footerNoteCount === 1 ? await page.locator('.site-footer .footer-note').textContent() : '';
+  ok('页脚统一声明区块唯一', footerNoteCount === 1);
+  ok('统一声明含 AI 生成 / 虚构 / 不逐图重复', footerNote.includes('AI 生成') && footerNote.includes('虚构') && footerNote.includes('不逐图重复'));
 
   /* ---------- 7. SEO/GEO 注入（构建产物层） ---------- */
   const html = await page.content();
