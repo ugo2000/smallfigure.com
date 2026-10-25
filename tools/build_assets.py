@@ -94,10 +94,11 @@ CAT_LABELS = {
     "monstertoys": {"zh": "怪兽玩具", "en": "Monster Toys"},
     "oddbeasts": {"zh": "古怪走兽", "en": "Odd Beasts"},
     "deepfish": {"zh": "深海怪鱼", "en": "Odd Fish"},
+    "oddbirds": {"zh": "怪鸟", "en": "Odd Birds"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -1960,6 +1961,42 @@ ITEMS = [
      "tags_en": ["deep sea", "odd fish", "hermit crab", "skull shell", "uneven claws", "barnacles"],
      "desc_zh": "深海怪鱼：一只铁锈色花寄居蟹，背的螺壳其实是个咧嘴笑的怪兽骷髅头，黑洞眼窝一排牙，一只钳子巨无霸一只小不点，细毛腿末端带着吸盘，壳上结满藤壶，壳沿磕掉一块，斜着一只小眼偷瞄，无厘头童话风描边，透明 PNG，1024×1024",
      "desc_en": "Odd fish: a mottled rust-brown hermit crab wearing a spiral shell that is actually a grinning monster skull with hollow eye sockets and a toothy jaw, one oversized claw and one tiny claw, thin hairy legs with tiny suction tips, barnacle patches crusted on the shell, a cracked shell rim with a chunk missing, one beady side-eye peeking out, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddbirds-1.png", "id": "oddbirds-saxvulture", "name_zh": "萨克斯秃鹫 · 怪鸟", "name_en": "Saxophone Vulture · Odd Birds",
+     "cat": "oddbirds", "tags": ["怪鸟", "秃鹫", "萨克斯", "黄铜", "珠链", "铜绿"],
+     "tags_en": ["odd bird", "vulture", "saxophone", "brass", "worry beads", "patina"],
+     "desc_zh": "怪鸟：一只灰褐色邋遢秃鹫，粉秃脑袋上挂着串晃晃悠悠的愁珠，长脖子整个换成一支弯弯曲曲的旧铜萨克斯，管身一排贝壳按键，该长尾羽的地方是一支瘪了口的萨克斯喇叭口，身侧支棱着几根乱翅羽，铜管磕得全是坑还泛着铜绿，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd bird: a scruffy grey-brown vulture with a bald pink head wearing a dangling worry-bead necklace, its long neck replaced by a curved tarnished brass saxophone with pearl key buttons along its length, a bent saxophone bell flaring where its tail feathers should be, ragged wing feathers at the sides, scuffed and dented brass with greenish patina, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddbirds-2.png", "id": "oddbirds-spoonheron", "name_zh": "汤勺苍鹭 · 怪鸟", "name_en": "Soup-Spoon Heron · Odd Birds",
+     "cat": "oddbirds", "tags": ["怪鸟", "苍鹭", "汤勺", "漏孔", "筷子腿", "呆毛"],
+     "tags_en": ["odd bird", "heron", "soup spoon", "drain holes", "chopstick legs", "cowlick"],
+     "desc_zh": "怪鸟：一只青灰色高脚苍鹭，两条筷子细腿拧着古怪的弯，嘴是一把特大号椭圆汤勺，勺底冲了三个漏孔，头顶一根呆毛直挺挺竖着，眼皮耷拉一脸没睡醒，翅羽乱糟糟，勺面磕了个坑还生了斑点锈，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd bird: a pale blue-grey heron with two chopstick-thin legs bent at odd angles, an oversized oval soup spoon for a beak with three drain holes punched in it, one silly cowlick feather sticking straight up from its head, half-closed sleepy eyes, ragged wing feathers, a dent on the spoon bowl and a speckled patina, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddbirds-3.png", "id": "oddbirds-trumpetparrot", "name_zh": "喇叭鹦鹉 · 怪鸟", "name_en": "Trumpet-Tail Parrot · Odd Birds",
+     "cat": "oddbirds", "tags": ["怪鸟", "鹦鹉", "小号", "羽冠", "活塞", "腿铃"],
+     "tags_en": ["odd bird", "parrot", "trumpet", "curled crest", "valves", "leg bell"],
+     "desc_zh": "怪鸟：一只壮实的珊瑚红配蓝绿鹦鹉，头顶羽冠拧成一对羊角卷，尾巴是一支磕瘪了的黄铜小号，喇叭口朝后张着，管上三个活塞，一只翅膀振在半空，圆眼睛亢奋得溜圆，喙磕掉一块，铜管满是凹坑和一处铜绿，脚上还系个小铃铛，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd bird: a chunky coral-red and teal parrot with a curled ram-horn crest of feathers on its head, its tail replaced by a dented brass trumpet with a flaring bell and three valve pistons, one wing raised mid-flap, round excited eyes, a scuffed beak with a chip, tarnished trumpet with dents and a green patina spot, a tiny bell tied to one leg, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddbirds-4.png", "id": "oddbirds-postostrich", "name_zh": "邮差鸵鸟 · 怪鸟", "name_en": "Postman Ostrich · Odd Birds",
+     "cat": "oddbirds", "tags": ["怪鸟", "鸵鸟", "邮差", "邮包", "信封", "一只鞋"],
+     "tags_en": ["odd bird", "ostrich", "postman", "mail satchel", "envelope", "one shoe"],
+     "desc_zh": "怪鸟：一只圆滚滚的炭灰色鸵鸟邮差，背上帆布邮包撑得爆满，信函小包裹从包口溢出来，嘴里叼着一封信、头顶还稳稳顶着一封，细腿上掉了一只鞋，包带磨旧皮扣裂了缝，羽毛从包口破洞里支棱出来，一脸期盼的急切表情，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd bird: a plump fluffy charcoal-grey ostrich with a bulging canvas mail satchel strapped to its back, stuffed so full that letters and small parcels spill out the top, a single envelope clutched in its beak and another balanced on its head, scrawny legs with one shoe missing, feather fluff poking out of a tear in the satchel, a worn leather strap with a cracked buckle, a hopeful eager expression, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddbirds-5.png", "id": "oddbirds-kettlepenguin", "name_zh": "茶壶企鹅 · 怪鸟", "name_en": "Teapot Penguin · Odd Birds",
+     "cat": "oddbirds", "tags": ["怪鸟", "企鹅", "茶壶", "壶嘴", "蒸汽", "创可贴"],
+     "tags_en": ["odd bird", "penguin", "teapot", "spout", "steam", "bandage"],
+     "desc_zh": "怪鸟：一只圆滚滚的黑白企鹅，头顶戳着一根茶壶嘴正噗噗冒着一缕蒸汽，弯弯的壶把手架在背上，白肚皮上画着一只大茶杯图案，鳍上掉了一块瓷漆还缠了圈创可贴，壶嘴根儿蹭着一小片煤灰，一脸心满意足的困意，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd bird: a plump black-and-white penguin with a teapot spout sticking out of the top of its head puffing a tiny wisp of steam, a curved teapot handle arching over its back, a round white belly patch with a big painted-on tea-cup motif, chipped enamel paint on the flippers, one flipper wrapped with a bandage, a small soot smudge near the spout, a content sleepy face, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddbirds-6.png", "id": "oddbirds-cuckoo", "name_zh": "座钟布谷鸟 · 怪鸟", "name_en": "Cuckoo Clock Bird · Odd Birds",
+     "cat": "oddbirds", "tags": ["怪鸟", "布谷鸟", "座钟", "摆锤", "木瓦", "报时门"],
+     "tags_en": ["odd bird", "cuckoo", "clock", "pendulum", "wooden shingles", "door"],
+     "desc_zh": "怪鸟：一只胖嘟嘟的木雕布谷鸟，松木身子雕成山间小屋样式，头顶铺着翘起的木瓦屋顶还缺了一片，肚皮上一扇小门敞着，尾巴是垂摆的铜摆锤，两只圆钟眼只有两根光杆指针，方嘴僵硬地半张着，棕漆掉色清漆泛黄，尾上挂着细细的黄铜链，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd bird: a chubby wooden cuckoo bird in a carved pine chalet-style body with a pitched shingle roof on its head and one shingle missing, a little door on its belly left open, a pendulum tail with a brass bob swinging below, round clock eyes with no numbers and only two plain hands, a stiff square beak half-open, chipped brown paint and faded varnish, a tiny brass chain dangling from its bottom, whimsical storybook outline, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 
