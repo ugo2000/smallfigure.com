@@ -136,18 +136,19 @@ const OUT = require('path').resolve(__dirname, '..');
   });
   ok('JSON-LD 存在且可解析', !!ldJson);
   ok('JSON-LD 含 WebSite + CollectionPage', !!ldJson && ldJson['@graph'].some(g => g['@type'] === 'WebSite') && ldJson['@graph'].some(g => g['@type'] === 'CollectionPage'));
-  ok('JSON-LD ItemList 279 条', !!ldJson && ldJson['@graph'][1].mainEntity.itemListElement.length === 279);
+  ok('JSON-LD ItemList 303 条', !!ldJson && ldJson['@graph'][1].mainEntity.itemListElement.length === 303);
   ok('canonical 指向主域名', html.includes('rel="canonical" href="https://smallfigure.com/"'));
   ok('hreflang 三语声明', (html.match(/hreflang=/g) || []).length >= 3);
   ok('OG 卡片齐全', ['og:title', 'og:description', 'og:image', 'og:url'].every(k => html.includes(k)));
   ok('Twitter 卡片', html.includes('twitter:card'));
   ok('noscript 全文版存在', html.includes('<noscript>') && html.includes('全文版'));
   ok('title 含关键词', (await page.title()).includes('素材图鉴'));
+  ok('hero 静态兜底数字实时化', html.includes('303 件原创小人') && html.includes('303 件素材') && html.includes('58 个分类'));
   /* robots / sitemap 直接 fetch */
   const robots = await page.evaluate(() => fetch('robots.txt').then(r => r.text()));
   const sitemap = await page.evaluate(() => fetch('sitemap.xml').then(r => r.text()));
   ok('robots.txt 放行 AI 爬虫', robots.includes('GPTBot') && robots.includes('Sitemap:'));
-  ok('sitemap.xml 含 279 张图', (sitemap.match(/<image:image>/g) || []).length === 279);
+  ok('sitemap.xml 含 303 张图', (sitemap.match(/<image:image>/g) || []).length === 303);
   /* og 图可访问（og:image 是生产绝对 URL，本地测试改为取文件名后 fetch 相对路径） */
   const ogOk = await page.evaluate(async () => {
     const m = document.querySelector('meta[property="og:image"]');

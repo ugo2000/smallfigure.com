@@ -47,6 +47,19 @@ html = html.replace(
   /(<meta name="description" data-i18n-content="meta\.desc" content=")[^"]*(")/,
   `$1${esc(descZh)}$2`
 );
+/* hero 静态兜底文本同步实时数字（运行时由 i18n 覆盖，静态值服务爬虫与无 JS 访客） */
+html = html.replace(
+  /(<p class="hero-sub" data-i18n="hero\.sub">)[^<]*(<\/p>)/,
+  `$1${esc(`smallfigure 收集这些故事：${nItems} 件原创小人、小徽章和奇异物件，按分类浏览，大图免费下载`)}$2`
+);
+html = html.replace(
+  /(<span data-i18n="hero\.pill\.count">)[^<]*(<\/span>)/,
+  `$1${nItems} 件素材$2`
+);
+html = html.replace(
+  /(<span data-i18n="hero\.pill\.cats">)[^<]*(<\/span>)/,
+  `$1${nCats} 个分类$2`
+);
 
 /* ---------- 2. meta / OG / hreflang / preload ---------- */
 const digest = createHash('sha1')
