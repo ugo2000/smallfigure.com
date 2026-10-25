@@ -93,10 +93,11 @@ CAT_LABELS = {
     "oddweapons": {"zh": "奇门兵器", "en": "Odd Weapons"},
     "monstertoys": {"zh": "怪兽玩具", "en": "Monster Toys"},
     "oddbeasts": {"zh": "古怪走兽", "en": "Odd Beasts"},
+    "deepfish": {"zh": "深海怪鱼", "en": "Odd Fish"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -1923,6 +1924,42 @@ ITEMS = [
      "tags_en": ["beast", "odd", "deer", "candy cane", "candy antlers", "sugar frost"],
      "desc_zh": "古怪走兽：一只粉玫瑰色胖驯鹿，四条腿是红白拐杖糖条纹，疙瘩鹿角上挂着用绳吊着的各色包装糖果，一身浅斑，鼻子沾着糖霜还被舔过一口，一根鹿角尖断了，脖铃裂了缝，糖纸角磕掉了几块，无厘头童话风描边，透明 PNG，1024×1024",
      "desc_en": "Odd beast: a plump dusty-rose deer with four legs striped red and white like candy canes, knobbly antlers hung with dangling wrapped candies on bits of string, pale spots on its coat, a frosted sugar-dusted nose with a lick mark, one antler tip snapped off, a bell collar with a cracked bell and chipped candy shells, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/deepfish-1.png", "id": "deepfish-angler", "name_zh": "鮟鱇灯笼鱼 · 深海怪鱼", "name_en": "Lantern Angler · Odd Fish",
+     "cat": "deepfish", "tags": ["深海", "怪鱼", "鮟鱇", "灯笼", "獠牙", "发光"],
+     "tags_en": ["deep sea", "odd fish", "anglerfish", "lantern", "fangs", "glowing"],
+     "desc_zh": "深海怪鱼：一条深青色胖鮟鱇，一嘴长短不齐的龅牙，额头钓竿挑着一盏暖黄灯笼，灯罩玻璃里还模模糊糊有个小怪兽剪影，肚皮缀着几粒青光小灯，鳞片磨花，鳍撕了个口子，一脸对眼的傻气，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd fish: a plump dark indigo anglerfish with mismatched overbite fangs, a fishing-rod spine on its forehead tipped with a glowing warm-yellow lantern hiding a tiny monster silhouette inside the glass, small glowing cyan light dots along its belly, scuffed scales and a torn frayed fin, a dopey cross-eyed look, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/deepfish-2.png", "id": "deepfish-tubelye", "name_zh": "管眼泡泡鱼 · 深海怪鱼", "name_en": "Tube-Eye Bubble Fish · Odd Fish",
+     "cat": "deepfish", "tags": ["深海", "怪鱼", "管眼", "果冻", "半透明", "气泡"],
+     "tags_en": ["deep sea", "odd fish", "tube eyes", "jelly", "translucent", "bubble"],
+     "desc_zh": "深海怪鱼：一条果冻粉的小鱼半透明身子，能看清里面几根小骨头和一颗吞下去的弹珠，双眼长在两根伸出老远的玻璃管顶端，各顶着一颗浑圆的大气泡眼球，管身泛着淡淡青光，鳍薄如纱，一脸愁容，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd fish: a translucent jelly-pink fish showing tiny bones and one swallowed marble inside its semi-transparent body, its two eyes sitting at the ends of two long clear glassy tubes tipped with big round bubble eyeballs, a faint glowing cyan glow inside the tubes, wispy frayed fins, a worried expression, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/deepfish-3.png", "id": "deepfish-viper", "name_zh": "獠牙蝰鱼 · 深海怪鱼", "name_en": "Fanged Viperfish · Odd Fish",
+     "cat": "deepfish", "tags": ["深海", "怪鱼", "獠牙", "发光触须", "虹彩", "三只眼"],
+     "tags_en": ["deep sea", "odd fish", "fangs", "glowing lure", "iridescent", "three eyes"],
+     "desc_zh": "深海怪鱼：一条银蓝细长蝰鱼，咧嘴笑着一圈巨獠牙根本合不拢，一根特长一根磕了口，下巴吊着一根细须缀着紫光饵球，虹彩鳞片斑驳，圆眼里写满惊慌，尾鳍弯了鳃鳍撕了，额头还多长了一只小眼，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd fish: a slender silver-blue viperfish with a huge grin of enormous curved fangs its mouth cannot close over, one fang longer than the other and a chipped tooth, a glowing violet lure dangling from its chin on a thin whisker, iridescent scale patches, big panicked eyes, a bent tail fin, a torn gill fin and a bonus small third eye on its forehead, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/deepfish-4.png", "id": "deepfish-oarfish", "name_zh": "缎带皇带鱼 · 深海怪鱼", "name_en": "Ribbon Oarfish · Odd Fish",
+     "cat": "deepfish", "tags": ["深海", "怪鱼", "皇带鱼", "长带", "红背鳍", "委屈脸"],
+     "tags_en": ["deep sea", "odd fish", "oarfish", "ribbon body", "red crest", "sad face"],
+     "desc_zh": "深海怪鱼：一条银白细长皇带鱼，身子拉成一条飘带的长度弯出几个舒缓的 S 弯，鲜红背鳍如一把破梳子从头梳到尾，一张小脸圆眼撇嘴委屈巴巴，带鳍拖在身后破破烂烂，背鳍缺了几根刺，鳞片磨花，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd fish: an enormous ribbon-like silver oarfish with an absurdly elongated body undulating in gentle S-curves, a bright red frilly dorsal crest running along its back like a ragged comb, a small sad face with round eyes and a tiny pout, frayed tattered ribbon fins trailing behind, a few missing crest spikes and silver scale scuffs, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/deepfish-5.png", "id": "deepfish-blob", "name_zh": "水滴鱼 · 深海怪鱼", "name_en": "Woeful Blobfish · Odd Fish",
+     "cat": "deepfish", "tags": ["深海", "怪鱼", "水滴鱼", "果冻", "融化", "委屈"],
+     "tags_en": ["deep sea", "odd fish", "blobfish", "gelatinous", "melting", "woeful"],
+     "desc_zh": "深海怪鱼：一团软趴趴的淡粉水滴鱼，身子像化开似的往下瘫，一张听天由命的苦脸，眼角嘴角一齐往下掉，两个贴歪了的玻璃眼珠，皮肉松垮全是褶，几缕小愁斑，小鳍扑腾，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd fish: a limp melting-looking pale pink blobfish with a saggy body pooling slightly at the bottom, a woeful resigned face with downturned eyes and a permanent worried frown, a couple of stuck-on googly eyes one slightly crooked, loose gelatinous skin folds and wrinkles, faint sad freckles and tiny flippers, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/deepfish-6.png", "id": "deepfish-hermit", "name_zh": "寄居怪蟹 · 深海怪鱼", "name_en": "Skull-Shell Hermit · Odd Fish",
+     "cat": "deepfish", "tags": ["深海", "怪鱼", "寄居蟹", "骷髅壳", "大小钳", "藤壶"],
+     "tags_en": ["deep sea", "odd fish", "hermit crab", "skull shell", "uneven claws", "barnacles"],
+     "desc_zh": "深海怪鱼：一只铁锈色花寄居蟹，背的螺壳其实是个咧嘴笑的怪兽骷髅头，黑洞眼窝一排牙，一只钳子巨无霸一只小不点，细毛腿末端带着吸盘，壳上结满藤壶，壳沿磕掉一块，斜着一只小眼偷瞄，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Odd fish: a mottled rust-brown hermit crab wearing a spiral shell that is actually a grinning monster skull with hollow eye sockets and a toothy jaw, one oversized claw and one tiny claw, thin hairy legs with tiny suction tips, barnacle patches crusted on the shell, a cracked shell rim with a chunk missing, one beady side-eye peeking out, whimsical storybook outline, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 
