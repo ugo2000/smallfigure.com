@@ -95,10 +95,11 @@ CAT_LABELS = {
     "oddbeasts": {"zh": "古怪走兽", "en": "Odd Beasts"},
     "deepfish": {"zh": "深海怪鱼", "en": "Odd Fish"},
     "oddbirds": {"zh": "怪鸟", "en": "Odd Birds"},
+    "hardware": {"zh": "钥匙锁具", "en": "Keys & Locks"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -1997,6 +1998,42 @@ ITEMS = [
      "tags_en": ["odd bird", "cuckoo", "clock", "pendulum", "wooden shingles", "door"],
      "desc_zh": "怪鸟：一只胖嘟嘟的木雕布谷鸟，松木身子雕成山间小屋样式，头顶铺着翘起的木瓦屋顶还缺了一片，肚皮上一扇小门敞着，尾巴是垂摆的铜摆锤，两只圆钟眼只有两根光杆指针，方嘴僵硬地半张着，棕漆掉色清漆泛黄，尾上挂着细细的黄铜链，无厘头童话风描边，透明 PNG，1024×1024",
      "desc_en": "Odd bird: a chubby wooden cuckoo bird in a carved pine chalet-style body with a pitched shingle roof on its head and one shingle missing, a little door on its belly left open, a pendulum tail with a brass bob swinging below, round clock eyes with no numbers and only two plain hands, a stiff square beak half-open, chipped brown paint and faded varnish, a tiny brass chain dangling from its bottom, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/hardware-1.png", "id": "hardware-skeletonkey", "name_zh": "心冠巨钥匙 · 钥匙锁具", "name_en": "Crest Heart Key · Keys & Locks",
+     "cat": "hardware", "tags": ["钥匙", "古铜", "心形柄环", "阶梯齿", "铜绿"],
+     "tags_en": ["key", "antique brass", "heart bow", "stepped bit", "verdigris"],
+     "desc_zh": "钥匙锁具：一把顶天立地的古铜巨钥匙，柄环是一颗镶着冠尖的大心形，细长钥匙杆磨得发亮，底端齿牙削成两级台阶，铜身布满细划痕、接缝处洇着一小片青绿铜锈，齿尖磕掉一个角，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Keys & Locks: an oversized antique brass skeleton key with a big heart-shaped bow crowned by a small point, a long slender shaft worn shiny, the bit cut into two stepped teeth at the bottom, fine scratches all over the brass with a patch of green verdigris seeping at the seams and a chipped corner on the tooth, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/hardware-2.png", "id": "hardware-padlock", "name_zh": "锈绿铁挂锁 · 钥匙锁具", "name_en": "Rusty Green Padlock · Keys & Locks",
+     "cat": "hardware", "tags": ["挂锁", "铁锁", "锈斑", "钥匙孔", "掉漆"],
+     "tags_en": ["padlock", "iron lock", "rust", "keyhole", "chipped paint"],
+     "desc_zh": "钥匙锁具：一把敦实的墨绿铁挂锁，粗壮的银灰锁梁弓在头顶，锁脸正中一个圆钥匙孔，绿漆剥落露出底下的锈铁，橙红锈斑东一块西一块，锁身边缘磕出一处小凹坑，孔口周围磨出一圈亮痕，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Keys & Locks: a chunky dark-green cast-iron padlock with a thick silver-grey shackle arching overhead, a round keyhole in the center of the face, green paint chipped away to reveal rusty iron beneath, orange rust blotches scattered around, a small dent on the body edge and a bright worn ring scratched around the keyhole, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/hardware-3.png", "id": "hardware-combolock", "name_zh": "黄铜密码转盘锁 · 钥匙锁具", "name_en": "Brass Dial Lock · Keys & Locks",
+     "cat": "hardware", "tags": ["密码锁", "转盘", "黄铜", "刻度点", "锁梁"],
+     "tags_en": ["combination lock", "dial", "brass", "tick marks", "shackle"],
+     "desc_zh": "钥匙锁具：一只黄铜密码挂锁，锁脸正中一个会转的圆转盘，盘面上只刻着一圈刻度线和凸起的小圆点，一个数字都没有，顶上一根粗壮的锁梁，铜面有几道细划痕和淡淡的指纹印，转盘边沿磕出一个小凹点，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Keys & Locks: a brass combination padlock with a round rotating dial in the center of its face, the dial engraved with a ring of tick marks and small embossed dots and not a single number, a sturdy curved shackle on top, fine scratches and faint fingerprint smudges on the brass, a tiny dent on the dial rim, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/hardware-4.png", "id": "hardware-pipewrench", "name_zh": "黄铜大管钳 · 钥匙锁具", "name_en": "Brass Pipe Wrench · Keys & Locks",
+     "cat": "hardware", "tags": ["扳手", "管钳", "黄铜", "滚花螺母", "锈点"],
+     "tags_en": ["wrench", "pipe wrench", "brass", "knurled nut", "rust spot"],
+     "desc_zh": "钥匙锁具：一把顶天立地的黄铜管钳，弯钩钳口张在头顶，钳口里一排咬合锯齿，杆身挂着滚花调节螺母，铜面磨出细密的划痕，柄杆中缝洇出一小块锈斑，钳口尖角磕瘪了一处，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Keys & Locks: an oversized brass pipe wrench standing tall with its hooked jaw gaping at the top, a row of biting teeth inside the jaw, a knurled adjustment nut riding the shaft, fine dense scratches worn into the brass, a small rust stain seeping at the middle seam and a chipped-flat corner on the jaw tip, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/hardware-5.png", "id": "hardware-lionknocker", "name_zh": "狮头门环 · 钥匙锁具", "name_en": "Lion-Head Knocker · Keys & Locks",
+     "cat": "hardware", "tags": ["门环", "狮头", "黄铜", "卷鬃", "铜环"],
+     "tags_en": ["door knocker", "lion head", "brass", "curled mane", "ring"],
+     "desc_zh": "钥匙锁具：一只威风凛凛的黄铜狮头门环，卷曲的鬃毛纹路一圈压一圈，头顶还翘着一撮涡卷饰冠，狮子呲着牙咬住一只大铜环，环身垂在嘴下微微晃着，铜面细划痕密布，鬃毛缝里洇着几点铜绿，冠沿磕掉一小块，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Keys & Locks: a magnificent brass lion-head door knocker with curled mane ridges layered ring upon ring and a little scroll crest tufting from the top of its head, the lion baring its teeth around a big brass ring that hangs swaying beneath its chin, dense fine scratches across the brass, spots of verdigris seeping in the mane crevices and a small chip off the crest edge, whimsical storybook outline, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/hardware-6.png", "id": "hardware-scrollhinge", "name_zh": "卷草铁铰链 · 钥匙锁具", "name_en": "Scrollwork Iron Hinge · Keys & Locks",
+     "cat": "hardware", "tags": ["铰链", "合页", "铁艺", "卷草纹", "锈点"],
+     "tags_en": ["hinge", "ironmongery", "wrought iron", "scrollwork", "rust"],
+     "desc_zh": "钥匙锁具：一条竖挂的黑铁艺铰链，笔直的扁铁条旁伸出一大蓬卷草涡纹，顶端一个圆轴盘带着小吊环，铆钉孔里缺了一颗只剩黑洞，铁面哑光却溅着星星点点的锈斑，涡纹边缘划痕累累，无厘头童话风描边，透明 PNG，1024×1024",
+     "desc_en": "Keys & Locks: a vertical wrought-iron strap hinge with a straight flat bar trailing a lush spill of scrollwork tendrils, a round pivot boss with a little hanging ring at the top, one rivet hole empty leaving just a black dot, matte black iron freckled with rust spots and scratches worn along the scroll edges, whimsical storybook outline, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 
