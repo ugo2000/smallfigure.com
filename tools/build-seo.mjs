@@ -201,7 +201,6 @@ const robots = [
   'User-agent: *',
   'Allow: /',
   'Disallow: /api/',
-  'Content-Signal: ai-train=no, search=yes, ai-input=no',
   '',
   '# AI 搜索爬虫：决定内容是否出现在 AI 回答里，放行以提升 GEO 可见性',
   'User-agent: OAI-SearchBot',
