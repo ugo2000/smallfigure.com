@@ -11,6 +11,12 @@ _site/
 tools/_*.png
 processed/_*.png
 
+# 仓库根目录的本地验收截图（_auth_modal_*.png / _final_*.png 等）
+/_*.png
+
+# OG 图母版：由 tools/make_og_image.py 本地生成，build-seo.mjs 按内容摘要复制为 og-<digest>.jpg
+/og-1200x630.jpg
+
 # 抠图中间产物与临时目录（定版成品 *_t.png 入库）
 processed/_n4_tmp/
 processed/_n4_tmp_raw/

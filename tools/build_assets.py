@@ -100,10 +100,11 @@ CAT_LABELS = {
     "fairytale": {"zh": "童话人物", "en": "Fairytale"},
     "alienfolk": {"zh": "盛装外星人", "en": "Dressed Aliens"},
     "oddchem": {"zh": "怪奇化学仪", "en": "Odd Chemistry"},
+    "trades": {"zh": "旧时百工", "en": "Old Trades"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔 / 童话人物 / 盛装外星人 / 怪奇化学仪",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures / Fairytale / Dressed Aliens / Odd Chemistry"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔 / 童话人物 / 盛装外星人 / 怪奇化学仪 / 旧时百工",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures / Fairytale / Dressed Aliens / Odd Chemistry / Old Trades"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -121,6 +122,7 @@ SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / �
           " + 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座"
           "（character-art 管线怪诞童话风续批五分类：仙童为胖娃娃中式仙童、星座为虚构星点连线图案，均与既有角色/行星徽志/飞靴错开）"
           " + 无厘头人物（character-art 管线 mo-lei-tau 无厘头故事书风，冷脸配荒诞反差物件）"
+          " + 旧时百工（character-art 管线：八位手工行业人物立绘，暖土色调，刻意避开霓虹与科幻）"
           " + 早期《音弹》游戏美术资产 + 果克星人系列（据张祥前《果克星球奇遇》描述 AI 生成）")
 
 # 每项：源文件, id, 中文名, 英文名, 分类, 标签, 中文简介, 英文简介, 透明, 动画效果
@@ -2182,6 +2184,56 @@ ITEMS = [
      "tags_en": ["chemistry", "cylinder", "stars", "moon", "cork"],
      "desc_zh": "怪奇化学仪：一支高量筒内盛着一颗发光夜空，浮星与一弯小月悬于液间，玻璃上刻着刻度，顶端软木塞，19 世纪科学插画风，纤细墨线配柔和水彩，淡蓝玻璃配暖色高光，透明 PNG，1024×1024",
      "desc_en": "Odd Chemistry: a tall graduated cylinder containing a tiny glowing night sky with floating stars and a small crescent moon suspended in the liquid, measurement markings etched up the glass, a cork stopper on top, vintage 19th-century scientific illustration with delicate ink linework and soft watercolor washes, pale blue glass with warm highlights, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+
+    # —— 旧时百工（character-art 管线：八位手工行业人物立绘，细腻美式漫画风）——
+    {"src": "processed/trades-1.png", "id": "trades-cooper", "name_zh": "箍桶匠 · 旧时百工", "name_en": "The Cooper · Old Trades",
+     "cat": "trades", "tags": ["箍桶匠", "木桶", "手艺人", "男性", "立绘", "透明", "小人"],
+     "tags_en": ["cooper", "barrel maker", "craftsman", "male", "character art", "transparent", "little figure"],
+     "desc_zh": "旧时百工：一位中年箍桶匠，粗壮结实，卷起袖口露出满是老茧的小臂，怀里抱着一只刚上箍的橡木桶，一手举着木槌，抬眼端详桶沿，神情里有安静的得意",
+     "desc_en": "Old Trades: a stocky middle-aged cooper cradling a freshly hooped oak barrel, sleeves rolled to the elbows showing calloused forearms, wooden mallet in one hand, quietly proud as he inspects the rim",
+     "transparent": True, "effect": None},
+    {"src": "processed/trades-2.png", "id": "trades-clockmaker", "name_zh": "修表匠 · 旧时百工", "name_en": "The Clockmaker · Old Trades",
+     "cat": "trades", "tags": ["修表匠", "怀表", "铜", "手艺人", "男性", "立绘", "透明", "小人"],
+     "tags_en": ["clockmaker", "pocket watch", "brass", "craftsman", "male", "character art", "transparent", "little figure"],
+     "desc_zh": "旧时百工：一位瘦削的老修表匠，白须垂胸，低鼻梁上架一副圆丝眼镜，深青对襟长衫，腰间系着皮工具卷，一手持开盖黄铜怀表，一手捏细镊子，眯眼盯住机芯",
+     "desc_en": "Old Trades: a slender elderly clockmaker, wispy white beard, round wire spectacles low on his nose, dark teal changshan with a leather tool roll at his waist, holding an open brass pocket watch and fine tweezers, eyes narrowed on the mechanism",
+     "transparent": True, "effect": None},
+    {"src": "processed/trades-3.png", "id": "trades-leatherworker", "name_zh": "皮匠 · 旧时百工", "name_en": "The Leatherworker · Old Trades",
+     "cat": "trades", "tags": ["皮匠", "马鞍", "皮革", "手艺人", "男性", "立绘", "透明", "小人"],
+     "tags_en": ["leatherworker", "saddle", "leather", "craftsman", "male", "character art", "transparent", "little figure"],
+     "desc_zh": "旧时百工：一位肩宽体壮的皮匠，浓胡须，辫发垂在脑后，一道旧疤横过眉骨，棕色皮围裙上缝着一排密线，一只手高高举起刚缝好的深棕马鞍，另一只手握着弯锥",
+     "desc_en": "Old Trades: a broad-shouldered leatherworker with a thick mustache, braided queue, an old scar across one eyebrow, a tan stitched apron, holding a finished dark brown saddle high in one hand and a curved awl in the other",
+     "transparent": True, "effect": None},
+    {"src": "processed/trades-4.png", "id": "trades-cottoncarder", "name_zh": "弹棉匠 · 旧时百工", "name_en": "The Cotton Carder · Old Trades",
+     "cat": "trades", "tags": ["弹棉匠", "棉花", "弓弦", "手艺人", "男性", "立绘", "透明", "小人"],
+     "tags_en": ["cotton carder", "cotton", "bow", "craftsman", "male", "character art", "transparent", "little figure"],
+     "desc_zh": "旧时百工：一位圆脸喜庆的弹棉匠，头系素色布巾，靛蓝短褂束腰挂在腰间，身后斜插一筒竹制被褥签，正拉开一张大弓弦，弦上鼓起一团雪白棉絮",
+     "desc_en": "Old Trades: a cheerful round-faced cotton carder in a cloth kerchief and indigo jacket, a bamboo quiver of quilting sticks at his hip, pulling a large wooden bow so a thick cloud of white cotton fiber billows along the string",
+     "transparent": True, "effect": None},
+    {"src": "processed/trades-5.png", "id": "trades-grinder", "name_zh": "磨刀匠 · 旧时百工", "name_en": "The Knife Grinder · Old Trades",
+     "cat": "trades", "tags": ["磨刀匠", "磨石", "菜刀", "手艺人", "男性", "立绘", "透明", "小人"],
+     "tags_en": ["knife grinder", "whetstone", "cleaver", "craftsman", "male", "character art", "transparent", "little figure"],
+     "desc_zh": "旧时百工：一位精瘦的磨刀匠，颧骨高耸，头缠布带，辫发细长，深蓝无袖工褂外罩灰色水渍衬衫，小腿绑着皮质护具，双手压住宽刃菜刀在木桶里的湿磨石上，水珠四溅",
+     "desc_en": "Old Trades: a lean knife grinder with high cheekbones, cloth headband and thin queue, dark blue sleeveless work jacket over a water-stained grey shirt, leather shin guards, pressing a broad cleaver onto a wet whetstone set in a wooden tub as droplets fly",
+     "transparent": True, "effect": None},
+    {"src": "processed/trades-6.png", "id": "trades-papercraft", "name_zh": "纸扎匠 · 旧时百工", "name_en": "The Paper Artisan · Old Trades",
+     "cat": "trades", "tags": ["纸扎匠", "纸人", "纸马", "手艺人", "男性", "立绘", "透明", "小人"],
+     "tags_en": ["paper artisan", "paper effigy", "paper horse", "craftsman", "male", "character art", "transparent", "little figure"],
+     "desc_zh": "旧时百工：一位清瘦的纸扎匠，窄眼专注，灰色长衫配墨黑腰带，草鞋落魄，袖口沾着纸屑，一只手托起一匹红绿描金的纸马，另一只手握着细笔，脚边竹盘上摞着彩纸",
+     "desc_en": "Old Trades: a slender paper artisan in a soft grey robe with an ink-black sash and straw sandals, paper scraps on his sleeves, holding up a red-and-green painted paper horse in one hand and a fine brush in the other, stacked coloured sheets on a bamboo tray at his feet",
+     "transparent": True, "effect": None},
+    {"src": "processed/trades-7.png", "id": "trades-dyer", "name_zh": "染匠 · 旧时百工", "name_en": "The Indigo Dyer · Old Trades",
+     "cat": "trades", "tags": ["染匠", "靛蓝", "染布", "手艺人", "男性", "立绘", "透明", "小人"],
+     "tags_en": ["dyer", "indigo", "cloth", "craftsman", "male", "character art", "transparent", "little figure"],
+     "desc_zh": "旧时百工：一位手臂粗壮的染匠，前臂与灰麻布衣襟全被靛蓝染渣染透，手腕缠着深色布护套，红布束发，一手挑起滴水的深蓝染布，一手握着木桨，脚下陶缸里紫蓝染液冒着白汽",
+     "desc_en": "Old Trades: a strong-armed indigo dyer with dye stains soaked into his forearms and coarse hemp robe, dark cloth wrapped as gloves, red bandanna in his hair, holding up a dripping deep indigo cloth on a pole and a wooden paddle, a ceramic vat of violet-blue liquid steaming at his feet",
+     "transparent": True, "effect": None},
+    {"src": "processed/trades-8.png", "id": "trades-basketweaver", "name_zh": "编竹匠 · 旧时百工", "name_en": "The Basket Weaver · Old Trades",
+     "cat": "trades", "tags": ["编竹匠", "竹篮", "竹篾", "手艺人", "男性", "立绘", "透明", "小人"],
+     "tags_en": ["basket weaver", "bamboo basket", "bamboo strips", "craftsman", "male", "character art", "transparent", "little figure"],
+     "desc_zh": "旧时百工：一位精瘦的编竹匠，肤色晒得黝黑，宽草帽往后推在头上，肩头搭着一片竹篾编的挡雨披，无袖蓝灰短褂露出胸腹，一手提起刚编好的圆形竹篮，一手握着劈好的竹篾",
+     "desc_en": "Old Trades: a wiry bamboo basket weaver with sun-darkened skin, a wide straw hat tilted back, a bamboo-strip rain cape over one shoulder, a sleeveless blue-grey vest, holding up a freshly woven round basket and a bundle of split bamboo strips",
      "transparent": True, "effect": None},
 ]
 

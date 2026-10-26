@@ -265,6 +265,10 @@ CAT_STORIES = {
         "zh": "玻璃器皿里装着讲不通的配方。冷凝管会自己盘成蛇，烧瓶能套三层，最细的那支量筒里泡着一整片夜空。本分类的规矩：能读刻度，不许问刻的是什么。",
         "en": "Glassware holding recipes that refuse to make sense. Condensers coil into snakes, flasks nest three deep, and the finest cylinder soaks up an entire night sky. House rule: you may read the graduations, not ask what is being measured.",
     },
+    "trades": {
+        "zh": "八位靠手艺吃饭的旧式匠人，一个比一个实在。箍桶的、修表的、缝皮的、弹棉的、磨刀的、扎纸的、染布的、编竹的，全站在同一片纸底上，谁也没比谁体面。规矩只有一条：手上的东西不许假。",
+        "en": "Eight old craftspeople who live by their hands, each more grounded than the last. A cooper, a clockmaker, a leatherworker, a cotton carder, a knife grinder, a paper artisan, a dyer and a basket weaver, all standing on the same flat ground. One rule: nothing they hold may be fake.",
+    },
 }
 
 # 素材故事：key 与 data/images.json 的 images[].id 对应（首批 38 件，其余分批补）
@@ -1600,5 +1604,37 @@ ITEM_STORIES = {
     "oddchem-stars": {
         "zh": "一支高量筒内盛着一颗发光夜空，浮星与一弯小月悬于液间，玻璃上刻着刻度，顶端软木塞。淡蓝玻璃配暖色高光——量筒量的是夜空，那道刻度至今没人敢往下读。",
         "en": "A tall graduated cylinder holding a small glowing night sky, floating stars and a crescent moon suspended in the liquid, measurement markings etched up the glass, a cork stopper on top. Pale blue glass with warm highlights: the cylinder measures the night sky, and nobody has dared read below the first mark.",
+    },
+    "trades-cooper": {
+        "zh": "箍桶匠抱着一只刚上完箍的橡木桶，木槌还攥在手里。他抬眼看桶沿的那一下，是他一天里唯一表示满意的动作——手艺人不太会说话，桶替他说了。",
+        "en": "The cooper cradles a freshly hooped oak barrel, mallet still in hand. The glance he gives the rim is the only sign of satisfaction he offers all day — craftspeople talk poorly, and the barrel says it for them.",
+    },
+    "trades-clockmaker": {
+        "zh": "老修表匠把一枚开盖黄铜怀表举到眼前，镊子尖几乎没进机芯。整站都催快，只有他愿意为半秒停下来。表走得快慢是别人的事，他只管它准。",
+        "en": "The old clockmaker holds an open brass pocket watch to his eye, tweezers almost inside the movement. The whole gallery is in a hurry; he alone will stop for half a second. Whether a watch runs fast is other people's business — he only makes it correct.",
+    },
+    "trades-leatherworker": {
+        "zh": "皮匠把刚缝好的马鞍高高举起，皮围裙上的针脚密得像账本。他脸上那道疤不解释来历，围裙上的线也不必数——他做的是马鞍，不是简历。",
+        "en": "The leatherworker raises a freshly stitched saddle high, the stitches on his apron dense as an account book. The scar on his face explains nothing, and the seams need no counting: he makes saddles, not résumés.",
+    },
+    "trades-cottoncarder": {
+        "zh": "弹棉匠拉着大弓弦，一团雪白棉絮顺着弦炸开，笑得像个抢到糖的孩子。这活计在今天已经没人接，他还在做——他说棉花要弹到能听见风为止。",
+        "en": "The cotton carder draws the great bow and a white cloud of fiber bursts along the string, grinning like a child who got the last sweet. Nobody takes the work any more, yet he still does: cotton, he says, must be beaten until you can hear wind in it.",
+    },
+    "trades-grinder": {
+        "zh": "磨刀匠把宽刃菜刀按在湿磨石上，水珠溅到袖口。他磨的刀进不了档案，进得了灶台——在他看来这反而是更难看的评价：一把刀好不好，最后要由吃饭的人说。",
+        "en": "The knife grinder presses a broad cleaver onto a wet whetstone, droplets reaching his sleeve. His blades will never enter an archive, only a kitchen — which he rates the harder brief: how good a knife is gets decided by whoever eats with it.",
+    },
+    "trades-papercraft": {
+        "zh": "纸扎匠托着一匹红绿描金的纸马，笔还捏在另一只手里。他做的马不会跑，但烧起来能跑很远——这在他看来不是缺陷，是一种更划算的运输方式。",
+        "en": "The paper artisan holds up a red-and-green painted paper horse, brush still in his other hand. His horses never run, but burned they travel a long way — not a defect, in his view, but a cheaper form of transport.",
+    },
+    "trades-dyer": {
+        "zh": "染匠挑起一段滴水的靛蓝布，脚下陶缸冒着酸气的白汽。他的手臂和衣襟被染渣染透了，迟早有一天会分不清哪块是布、哪块是人。",
+        "en": "The dyer lifts a dripping length of indigo cloth; white steam rises from the ceramic vat at his feet. Dye has soaked his arms and his robe alike, and sooner or later he will not be able to tell cloth from skin.",
+    },
+    "trades-basketweaver": {
+        "zh": "编竹匠提起刚编好的圆竹篮，篾条编得密实发亮。他脚边那些卷曲的竹屑说明一件事实：他不是把竹子变成篮子，他是把竹子剩下的部分也一并安排妥当。",
+        "en": "The basket weaver lifts a freshly woven round basket, the strips tight and glossy. The curled shavings at his feet give away the real skill: he does not just turn bamboo into a basket, he also finds a use for what is left over.",
     },
 }
