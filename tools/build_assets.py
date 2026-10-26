@@ -98,10 +98,11 @@ CAT_LABELS = {
     "hardware": {"zh": "钥匙锁具", "en": "Keys & Locks"},
     "toyfolk": {"zh": "立体公仔", "en": "Toy Figures"},
     "fairytale": {"zh": "童话人物", "en": "Fairytale"},
+    "alienfolk": {"zh": "盛装外星人", "en": "Dressed Aliens"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔 / 童话人物",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures / Fairytale"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔 / 童话人物 / 盛装外星人",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures / Fairytale / Dressed Aliens"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -2108,6 +2109,42 @@ ITEMS = [
      "tags_en": ["fairytale", "puppet", "lantern", "jointed", "warm glow"],
      "desc_zh": "童话人物：一个木偶小男孩，四肢带关节、头戴尖帽，雕出的脸上神情生动，手提一盏发暖光的小纸灯笼，头顶牵着细线，19 世纪欧洲故事书水彩插画风，纤细墨线配柔和水彩，暖木与灯光配色，透明 PNG，1024×1024",
      "desc_en": "Fairytale: a wooden marionette puppet boy with jointed limbs and a pointed hat, a carved expressive face, carrying a small glowing paper lantern, control strings above his head, vintage 19th-century European storybook watercolor illustration with delicate ink linework and soft washes, warm wood-and-lamplight palette, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/alienfolk-1.png", "id": "alienfolk-victorian", "name_zh": "维多利亚绅士 · 盛装外星人", "name_en": "Victorian Gentleman · Dressed Aliens",
+     "cat": "alienfolk", "tags": ["外星人", "绿肤", "燕尾服", "礼帽", "维多利亚"],
+     "tags_en": ["alien", "green", "tailcoat", "top hat", "Victorian"],
+     "desc_zh": "盛装外星人：一个绿皮肤外星人，大黑杏仁眼、两根细弯触角，身披优雅维多利亚绅士燕尾服，头戴高顶黑礼帽，内衬荷叶边白衬衫与丝绸领结，19 世纪欧洲故事书水彩插画风，纤细墨线配柔和水彩，绿肤与墨黑礼服对比，透明 PNG，1024×1024",
+     "desc_en": "Dressed Aliens: a green-skinned alien with large black almond eyes and two slender curved antennae, wearing an elegant Victorian gentleman's tailcoat with a tall black top hat, a ruffled white shirt and a silk cravat, vintage 19th-century European storybook watercolor illustration with delicate ink linework and soft washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/alienfolk-2.png", "id": "alienfolk-kimono", "name_zh": "和服仕女 · 盛装外星人", "name_en": "Kimono Lady · Dressed Aliens",
+     "cat": "alienfolk", "tags": ["外星人", "紫肤", "和服", "腰带", "花卉"],
+     "tags_en": ["alien", "violet", "kimono", "obi", "floral"],
+     "desc_zh": "盛装外星人：一个紫皮肤外星人，圆润大眼、飘逸触须发丝，身着繁复花纹和服，宽腰带与精致花卉纹样，19 世纪欧洲故事书水彩插画风，纤细墨线配柔和水彩，紫肤与花色和服，透明 PNG，1024×1024",
+     "desc_en": "Dressed Aliens: a violet-skinned alien with huge round eyes and wispy tendril hair, wearing an elaborately patterned Japanese kimono with a wide obi sash and delicate floral motifs, vintage 19th-century European storybook watercolor illustration with delicate ink linework and soft washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/alienfolk-3.png", "id": "alienfolk-ballgown", "name_zh": "欧式礼服裙 · 盛装外星人", "name_en": "Ball Gown Alien · Dressed Aliens",
+     "cat": "alienfolk", "tags": ["外星人", "蓝肤", "礼服裙", "蕾丝", "蓬裙"],
+     "tags_en": ["alien", "blue", "ball gown", "lace", "skirt"],
+     "desc_zh": "盛装外星人：一个蓝皮肤外星人，发光大眼、羽毛状触角，身着华丽欧式礼服裙，蓬松层叠裙摆、细致蕾丝边与缎带胸衣，19 世纪欧洲故事书水彩插画风，纤细墨线配柔和水彩，蓝肤与层叠裙，透明 PNG，1024×1024",
+     "desc_en": "Dressed Aliens: a blue-skinned alien with large luminous eyes and delicate feathery antennae, wearing an elaborate European ball gown with a voluminous layered skirt, fine lace trim and a ribboned bodice, vintage 19th-century European storybook watercolor illustration with delicate ink linework and soft washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/alienfolk-4.png", "id": "alienfolk-military", "name_zh": "军礼服 · 盛装外星人", "name_en": "Military Dress Alien · Dressed Aliens",
+     "cat": "alienfolk", "tags": ["外星人", "灰肤", "军礼服", "勋章", "筒帽"],
+     "tags_en": ["alien", "grey", "military", "medals", "shako"],
+     "desc_zh": "盛装外星人：一个灰皮肤外星人，大黑眼、一根卷曲触角，身着正式军礼服，金线肩章、胸前一排闪亮勋章与羽饰筒帽，19 世纪欧洲故事书水彩插画风，纤细墨线配柔和水彩，灰肤与红金军服，透明 PNG，1024×1024",
+     "desc_en": "Dressed Aliens: a grey-skinned alien with large dark eyes and a single curled antenna, wearing a formal military dress uniform with braided gold epaulettes, a row of shining medals and a plumed shako, vintage 19th-century European storybook watercolor illustration with delicate ink linework and soft washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/alienfolk-5.png", "id": "alienfolk-qipao", "name_zh": "旗袍 · 盛装外星人", "name_en": "Qipao Alien · Dressed Aliens",
+     "cat": "alienfolk", "tags": ["外星人", "青肤", "旗袍", "刺绣", "开衩"],
+     "tags_en": ["alien", "teal", "qipao", "embroidery", "slit"],
+     "desc_zh": "盛装外星人：一个青绿皮肤外星人，杏仁大眼、两只小弯角，身着修身红色旗袍，金色花卉刺绣沿下摆、高开衩，19 世纪欧洲故事书水彩插画风，纤细墨线配柔和水彩，青肤与红袍金绣，透明 PNG，1024×1024",
+     "desc_en": "Dressed Aliens: a teal-skinned alien with large almond eyes and two small curved horns, wearing a fitted red Chinese qipao cheongsam with golden floral embroidery along the hem and a high side slit, vintage 19th-century European storybook watercolor illustration with delicate ink linework and soft washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/alienfolk-6.png", "id": "alienfolk-royal", "name_zh": "帝王袍 · 盛装外星人", "name_en": "Royal Robe Alien · Dressed Aliens",
+     "cat": "alienfolk", "tags": ["外星人", "金肤", "帝王袍", "王冠", "权杖"],
+     "tags_en": ["alien", "gold", "royal robe", "crown", "scepter"],
+     "desc_zh": "盛装外星人：一个金皮肤外星人，发光大眼、额间一圈细小水晶额饰，身着帝王长袍配白貂皮滚边与珠宝王冠，手持纤细权杖，19 世纪欧洲故事书水彩插画风，纤细墨线配柔和水彩，金肤与华袍，透明 PNG，1024×1024",
+     "desc_en": "Dressed Aliens: a golden-skinned alien with large glowing eyes and a delicate circlet of small crystals, wearing an imperial royal robe with white ermine trim and a jeweled crown, holding a slender scepter, vintage 19th-century European storybook watercolor illustration with delicate ink linework and soft washes, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 
