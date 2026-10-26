@@ -99,10 +99,11 @@ CAT_LABELS = {
     "toyfolk": {"zh": "立体公仔", "en": "Toy Figures"},
     "fairytale": {"zh": "童话人物", "en": "Fairytale"},
     "alienfolk": {"zh": "盛装外星人", "en": "Dressed Aliens"},
+    "oddchem": {"zh": "怪奇化学仪", "en": "Odd Chemistry"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔 / 童话人物 / 盛装外星人",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures / Fairytale / Dressed Aliens"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔 / 童话人物 / 盛装外星人 / 怪奇化学仪",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures / Fairytale / Dressed Aliens / Odd Chemistry"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -2145,6 +2146,42 @@ ITEMS = [
      "tags_en": ["alien", "gold", "royal robe", "crown", "scepter"],
      "desc_zh": "盛装外星人：一个金皮肤外星人，发光大眼、额间一圈细小水晶额饰，身着帝王长袍配白貂皮滚边与珠宝王冠，手持纤细权杖，19 世纪欧洲故事书水彩插画风，纤细墨线配柔和水彩，金肤与华袍，透明 PNG，1024×1024",
      "desc_en": "Dressed Aliens: a golden-skinned alien with large glowing eyes and a delicate circlet of small crystals, wearing an imperial royal robe with white ermine trim and a jeweled crown, holding a slender scepter, vintage 19th-century European storybook watercolor illustration with delicate ink linework and soft washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddchem-1.png", "id": "oddchem-distillai", "name_zh": "蒸馏 AI 蒸馏瓶", "name_en": "AI-Distilling Flask",
+     "cat": "oddchem", "tags": ["化学仪", "蒸馏瓶", "AI", "冷凝管", "发光脑"],
+     "tags_en": ["chemistry", "distillation", "AI", "condenser", "brain"],
+     "desc_zh": "怪奇化学仪：一只圆底蒸馏瓶接蛇形冷凝管，正在把一颗发光的小型人工智能脑蒸馏成一串晶莹液滴落入接收瓶，脑中迸出细小电路火花，19 世纪科学插画风，纤细墨线配柔和水彩，淡蓝绿玻璃配暖色高光，透明 PNG，1024×1024",
+     "desc_en": "Odd Chemistry: a round-bottom distillation flask joined to a coiled condenser, distilling a glowing miniature AI brain into shimmering droplets that fall into a receiving flask, tiny circuit sparks crackling from the brain, vintage 19th-century scientific illustration with delicate ink linework and soft watercolor washes, pale blue-green glass with warm highlights, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddchem-2.png", "id": "oddchem-serpent", "name_zh": "蛇形冷凝管", "name_en": "Serpent Condenser",
+     "cat": "oddchem", "tags": ["化学仪", "冷凝管", "蛇", "玻璃", "发光液"],
+     "tags_en": ["chemistry", "condenser", "snake", "glass", "glow"],
+     "desc_zh": "怪奇化学仪：一支盘成蜿蜒蛇形的玻璃冷凝管，蛇首在顶端，发光液体沿螺旋管流动，19 世纪科学插画风，纤细墨线配柔和水彩，淡蓝玻璃配暖色高光，透明 PNG，1024×1024",
+     "desc_en": "Odd Chemistry: a coiled serpentine laboratory condenser shaped like a slithering glass snake, a small serpent head at the top, glowing liquid flowing through the spiral coil, vintage 19th-century scientific illustration with delicate ink linework and soft watercolor washes, pale blue glass with warm highlights, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddchem-3.png", "id": "oddchem-eyeball", "name_zh": "眼球滴定管", "name_en": "Eyeball Burette",
+     "cat": "oddchem", "tags": ["化学仪", "滴定管", "眼球", "虹彩", "星座"],
+     "tags_en": ["chemistry", "burette", "eyeball", "iris", "stars"],
+     "desc_zh": "怪奇化学仪：一支形如巨大人眼的玻璃滴定管，刻度环刻在虹彩四周，底部旋塞滴出发光液滴，虹膜旋着细小星座，19 世纪科学插画风，纤细墨线配柔和水彩，淡蓝玻璃配暖色高光，透明 PNG，1024×1024",
+     "desc_en": "Odd Chemistry: a glass burette shaped like a giant human eyeball with a graduated scale etched around the iris, a stopcock at the bottom releasing glowing droplets, the iris swirling with tiny constellations, vintage 19th-century scientific illustration with delicate ink linework and soft watercolor washes, pale blue glass with warm highlights, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddchem-4.png", "id": "oddchem-nested", "name_zh": "三层幻象烧瓶", "name_en": "Nested Illusion Flask",
+     "cat": "oddchem", "tags": ["化学仪", "烧瓶", "嵌套", "幻象", "光球"],
+     "tags_en": ["chemistry", "flask", "nested", "illusion", "sphere"],
+     "desc_zh": "怪奇化学仪：三只锥形烧瓶层层嵌套如回响幻象，最内层悬浮一颗发光小球，玻璃壁间缭绕淡淡雾气，19 世纪科学插画风，纤细墨线配柔和水彩，淡蓝绿玻璃配暖色高光，透明 PNG，1024×1024",
+     "desc_en": "Odd Chemistry: a triple-nested Erlenmeyer flask, three conical flasks nested inside one another like echoing illusions, the innermost holding a tiny floating glowing sphere, faint mist swirling between the glass walls, vintage 19th-century scientific illustration with delicate ink linework and soft watercolor washes, pale blue-green glass with warm highlights, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddchem-5.png", "id": "oddchem-gears", "name_zh": "齿轮分液漏斗", "name_en": "Gear Separatory Funnel",
+     "cat": "oddchem", "tags": ["化学仪", "分液漏斗", "齿轮", "黄铜", "分层液"],
+     "tags_en": ["chemistry", "separatory", "gears", "brass", "layers"],
+     "desc_zh": "怪奇化学仪：一支分液漏斗环抱黄铜齿轮，齿轮绕玻璃身缓缓转动，两不相溶的发光液体在瓶内分成两层，底部一只齿轮旋塞，19 世纪科学插画风，纤细墨线配柔和水彩，淡蓝玻璃配暖黄铜高光，透明 PNG，1024×1024",
+     "desc_en": "Odd Chemistry: a separatory funnel ringed with brass toothed gears rotating around its glass body, two immiscible glowing liquids separating into layers inside, a tiny gear stopcock at the bottom, vintage 19th-century scientific illustration with delicate ink linework and soft watercolor washes, pale blue glass with warm brass highlights, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/oddchem-6.png", "id": "oddchem-stars", "name_zh": "星象量筒", "name_en": "Astral Cylinder",
+     "cat": "oddchem", "tags": ["化学仪", "量筒", "星空", "月亮", "软木塞"],
+     "tags_en": ["chemistry", "cylinder", "stars", "moon", "cork"],
+     "desc_zh": "怪奇化学仪：一支高量筒内盛着一颗发光夜空，浮星与一弯小月悬于液间，玻璃上刻着刻度，顶端软木塞，19 世纪科学插画风，纤细墨线配柔和水彩，淡蓝玻璃配暖色高光，透明 PNG，1024×1024",
+     "desc_en": "Odd Chemistry: a tall graduated cylinder containing a tiny glowing night sky with floating stars and a small crescent moon suspended in the liquid, measurement markings etched up the glass, a cork stopper on top, vintage 19th-century scientific illustration with delicate ink linework and soft watercolor washes, pale blue glass with warm highlights, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 
