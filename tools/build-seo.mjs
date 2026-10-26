@@ -196,53 +196,55 @@ images.forEach((im) => {
 sitemap += '  </url>\n</urlset>\n';
 writeFileSync(path.join(SITE, 'sitemap.xml'), sitemap);
 
+/* Content Signals（https://contentsignals.org/）取值说明：
+ *   ai-train=no  不用于模型训练/微调
+ *   search=yes   允许建索引、出搜索结果与短摘要
+ *   ai-input=yes 允许作为 RAG / grounding 输入、允许 AI 搜索答案引用本站内容
+ * 注意：官方定义 search **不包含** AI 生成式搜索摘要，所以本站在 ai-input 上取 yes，
+ *       与站点 GEO 目标（被 AI 答案引用）一致；训练用途一律 no。 */
+const SIG_ALL = 'Content-Signal: ai-train=no, search=yes, ai-input=yes';
+const SIG_TRAIN_NO_INPUT = 'Content-Signal: ai-train=no, search=yes, ai-input=no';
+
+/* 每个 User-agent 独立成组、空行分隔（对齐 contentsignals.org 官方示例） */
+const groups = [
+  ['# 全站默认：允许索引与 AI 引用，拒绝 AI 训练；/api/ 为接口不索引',
+    ['User-agent: *', SIG_ALL, 'Allow: /', 'Disallow: /api/']],
+  ['# AI 搜索爬虫：用于搜索索引与答案引用，明确拒绝训练用途',
+    ['User-agent: OAI-SearchBot', SIG_ALL, 'Allow: /'],
+    ['User-agent: Claude-SearchBot', SIG_ALL, 'Allow: /'],
+    ['User-agent: PerplexityBot', SIG_ALL, 'Allow: /']],
+  ['# Google-Extended：只放行 grounding / 引用，拒绝训练',
+    ['User-agent: Google-Extended', SIG_ALL, 'Allow: /']],
+  ['# AI 训练爬虫：可抓取但不用于训练，也不喂给模型做 grounding',
+    ['User-agent: GPTBot', SIG_TRAIN_NO_INPUT, 'Allow: /'],
+    ['User-agent: ClaudeBot', SIG_TRAIN_NO_INPUT, 'Allow: /'],
+    ['User-agent: Applebot-Extended', SIG_TRAIN_NO_INPUT, 'Allow: /'],
+    ['User-agent: CCBot', SIG_TRAIN_NO_INPUT, 'Allow: /'],
+    ['User-agent: Bytespider', SIG_TRAIN_NO_INPUT, 'Allow: /'],
+    ['User-agent: Amazonbot', SIG_TRAIN_NO_INPUT, 'Allow: /']],
+  ['# 用户触发的抓取（用户提问时实时取内容，属 ai-input）',
+    ['User-agent: ChatGPT-User', SIG_ALL, 'Allow: /'],
+    ['User-agent: Claude-User', SIG_ALL, 'Allow: /'],
+    ['User-agent: Perplexity-User', SIG_ALL, 'Allow: /']],
+  ['# 传统搜索引擎爬虫：只建索引与出结果',
+    ['User-agent: Bingbot', SIG_TRAIN_NO_INPUT, 'Allow: /'],
+    ['User-agent: Baiduspider', SIG_TRAIN_NO_INPUT, 'Allow: /']],
+];
+
 const robots = [
   '# smallfigure.com robots',
-  'User-agent: *',
-  'Allow: /',
-  'Disallow: /api/',
+  '# AI 用途偏好声明（Content Signals, https://contentsignals.org/）',
+  '#   ai-train=no  不用于模型训练或微调',
+  '#   search=yes   允许建立索引、提供搜索结果与短摘要',
+  '#   ai-input=yes 允许作为 RAG / grounding 输入、允许 AI 搜索答案引用本站内容',
   '',
-  '# AI 搜索爬虫：决定内容是否出现在 AI 回答里，放行以提升 GEO 可见性',
-  'User-agent: OAI-SearchBot',
-  'Allow: /',
-  'User-agent: Claude-SearchBot',
-  'Allow: /',
-  'User-agent: PerplexityBot',
-  'Allow: /',
-  '',
-  '# AI 训练爬虫：拦截不影响出现在 AI 搜索结果，按策略放行',
-  'User-agent: GPTBot',
-  'Allow: /',
-  'User-agent: ClaudeBot',
-  'Allow: /',
-  'User-agent: Google-Extended',
-  'Allow: /',
-  'User-agent: Applebot-Extended',
-  'Allow: /',
-  'User-agent: CCBot',
-  'Allow: /',
-  'User-agent: Bytespider',
-  'Allow: /',
-  'User-agent: Amazonbot',
-  'Allow: /',
-  '',
-  '# 用户触发的抓取（部分厂商不应用 robots.txt，按策略放行）',
-  'User-agent: ChatGPT-User',
-  'Allow: /',
-  'User-agent: Claude-User',
-  'Allow: /',
-  'User-agent: Perplexity-User',
-  'Allow: /',
-  '',
-  '# 传统搜索引擎爬虫',
-  'User-agent: Bingbot',
-  'Allow: /',
-  'User-agent: Baiduspider',
-  'Allow: /',
-  '',
-  `Sitemap: ${BASE}/sitemap.xml`,
-  '',
-].join('\n');
+].concat(
+  groups.flatMap((block) => {
+    const [comment, ...agentGroups] = block;
+    return ['', comment].concat(agentGroups.map(g => g.join('\n'))).join('\n');
+  }),
+  ['', `Sitemap: ${BASE}/sitemap.xml`, '']
+).join('\n');
 writeFileSync(path.join(SITE, 'robots.txt'), robots);
 console.log('[seo] sitemap.xml（1 个 URL + ' + nItems + ' 张图）与 robots.txt 已生成');
 

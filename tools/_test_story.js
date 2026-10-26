@@ -132,11 +132,15 @@ const OUT = require('path').resolve(__dirname, '..');
           dup: zh.length - new Set(zh).size,
           missing: d.images.filter(im => !s.items[im.id]).length,
           marked: Object.values(s.items).filter(v => String(v.zh).includes('本站虚构设定')).length,
+          images: d.images.length,
+          cats: d.categories.length,
         };
       });
     });
   });
-  ok('素材故事 303 条全覆盖', storyStats.total === 303 && storyStats.missing === 0);
+  const N = storyStats.images;   // 素材数动态取自 images.json，新增批次无需改测试
+  const C = storyStats.cats;     // 分类数
+  ok(`素材故事 ${N} 条全覆盖`, storyStats.total === N && storyStats.missing === 0);
   ok('素材故事零重复（每张图都不同）', storyStats.dup === 0);
   ok('故事库无逐图虚构标识', storyStats.marked === 0);
 
@@ -148,19 +152,53 @@ const OUT = require('path').resolve(__dirname, '..');
   });
   ok('JSON-LD 存在且可解析', !!ldJson);
   ok('JSON-LD 含 WebSite + CollectionPage', !!ldJson && ldJson['@graph'].some(g => g['@type'] === 'WebSite') && ldJson['@graph'].some(g => g['@type'] === 'CollectionPage'));
-  ok('JSON-LD ItemList 303 条', !!ldJson && ldJson['@graph'][1].mainEntity.itemListElement.length === 303);
+  ok(`JSON-LD ItemList ${N} 条`, !!ldJson && ldJson['@graph'][1].mainEntity.itemListElement.length === N);
   ok('canonical 指向主域名', html.includes('rel="canonical" href="https://smallfigure.com/"'));
   ok('hreflang 三语声明', (html.match(/hreflang=/g) || []).length >= 3);
   ok('OG 卡片齐全', ['og:title', 'og:description', 'og:image', 'og:url'].every(k => html.includes(k)));
   ok('Twitter 卡片', html.includes('twitter:card'));
   ok('noscript 全文版存在', html.includes('<noscript>') && html.includes('全文版'));
   ok('title 含关键词', (await page.title()).includes('素材图鉴'));
-  ok('hero 静态兜底数字实时化', html.includes('303 件原创小人') && html.includes('303 件素材') && html.includes('58 个分类'));
+  ok('hero 静态兜底数字实时化', html.includes(`${N} 件原创小人`) && html.includes(`${N} 件素材`) && html.includes(`${C} 个分类`));
   /* robots / sitemap 直接 fetch */
   const robots = await page.evaluate(() => fetch('robots.txt').then(r => r.text()));
   const sitemap = await page.evaluate(() => fetch('sitemap.xml').then(r => r.text()));
   ok('robots.txt 放行 AI 爬虫', robots.includes('GPTBot') && robots.includes('Sitemap:'));
-  ok('sitemap.xml 含 303 张图', (sitemap.match(/<image:image>/g) || []).length === 303);
+  /* Content Signals（https://contentsignals.org/）：每个 User-agent 组都要声明 ai-train/search/ai-input */
+  /* 按 RFC 9309 语义分组：遇到新的 User-agent 行即开新组（不依赖空行） */
+  const robotsGroups = [];
+  robots.split('\n').forEach(raw => {
+    const line = raw.trim();
+    if (!line || line.startsWith('#')) return;
+    const kv = line.match(/^([^:]+):\s*(.*)$/);
+    if (!kv) return;
+    const key = kv[1].trim().toLowerCase();
+    const val = kv[2].trim();
+    if (key === 'user-agent') {
+      robotsGroups.push({ ua: val, lines: [] });
+    } else if (robotsGroups.length) {
+      robotsGroups[robotsGroups.length - 1].lines.push(line);
+    }
+  });
+  const sigRe = /content-signal:\s*(.*)$/i;
+  const badSig = [];
+  robotsGroups.forEach(g => {
+    const sig = g.lines.map(l => (l.match(sigRe) || [])[1]).filter(Boolean).join(';');
+    if (!sig) { badSig.push(g.ua + ' (缺 Content-Signal)'); return; }
+    ['ai-train', 'search', 'ai-input'].forEach(f => {
+      if (!new RegExp(f + '\\s*=\\s*(yes|no)\\b', 'i').test(sig)) badSig.push(g.ua + ' (缺 ' + f + ')');
+    });
+    if (!g.lines.some(l => /^(allow|disallow):/i.test(l))) badSig.push(g.ua + ' (缺 Allow/Disallow)');
+  });
+  ok(`robots.txt 每组都有 Content-Signal（${robotsGroups.length} 组）`, badSig.length === 0 && robotsGroups.length >= 10);
+  if (badSig.length) console.log('    异常组:', badSig.join(' | '));
+  ok('robots.txt 声明 AI 三类用途偏好', /content-signal:[^\n]*ai-train\s*=\s*(yes|no)/i.test(robots)
+    && /content-signal:[^\n]*search\s*=\s*(yes|no)/i.test(robots)
+    && /content-signal:[^\n]*ai-input\s*=\s*(yes|no)/i.test(robots));
+  ok('robots.txt 拒绝 AI 训练用途（ai-train=no）', !/content-signal:[^\n]*ai-train\s*=\s*yes/i.test(robots));
+  ok('robots.txt 允许搜索与 AI 输入（GEO 可见性）', /content-signal:[^\n]*search\s*=\s*yes/i.test(robots)
+    && /content-signal:[^\n]*ai-input\s*=\s*yes/i.test(robots));
+  ok(`sitemap.xml 含 ${N} 张图`, (sitemap.match(/<image:image>/g) || []).length === N);
   /* og 图可访问（og:image 是生产绝对 URL，本地测试改为取文件名后 fetch 相对路径） */
   const ogOk = await page.evaluate(async () => {
     const m = document.querySelector('meta[property="og:image"]');
