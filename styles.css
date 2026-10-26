@@ -395,6 +395,30 @@ body {
   100% { opacity: 0; transform: scale(1.4); }
 }
 
+/* ---------- 回到顶部（侧边悬停按钮） ---------- */
+.to-top-btn {
+  position: fixed; right: 18px; bottom: 74px; z-index: 60;
+  height: 44px; min-width: 44px; padding: 0 11px; border-radius: 999px;
+  display: flex; align-items: center; gap: 0; justify-content: center;
+  background: rgba(20, 25, 38, .88); color: var(--accent);
+  border: 1px solid rgba(94, 234, 212, .35); box-shadow: var(--shadow);
+  backdrop-filter: blur(8px); cursor: pointer; overflow: hidden;
+  transition: transform .18s, border-color .18s, color .18s, gap .22s, padding .22s;
+}
+.to-top-btn:hover, .to-top-btn:focus-visible {
+  transform: scale(1.04); border-color: var(--accent); gap: 7px; padding: 0 15px;
+}
+.to-top-btn:focus-visible { outline: 2px solid var(--accent-3); outline-offset: 3px; }
+.to-top-icon { width: 19px; height: 19px; flex: none; }
+/* 文字默认收起，悬停/聚焦才展开 */
+.to-top-label {
+  max-width: 0; opacity: 0; white-space: nowrap; overflow: hidden;
+  font-size: 13px; line-height: 1;
+  transition: max-width .22s ease, opacity .18s ease;
+}
+.to-top-btn:hover .to-top-label,
+.to-top-btn:focus-visible .to-top-label { max-width: 88px; opacity: 1; }
+
 /* ---------- 页脚 ---------- */
 .site-footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: 13px; }
 .site-footer p { margin-bottom: 6px; }
@@ -461,6 +485,8 @@ body {
   .filters { width: 100%; }
   .sel { flex: 1; }
   .sel select { flex: 1; }
+  /* 回到顶部：贴更近右边缘，悬停展开的胶囊不顶出屏幕 */
+  .to-top-btn { right: 12px; bottom: 68px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

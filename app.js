@@ -186,6 +186,32 @@
     });
   }
 
+  /* ---------- 回到顶部（侧边悬停按钮） ---------- */
+  function initToTop() {
+    var btn = $('toTopBtn');
+    if (!btn) return;
+    var THRESHOLD = 320;   /* 滚过这一段才让按钮露脸 */
+    var ticking = false;
+
+    function sync() {
+      var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+      btn.hidden = y < THRESHOLD;
+      ticking = false;
+    }
+    function onScroll() {
+      if (ticking) return;          /* 一帧最多算一次，别绑死滚动 */
+      ticking = true;
+      window.requestAnimationFrame(sync);
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    btn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      /* 回到顶部后焦点还给页面，别让焦点悬在已经看不见的按钮上 */
+      btn.blur();
+    });
+    sync();
+  }
+
   /* ---------- 精灵图播放器（rAF 驱动，不依赖 CSS 变量） ---------- */
   function makeSheetPlayer(el, frames, framePx) {
     var elapsed = 0, last = null, raf = null;
@@ -725,6 +751,7 @@
       loadCounts(); /* 计数后到，拉到了再补徽章 */
       loadMe();     /* 登录态：恢复会话或保持匿名 */
       initBgm();    /* 背景音乐：默认开，被浏览器拦了就等首次交互 */
+      initToTop();  /* 回到顶部：滚过一段才出现 */
       /* 语言切换：标题 / chips / 网格 / 灯箱 / 音乐提示 / 登录入口 全部重绘 */
       SF.onChange(function () {
         document.title = SF.t('site.title');
