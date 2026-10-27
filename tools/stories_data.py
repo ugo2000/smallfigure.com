@@ -269,6 +269,10 @@ CAT_STORIES = {
         "zh": "八位靠手艺吃饭的旧式匠人，一个比一个实在。箍桶的、修表的、缝皮的、弹棉的、磨刀的、扎纸的、染布的、编竹的，全站在同一片纸底上，谁也没比谁体面。规矩只有一条：手上的东西不许假。",
         "en": "Eight old craftspeople who live by their hands, each more grounded than the last. A cooper, a clockmaker, a leatherworker, a cotton carder, a knife grinder, a paper artisan, a dyer and a basket weaver, all standing on the same flat ground. One rule: nothing they hold may be fake.",
     },
+    "opera": {
+        "zh": "武生、花旦、花脸、老生、丑角、青衣——六位把脸谱当工牌戴的角儿，全站嗓门最大的一分类。规矩：亮相要稳，水袖要飘，白鼻梁不许擦掉。他们不上台，只在透明背景上比画架势。",
+        "en": "Wusheng, huadan, jing, laosheng, chou and qingyi — six performers wearing painted faces as their staff badges, the loudest category on the site. Rules: hold the pose, float the sleeves, never wipe the white nose patch. They never take a stage; they only gesture against a transparent background.",
+    },
 }
 
 # 素材故事：key 与 data/images.json 的 images[].id 对应（首批 38 件，其余分批补）
@@ -1636,5 +1640,29 @@ ITEM_STORIES = {
     "trades-basketweaver": {
         "zh": "编竹匠提起刚编好的圆竹篮，篾条编得密实发亮。他脚边那些卷曲的竹屑说明一件事实：他不是把竹子变成篮子，他是把竹子剩下的部分也一并安排妥当。",
         "en": "The basket weaver lifts a freshly woven round basket, the strips tight and glossy. The curled shavings at his feet give away the real skill: he does not just turn bamboo into a basket, he also finds a use for what is left over.",
+    },
+    "opera-spear": {
+        "zh": "武生把一杆红缨长枪横在身前，双翎随亮相一颤。他脸上的红是为气势上的，靠甲上的龙是给自己壮胆的——枪是真的沉，翎是真的痒。",
+        "en": "The wusheng levels his red-tasseled spear, twin plumes quivering as he strikes his pose. The red on his face is for presence, the dragon on his armour for courage — the spear is genuinely heavy and the plumes genuinely itchy.",
+    },
+    "opera-fan": {
+        "zh": "花旦把绢面团扇举到腮边，露出半双含笑的眼睛。珠翠头面一件不少，扇子却挑最素的那柄——按她的说法，遮掩是手艺，露多少才是功夫。",
+        "en": "The huadan raises her silk fan to her cheek, revealing half of a smiling pair of eyes. The beaded headdress is complete, yet she chose the plainest fan — in her line of work, concealment is craft; how much to show is the kung fu.",
+    },
+    "opera-jing": {
+        "zh": "净角一声喝令停在半空，脸谱纹样怒目圆睁，长髯飘起三寸。雉鸡翎在盔头上颤，其实是全场最贵的部分——他演的是气势，翎演的是高度。",
+        "en": "The jing's command hangs mid-air: painted patterns wide-eyed, the long beard lifting three inches. The pheasant plumes tremble on his helm — the costliest part of the whole look. He plays the fury; the plumes play the altitude.",
+    },
+    "opera-laosheng": {
+        "zh": "老生拈着长髯沉吟，深蓝袍子和黑方巾收拾得一丝不乱。整出戏都在赶时间，只有他这个动作被允许慢放——捋须三下，代表想了半辈子。",
+        "en": "The laosheng strokes his long beard in thought, his deep-blue robe and black square hat in faultless order. The whole opera is rushing; only this gesture is allowed to run slow. Three strokes of the beard, and half a lifetime of deliberation.",
+    },
+    "opera-chou": {
+        "zh": "丑角歪着小帽挤出鼻梁上一道白粉，短打青橙撞色，一蹦三跳。他是台上的漏洞，专负责把绷紧的戏戳个口子——白鼻梁一出现，观众就知道可以喘气了。",
+        "en": "The chou tilts his little hat around a white nose patch, turquoise-and-orange acrobat colours, three skips per leap. He is the flaw in the show, the one who punctures its tension — when the white patch appears, the audience knows it may breathe again.",
+    },
+    "opera-qingyi": {
+        "zh": "青衣甩开两条白水袖，人立在袖影中央，神色端庄里压着一点哀愁。淡紫长裙不沾水，水袖替她哭——按青衣的规矩，眼泪不能自己出门，得让袖子代劳。",
+        "en": "The qingyi flings out her two white water sleeves, standing at the centre of their shadow, dignity holding down a thread of sorrow. The lavender gown stays dry; the sleeves weep for her — a qingyi's tears never leave on their own; the sleeves carry them out.",
     },
 }
