@@ -101,10 +101,11 @@ CAT_LABELS = {
     "alienfolk": {"zh": "盛装外星人", "en": "Dressed Aliens"},
     "oddchem": {"zh": "怪奇化学仪", "en": "Odd Chemistry"},
     "trades": {"zh": "旧时百工", "en": "Old Trades"},
+    "opera": {"zh": "戏曲小人", "en": "Opera Figures"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔 / 童话人物 / 盛装外星人 / 怪奇化学仪 / 旧时百工",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures / Fairytale / Dressed Aliens / Odd Chemistry / Old Trades"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔 / 童话人物 / 盛装外星人 / 怪奇化学仪 / 旧时百工 / 戏曲小人",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures / Fairytale / Dressed Aliens / Odd Chemistry / Old Trades / Opera Figures"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -2234,6 +2235,42 @@ ITEMS = [
      "tags_en": ["basket weaver", "bamboo basket", "bamboo strips", "craftsman", "male", "character art", "transparent", "little figure"],
      "desc_zh": "旧时百工：一位精瘦的编竹匠，肤色晒得黝黑，宽草帽往后推在头上，肩头搭着一片竹篾编的挡雨披，无袖蓝灰短褂露出胸腹，一手提起刚编好的圆形竹篮，一手握着劈好的竹篾",
      "desc_en": "Old Trades: a wiry bamboo basket weaver with sun-darkened skin, a wide straw hat tilted back, a bamboo-strip rain cape over one shoulder, a sleeveless blue-grey vest, holding up a freshly woven round basket and a bundle of split bamboo strips",
+     "transparent": True, "effect": None},
+    {"src": "processed/opera-1.png", "id": "opera-spear", "name_zh": "武生亮相", "name_en": "Spear-Bearing Warrior",
+     "cat": "opera", "tags": ["戏曲", "武生", "长枪", "靠甲", "翎子"],
+     "tags_en": ["opera", "warrior", "spear", "armor", "plume"],
+     "desc_zh": "戏曲小人：武生持一杆红缨长枪英气亮相，脸绘红色英武脸谱，头插双翎，身披绣龙靠甲，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Opera Figures: a martial wusheng striking a heroic pose with a red-tasseled spear, bold red painted face, twin feather plumes, dragon-embroidered armor, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/opera-2.png", "id": "opera-fan", "name_zh": "花旦执扇", "name_en": "Fan-Holding Maiden",
+     "cat": "opera", "tags": ["戏曲", "花旦", "团扇", "绣花裙", "含羞"],
+     "tags_en": ["opera", "maiden", "fan", "embroidery", "shy"],
+     "desc_zh": "戏曲小人：花旦执一柄绢面团扇半掩含羞浅笑，头戴珠翠头面，身穿绣花袄裙披飘带，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Opera Figures: a young huadan maiden holding a round silk fan half-hiding a shy smile, beaded headdress, embroidered jacket and skirt with flowing ribbons, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/opera-3.png", "id": "opera-jing", "name_zh": "花脸怒目", "name_en": "Fierce Painted Face",
+     "cat": "opera", "tags": ["戏曲", "净角", "花脸", "长髯", "怒目"],
+     "tags_en": ["opera", "painted face", "jing", "beard", "fierce"],
+     "desc_zh": "戏曲小人：净角花脸怒目圆睁张手喝令，满脸彩色脸谱纹样，长髯飘胸，盔头插雉鸡翎，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Opera Figures: a fierce jing general glaring with wide painted-face patterns, spreading a commanding open hand, long flowing beard, headdress crowned with pheasant plumes, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/opera-4.png", "id": "opera-laosheng", "name_zh": "老生捋须", "name_en": "Bearded Scholar",
+     "cat": "opera", "tags": ["戏曲", "老生", "捋须", "沉思", "方巾"],
+     "tags_en": ["opera", "scholar", "beard", "thoughtful", "hat"],
+     "desc_zh": "戏曲小人：老生慢捋长髯沉吟思考，眉目安详透着智慧，身穿素雅深蓝长袍头戴黑方巾，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Opera Figures: an older laosheng scholar slowly stroking his long gray beard in quiet contemplation, serene wise eyes, plain elegant deep-blue robe and black square hat, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/opera-5.png", "id": "opera-chou", "name_zh": "丑角逗趣", "name_en": "Playful Clown",
+     "cat": "opera", "tags": ["戏曲", "丑角", "白鼻梁", "短打", "滑稽"],
+     "tags_en": ["opera", "clown", "chou", "acrobat", "funny"],
+     "desc_zh": "戏曲小人：丑角挤眉弄眼张手逗趣，鼻梁一块白粉，歪戴小帽身穿青橙短打，蹦蹦跳跳，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Opera Figures: a comical chou clown crossing his eyes and pulling a funny face, white nose patch, tilted little hat, turquoise-and-orange acrobat outfit mid-skip, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/opera-6.png", "id": "opera-qingyi", "name_zh": "青衣水袖", "name_en": "Water-Sleeve Dancer",
+     "cat": "opera", "tags": ["戏曲", "青衣", "水袖", "起舞", "端庄"],
+     "tags_en": ["opera", "qingyi", "water sleeves", "dance", "graceful"],
+     "desc_zh": "戏曲小人：青衣甩动双白水袖翩然起舞，神色端庄含着淡淡哀愁，身穿淡紫绣花长裙头戴雅致头饰，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Opera Figures: a dignified qingyi dancer swinging long white water sleeves through the air, gentle expression carrying a hint of sorrow, lavender embroidered gown and delicate headdress, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 
