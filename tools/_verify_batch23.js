@@ -28,7 +28,7 @@ const EXEC = 'C:/Users/Administrator/AppData/Local/ms-playwright/chromium-1234/c
         .map(c => ({ id: c.dataset.id, nw: (c.querySelector('img') || {}).naturalWidth || 0 }));
       return { countTxt, chips, first };
     });
-    assert(/339/.test(info.countTxt), 'count line 含 339: ' + info.countTxt.trim());
+    assert(/347/.test(info.countTxt), 'count line 含 347: ' + info.countTxt.trim());
     assert(info.chips.includes('opera'), '戏曲小人 opera chip 存在');
     assert(info.first.every(c => c.id.startsWith('opera-')), '最新前 6 张全是戏曲小人: ' + info.first.map(c => c.id).join(','));
     assert(info.first.every(c => c.nw > 0), '前 6 张缩略图全加载');
