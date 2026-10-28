@@ -103,10 +103,11 @@ CAT_LABELS = {
     "trades": {"zh": "旧时百工", "en": "Old Trades"},
     "opera": {"zh": "戏曲小人", "en": "Opera Figures"},
     "seamonsters": {"zh": "海洋怪兽", "en": "Sea Monsters"},
+    "plantfolk": {"zh": "衣装植物", "en": "Costumed Plants"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔 / 童话人物 / 盛装外星人 / 怪奇化学仪 / 旧时百工 / 戏曲小人 / 海洋怪兽",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures / Fairytale / Dressed Aliens / Odd Chemistry / Old Trades / Opera Figures / Sea Monsters"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔 / 童话人物 / 盛装外星人 / 怪奇化学仪 / 旧时百工 / 戏曲小人 / 海洋怪兽 / 衣装植物",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures / Fairytale / Dressed Aliens / Odd Chemistry / Old Trades / Opera Figures / Sea Monsters / Costumed Plants"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -2308,6 +2309,42 @@ ITEMS = [
      "tags_en": ["sea monster", "anglerfish", "fangs", "glowing", "deep sea"],
      "desc_zh": "海洋怪兽：深渊灯笼鱼咧着满口尖牙的大嘴，圆滚滚的深蓝身躯，头顶挂着一盏发光小灯笼，一只大眼乌溜溜发亮，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
      "desc_en": "Sea Monsters: an abyss anglerfish grinning wide with sharp fangs, round deep-blue body, a glowing lantern lure dangling above, one big luminous eye shining, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/plantfolk-1.png", "id": "plantfolk-tophat", "name_zh": "礼帽蘑菇先生", "name_en": "Top-hat Mushroom Gentleman",
+     "cat": "plantfolk", "tags": ["衣装植物", "蘑菇", "礼帽", "单片眼镜", "领结"],
+     "tags_en": ["costumed plant", "mushroom", "top hat", "monocle", "bow tie"],
+     "desc_zh": "衣装植物：礼帽蘑菇先生歪戴一顶黑色高顶礼帽，单片眼镜架在眼上，酒红领结系在脖间，奶油色菌柄挺着圆肚，小树枝手臂神气地叉腰，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Costumed Plants: a top-hat mushroom gentleman wearing a tilted black top hat, a brass monocle over one eye and a burgundy bow tie, cream stem body with a proud round belly and twiggy arms akimbo, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/plantfolk-2.png", "id": "plantfolk-scarf", "name_zh": "围巾仙人掌", "name_en": "Wool-Scarf Cactus",
+     "cat": "plantfolk", "tags": ["衣装植物", "仙人掌", "围巾", "手套", "针织"],
+     "tags_en": ["costumed plant", "cactus", "scarf", "mittens", "knitwear"],
+     "desc_zh": "衣装植物：围巾仙人掌圆滚滚的绿身子裹着粗针织红条纹围巾，戴着红毛线手套的小胳膊缩在身侧，头顶开出一朵小粉花，一脸惬意，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Costumed Plants: a wool-scarf cactus with a round ribbed green body wrapped in a chunky striped scarf, stubby arms in red knitted mittens tucked snugly, a little pink flower sprouting on top, content and cozy, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/plantfolk-3.png", "id": "plantfolk-lotus", "name_zh": "和服荷花", "name_en": "Kimono Lotus",
+     "cat": "plantfolk", "tags": ["衣装植物", "荷花", "和服", "折扇", "优雅"],
+     "tags_en": ["costumed plant", "lotus", "kimono", "paper fan", "graceful"],
+     "desc_zh": "衣装植物：和服荷花层层粉白花瓣拢成和服衣襟，系一条花纹腰带，眉眼低垂浅浅含笑，叶手轻摇一柄小折扇，根部收拢如裙裾，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Costumed Plants: a kimono lotus lady with layered pink-and-white petals folded like flowing robes, a patterned obi sash, eyes lowered in a gentle smile, one leaf-hand tilting a tiny paper fan, roots gathered like a hem, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/plantfolk-4.png", "id": "plantfolk-sunflower", "name_zh": "背带裤向日葵", "name_en": "Overalls Sunflower",
+     "cat": "plantfolk", "tags": ["衣装植物", "向日葵", "背带裤", "浇水壶", "园丁"],
+     "tags_en": ["costumed plant", "sunflower", "overalls", "watering can", "gardener"],
+     "desc_zh": "衣装植物：背带裤向日葵金黄花瓣戴成王冠，一条背带滑下肩膀，脸颊沾着泥点，一手拎小铁皮浇水壶一手欢呼挥手，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Costumed Plants: an overalls sunflower wearing golden petals like a crown, one denim strap slipped off the shoulder, dirt-smudged cheeks, a tiny watering can in one leaf-hand and the other waving cheerfully, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/plantfolk-5.png", "id": "plantfolk-ivy", "name_zh": "兜帽藤蔓", "name_en": "Hooded Ivy",
+     "cat": "plantfolk", "tags": ["衣装植物", "藤蔓", "兜帽", "斗篷", "常春藤"],
+     "tags_en": ["costumed plant", "ivy", "hood", "cloak", "vine"],
+     "desc_zh": "衣装植物：兜帽藤蔓披一袭深绿连帽斗篷，帽檐下只露出两只狡黠发亮的眼睛，心形小叶片顺着衣摆垂落，卷须细臂悄声掀着兜帽，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Costumed Plants: a hooded ivy sprite draped in a deep-green cloak, only two sly glowing eyes peeking from the hood shadow, heart-shaped leaves hanging along the hem, a thin tendril raising the hood stealthily, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/plantfolk-6.png", "id": "plantfolk-tulip", "name_zh": "雨靴郁金香", "name_en": "Rainboot Tulip",
+     "cat": "plantfolk", "tags": ["衣装植物", "郁金香", "雨靴", "小伞", "雨滴"],
+     "tags_en": ["costumed plant", "tulip", "rain boots", "parasol", "raindrops"],
+     "desc_zh": "衣装植物：雨靴郁金香红瓣花冠里绽着笑脸，踩一双明黄雨靴正跨步溅水，卷曲的花茎当手臂撑着一柄波点小伞，身边飘着几滴雨珠，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Costumed Plants: a rainboot tulip grinning from its red-and-cream bloom, striding in bright yellow wellies, curly stem arms holding a polka-dot parasol, stylized raindrops drifting around, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 
