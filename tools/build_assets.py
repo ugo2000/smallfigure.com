@@ -102,10 +102,11 @@ CAT_LABELS = {
     "oddchem": {"zh": "怪奇化学仪", "en": "Odd Chemistry"},
     "trades": {"zh": "旧时百工", "en": "Old Trades"},
     "opera": {"zh": "戏曲小人", "en": "Opera Figures"},
+    "seamonsters": {"zh": "海洋怪兽", "en": "Sea Monsters"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔 / 童话人物 / 盛装外星人 / 怪奇化学仪 / 旧时百工 / 戏曲小人",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures / Fairytale / Dressed Aliens / Odd Chemistry / Old Trades / Opera Figures"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔 / 童话人物 / 盛装外星人 / 怪奇化学仪 / 旧时百工 / 戏曲小人 / 海洋怪兽",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures / Fairytale / Dressed Aliens / Odd Chemistry / Old Trades / Opera Figures / Sea Monsters"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -2271,6 +2272,42 @@ ITEMS = [
      "tags_en": ["opera", "qingyi", "water sleeves", "dance", "graceful"],
      "desc_zh": "戏曲小人：青衣甩动双白水袖翩然起舞，神色端庄含着淡淡哀愁，身穿淡紫绣花长裙头戴雅致头饰，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
      "desc_en": "Opera Figures: a dignified qingyi dancer swinging long white water sleeves through the air, gentle expression carrying a hint of sorrow, lavender embroidered gown and delicate headdress, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/seamonsters-1.png", "id": "seamonsters-serpent", "name_zh": "碧浪海龙", "name_en": "Tidal Sea Serpent",
+     "cat": "seamonsters", "tags": ["海洋怪兽", "海龙", "波浪", "蜿蜒", "鳞片"],
+     "tags_en": ["sea monster", "serpent", "waves", "coiling", "scales"],
+     "desc_zh": "海洋怪兽：碧浪海龙自翻涌浪花间昂起长身，鳞片青绿闪亮，龙首带须咧嘴而笑，蜿蜒成 S 形，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Sea Monsters: a tidal sea serpent rearing its long scaled body from churning waves, teal sea-green scales glinting, whiskered snout grinning in an S-curve, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/seamonsters-2.png", "id": "seamonsters-kraken", "name_zh": "紫潮克拉肯", "name_en": "Violet Kraken",
+     "cat": "seamonsters", "tags": ["海洋怪兽", "克拉肯", "章鱼", "触手", "紫色"],
+     "tags_en": ["sea monster", "kraken", "octopus", "tentacles", "purple"],
+     "desc_zh": "海洋怪兽：紫潮克拉肯八条触手张牙舞爪高举，圆滚滚的紫色头颅咧嘴露齿，黄色大眼滴溜溜转，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Sea Monsters: a violet kraken raising eight writhing tentacles, bulbous purple head grinning wide with big gleaming yellow eyes, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/seamonsters-3.png", "id": "seamonsters-crab", "name_zh": "赤甲巨蟹", "name_en": "Crimson Shell Crab",
+     "cat": "seamonsters", "tags": ["海洋怪兽", "巨蟹", "蟹钳", "藤壶", "甲壳"],
+     "tags_en": ["sea monster", "crab", "pincers", "barnacles", "shell"],
+     "desc_zh": "海洋怪兽：赤甲巨蟹双钳高举威风凛凛，圆滚滚的红壳上缀满藤壶，眼柄上顶着凸出的卡通大眼，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Sea Monsters: a crimson shell crab raising both huge pincers menacingly, round armored shell speckled with barnacles, bulging cartoon eyes on stalks, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/seamonsters-4.png", "id": "seamonsters-jelly", "name_zh": "幽灵水母", "name_en": "Ghost Jellyfish",
+     "cat": "seamonsters", "tags": ["海洋怪兽", "水母", "触须", "半透明", "幽灵"],
+     "tags_en": ["sea monster", "jellyfish", "tentacles", "translucent", "ghostly"],
+     "desc_zh": "海洋怪兽：幽灵水母半透明的伞盖泛着柔光，粉紫渐变，细长触须随风飘荡，伞下挂着一张温柔的笑脸，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Sea Monsters: a ghost jellyfish with a softly glowing translucent bell in pink and violet, long wispy tentacles trailing below, a gentle smiling face inside the bell, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/seamonsters-5.png", "id": "seamonsters-walrus", "name_zh": "长牙海象魔", "name_en": "Tusked Walrus-Fiend",
+     "cat": "seamonsters", "tags": ["海洋怪兽", "海象", "獠牙", "鳍肢", "藤壶"],
+     "tags_en": ["sea monster", "walrus", "tusks", "flippers", "barnacles"],
+     "desc_zh": "海洋怪兽：长牙海象魔圆滚滚的棕褐身躯向前扑去，两根螺旋长牙白得发亮，鳍肢张开憨态可掬，皮上缀着藤壶斑点，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Sea Monsters: a tusked walrus-fiend lunging forward on its bulky blubbery brown body, two long spiraled ivory tusks gleaming, flippers splayed in a clumsy lunge, barnacle speckles on its hide, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/seamonsters-6.png", "id": "seamonsters-angler", "name_zh": "深渊灯笼鱼", "name_en": "Abyss Anglerfish",
+     "cat": "seamonsters", "tags": ["海洋怪兽", "灯笼鱼", "尖牙", "发光", "深海"],
+     "tags_en": ["sea monster", "anglerfish", "fangs", "glowing", "deep sea"],
+     "desc_zh": "海洋怪兽：深渊灯笼鱼咧着满口尖牙的大嘴，圆滚滚的深蓝身躯，头顶挂着一盏发光小灯笼，一只大眼乌溜溜发亮，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Sea Monsters: an abyss anglerfish grinning wide with sharp fangs, round deep-blue body, a glowing lantern lure dangling above, one big luminous eye shining, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 
