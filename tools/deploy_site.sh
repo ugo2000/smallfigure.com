@@ -55,9 +55,8 @@ else
   echo "[deploy] 警告：git fetch 失败（网络/代理），跳过闸 2 校验"
 fi
 
-# ---- 同步 + 部署 ----
-bash tools/sync_site.sh
-"$NODE" "$WRANGLER" pages deploy _site --project-name="$PROJECT" --branch=main
+# ---- 同步 + 构建 + 部署（tools/deploy.sh 内含 sync / 详情页 / SEO 构建）----
+bash tools/deploy.sh
 
 # ---- 闸 3：部署后校验线上项数（别名切换有延迟，最多等 ~1 分钟）----
 for i in $(seq 1 10); do
