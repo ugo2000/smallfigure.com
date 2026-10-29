@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,follow">
+<title>页面走丢了 · smallfigure</title>
+<style>
+  :root{--bg:#0b0e14;--panel:#141926;--line:#232b3b;--text:#e8eef7;--muted:#8b96a9;--accent:#5eead4;--accent-2:#f472b6}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;
+    background:radial-gradient(120% 90% at 50% 0%,#141a28 0%,var(--bg) 60%);
+    color:var(--text);font-family:system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+  .box{max-width:520px;text-align:center}
+  .code{font-size:96px;font-weight:800;line-height:1;letter-spacing:-2px;
+    background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  h1{margin:18px 0 8px;font-size:22px}
+  p{color:var(--muted);font-size:14px;line-height:1.7}
+  .btns{margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  a.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:12px;
+    text-decoration:none;font-size:14px;font-weight:600;border:1px solid var(--line);
+    color:var(--text);background:var(--panel);transition:.18s}
+  a.btn.primary{background:var(--accent);color:#062a24;border-color:transparent}
+  a.btn:hover{transform:translateY(-1px);border-color:var(--accent)}
+  .logo{margin-bottom:10px;font-weight:700;letter-spacing:.5px}
+  .logo b{color:var(--accent)}
+</style>
+</head>
+<body>
+  <main class="box">
+    <div class="logo">smallfigure<b>.com</b></div>
+    <div class="code">404</div>
+    <h1>这个页面走丢了</h1>
+    <p>你要找的地址不存在，或者已经被搬走了。<br>
+       The page you're looking for doesn't exist or has moved.</p>
+    <div class="btns">
+      <a class="btn primary" href="/">回到首页 · Home</a>
+      <a class="btn" href="/sitemap.xml">站点地图 · Sitemap</a>
+    </div>
+  </main>
+</body>
+</html>

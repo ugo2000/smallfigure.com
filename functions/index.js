@@ -34,7 +34,16 @@ export async function onRequest(context) {
   }
 
   // 默认：透传静态资源（浏览器拿到的仍是 index.html）
-  return env.ASSETS.fetch(request);
+  const res = await env.ASSETS.fetch(request);
+  // HTML 响应补 Link 头（GEO：canonical + llms.txt describedby，供 Agent/爬虫发现）
+  const ct = (res.headers.get('content-type') || '').toLowerCase();
+  if (ct.indexOf('text/html') !== -1) {
+    const origin = new URL(request.url).origin;
+    const headers = new Headers(res.headers);
+    headers.set('Link', '<' + origin + '/>; rel="canonical", <' + origin + '/llms.txt>; rel="describedby"');
+    return new Response(res.body, { status: res.status, statusText: res.statusText, headers });
+  }
+  return res;
 }
 
 async function buildMarkdown(env, request) {

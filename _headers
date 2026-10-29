@@ -1,6 +1,11 @@
 # HTML 不缓存，改版后刷新即可见（防止浏览器拿旧页面）
+# Link 头：canonical + llms.txt（GEO：便于 Agent/爬虫发现站点索引；首页 / 由 functions/index.js 补同款头）
+/
+  Link: <https://smallfigure.com/>; rel="canonical", <https://smallfigure.com/llms.txt>; rel="describedby"
+
 /index.html
   Cache-Control: public, max-age=0, must-revalidate
+  Link: <https://smallfigure.com/>; rel="canonical", <https://smallfigure.com/llms.txt>; rel="describedby"
 /*.html
   Cache-Control: public, max-age=0, must-revalidate
 

@@ -309,18 +309,30 @@
       if (state.cat !== 'all' && im.category !== state.cat) return false;
       if (state.size !== 'all' && sizeBucket(im.width, im.height) !== state.size) return false;
       if (q) {
-        /* 中英文名/简介/标签/分类名全部进 haystack：两种语言的关键词都能搜到 */
+        /* 中英文名/简介/标签/分类名/专属故事全部进 haystack：两种语言、故事关键词都能搜到 */
+        var st = stories.items[im.id];
+        var story = st ? ((st.zh || '') + ' ' + (st.en || '')) : '';
         var hay = (im.name + ' ' + (im.nameEn || '') + ' ' +
           im.desc + ' ' + (im.descEn || '') + ' ' +
           im.tags.join(' ') + ' ' + (im.tagsEn || []).join(' ') + ' ' +
-          im.categoryLabel + ' ' + (im.categoryLabelEn || '')).toLowerCase();
+          im.categoryLabel + ' ' + (im.categoryLabelEn || '') + ' ' + story).toLowerCase();
         if (hay.indexOf(q) === -1) return false;
       }
       return true;
     });
+    /* 搜索命中排序：名称 > 标签/分类 > 简介/故事。仅在默认「最新优先」时启用，不改用户显式选择的排序 */
+    function scoreOf(im) {
+      var nm = (im.name + ' ' + (im.nameEn || '')).toLowerCase();
+      var tg = ((im.tags || []).join(' ') + ' ' + ((im.tagsEn || []).join(' ')) + ' ' +
+        im.categoryLabel + ' ' + (im.categoryLabelEn || '')).toLowerCase();
+      if (nm.indexOf(q) !== -1) return 3;
+      if (tg.indexOf(q) !== -1) return 2;
+      return 1;
+    }
     if (state.sort === 'newest') {
-      /* 最新入库的排在最前面；added 缺失的沉到末尾 */
+      /* 最新入库的排在最前面；搜索时名称/标签命中优先；added 缺失的沉到末尾 */
       view.sort(function (a, b) {
+        if (q) { var d = scoreOf(b) - scoreOf(a); if (d) return d; }
         var ta = a.added || '', tb = b.added || '';
         if (ta === tb) return String(a.id).localeCompare(String(b.id));
         if (!ta) return 1;

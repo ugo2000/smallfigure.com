@@ -89,6 +89,8 @@ const headTags = [
   '<meta name="twitter:title" content="' + esc(titleZh) + '">',
   '<meta name="twitter:description" content="' + esc(descZh) + '">',
   '<meta name="twitter:image" content="' + ogImage + '">',
+  '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">',
+  '<link rel="alternate" type="text/markdown" href="' + BASE + '/" title="Markdown for AI agents">',
   '<link rel="preload" as="image" href="assets/img/hero_bg.webp" fetchpriority="high">',
 ].join('\n');
 html = html.replace('</head>', headTags + '\n</head>');
@@ -247,6 +249,34 @@ const robots = [
 ).join('\n');
 writeFileSync(path.join(SITE, 'robots.txt'), robots);
 console.log('[seo] sitemap.xml（1 个 URL + ' + nItems + ' 张图）与 robots.txt 已生成');
+
+/* ---------- 5b. llms.txt（GEO：给 LLM/Agent 的简明纯文本站点索引，https://llmstxt.org/） ---------- */
+const catLines = cats.map((c) => {
+  const n = images.filter((im) => im.category === c.key).length;
+  return `- ${c.label} / ${c.labelEn || ''}：${n} 件（key: ${c.key}）`;
+}).join('\n');
+const llms = [
+  '# smallfigure · 原创小人素材图鉴',
+  '',
+  `> ${descZh}`,
+  '',
+  'smallfigure 是原创 2D 素材图鉴站：全部素材为透明 PNG（部分 WebP 循环动图），每件都有自己的故事由来，注册后可免费下载大图。素材为 AI 生成（页脚统一披露），本站不承诺商用授权。',
+  '',
+  '## 关键链接',
+  `- 首页：${BASE}/`,
+  `- 站点地图（含全部图片条目）：${BASE}/sitemap.xml`,
+  `- robots.txt：${BASE}/robots.txt`,
+  `- Markdown 全文：对 ${BASE}/ 发送带 \`Accept: text/markdown\` 的请求即返回纯 Markdown 全文`,
+  '',
+  `## 分类（共 ${nCats} 个，合计 ${nItems} 件素材）`,
+  catLines,
+  '',
+  '## 授权说明',
+  '- 生成方式：AI 生成；本站不承诺商用授权，转载或使用请保留署名与出处（smallfigure.com）。',
+  '',
+].join('\n');
+writeFileSync(path.join(SITE, 'llms.txt'), llms);
+console.log('[seo] llms.txt 已生成（' + nCats + ' 分类 / ' + nItems + ' 素材）');
 
 /* ---------- 6. og 图缓存 bust ---------- */
 if (existsSync(OG_SRC)) {

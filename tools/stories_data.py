@@ -273,6 +273,14 @@ CAT_STORIES = {
         "zh": "武生、花旦、花脸、老生、丑角、青衣——六位把脸谱当工牌戴的角儿，全站嗓门最大的一分类。规矩：亮相要稳，水袖要飘，白鼻梁不许擦掉。他们不上台，只在透明背景上比画架势。",
         "en": "Wusheng, huadan, jing, laosheng, chou and qingyi — six performers wearing painted faces as their staff badges, the loudest category on the site. Rules: hold the pose, float the sleeves, never wipe the white nose patch. They never take a stage; they only gesture against a transparent background.",
     },
+    "seamonsters": {
+        "zh": "深海是本站唯一没有营业执照的车间。海龙、克拉肯、巨蟹、水母、海象魔、灯笼鱼，全是浪花里长出来的住户，鳞片与触须一律不收税。规矩：上岸可以，别把咸味带进透明背景。它们不攻击船只，只负责让看图的人后退半步。",
+        "en": "The deep sea is the only workshop here with no business licence. Sea serpents, krakens, crabs, jellies, walrus-fiends and anglerfish, all residents grown from the surf, scales and tentacles tax-free. Rule: you may come ashore, but leave the salt out of the transparent background. They never attack ships — they only make the viewer step back half a pace.",
+    },
+    "plantfolk": {
+        "zh": "六株学会穿衣服的植物，把花瓣当衣襟、把叶子当手。礼帽蘑菇、围巾仙人掌、和服荷花、背带裤向日葵、兜帽藤蔓、雨靴郁金香，一个个比园丁还讲究。规矩：花盆可以没有，体面不能没有。它们不结果子，只负责在透明背景上过各自的精致小日子。",
+        "en": "Six plants that learned to dress, wearing petals as lapels and leaves as hands. A top-hat mushroom, a scarf cactus, a kimono lotus, an overalls sunflower, a hooded ivy and a rainboot tulip, each more fastidious than a gardener. Rule: a pot is optional, dignity is not. They bear no fruit — they only live their neat little lives against a transparent background.",
+    },
 }
 
 # 素材故事：key 与 data/images.json 的 images[].id 对应（首批 38 件，其余分批补）
@@ -1664,5 +1672,53 @@ ITEM_STORIES = {
     "opera-qingyi": {
         "zh": "青衣甩开两条白水袖，人立在袖影中央，神色端庄里压着一点哀愁。淡紫长裙不沾水，水袖替她哭——按青衣的规矩，眼泪不能自己出门，得让袖子代劳。",
         "en": "The qingyi flings out her two white water sleeves, standing at the centre of their shadow, dignity holding down a thread of sorrow. The lavender gown stays dry; the sleeves weep for her — a qingyi's tears never leave on their own; the sleeves carry them out.",
+    },
+    "seamonsters-serpent": {
+        "zh": "碧浪海龙从翻涌的浪花里昂起青绿长身，S 形蜿蜒，龙首带须还咧着嘴笑。它本是被冲上岸的一截旧缆绳，泡够海水后自己长出了鳞。传说谁在风暴里看见它船就不会翻——但目前只验证过透明背景上的那一条。",
+        "en": "The tidal sea serpent rears its teal scaled body from churning waves, curving in an S, whiskered snout grinning. It began as a length of old hawser washed ashore, growing scales after enough soak in seawater. Legend says whoever sees it in a storm keeps their ship — though only the transparent-background one has been verified.",
+    },
+    "seamonsters-kraken": {
+        "zh": "紫潮克拉肯八条触手张牙舞爪，圆头咧嘴露着黄牙，大眼滴溜溜转。它住在本站最深的缓存里，平时盘成一团睡午觉，一被点开就精神抖擞。它从没缠过船，只是把透明背景当成了自己的墨水瓶。",
+        "en": "The violet kraken flings eight writhing tentacles, bulbous purple head grinning yellow fangs, big eyes darting. It lives in the site's deepest cache, coiled asleep by day, alert the moment it is opened. It has never seized a ship — it only mistook the transparent background for its own inkpot.",
+    },
+    "seamonsters-crab": {
+        "zh": "赤甲巨蟹双钳高举，红壳上缀满藤壶，眼柄顶着凸出的大眼。它原本是码头边一只普通青蟹，被画师多添了两道红漆后升级成怪兽。它不横着走了，改为正面威风——至少在自己的透明背景里。",
+        "en": "The crimson shell crab raises both pincers, red armour speckled with barnacles, bulging eyes on stalks. It was an ordinary green crab by the dock until a painter added two coats of red and promoted it to monster. It no longer scuttles sideways — it faces forward, at least within its own transparent background.",
+    },
+    "seamonsters-jelly": {
+        "zh": "幽灵水母的半透明伞盖泛着粉紫柔光，触须随风飘荡，伞下还挂着一张温柔笑脸。它不螫人，只负责在透明背景里安静发光，把经过的看图人照得心里一软。它从没漂走过，因为没地方比 PNG 更稳当。",
+        "en": "The ghost jellyfish's translucent bell glows pink and violet, wispy tentacles drifting, a gentle smiling face inside. It never stings — it only glows quietly on the transparent background, softening the heart of whoever looks. It has never drifted away; no place is steadier than a PNG.",
+    },
+    "seamonsters-walrus": {
+        "zh": "长牙海象魔圆滚滚扑来，两根螺旋长牙白得发亮，鳍肢张开憨态可掬，皮上还点着藤壶。它被画成怪兽纯属误会——本来只是只爱打哈欠的海象，画师嫌它太乖，硬塞了两根獠牙凑数。它在透明背景里扑空过无数次。",
+        "en": "The tusked walrus-fiend lunges on its blubbery body, two spiralled ivory tusks gleaming, flippers splayed, barnacle freckles on its hide. It became a monster by mistake — an ordinary yawning walrus the painter found too tame, bolting on two tusks for show. It has lunged into empty space countless times on the transparent background.",
+    },
+    "seamonsters-angler": {
+        "zh": "深渊灯笼鱼咧着满口尖牙，深蓝圆身，头顶挂着一盏发光小灯笼，一只大眼乌溜溜亮。那盏灯本是它钓晚饭的家伙，现在改行给看图人指路。它从没钓到过鱼，倒是照亮了不少透明背景。",
+        "en": "The abyss anglerfish grins with sharp fangs, round deep-blue body, a glowing lantern dangling above, one big luminous eye. That lantern once lured its dinner; now it guides viewers instead. It has never caught a fish, but it has lit up plenty of transparent backgrounds.",
+    },
+    "plantfolk-tophat": {
+        "zh": "礼帽蘑菇先生歪戴黑高顶礼帽，单片眼镜架在眼上，酒红领结系在脖间，菌柄挺着圆肚，小树枝手臂叉腰。他从不长孢子，只长派头。据传他每天在透明背景里给自己掸三次礼帽灰。",
+        "en": "The top-hat mushroom gentleman tilts a black topper, brass monocle over one eye, burgundy bow tie at the throat, cream stem belly proudly out, twiggy arms akimbo. He never grows spores, only posture. Rumor says he dusts his hat three times a day against the transparent background.",
+    },
+    "plantfolk-scarf": {
+        "zh": "围巾仙人掌圆身子裹着粗针织红条纹围巾，红手套小胳膊缩在身侧，头顶开朵小粉花，一脸惬意。它不扎人，因为刺都藏进了毛线里。它在透明背景里过的冬天，比谁都暖。",
+        "en": "The wool-scarf cactus wraps its round body in a chunky striped scarf, stubby mittened arms tucked in, a little pink flower on top, perfectly content. It never pricks — every spine is hidden in the wool. Its winter on the transparent background is warmer than anyone's.",
+    },
+    "plantfolk-lotus": {
+        "zh": "和服荷花层层粉白花瓣拢成衣襟，系着花纹腰带，眉眼低垂浅浅含笑，叶手轻摇小折扇，根部收拢如裙裾。她不结莲蓬，只结仪态。据传每开一次扇子，透明背景就安静一分。",
+        "en": "The kimono lotus folds layered pink-and-white petals into robes, a patterned obi at the waist, eyes lowered in a gentle smile, a leaf-hand tilting a tiny fan, roots gathered like a hem. She bears no seed pod, only grace. They say each unfurl of her fan quiets the transparent background a little more.",
+    },
+    "plantfolk-sunflower": {
+        "zh": "背带裤向日葵金黄花瓣戴成王冠，一条背带滑下肩，脸颊沾泥点，一手拎小铁皮壶一手挥手欢呼。它是本站最吵的园丁，也是唯一会浇自己的花。它在透明背景里从不缺水，因为壶里永远满着。",
+        "en": "The overalls sunflower wears golden petals like a crown, one denim strap slipped off the shoulder, dirt-smudged cheeks, a tiny watering can in one leaf-hand and the other waving. The site's loudest gardener and the only one who waters itself. On the transparent background it never runs dry — the can stays full.",
+    },
+    "plantfolk-ivy": {
+        "zh": "兜帽藤蔓披一袭深绿连帽斗篷，帽檐下只露两只狡黠发亮的眼睛，心形小叶顺衣摆垂落，卷须细臂悄声掀着兜帽。它不爬墙，只爬透明背景。据传它偷过不止一顶别人的帽子，但没人能证明。",
+        "en": "The hooded ivy drapes a deep-green cloak, only two sly glowing eyes from the hood shadow, heart-shaped leaves along the hem, a tendril raising the hood. It climbs no wall, only the transparent background. Rumor credits it with more than one stolen hat, though no proof exists.",
+    },
+    "plantfolk-tulip": {
+        "zh": "雨靴郁金香在红瓣花冠里绽着笑脸，踩明黄雨靴跨步溅水，卷曲花茎当手臂撑着波点小伞，身边飘着雨珠。它不躲雨，反而专挑水坑走。它在透明背景里从没淋湿过，因为雨从不真的落下。",
+        "en": "The rainboot tulip grins from its red-and-cream bloom, striding in bright yellow wellies, curly stem arms holding a polka-dot parasol, raindrops drifting near. It avoids no puddle — it seeks them out. On the transparent background it has never been wet, for the rain never truly falls.",
     },
 }

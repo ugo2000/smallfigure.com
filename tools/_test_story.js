@@ -107,6 +107,35 @@ const OUT = require('path').resolve(__dirname, '..');
     await page.waitForTimeout(400);
   }
 
+  /* ---------- 4b. 搜索覆盖故事正文：故事独有关键词也能命中 ---------- */
+  const storySearch = await page.evaluate(async () => {
+    const [img, sto] = await Promise.all([
+      fetch('data/images.json').then(r => r.json()),
+      fetch('data/stories.json').then(r => r.json()),
+    ]);
+    for (const im of img.images) {
+      const s = sto.items[im.id];
+      if (!s || !s.zh) continue;
+      const base = (im.name + ' ' + (im.nameEn || '') + ' ' + im.desc + ' ' +
+        (im.descEn || '') + ' ' + (im.tags || []).join(' ')).toLowerCase();
+      const segs = s.zh.match(/[\u4e00-\u9fa5]{4}/g) || [];
+      for (const seg of segs) {
+        if (base.indexOf(seg.toLowerCase()) === -1) return { id: im.id, q: seg };
+      }
+    }
+    return null;
+  });
+  ok('找到故事独有关键词用于搜索测试', !!storySearch);
+  if (storySearch) {
+    await page.locator('#chips .chip[data-cat="all"]').click();
+    await page.fill('#search', storySearch.q);
+    await page.waitForTimeout(500);
+    const found = await page.locator('.card[data-id="' + storySearch.id + '"]').count();
+    ok('搜索故事独有关键词能命中该素材', found > 0, storySearch.q);
+    await page.fill('#search', '');
+    await page.waitForTimeout(300);
+  }
+
   /* ---------- 5. 灯箱 meta 增加「生成方式: AI 生成」 ---------- */
   await page.locator('#chips .chip[data-cat="characters"]').click();
   await page.waitForTimeout(300);
