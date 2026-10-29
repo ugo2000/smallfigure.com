@@ -1435,6 +1435,30 @@
   "plantfolk-tulip": {
    "zh": "雨靴郁金香在红瓣花冠里绽着笑脸，踩明黄雨靴跨步溅水，卷曲花茎当手臂撑着波点小伞，身边飘着雨珠。它不躲雨，反而专挑水坑走。它在透明背景里从没淋湿过，因为雨从不真的落下。",
    "en": "The rainboot tulip grins from its red-and-cream bloom, striding in bright yellow wellies, curly stem arms holding a polka-dot parasol, raindrops drifting near. It avoids no puddle — it seeks them out. On the transparent background it has never been wet, for the rain never truly falls."
+  },
+  "metalfolk-gnome": {
+   "zh": "黄铜小矮人戴着尖顶铜帽，卷曲白胡子垂到胸前，红鼻子圆得发亮，小手提一盏黄铜小灯。铜面划痕细密，暖色包浆里缀着几点铜绿。它是这一批里唯一还带灯的，说灯是给自己照路的——好让抽屉里的其他金属人看见它没在偷懒。",
+   "en": "The brass gnome wears a pointed cap, a curly white beard down to his chest and a round red nose, small hands carrying a little brass lantern. Fine scratches cover the metal, warm patina broken by flecks of verdigris. He is the only one of the batch who still brings a light — to show the other metal folk in the drawer that he is not slacking off."
+  },
+  "metalfolk-clockwork": {
+   "zh": "发条机械少年圆铜头顶着一枚上弦钥匙，胸口小窗里齿轮咬合清清楚楚，一只圆玻璃眼嵌在磨旧的铜皮外套上，短手短腿抬起招手。他每天上三次弦，走三步歇一步。本站不修他，只保证他每次停下来的地方，都刚好在透明背景的正中间。",
+   "en": "The clockwork boy wears a wind-up key on his rounded brass head, gears meshing visibly behind a small chest window, one round glass eye set in a worn copper coat, stubby limbs raised in greeting. He winds himself three times a day, walks three steps, then rests. Nobody here repairs him — only guarantees that wherever he stops, it is dead centre of the transparent background."
+  },
+  "metalfolk-knight": {
+   "zh": "青铜小骑士顶着带小缨的圆盔，圆盔正面开着个圆孔，一手举短剑，一手挎圆盾，短腿立正站得笔直。铜绿从甲缝里渗出来，划痕顺着披风纹路走。它个子小到只配给糖罐看家，但站姿从不含糊——立正就是立正，不许晃。",
+   "en": "The bronze knight wears a plumed round helm with a hole punched in the front, short sword raised in one hand, round shield on the other, stubby legs standing at attention. Verdigris seeps from the seams, scratches following the lines of his cape. He is too small to guard anything but a sugar jar, yet his posture is never in doubt: attention means attention, and no wobbling."
+  },
+  "metalfolk-drummer": {
+   "zh": "锡皮小鼓手戴着圆筒军帽咧嘴笑，双臂扬起鼓槌敲肚前那面小军鼓，一腿跨出行进步伐。红蓝油漆剥落成一片片，露出底下发乌的锡皮。它敲的曲子只有三拍，前两拍热闹，第三拍留给安静——本站不允许噪声超过两拍。",
+   "en": "The tin drummer grins beneath a shako cap, both arms up with drumsticks over the little drum on his belly, one leg marching forward. Red and blue paint flakes away to dull tin beneath. His tune runs to three beats: two loud ones and one left for silence — this gallery does not allow noise beyond the second beat."
+  },
+  "metalfolk-scribe": {
+   "zh": "铜锈小书吏戴圆顶小帽、架一副圆眼镜，俯身凑近摊开的小书，一手捏着长鹅毛笔正要落笔。铜身通体发绿，深色锈纹与细划痕交错，只留几处暖铜色。它写得极慢，因为每落一笔都要先在透明背景上把墨迹晾干。",
+   "en": "The verdigris scribe wears a small domed cap and round spectacles, bending over a tiny open book, a long quill poised to write. His copper body has gone green, dark patina crossing fine scratches, with only a few warm brass notes left. He writes very slowly — every stroke must first be dried against the transparent background."
+  },
+  "metalfolk-gardener": {
+   "zh": "镀金小园丁戴着草帽，系一条缀着铜绿的深铜围裙，一手拎黄铜洒水壶低头浇水，壶嘴滴出一串水珠。金箔剥落处露出底下深铜，磨旧的金边发暗。它浇的花在透明背景上，所以水珠落下去就再也不见了。",
+   "en": "The gilded gardener wears a straw hat and a dark bronze apron spotted with verdigris, one hand tipping a brass watering can as he bends to pour, droplets falling from the spout. Chipped gold leaf reveals the bronze beneath, worn gilt edges gone dull. The flowers he waters live on a transparent background, so the water falls and is never seen again."
   }
  },
  "cats": {
@@ -1705,6 +1729,10 @@
   "plantfolk": {
    "zh": "六株学会穿衣服的植物，把花瓣当衣襟、把叶子当手。礼帽蘑菇、围巾仙人掌、和服荷花、背带裤向日葵、兜帽藤蔓、雨靴郁金香，一个个比园丁还讲究。规矩：花盆可以没有，体面不能没有。它们不结果子，只负责在透明背景上过各自的精致小日子。",
    "en": "Six plants that learned to dress, wearing petals as lapels and leaves as hands. A top-hat mushroom, a scarf cactus, a kimono lotus, an overalls sunflower, a hooded ivy and a rainboot tulip, each more fastidious than a gardener. Rule: a pot is optional, dignity is not. They bear no fruit — they only live their neat little lives against a transparent background."
+  },
+  "metalfolk": {
+   "zh": "六个从旧抽屉深处翻出来的金属小人：黄铜矮人、发条少年、青铜骑士、锡皮鼓手、铜锈书吏、镀金园丁，个头不过膝，脾气却各不相同。规矩：擦亮可以，上发条随缘，别把铜绿当锈病治——那是它们的年轮。它们不吵不闹，只在透明背景上过各自的旧日子。",
+   "en": "Six metal folk dug out of an old drawer: a brass gnome, a clockwork boy, a bronze knight, a tin drummer, a verdigris scribe and a gilded gardener, each knee-high and each in a different mood. Rules: polishing is welcome, winding is optional, and never treat the verdigris as a disease — it is their ring count. They are quiet company, living their old days against a transparent background."
   }
  }
 }
