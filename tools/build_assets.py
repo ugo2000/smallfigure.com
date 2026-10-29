@@ -104,10 +104,11 @@ CAT_LABELS = {
     "opera": {"zh": "戏曲小人", "en": "Opera Figures"},
     "seamonsters": {"zh": "海洋怪兽", "en": "Sea Monsters"},
     "plantfolk": {"zh": "衣装植物", "en": "Costumed Plants"},
+    "metalfolk": {"zh": "古董金属人", "en": "Antique Metal Folk"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔 / 童话人物 / 盛装外星人 / 怪奇化学仪 / 旧时百工 / 戏曲小人 / 海洋怪兽 / 衣装植物",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures / Fairytale / Dressed Aliens / Odd Chemistry / Old Trades / Opera Figures / Sea Monsters / Costumed Plants"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔 / 童话人物 / 盛装外星人 / 怪奇化学仪 / 旧时百工 / 戏曲小人 / 海洋怪兽 / 衣装植物 / 古董金属人",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures / Fairytale / Dressed Aliens / Odd Chemistry / Old Trades / Opera Figures / Sea Monsters / Costumed Plants / Antique Metal Folk"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -2345,6 +2346,42 @@ ITEMS = [
      "tags_en": ["costumed plant", "tulip", "rain boots", "parasol", "raindrops"],
      "desc_zh": "衣装植物：雨靴郁金香红瓣花冠里绽着笑脸，踩一双明黄雨靴正跨步溅水，卷曲的花茎当手臂撑着一柄波点小伞，身边飘着几滴雨珠，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
      "desc_en": "Costumed Plants: a rainboot tulip grinning from its red-and-cream bloom, striding in bright yellow wellies, curly stem arms holding a polka-dot parasol, stylized raindrops drifting around, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/metalfolk-1.png", "id": "metalfolk-gnome", "name_zh": "黄铜小矮人", "name_en": "Brass Gnome",
+     "cat": "metalfolk", "tags": ["古董金属人", "黄铜", "矮人", "提灯", "铜绿"],
+     "tags_en": ["antique metal folk", "brass", "gnome", "lantern", "verdigris"],
+     "desc_zh": "古董金属人：黄铜小矮人戴着尖顶铜帽，一把卷曲白胡子垂到胸前，圆红鼻子，小手提着一盏黄铜小灯，铜面布满细划痕与暖色包浆，缀着几点铜绿，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Antique Metal Folk: a knee-high brass gnome with a pointed hat, long curly white beard and round red nose, tiny hands holding a small brass lantern, tarnished brass with fine scratches, warm patina and a few verdigris spots, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/metalfolk-2.png", "id": "metalfolk-clockwork", "name_zh": "发条机械少年", "name_en": "Clockwork Boy",
+     "cat": "metalfolk", "tags": ["古董金属人", "发条", "机械", "齿轮", "铜皮"],
+     "tags_en": ["antique metal folk", "clockwork", "automaton", "gears", "wind-up"],
+     "desc_zh": "古董金属人：发条机械少年圆铜头顶着上弦钥匙，胸口小窗里齿轮清晰可见，一只圆眼睛，穿着磨旧的铜皮外套，短手短腿抬起招手，铜面发乌带细划痕，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Antique Metal Folk: a knee-high clockwork automaton boy with a wind-up key on his rounded brass head, turning gears visible in a small chest window, one round glass eye, a worn copper coat and stubby jointed limbs waving hello, tarnished brass with fine scratches, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/metalfolk-3.png", "id": "metalfolk-knight", "name_zh": "青铜小骑士", "name_en": "Bronze Knight",
+     "cat": "metalfolk", "tags": ["古董金属人", "青铜", "骑士", "短剑", "圆盾"],
+     "tags_en": ["antique metal folk", "bronze", "knight", "sword", "shield"],
+     "desc_zh": "古董金属人：青铜小骑士顶着带小缨的圆盔，圆面盔上开着一个圆孔，一手举短剑一手挎圆盾，短腿立正站直，青铜发乌、缝隙里渗着铜绿与细划痕，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Antique Metal Folk: a knee-high bronze knight in a small plumed helmet, miniature sword raised in one hand and a round shield on the other arm, stubby armored legs standing at attention, tarnished bronze with verdigris seeping in the crevices and fine scratches, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/metalfolk-4.png", "id": "metalfolk-drummer", "name_zh": "锡皮小鼓手", "name_en": "Tin Drummer",
+     "cat": "metalfolk", "tags": ["古董金属人", "锡皮", "士兵", "军鼓", "掉漆"],
+     "tags_en": ["antique metal folk", "tin", "soldier", "drum", "chipped paint"],
+     "desc_zh": "古董金属人：锡皮小鼓手戴着圆筒军帽咧嘴笑着，双臂举起鼓槌正敲肚前的小军鼓，一腿跨出行进步伐，锡皮上红蓝油漆剥落带细划痕，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Antique Metal Folk: a knee-high painted tin drummer grinning under a small shako cap, both arms raising drumsticks over the little drum on his belly, one leg mid-march, chipped red-and-blue paint and fine scratches over dull tin, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/metalfolk-5.png", "id": "metalfolk-scribe", "name_zh": "铜锈小书吏", "name_en": "Verdigris Scribe",
+     "cat": "metalfolk", "tags": ["古董金属人", "铜锈", "书吏", "鹅毛笔", "眼镜"],
+     "tags_en": ["antique metal folk", "verdigris", "scribe", "quill", "spectacles"],
+     "desc_zh": "古董金属人：铜锈小书吏戴着圆顶小帽和圆眼镜，伏身凑近摊开的小书，一手捏着长鹅毛笔正要落笔，铜身通体发绿，深色锈纹与细划痕交错，缀着几处暖铜色，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Antique Metal Folk: a knee-high verdigris scribe in a small domed cap and round spectacles, leaning over a tiny open book with a long feather quill poised in hand, copper body turned green with darker patina streaks and fine scratches, a few warm brass accents, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/metalfolk-6.png", "id": "metalfolk-gardener", "name_zh": "镀金小园丁", "name_en": "Gilded Gardener",
+     "cat": "metalfolk", "tags": ["古董金属人", "镀金", "园丁", "洒水壶", "草帽"],
+     "tags_en": ["antique metal folk", "gilded", "gardener", "watering can", "gold leaf"],
+     "desc_zh": "古董金属人：镀金小园丁戴着草帽，深铜围裙缀着铜绿，一手拎着黄铜洒水壶正低头浇水，壶嘴滴出一串水珠，金箔剥落处露出底下深铜，细划痕与磨旧的金边，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Antique Metal Folk: a knee-high gilded gardener in a straw sun hat and dark bronze apron spotted with verdigris, tipping a small brass watering can mid-pour with droplets falling, chipped gold leaf revealing darker bronze beneath, fine scratches and worn gilt edges, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 
