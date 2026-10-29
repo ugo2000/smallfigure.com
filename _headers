@@ -20,3 +20,9 @@
 # 数据文件短缓存，保证元数据更新及时可见
 /data/*
   Cache-Control: public, max-age=300
+
+# 素材详情页与分类页：HTML 不缓存（内容随素材更新即时可见）
+/i/*
+  Cache-Control: public, max-age=0, must-revalidate
+/c/*
+  Cache-Control: public, max-age=0, must-revalidate

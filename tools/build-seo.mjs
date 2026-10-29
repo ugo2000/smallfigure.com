@@ -10,9 +10,11 @@
  * 规格来源：技术 SEO 架构师（盘古）2026-10-25 交付。
  */
 import { createHash } from 'node:crypto';
-import { readFileSync, writeFileSync, copyFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, copyFileSync, existsSync, readdirSync, rmSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import { ITEM_PATH, CAT_PATH } from './_site_routes.mjs';
+import { contentDigest } from './_content_digest.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const SITE = path.join(ROOT, '_site');
@@ -23,7 +25,19 @@ const imagesData = JSON.parse(readFileSync(path.join(ROOT, 'data', 'images.json'
 const storiesData = JSON.parse(readFileSync(path.join(ROOT, 'data', 'stories.json'), 'utf8'));
 const images = imagesData.images;
 const cats = imagesData.categories;
+/* 详情页/分类页清单：由 tools/build_item_pages.mjs 先生成（部署流水线里它跑在 SEO 构建之前） */
+const manifestPath = path.join(SITE, 'pages-manifest.json');
+const manifest = existsSync(manifestPath) ? JSON.parse(readFileSync(manifestPath, 'utf8')) : { items: [], cats: [] };
 let html = readFileSync(path.join(SITE, 'index.html'), 'utf8');
+
+/* 幂等保护：_site/index.html 若已被注入过（重跑构建但没先跑 sync_site.sh），
+   再次注入会叠加重复的 meta / JSON-LD。先还原成源文件再注入。 */
+const SRC_INDEX = path.join(ROOT, 'index.html');
+const SITE_INDEX = path.join(SITE, 'index.html');
+if (html.includes('application/ld+json') && html !== readFileSync(SRC_INDEX, 'utf8')) {
+  console.log('[seo] 检测到 _site/index.html 已注入过 SEO，重置为源文件后重新注入');
+  html = readFileSync(SRC_INDEX, 'utf8');
+}
 
 const nItems = images.length;
 const nCats = cats.length;
@@ -62,11 +76,8 @@ html = html.replace(
 );
 
 /* ---------- 2. meta / OG / hreflang / preload ---------- */
-const digest = createHash('sha1')
-  .update(readFileSync(path.join(ROOT, 'data', 'images.json')))
-  .update(readFileSync(path.join(ROOT, 'data', 'stories.json')))
-  .update(html)
-  .digest('hex').slice(0, 10);
+/* digest：og 图缓存 bust（与 build_item_pages.mjs 共用同一算法，保证分类页 og 图与首页一致） */
+const digest = contentDigest(ROOT);
 const ogImage = `${BASE}/og-${digest}.jpg`;
 
 const headTags = [
@@ -166,16 +177,17 @@ const catLabelEn = (key) => {
 const catStoryZh = (key) => (storiesData.cats[key] ? storiesData.cats[key].zh : '');
 
 let noscript = '<noscript>\n<h2>smallfigure 原创小人素材图鉴（全文版）</h2>\n<p>' + esc(descZh) +
-  '</p>\n<p>本页为无 JavaScript 环境的全文版本；启用 JavaScript 可获得分类筛选、搜索与灯箱大图功能。</p>\n';
+  '</p>\n<p>本页为无 JavaScript 环境的全文版本；启用 JavaScript 可获得分类筛选、搜索与灯箱大图功能。' +
+  '每件素材另有一个可独立收录的详情页，内含完整故事与规格（链接见下）。</p>\n';
 cats.forEach((c) => {
   const items = images.filter((im) => im.category === c.key);
   if (!items.length) return;
-  noscript += `<h3>${esc(c.label)}（${esc(c.labelEn)}）· ${items.length} 件</h3>\n`;
+  noscript += `<h3><a href="${BASE}${CAT_PATH(c.key)}">${esc(c.label)}</a>（${esc(c.labelEn)}）· ${items.length} 件</h3>\n`;
   const cs = catStoryZh(c.key);
   if (cs) noscript += `<p>${esc(cs)}</p>\n`;
   items.forEach((im) => {
     const story = storyOf(im);
-    noscript += `<p><strong>${esc(im.name)}</strong>（${esc(im.nameEn || '')}）：${esc(im.desc || '')}` +
+    noscript += `<p><strong><a href="${BASE}${ITEM_PATH(im.id)}">${esc(im.name)}</a></strong>（${esc(im.nameEn || '')}）：${esc(im.desc || '')}` +
       (story ? ' ' + esc(story) : '') +
       ` 规格：${im.width}×${im.height} px，${im.transparent ? '透明 PNG' : 'PNG'}，${im.animated ? 'WebP 循环动图' : '静图'}。` +
       ` 分类：${esc(catLabel(im.category))} / ${esc(catLabelEn(im.category))}。大图：${BASE}/${im.file}</p>\n`;
@@ -190,12 +202,24 @@ console.log('[seo] index.html 已注入 meta / JSON-LD(' + nItems + ' 个 ImageO
 
 /* ---------- 5. sitemap.xml + robots.txt ---------- */
 const lastmod = (imagesData.generated || new Date().toISOString()).slice(0, 10);
+/* sitemap 结构调整：每件素材挂到自己的详情页 /i/<id>/，分类挂到 /c/<key>/，
+   首页只留一个 URL（不再把 365 张图全挂在首页下）。
+   这样搜索引擎能把每张图收录到各自的落地页，图片搜索也才有对应页面可指。 */
 let sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n' +
-  `  <url>\n    <loc>${BASE}/</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n`;
-images.forEach((im) => {
-  sitemap += `    <image:image>\n      <image:loc>${BASE}/${im.file}</image:loc>\n      <image:title>${esc(im.name)}</image:title>\n      <image:caption>${esc(im.desc || '')}</image:caption>\n    </image:image>\n`;
-});
-sitemap += '  </url>\n</urlset>\n';
+  `  <url>\n    <loc>${BASE}/</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>\n`;
+/* 分类页 */
+for (const c of manifest.cats || []) {
+  sitemap += `  <url>\n    <loc>${c.url}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
+}
+/* 素材详情页：每个 URL 带自己的 image:image（含 title/caption，利于图片搜索） */
+for (const im of manifest.items || []) {
+  const src = images.find((x) => x.id === im.id);
+  if (!src) continue;
+  sitemap += `  <url>\n    <loc>${im.url}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n` +
+    `    <image:image>\n      <image:loc>${BASE}/${src.file}</image:loc>\n      <image:title>${esc(src.name)}</image:title>\n      <image:caption>${esc(src.desc || '')}</image:caption>\n    </image:image>\n` +
+    `  </url>\n`;
+}
+sitemap += '</urlset>\n';
 writeFileSync(path.join(SITE, 'sitemap.xml'), sitemap);
 
 /* Content Signals（https://contentsignals.org/）取值说明：
@@ -253,7 +277,14 @@ console.log('[seo] sitemap.xml（1 个 URL + ' + nItems + ' 张图）与 robots.
 /* ---------- 5b. llms.txt（GEO：给 LLM/Agent 的简明纯文本站点索引，https://llmstxt.org/） ---------- */
 const catLines = cats.map((c) => {
   const n = images.filter((im) => im.category === c.key).length;
-  return `- ${c.label} / ${c.labelEn || ''}：${n} 件（key: ${c.key}）`;
+  return `- ${c.label} / ${c.labelEn || ''}：${n} 件（key: ${c.key}）— 分类页 ${BASE}${CAT_PATH(c.key)}`;
+}).join('\n');
+/* 素材明细：每件一行，含独立详情页 URL，AI 引擎可逐件引用而非只拿到一个大页面 */
+const itemLines = images.map((im) => {
+  const st = storiesData.items[im.id];
+  const brief = (st && st.zh ? st.zh : im.desc || '').replace(/\s+/g, ' ').slice(0, 60);
+  return `- [${im.name}](${BASE}${ITEM_PATH(im.id)}) — ${im.width}×${im.height} px，${im.transparent ? '透明 PNG' : 'PNG'}`
+    + `${im.animated ? '（WebP 循环动图）' : ''} · ${brief}`;
 }).join('\n');
 const llms = [
   '# smallfigure · 原创小人素材图鉴',
@@ -271,14 +302,27 @@ const llms = [
   `## 分类（共 ${nCats} 个，合计 ${nItems} 件素材）`,
   catLines,
   '',
+  `## 素材明细（共 ${nItems} 件，每件一个独立详情页）`,
+  itemLines,
+  '',
   '## 授权说明',
   '- 生成方式：AI 生成；本站不承诺商用授权，转载或使用请保留署名与出处（smallfigure.com）。',
   '',
 ].join('\n');
 writeFileSync(path.join(SITE, 'llms.txt'), llms);
-console.log('[seo] llms.txt 已生成（' + nCats + ' 分类 / ' + nItems + ' 素材）');
+console.log('[seo] llms.txt 已生成（' + nCats + ' 分类 / ' + nItems + ' 素材，含逐件详情页链接）');
 
 /* ---------- 6. og 图缓存 bust ---------- */
+/* 清理历史遗留的旧 digest og 图：只保留 og-1200x630.jpg（母版）与当次 digest 那张，
+   否则每跑一次构建就多留一个 76KB 的死文件，部署包白白变大 */
+if (existsSync(SITE)) {
+  for (const f of readdirSync(SITE)) {
+    if (/^og-[0-9a-f]{10}\.jpg$/.test(f) && f !== `og-${digest}.jpg`) {
+      rmSync(path.join(SITE, f), { force: true });
+      console.log('[seo] 清理旧 og 图：' + f);
+    }
+  }
+}
 if (existsSync(OG_SRC)) {
   copyFileSync(OG_SRC, path.join(SITE, `og-${digest}.jpg`));
   console.log('[seo] og 图已复制为 og-' + digest + '.jpg');
