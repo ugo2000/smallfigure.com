@@ -158,12 +158,10 @@ const OUT = require('path').resolve(__dirname, '..');
    * 注意：本地静态服务没有 Functions 路由，不会返回 Markdown；
    * 该断言只在生产域名（SF_BASE 指向线上）时生效。 */
   if (/^https:\/\/smallfigure\.com/.test(BASE)) {
-    const mdItem = await page.evaluate(async () => {
-      const href = document.querySelector('.related-item').getAttribute('href');
-      const id = href.split('/').filter(Boolean).pop();
+    const mdItem = await page.evaluate(async (id) => {
       const r = await fetch('/i/' + id + '/', { headers: { Accept: 'text/markdown' } });
       return { status: r.status, ct: r.headers.get('content-type') || '', body: (await r.text()).slice(0, 300) };
-    });
+    }, S.id);
     ok('详情页 Markdown 协商返回 200', mdItem.status === 200);
     ok('详情页 Markdown Content-Type 正确', mdItem.ct.includes('text/markdown'));
     ok('详情页 Markdown 含标题与故事段', mdItem.body.includes('# ') && mdItem.body.includes('故事由来'));
