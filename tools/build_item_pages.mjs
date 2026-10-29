@@ -59,6 +59,7 @@ function head({ title, desc, canonical, ogImage, ogImageW, ogImageH, jsonld, ext
 <link rel="alternate" hreflang="zh-CN" href="${canonical}">
 <link rel="alternate" hreflang="en" href="${canonical}">
 <link rel="alternate" hreflang="x-default" href="${canonical}">
+<link rel="alternate" type="text/markdown" href="${canonical}" title="Markdown for AI agents">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="smallfigure">
 <meta property="og:title" content="${esc(title)}">

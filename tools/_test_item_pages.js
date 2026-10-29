@@ -154,6 +154,38 @@ const OUT = require('path').resolve(__dirname, '..');
   /* ---------- 7. 详情页无 JS 报错 ---------- */
   ok('全程无 JS 报错', jsErrors.length === 0);
 
+  /* ---------- 8. Markdown 协商（详情页 / 分类页）----------
+   * 注意：本地静态服务没有 Functions 路由，不会返回 Markdown；
+   * 该断言只在生产域名（SF_BASE 指向线上）时生效。 */
+  if (/^https:\/\/smallfigure\.com/.test(BASE)) {
+    const mdItem = await page.evaluate(async () => {
+      const href = document.querySelector('.related-item').getAttribute('href');
+      const id = href.split('/').filter(Boolean).pop();
+      const r = await fetch('/i/' + id + '/', { headers: { Accept: 'text/markdown' } });
+      return { status: r.status, ct: r.headers.get('content-type') || '', body: (await r.text()).slice(0, 300) };
+    });
+    ok('详情页 Markdown 协商返回 200', mdItem.status === 200);
+    ok('详情页 Markdown Content-Type 正确', mdItem.ct.includes('text/markdown'));
+    ok('详情页 Markdown 含标题与故事段', mdItem.body.includes('# ') && mdItem.body.includes('故事由来'));
+
+    const mdCat = await page.evaluate(async () => {
+      const r = await fetch('/c/characters/', { headers: { Accept: 'text/markdown' } });
+      return { status: r.status, ct: r.headers.get('content-type') || '', body: (await r.text()).slice(0, 300) };
+    });
+    ok('分类页 Markdown 协商返回 200', mdCat.status === 200);
+    ok('分类页 Markdown 含素材列表', mdCat.ct.includes('text/markdown') && mdCat.body.includes('素材列表'));
+  }
+
+  /* ---------- 9. 详情页 Link 头（生产环境由 Functions 补 canonical）---------- */
+  if (/^https:\/\/smallfigure\.com/.test(BASE)) {
+    const linkHdr = await page.evaluate(async () => {
+      const r = await fetch('/i/metalfolk-gnome/');
+      return r.headers.get('link') || '';
+    });
+    ok('详情页 Link 头含 canonical', /rel="canonical"/.test(linkHdr));
+    ok('详情页 Link 头 canonical 指向自己', linkHdr.includes('/i/metalfolk-gnome/'));
+  }
+
   await browser.close();
 
   let fail = 0;
