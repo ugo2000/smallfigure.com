@@ -40,7 +40,11 @@ export async function onRequest(context) {
   if (ct.indexOf('text/html') !== -1) {
     const origin = new URL(request.url).origin;
     const headers = new Headers(res.headers);
-    headers.set('Link', '<' + origin + '/>; rel="canonical", <' + origin + '/llms.txt>; rel="describedby"');
+    // canonical 按路径走：详情页 /i/<id>/ 与分类页 /c/<key>/ 指向自己，
+    // 不能一律指向首页（那样会把 365 个详情页判成重复内容）
+    const path = url.pathname.replace(/\/+$/, '');
+    const canonical = path ? origin + path + '/' : origin + '/';
+    headers.set('Link', `<${canonical}>; rel="canonical", <${origin}/llms.txt>; rel="describedby"`);
     return new Response(res.body, { status: res.status, statusText: res.statusText, headers });
   }
   return res;

@@ -376,8 +376,15 @@
       '<h3>' + esc(locName(im)) + '</h3>' +
       '<p class="dims">' + im.width + ' × ' + im.height + ' · ' + fmtBytes(im.bytes) + '</p>' +
       '<p class="cat">' + esc(locCat(im)) + '</p>' +
+      /* 每张素材一个可独立收录的落地页（构建期生成的静态页），爬虫靠这个 <a> 找到详情 */
+      '<a class="card-detail" href="/i/' + encodeURIComponent(im.id) + '/">' + SF.t('card.detail') + '</a>' +
       '</div>';
     el.addEventListener('click', function () { openLightbox(im); });
+    /* 点详情链接时别顺带弹灯箱 */
+    var detail = el.querySelector('.card-detail');
+    if (detail) {
+      detail.addEventListener('click', function (e) { e.stopPropagation(); });
+    }
     return el;
   }
 

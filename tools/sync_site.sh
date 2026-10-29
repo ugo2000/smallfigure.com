@@ -13,7 +13,7 @@ cd "$(dirname "$0")/.."
 
 PY="C:/Users/Administrator/.workbuddy/binaries/python/envs/default/Scripts/python.exe"
 
-REQUIRED=(index.html styles.css app.js i18n.js _headers)
+REQUIRED=(index.html styles.css item.css app.js i18n.js _headers)
 OPTIONAL=(404.html tcg.html tcg-admin.html og-1200x630.jpg README.md)
 
 mkdir -p _site

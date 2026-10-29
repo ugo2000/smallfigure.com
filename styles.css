@@ -265,6 +265,13 @@ body {
 .card-meta h3 { font-size: 13.5px; font-weight: 600; line-height: 1.35; }
 .card-meta .dims { color: var(--muted); font-size: 12px; margin-top: 3px; font-variant-numeric: tabular-nums; }
 .card-meta .cat { margin-top: 7px; font-size: 11px; color: var(--accent-3); opacity: .85; }
+/* 卡片上的「详情页」链接：指向该素材的独立落地页（/i/<id>/），供爬虫逐件收录 */
+.card-detail {
+  display: inline-block; margin-top: 8px;
+  font-size: 11px; color: var(--muted); text-decoration: none;
+  border-bottom: 1px solid var(--line); padding-bottom: 1px; transition: color .18s, border-color .18s;
+}
+.card-detail:hover { color: var(--accent); border-color: var(--accent); }
 
 /* ---------- 动画特效 ---------- */
 .fx-shake { animation: fxShake .45s steps(2) infinite; }

@@ -20,3 +20,13 @@
 # 数据文件短缓存，保证元数据更新及时可见
 /data/*
   Cache-Control: public, max-age=300
+
+# 素材详情页与分类页：HTML 不缓存（内容随素材更新即时可见）
+# Link 头：describedby 指向 llms.txt（GEO：让 Agent/爬虫知道本站有纯文本站点索引）；
+# canonical 由页面内 <link rel="canonical"> 承担（每个详情页指向自己，静态文件无法用 _headers 逐条生成）
+/i/*
+  Cache-Control: public, max-age=0, must-revalidate
+  Link: <https://smallfigure.com/llms.txt>; rel="describedby"
+/c/*
+  Cache-Control: public, max-age=0, must-revalidate
+  Link: <https://smallfigure.com/llms.txt>; rel="describedby"
