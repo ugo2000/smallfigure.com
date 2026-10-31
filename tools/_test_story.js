@@ -136,20 +136,21 @@ const OUT = require('path').resolve(__dirname, '..');
     await page.waitForTimeout(300);
   }
 
-  /* ---------- 5. 灯箱 meta 增加「生成方式: AI 生成」 ---------- */
+  /* ---------- 5. 灯箱 meta 不再含「生成方式: AI 生成」 ---------- */
   await page.locator('#chips .chip[data-cat="characters"]').click();
   await page.waitForTimeout(300);
   await page.locator('.card').first().click();
   await page.waitForSelector('#lightbox:not([hidden])', { timeout: 5000 });
   const metaHtml = await page.locator('#lbMeta').innerHTML();
-  ok('meta 含生成方式: AI 生成', metaHtml.includes('生成方式') && metaHtml.includes('AI 生成'));
+  ok('meta 不再含生成方式/AI 生成', !metaHtml.includes('生成方式') && !metaHtml.includes('AI 生成'));
   await page.keyboard.press('Escape');
 
   /* ---------- 6. 页脚统一声明（全站唯一声明处） ---------- */
   const footerNoteCount = await page.locator('.site-footer .footer-note').count();
   const footerNote = footerNoteCount === 1 ? await page.locator('.site-footer .footer-note').textContent() : '';
   ok('页脚统一声明区块唯一', footerNoteCount === 1);
-  ok('统一声明含 AI 生成 / 虚构 / 不逐图重复', footerNote.includes('AI 生成') && footerNote.includes('虚构') && footerNote.includes('不逐图重复'));
+  ok('统一声明不再含 AI 生成', !footerNote.includes('AI 生成'));
+  ok('统一声明仍含 虚构 / 不逐图重复', footerNote.includes('虚构') && footerNote.includes('不逐图重复'));
 
   /* ---------- 6b. 故事库全量校验：每张图都不同 / 全覆盖 / 无逐图标识 ---------- */
   const storyStats = await page.evaluate(() => {

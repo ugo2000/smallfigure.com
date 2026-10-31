@@ -445,7 +445,7 @@ body {
 .site-footer .footer-coop-mail { color: var(--text); font-size: 13px; margin-bottom: 0; }
 .site-footer .footer-coop-mail a { color: var(--accent); font-weight: 600; }
 
-/* ---------- 页脚：AI 与虚构统一声明（全站只此一处，不逐图重复） ---------- */
+/* ---------- 页脚：虚构与授权统一声明（全站只此一处，不逐图重复） ---------- */
 .site-footer .footer-note {
   background: var(--panel); border: 1px solid var(--line);
   border-left: 3px solid var(--accent-3); border-radius: 10px;

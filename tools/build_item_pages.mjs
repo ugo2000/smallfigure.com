@@ -102,7 +102,7 @@ function headerBlock() {
 function footerBlock() {
   return `<footer class="site-footer">
   <div class="wrap">
-    <p class="footer-note">关于 AI 与虚构的说明：本站所有素材图片均由 AI 生成并处理为透明 PNG；各处「故事由来」均为 AI 辅助创作的虚构设定，非事实陈述，素材规格以本页参数区为准。相关声明统一在此披露，不逐图重复。</p>
+    <p class="footer-note">关于虚构与授权的说明：各处「故事由来」均为虚构设定，非事实陈述，素材规格以本页参数区为准；本站不承诺商用授权，转载或使用请保留署名与出处（smallfigure.com）。相关声明统一在此披露，不逐图重复。</p>
     <p class="dim">联系：<a href="mailto:ugo2000@126.com">ugo2000@126.com</a></p>
     <p class="dim">© 2026 smallfigure.com</p>
   </div>
@@ -226,7 +226,6 @@ ${headerBlock()}
         <dt>站内尺寸</dt><dd>${im.width} × ${im.height} px</dd>
         <dt>文件体积</dt><dd>${fmtBytes(im.bytes)}</dd>
         <dt>文件格式</dt><dd>${im.animated ? 'WebP 循环动图' : (im.transparent ? '透明 PNG' : 'PNG')}</dd>
-        <dt>生成方式</dt><dd>AI 生成</dd>
         <dt>所属分类</dt><dd><a href="${CAT_PATH(c.key)}">${esc(c.label)} / ${esc(c.labelEn || '')}</a></dd>
       </dl>
 

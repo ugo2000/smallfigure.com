@@ -81,7 +81,7 @@ async function buildMarkdown(env, request) {
   L.push(`- 站点：${base}/`);
   L.push(`- 素材总数：${nItems}`);
   L.push(`- 分类总数：${nCats}`);
-  L.push(`- 授权：每件素材页脚标注「生成方式: AI 生成」；本站不承诺商用授权`);
+  L.push(`- 授权：本站不承诺商用授权，转载或使用请保留署名与出处（smallfigure.com）`);
   L.push('');
 
   for (const c of cats) {

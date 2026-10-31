@@ -111,7 +111,7 @@ CAT_LABELS = {
 SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔 / 童话人物 / 盛装外星人 / 怪奇化学仪 / 旧时百工 / 戏曲小人 / 海洋怪兽 / 衣装植物 / 古董金属人 / 小器械",
             "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures / Fairytale / Dressed Aliens / Odd Chemistry / Old Trades / Opera Figures / Sea Monsters / Costumed Plants / Antique Metal Folk / Tiny Contraptions"}
 
-SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
+SOURCE = ("原创系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
           "异星猎食 / 星球徽志）"
           " + 小人动图（Remotion 渲染的无缝循环 WebP 小动画）"
@@ -128,7 +128,7 @@ SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / �
           "（character-art 管线怪诞童话风续批五分类：仙童为胖娃娃中式仙童、星座为虚构星点连线图案，均与既有角色/行星徽志/飞靴错开）"
           " + 无厘头人物（character-art 管线 mo-lei-tau 无厘头故事书风，冷脸配荒诞反差物件）"
           " + 旧时百工（character-art 管线：八位手工行业人物立绘，暖土色调，刻意避开霓虹与科幻）"
-          " + 早期《音弹》游戏美术资产 + 果克星人系列（据张祥前《果克星球奇遇》描述 AI 生成）")
+          " + 早期《音弹》游戏美术资产 + 果克星人系列（据张祥前《果克星球奇遇》描述生成）")
 
 # 每项：源文件, id, 中文名, 英文名, 分类, 标签, 中文简介, 英文简介, 透明, 动画效果
 # 透明立绘的来源：processed/ 下的是用 character-art 技能脚本从 AI 原图重抠的干净版
@@ -138,14 +138,14 @@ ITEMS = [
     {"src": "processed/hero_t.png", "id": "hero-t", "name_zh": "老张 · 立绘", "name_en": "Laozhang · Character Art",
      "cat": "characters", "tags": ["老张", "主角", "立绘", "hero", "透明", "小人"],
      "tags_en": ["Laozhang", "protagonist", "character art", "hero", "transparent", "little figure"],
-     "desc_zh": "本站看板小人：棕夹克工装男，AI 生成后抠成透明 PNG，512×512",
-     "desc_en": "The mascot of this site: a brown-jacket workwear man, AI-generated and cut out to a transparent PNG, 512×512",
+     "desc_zh": "本站看板小人：棕夹克工装男，抠成透明 PNG，512×512",
+     "desc_en": "The mascot of this site: a brown-jacket workwear man, cut out to a transparent PNG, 512×512",
      "transparent": True, "effect": None},
     {"src": "img/hero.png", "id": "hero", "name_zh": "老张 · 立绘原图", "name_en": "Laozhang · Original Artwork",
      "cat": "characters", "tags": ["老张", "主角", "立绘", "hero", "原图"],
      "tags_en": ["Laozhang", "protagonist", "character art", "hero", "original"],
-     "desc_zh": "AI 原始生成图，浅灰底未抠图（原图在本地备份目录中有留存）",
-     "desc_en": "Original AI-generated image, light gray background, not cut out (backup kept in originals/)",
+     "desc_zh": "原始图，浅灰底未抠图（原图在本地备份目录中有留存）",
+     "desc_en": "Original image, light gray background, not cut out (backup kept in originals/)",
      "transparent": False, "effect": None},
     {"src": "processed/alien_t.png", "id": "alien-t", "name_zh": "果克星人 · 立绘", "name_en": "Gucck Alien · Character Art",
      "cat": "characters", "tags": ["果克星人", "外星人", "立绘", "alien", "透明", "小人"],
@@ -156,8 +156,8 @@ ITEMS = [
     {"src": "img/alien.png", "id": "alien", "name_zh": "果克星人 · 立绘原图", "name_en": "Gucck Alien · Original Artwork",
      "cat": "characters", "tags": ["果克星人", "外星人", "alien", "原图"],
      "tags_en": ["Gucck Alien", "extraterrestrial", "original"],
-     "desc_zh": "AI 原始生成图，未抠图",
-     "desc_en": "Original AI-generated image, not cut out",
+     "desc_zh": "原始图，未抠图",
+     "desc_en": "Original image, not cut out",
      "transparent": False, "effect": None},
     {"src": "processed/hero_new.png", "id": "engineer", "name_zh": "女工程师 · 立绘", "name_en": "Lady Engineer · Character Art",
      "cat": "characters", "tags": ["女工程师", "立绘", "engineer", "透明", "小人"],

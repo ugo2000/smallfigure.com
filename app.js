@@ -457,8 +457,7 @@
       '<dt>' + SF.t('meta.siteSize') + '</dt><dd>' + im.width + ' × ' + im.height + ' px</dd>' +
       '<dt>' + SF.t('meta.bytes') + '</dt><dd>' + fmtBytes(im.bytes) + '</dd>' +
       '<dt>' + SF.t('meta.type') + '</dt><dd>' + (im.effect === 'sheet' ? SF.t('type.sheet', { n: im.frames })
-        : (im.animated ? SF.t('type.anim') : SF.t('type.still'))) + '</dd>' +
-      '<dt>' + SF.t('meta.generation') + '</dt><dd>' + SF.t('meta.generation.ai') + '</dd>';
+        : (im.animated ? SF.t('type.anim') : SF.t('type.still'))) + '</dd>';
     var n = countOf(im.id);
     if (n >= DL_THRESHOLD) {
       html += '<dt>' + SF.t('meta.downloads') + '</dt><dd>' + fmtCount(n) + SF.t('meta.times') + '</dd>';

@@ -92,7 +92,7 @@ export async function buildMarkdown(env, request, pathname) {
     if (st.zh) { L.push(''); L.push('## 故事由来'); L.push(''); L.push(esc(st.zh)); }
     if (st.en) { L.push(''); L.push(esc(st.en)); }
     L.push('');
-    L.push('> 生成方式：AI 生成；本站不承诺商用授权，转载或使用请保留署名与出处（smallfigure.com）。');
+    L.push('> 本站不承诺商用授权，转载或使用请保留署名与出处（smallfigure.com）。');
     return L.join('\n');
   }
 
@@ -115,6 +115,6 @@ export async function buildMarkdown(env, request, pathname) {
     L.push(`- [${esc(im.name)}](${base}/i/${im.id}/) — ${esc(spec)} · ${esc(brief)}`);
   }
   L.push('');
-  L.push('> 生成方式：AI 生成；本站不承诺商用授权，转载或使用请保留署名与出处（smallfigure.com）。');
+    L.push('> 本站不承诺商用授权，转载或使用请保留署名与出处（smallfigure.com）。');
   return L.join('\n');
 }

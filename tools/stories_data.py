@@ -6,8 +6,7 @@
 - 语气：博物馆解说牌式的冷幽默，不堆形容词、不喊口号
 - 每篇必含：来历 + 形态特征或可验证规格 + 世界观用途/轶事
 - **每张图的故事都必须不同**（build_stories.py 会查重并报警）
-- 故事正文内**不写**任何 AI/虚构声明：全站声明统一在页脚 footer.ai 一处披露，
-  灯箱 meta 保留「生成方式: AI 生成」，不逐图重复标识
+- 故事正文内**不写**任何 AI/虚构声明：全站声明统一在页脚 footer.ai 一处披露（不再标注生成方式），不逐图重复标识
 - 新增素材后在这里补条目，跑 tools/build_stories.py 产出 data/stories.json
 """
 
@@ -290,7 +289,7 @@ CAT_STORIES = {
 # 素材故事：key 与 data/images.json 的 images[].id 对应（首批 38 件，其余分批补）
 ITEM_STORIES = {
     "hero-t": {
-        "zh": "本站看板小人老张，棕夹克、工装裤，AI 生成后抠成透明 PNG。他不出镜、不说话，只负责在宣传横幅里代表全站露一次脸。透明背景，随叫随到。",
+        "zh": "本站看板小人老张，棕夹克、工装裤，抠成透明 PNG。他不出镜、不说话，只负责在宣传横幅里代表全站露一次脸。透明背景，随叫随到。",
         "en": "Laozhang, the site's mascot: brown jacket, workwear, cut out to a transparent PNG. He never appears on camera or speaks — he simply represents the whole gallery once, in the hero banner. transparent, on call.",
     },
     "hero": {

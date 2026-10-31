@@ -291,7 +291,7 @@ const llms = [
   '',
   `> ${descZh}`,
   '',
-  'smallfigure 是原创 2D 素材图鉴站：全部素材为透明 PNG（部分 WebP 循环动图），每件都有自己的故事由来，注册后可免费下载大图。素材为 AI 生成（页脚统一披露），本站不承诺商用授权。',
+  'smallfigure 是原创 2D 素材图鉴站：全部素材为透明 PNG（部分 WebP 循环动图），每件都有自己的故事由来，注册后可免费下载大图。本站不承诺商用授权。',
   '',
   '## 关键链接',
   `- 首页：${BASE}/`,
@@ -306,7 +306,7 @@ const llms = [
   itemLines,
   '',
   '## 授权说明',
-  '- 生成方式：AI 生成；本站不承诺商用授权，转载或使用请保留署名与出处（smallfigure.com）。',
+  '- 本站不承诺商用授权，转载或使用请保留署名与出处（smallfigure.com）。',
   '',
 ].join('\n');
 writeFileSync(path.join(SITE, 'llms.txt'), llms);
