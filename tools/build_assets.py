@@ -105,10 +105,11 @@ CAT_LABELS = {
     "seamonsters": {"zh": "海洋怪兽", "en": "Sea Monsters"},
     "plantfolk": {"zh": "衣装植物", "en": "Costumed Plants"},
     "metalfolk": {"zh": "古董金属人", "en": "Antique Metal Folk"},
+    "gizmos": {"zh": "小器械", "en": "Tiny Contraptions"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔 / 童话人物 / 盛装外星人 / 怪奇化学仪 / 旧时百工 / 戏曲小人 / 海洋怪兽 / 衣装植物 / 古董金属人",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures / Fairytale / Dressed Aliens / Odd Chemistry / Old Trades / Opera Figures / Sea Monsters / Costumed Plants / Antique Metal Folk"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔 / 童话人物 / 盛装外星人 / 怪奇化学仪 / 旧时百工 / 戏曲小人 / 海洋怪兽 / 衣装植物 / 古董金属人 / 小器械",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures / Fairytale / Dressed Aliens / Odd Chemistry / Old Trades / Opera Figures / Sea Monsters / Costumed Plants / Antique Metal Folk / Tiny Contraptions"}
 
 SOURCE = ("原创 AI 生成系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -2382,6 +2383,43 @@ ITEMS = [
      "tags_en": ["antique metal folk", "gilded", "gardener", "watering can", "gold leaf"],
      "desc_zh": "古董金属人：镀金小园丁戴着草帽，深铜围裙缀着铜绿，一手拎着黄铜洒水壶正低头浇水，壶嘴滴出一串水珠，金箔剥落处露出底下深铜，细划痕与磨旧的金边，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
      "desc_en": "Antique Metal Folk: a knee-high gilded gardener in a straw sun hat and dark bronze apron spotted with verdigris, tipping a small brass watering can mid-pour with droplets falling, chipped gold leaf revealing darker bronze beneath, fine scratches and worn gilt edges, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    # ---- 小器械 ----
+    {"src": "processed/gizmos-1.png", "id": "gizmos-bellclock", "name_zh": "自鸣铜座钟", "name_en": "Chiming Brass Clock",
+     "cat": "gizmos", "tags": ["小器械", "黄铜", "座钟", "钟摆", "铜铃"],
+     "tags_en": ["tiny contraptions", "brass", "clock", "pendulum", "bells"],
+     "desc_zh": "小器械：黄铜自鸣座钟巴掌大小，圆脸钟盘上两根细长指针，钟摆在小门里轻轻自摆，顶上一对小铜铃随摆轻响，铜壳发乌带细划痕与几点铜绿，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Tiny Contraptions: a palm-sized brass chiming clock with a round dial and two slim hands, a pendulum swinging gently behind a little door, a tiny pair of brass bells on top jingling with the swing, tarnished brass with fine scratches and a few verdigris spots, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/gizmos-2.png", "id": "gizmos-grabber", "name_zh": "多节铜机械手", "name_en": "Jointed Brass Grabber",
+     "cat": "gizmos", "tags": ["小器械", "黄铜", "机械臂", "夹爪", "关节"],
+     "tags_en": ["tiny contraptions", "brass", "robotic arm", "pincers", "joints"],
+     "desc_zh": "小器械：多节铜机械手由一段段铜环关节连成，末端一对小夹爪微微张开像要抓东西，搁在一块圆铜底座上，铜面磨亮带细划痕，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Tiny Contraptions: a jointed brass grabber arm made of linked brass-ring segments with a pair of small pincers half-open at the tip as if about to grip, resting on a round brass base, polished brass with fine scratches, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/gizmos-3.png", "id": "gizmos-steamfan", "name_zh": "喷汽小风轮", "name_en": "Steam-Puff Whirligig",
+     "cat": "gizmos", "tags": ["小器械", "黄铜", "风轮", "蒸汽", "阀门"],
+     "tags_en": ["tiny contraptions", "brass", "pinwheel", "steam", "valve"],
+     "desc_zh": "小器械：喷汽小风轮是一截黄铜小立管顶着一只三叶小风轮，侧边一个小阀门喷出几缕白汽推着叶片缓缓转，铜管发乌带细划痕，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Tiny Contraptions: a steam-puff whirligig with a small three-blade fan on top of a short brass tube, a little valve at the side puffing a few wisps of white steam to turn the blades slowly, tarnished brass tube with fine scratches, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/gizmos-4.png", "id": "gizmos-inker", "name_zh": "自动研墨磨", "name_en": "Self-Grinding Ink Mill",
+     "cat": "gizmos", "tags": ["小器械", "黄铜", "磨盘", "齿轮", "墨"],
+     "tags_en": ["tiny contraptions", "brass", "millstone", "gears", "ink"],
+     "desc_zh": "小器械：自动研墨磨是铜制小磨盘，上截一齿轮带动石磨缓缓转，墨从底口一滴滴落进小铜盂，铜壳磨亮带细划痕与几点铜绿，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Tiny Contraptions: a self-grinding ink mill, a small brass millstone turned slowly by a gear above it, ink dripping drop by drop from the bottom spout into a tiny brass cup, polished brass with fine scratches and a few verdigris spots, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/gizmos-5.png", "id": "gizmos-astrolabe", "name_zh": "折叠观星仪", "name_en": "Folding Astrolabe",
+     "cat": "gizmos", "tags": ["小器械", "黄铜", "观星仪", "星图", "指针"],
+     "tags_en": ["tiny contraptions", "brass", "astrolabe", "star chart", "pointers"],
+     "desc_zh": "小器械：折叠观星仪是几层黄铜圆盘叠着细密星点，边缘可折出几根指针像微缩星图，铜面发乌带细划痕，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Tiny Contraptions: a folding astrolabe of stacked brass discs engraved with fine star points, a few pointers folding out at the rim like a miniaturized star chart, tarnished brass with fine scratches, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/gizmos-6.png", "id": "gizmos-musictoy", "name_zh": "发条八音匣", "name_en": "Clockwork Music Box",
+     "cat": "gizmos", "tags": ["小器械", "黄铜", "八音匣", "发条", "机械小人"],
+     "tags_en": ["tiny contraptions", "brass", "music box", "clockwork", "automaton"],
+     "desc_zh": "小器械：发条八音匣是方铜小匣，盖上半透明小窗里一个黄铜机械小人随发条转动，一侧露出上弦旋钮，铜壳磨亮带细划痕与几点铜绿，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
+     "desc_en": "Tiny Contraptions: a clockwork music box, a small square brass case with a translucent window in the lid where a tiny brass automaton turns with the spring, a wind-up knob showing at one side, polished brass with fine scratches and a few verdigris spots, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
      "transparent": True, "effect": None},
 ]
 
