@@ -90,7 +90,8 @@ const FOODJAR_IDS = ['foodjar-1','foodjar-2','foodjar-3','foodjar-4','foodjar-5'
     // 详情页 / 分类页
     const urls = [
       '/i/food-friedrice/', '/i/food-mapo/', '/i/food-ramen/',
-      '/i/foodjar-1/', '/i/foodjar-6/', '/c/food/', '/c/foodjar/'
+      '/i/foodjar-star/', '/i/foodjar-honey/', '/i/foodjar-jam/',
+      '/c/food/', '/c/foodjar/'
     ];
     for (const u of urls) {
       const resp = await page.goto(BASE + u, { waitUntil: 'domcontentloaded', timeout: 60000 });

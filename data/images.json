@@ -2,9 +2,9 @@
  "site": "smallfigure.com",
  "subtitle": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔 / 童话人物 / 盛装外星人 / 怪奇化学仪 / 旧时百工 / 戏曲小人 / 海洋怪兽 / 衣装植物 / 古董金属人 / 小器械",
  "subtitleEn": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures / Fairytale / Dressed Aliens / Odd Chemistry / Old Trades / Opera Figures / Sea Monsters / Costumed Plants / Antique Metal Folk / Tiny Contraptions",
- "generated": "2026-11-01T20:26:52+08:00",
+ "generated": "2026-11-02T13:31:38+08:00",
  "source": "原创系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 星球徽志） + 小人动图（Remotion 渲染的无缝循环 WebP 小动画） + 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头（角色与器物两路 character-art 管线产出） + 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜（character-art 管线九分类批量产出） + 手作纹样（character-art 管线暖土色手作物料系，刻意避开霓虹科技风） + 骑兽武者（character-art 管线：古人骑怪兽执奇怪兵器，古风暖调） + 怪异枪械（character-art 管线：怪奇手作风枪械，材质奇诡避开现代战术枪） + 都市小民（character-art 管线：现代日常职业装束小人，扁平矢量风） + 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝（character-art 管线怪诞童话风五分类，heavy ink storybook style） + 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座（character-art 管线怪诞童话风续批五分类：仙童为胖娃娃中式仙童、星座为虚构星点连线图案，均与既有角色/行星徽志/飞靴错开） + 无厘头人物（character-art 管线 mo-lei-tau 无厘头故事书风，冷脸配荒诞反差物件） + 旧时百工（character-art 管线：八位手工行业人物立绘，暖土色调，刻意避开霓虹与科幻） + 早期《音弹》游戏美术资产 + 果克星人系列（据张祥前《果克星球奇遇》描述生成）",
- "count": 385,
+ "count": 405,
  "categories": [
   {
    "key": "characters",
@@ -13727,7 +13727,7 @@
    ],
    "desc": "本站看板小人：棕夹克工装男，抠成",
    "descEn": "The mascot of this site: a brown-jacket workwear man, cut out to a",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "hero",
@@ -13763,7 +13763,7 @@
    ],
    "desc": "原始图，浅灰底未抠图（原图在本地备份目录中有留存）",
    "descEn": "Original image, light gray background, not cut out (backup kept in originals/)",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "alien-t",
@@ -13800,7 +13800,7 @@
    ],
    "desc": "绿色大头外星小人",
    "descEn": "A green big-headed little alien",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "alien",
@@ -13833,7 +13833,7 @@
    ],
    "desc": "原始图，未抠图",
    "descEn": "Original image, not cut out",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "engineer",
@@ -13869,7 +13869,7 @@
    ],
    "desc": "技能验证时生成的漫画风女工程师",
    "descEn": "A comic-style lady engineer generated during skill validation",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "gucck-female",
@@ -13908,7 +13908,7 @@
    ],
    "desc": "据张祥前描述创作：雪青螺旋发、钻石大眼、粉白发光肌肤，虚拟光膜裙",
    "descEn": "Created from Zhang Xiangqian's account: spiral lilac hair, diamond-bright eyes, pale glowing skin and a virtual light-film dress",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "gucck-male",
@@ -13947,7 +13947,7 @@
    ],
    "desc": "据张祥前描述创作：黑亮贴头皮短发、大薄尖耳、粉白精致肌肤",
    "descEn": "Created from Zhang Xiangqian's account: sleek glossy hair, large thin pointed ears and fine pale skin",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "gucck-neutral",
@@ -13986,7 +13986,7 @@
    ],
    "desc": "据张祥前描述创作：长相介于男女之间的中性人，无皱粉白肌肤",
    "descEn": "Created from Zhang Xiangqian's account: an androgynous Gucck neutral with wrinkle-free pale skin",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "gucck-virtual",
@@ -14025,7 +14025,7 @@
    ],
    "desc": "据张祥前描述创作：人工场生成的虚拟人，只显上半身的全息投影",
    "descEn": "Created from Zhang Xiangqian's account: a field-generated virtual being, a holographic upper-body projection",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "gucck-splitter",
@@ -14062,7 +14062,7 @@
    ],
    "desc": "据张祥前描述创作：身体可拆成碧玉蓝条状、又能迅速复原的拆分人",
    "descEn": "Created from Zhang Xiangqian's account: a splitter whose body breaks into jade-blue segments and reassembles",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "figure-chef",
@@ -14099,7 +14099,7 @@
    ],
    "desc": "原创系列：系着围裙的胖厨师，漫画式爆发光晕，细腻美式漫画风",
    "descEn": "Original series: a plump chef in an apron with a comic burst glow, detailed American comic style",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "figure-grandpa",
@@ -14136,7 +14136,7 @@
    ],
    "desc": "原创系列：白胡子老爷爷，皱纹和衣纹细节扎实，细腻美式漫画风",
    "descEn": "Original series: a white-bearded grandpa with rich wrinkle and fabric detail, detailed American comic style",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "figure-robot",
@@ -14173,7 +14173,7 @@
    ],
    "desc": "原创系列：捧着小花的大眼小机器人，橙色爆发光晕，细腻美式漫画风",
    "descEn": "Original series: a big-eyed little robot holding a flower with an orange burst glow, detailed American comic style",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "figure-musician",
@@ -14212,7 +14212,7 @@
    ],
    "desc": "原创系列：抱着木吉他的绿裙歌者，脚下聚光灯晕，细腻美式漫画风",
    "descEn": "Original series: a green-dress singer with an acoustic guitar under a spotlight glow, detailed American comic style",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "figure-witch-gray",
@@ -14251,7 +14251,7 @@
    ],
    "desc": "原创系列：歪戴紫帽、星纹拼布斗篷、提古董灯的老巫婆，细腻美式漫画风，非任何影视角色",
    "descEn": "Original series: an old witch with a tilted purple hat, a star-patterned patchwork cloak and an antique lantern, detailed American comic style, not based on any film/TV character",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "figure-witch-mushroom",
@@ -14292,7 +14292,7 @@
    ],
    "desc": "原创系列：红伞帽、树叶斗篷、拄琥珀木杖的年轻森林女巫，细腻美式漫画风，非任何影视角色",
    "descEn": "Original series: a young forest witch with a red mushroom cap, a leaf cloak and an amber-topped staff, detailed American comic style, not based on any film/TV character",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "figure-elf-woodland",
@@ -14335,7 +14335,7 @@
    ],
    "desc": "原创系列：长尖耳、苔绿兜帽束腰外衣、背后小弓的森林精灵，细腻美式漫画风，非任何影视/文学角色",
    "descEn": "Original series: a woodland elf with long pointed ears, a moss-green hooded tunic and a small back-bow, detailed American comic style, not based on any film/TV or literary character",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "figure-fairy-lattice",
@@ -14377,7 +14377,7 @@
    ],
    "desc": "原创系列：薄荷绿短发、原创几何网纹薄翼、茶叶金线小裙、赤脚漂浮的仙子，刻意避开既有童话仙子的经典造型，细腻美式漫画风",
    "descEn": "Original series: a fairy with mint-green hair, original geometric-lattice gossamer wings, a teal leaf-and-gold dress and bare floating feet, deliberately not a Tinker Bell likeness, detailed American comic style",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "lil-scholar",
@@ -14416,7 +14416,7 @@
    ],
    "desc": "原创精致小人：素蓝长衫、衣缘绣云纹，双手捧卷、垂目沉思，气质沉静内秀。老张漫画渲染（粗黑墨线、平涂赛璐璐、网点质感），脚下柔和投影",
    "descEn": "Original refined figure: a pale-blue lined robe with cloud-scroll hems, a rolled scroll in both hands, eyes lowered in calm thought — serene and introspective. Laozhang comic rendering (heavy ink, cel shading, halftone), soft ground shadow",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "lil-tea",
@@ -14455,7 +14455,7 @@
    ],
    "desc": "原创精致小人：棉麻宽袍、袖口衣缘染水波纹，双手捧茶盏于胸前、恬淡含笑，气质从容闲适。老张漫画渲染，脚下柔和投影",
    "descEn": "Original refined figure: loose undyed-linen tunic and wide trousers with water-ripple motifs on the cuffs, cradling a tea cup at chest, tranquil composed smile — calm and easeful. Laozhang comic rendering, soft ground shadow",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "lil-embroider",
@@ -14494,7 +14494,7 @@
    ],
    "desc": "原创精致小人：交领襦裙、衣襟与腰带织缠枝花纹，抬手引线、偏头带俏皮神采，气质灵巧温婉。老张漫画渲染，脚下柔和投影",
    "descEn": "Original refined figure: a fitted cross-collar ruqun with intertwined floral-vine patterns on the bodice and sash, a raised needle and trailing thread, lively warm tilted head — deft and gentle. Laozhang comic rendering, soft ground shadow",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "lil-sword",
@@ -14533,7 +14533,7 @@
    ],
    "desc": "原创精致小人：短打劲装、护肩袖口绘方正雷纹，腰悬长剑、一手叉腰带不羁笑，气质疏狂自在。老张漫画渲染，脚下柔和投影",
    "descEn": "Original refined figure: a short practical martial outfit with bold angular thunder-key patterns on the shoulder guards, a sheathed sword at the hip, roguish grin and hand on hip — free-spirited and untamed. Laozhang comic rendering, soft ground shadow",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "lil-music",
@@ -14572,7 +14572,7 @@
    ],
    "desc": "原创精致小人：飘逸长衣、袖上散布星纹与卷草，斜抱古琴、仰首出神，气质清逸出尘。老张漫画渲染，脚下柔和投影",
    "descEn": "Original refined figure: a flowing long robe with scattered star-and-scrolling-vine motifs on the sleeves, a small zither held diagonally, distant dreamy upward gaze — ethereal and otherworldly. Laozhang comic rendering, soft ground shadow",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "lil-craft",
@@ -14611,7 +14611,7 @@
    ],
    "desc": "原创精致小人：工装短褐、皮围裙印利落几何格纹，手持木刨、神情专注，气质笃实可靠。老张漫画渲染，脚下柔和投影",
    "descEn": "Original refined figure: a short work jacket and leather apron printed with a crisp geometric grid, a small wooden plane in hand, focused earnest face — steadfast and dependable. Laozhang comic rendering, soft ground shadow",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "lil-merchant",
@@ -14650,7 +14650,7 @@
    ],
    "desc": "原创精致小人：圆领袍、领口衣缘缀钱纹菱格，抬手似在议价、笑意精明热络，气质机敏亲和。老张漫画渲染，脚下柔和投影",
    "descEn": "Original refined figure: a round-collar gown with diamond-coin motifs along the collar and hem, one hand raised mid-gesture as if closing a deal, bright shrewd friendly smile — sharp yet warm. Laozhang comic rendering, soft ground shadow",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "lil-recluse",
@@ -14689,7 +14689,787 @@
    ],
    "desc": "原创精致小人：素简道袍、衣摆爬冰裂纹釉样，拄结绳杖、含通透笑意，气质豁达通透。老张漫画渲染，脚下柔和投影",
    "descEn": "Original refined figure: a simple straw-trimmed Taoist robe with ice-crack glaze patterns crawling across the hem, a knotted walking staff, wise amused half-smile — perceptive and free. Laozhang comic rendering, soft ground shadow",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
+  },
+  {
+   "id": "lil2-fisher",
+   "name": "渔父 · 精致小人",
+   "nameEn": "The Fisherman · Refined Figure",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
+   "file": "assets/img/full/lil2_fisher_t.png",
+   "thumb": "assets/img/thumbs/lil2_fisher_t.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1461897,
+   "ver": "13ab49e9",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#302e2b",
+   "tags": [
+    "渔父",
+    "原创",
+    "立绘",
+    "鳞纹",
+    "透明",
+    "小人"
+   ],
+   "tagsEn": [
+    "fisherman",
+    "original",
+    "character art",
+    "fish-scale pattern",
+    "transparent",
+    "little figure"
+   ],
+   "desc": "原创精致小人：蓑衣斗笠、衣缘织鳞纹，肩扛钓竿、腰悬鱼篓，含笑缓步，气质闲适逍遥。老张漫画渲染（粗黑墨线、平涂赛璐璐、网点质感），脚下柔和投影",
+   "descEn": "Original refined figure: a straw rain cape and conical hat with fish-scale patterns woven into the hem, a bamboo rod slung over the shoulder and a fish basket at the hip, strolling with a content smile — carefree and at ease. Laozhang comic rendering (heavy ink, cel shading, halftone), soft ground shadow",
+   "added": "2026-11-02T13:31:38+08:00"
+  },
+  {
+   "id": "lil2-woodman",
+   "name": "樵夫 · 精致小人",
+   "nameEn": "The Woodcutter · Refined Figure",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
+   "file": "assets/img/full/lil2_woodman_t.png",
+   "thumb": "assets/img/thumbs/lil2_woodman_t.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1499534,
+   "ver": "2b470f64",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#302623",
+   "tags": [
+    "樵夫",
+    "原创",
+    "立绘",
+    "年轮纹",
+    "透明",
+    "小人"
+   ],
+   "tagsEn": [
+    "woodcutter",
+    "original",
+    "character art",
+    "tree-ring pattern",
+    "transparent",
+    "little figure"
+   ],
+   "desc": "原创精致小人：粗布短褐、胸前印年轮纹，背负柴捆、肩扛长斧，咧嘴憨笑，气质憨厚朴实。老张漫画渲染，脚下柔和投影",
+   "descEn": "Original refined figure: a short work jacket with tree-ring patterns on the chest, firewood bundled on the back and a broad axe on the shoulder, a simple cheerful grin — honest and unpretentious. Laozhang comic rendering, soft ground shadow",
+   "added": "2026-11-02T13:31:38+08:00"
+  },
+  {
+   "id": "lil2-farmer",
+   "name": "农夫 · 精致小人",
+   "nameEn": "The Farmer · Refined Figure",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
+   "file": "assets/img/full/lil2_farmer_t.png",
+   "thumb": "assets/img/thumbs/lil2_farmer_t.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1870109,
+   "ver": "39c57a94",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#2a2522",
+   "tags": [
+    "农夫",
+    "原创",
+    "立绘",
+    "稻穗纹",
+    "透明",
+    "小人"
+   ],
+   "tagsEn": [
+    "farmer",
+    "original",
+    "character art",
+    "rice-ear pattern",
+    "transparent",
+    "little figure"
+   ],
+   "desc": "原创精致小人：粗布短衫、衣缘袖口绣稻穗纹，扶锄拭汗、头戴草帽，温厚含笑，气质勤恳质朴。老张漫画渲染，脚下柔和投影",
+   "descEn": "Original refined figure: a rough-spun tunic with golden rice-ear motifs on the hem and cuffs, leaning on a hoe and wiping his brow under a straw hat, warm good-natured smile — diligent and kindly. Laozhang comic rendering, soft ground shadow",
+   "added": "2026-11-02T13:31:38+08:00"
+  },
+  {
+   "id": "lil2-cowherd",
+   "name": "牧童 · 精致小人",
+   "nameEn": "The Cowherd Boy · Refined Figure",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
+   "file": "assets/img/full/lil2_cowherd_t.png",
+   "thumb": "assets/img/thumbs/lil2_cowherd_t.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1686920,
+   "ver": "4ef0abf6",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#282526",
+   "tags": [
+    "牧童",
+    "原创",
+    "立绘",
+    "柳叶纹",
+    "透明",
+    "小人"
+   ],
+   "tagsEn": [
+    "cowherd boy",
+    "original",
+    "character art",
+    "willow-leaf pattern",
+    "transparent",
+    "little figure"
+   ],
+   "desc": "原创精致小人：短衣短裤、肩头印柳叶纹，横笛吹奏、赤脚而立，歪头俏笑，气质天真烂漫。老张漫画渲染，脚下柔和投影",
+   "descEn": "Original refined figure: short pants and an open shirt with willow-leaf motifs on the shoulders, playing a bamboo flute barefoot, head tilted with a mischievous grin — innocent and lively. Laozhang comic rendering, soft ground shadow",
+   "added": "2026-11-02T13:31:38+08:00"
+  },
+  {
+   "id": "lil2-healer",
+   "name": "郎中 · 精致小人",
+   "nameEn": "The Healer · Refined Figure",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
+   "file": "assets/img/full/lil2_healer_t.png",
+   "thumb": "assets/img/thumbs/lil2_healer_t.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1681327,
+   "ver": "dd26fa6e",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#3a3835",
+   "tags": [
+    "郎中",
+    "原创",
+    "立绘",
+    "灵芝纹",
+    "透明",
+    "小人"
+   ],
+   "tagsEn": [
+    "healer",
+    "original",
+    "character art",
+    "lingzhi pattern",
+    "transparent",
+    "little figure"
+   ],
+   "desc": "原创精致小人：洗练长衫、胸前绣灵芝纹，背负药箱、托举药杵，含笑伸手，气质仁心温和。老张漫画渲染，脚下柔和投影",
+   "descEn": "Original refined figure: a long pale robe with lingzhi mushroom motifs across the chest, a medicine chest on the back and a small mortar in hand, offering a remedy with a compassionate smile — kind and gentle. Laozhang comic rendering, soft ground shadow",
+   "added": "2026-11-02T13:31:38+08:00"
+  },
+  {
+   "id": "lil2-taoist",
+   "name": "道士 · 精致小人",
+   "nameEn": "The Taoist · Refined Figure",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
+   "file": "assets/img/full/lil2_taoist_t.png",
+   "thumb": "assets/img/thumbs/lil2_taoist_t.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1455748,
+   "ver": "f368f371",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#161a20",
+   "tags": [
+    "道士",
+    "原创",
+    "立绘",
+    "八卦纹",
+    "透明",
+    "小人"
+   ],
+   "tagsEn": [
+    "taoist",
+    "original",
+    "character art",
+    "bagua pattern",
+    "transparent",
+    "little figure"
+   ],
+   "desc": "原创精致小人：深蓝道袍、胸前缀八卦纹圆章，拂尘搭臂、垂目淡然，气质超然物外。老张漫画渲染，脚下柔和投影",
+   "descEn": "Original refined figure: a dark-blue Taoist robe with a circular bagua medallion on the chest, a horsetail whisk across the forearm, eyes gently lowered — detached and serene. Laozhang comic rendering, soft ground shadow",
+   "added": "2026-11-02T13:31:38+08:00"
+  },
+  {
+   "id": "lil2-monk",
+   "name": "僧侣 · 精致小人",
+   "nameEn": "The Monk · Refined Figure",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
+   "file": "assets/img/full/lil2_monk_t.png",
+   "thumb": "assets/img/thumbs/lil2_monk_t.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1536864,
+   "ver": "c8c759bc",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#34251d",
+   "tags": [
+    "僧侣",
+    "原创",
+    "立绘",
+    "莲瓣纹",
+    "透明",
+    "小人"
+   ],
+   "tagsEn": [
+    "monk",
+    "original",
+    "character art",
+    "lotus-petal pattern",
+    "transparent",
+    "little figure"
+   ],
+   "desc": "原创精致小人：橙黄僧衣、衣缘缀莲瓣纹，腕绕念珠、手托陶钵，垂目浅笑，气质澄明安宁。老张漫画渲染，脚下柔和投影",
+   "descEn": "Original refined figure: a saffron monastic robe with lotus-petal motifs along the hem, prayer beads at the wrist and an alms bowl in hand, serene lowered eyes — clear and peaceful. Laozhang comic rendering, soft ground shadow",
+   "added": "2026-11-02T13:31:38+08:00"
+  },
+  {
+   "id": "lil2-warrior",
+   "name": "武生 · 精致小人",
+   "nameEn": "The Martial Performer · Refined Figure",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
+   "file": "assets/img/full/lil2_warrior_t.png",
+   "thumb": "assets/img/thumbs/lil2_warrior_t.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1523599,
+   "ver": "8f53c997",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#272623",
+   "tags": [
+    "武生",
+    "原创",
+    "立绘",
+    "火焰纹",
+    "透明",
+    "小人"
+   ],
+   "tagsEn": [
+    "martial performer",
+    "original",
+    "character art",
+    "flame pattern",
+    "transparent",
+    "little figure"
+   ],
+   "desc": "原创精致小人：紧身扎甲、肩胸绘腾火焰纹，持枪亮相、按拳而立，目光炯炯，气质刚烈炽热。老张漫画渲染，脚下柔和投影",
+   "descEn": "Original refined figure: a fitted armored costume with bold flame patterns blazing up the shoulders, a long spear planted and a fist at the hip, intense blazing eyes — fierce and ardent. Laozhang comic rendering, soft ground shadow",
+   "added": "2026-11-02T13:31:38+08:00"
+  },
+  {
+   "id": "lil2-poet",
+   "name": "诗人 · 精致小人",
+   "nameEn": "The Poet · Refined Figure",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
+   "file": "assets/img/full/lil2_poet_t.png",
+   "thumb": "assets/img/thumbs/lil2_poet_t.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1423766,
+   "ver": "aee26c4b",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#1a2221",
+   "tags": [
+    "诗人",
+    "原创",
+    "立绘",
+    "竹节纹",
+    "透明",
+    "小人"
+   ],
+   "tagsEn": [
+    "poet",
+    "original",
+    "character art",
+    "bamboo-node pattern",
+    "transparent",
+    "little figure"
+   ],
+   "desc": "原创精致小人：青绿长衫、袖垂竹节纹，腰悬酒壶、仰首吟哦，疏放一笑，气质清狂孤高。老张漫画渲染，脚下柔和投影",
+   "descEn": "Original refined figure: a teal robe with bamboo-node motifs down the sleeves, a wine gourd at the waist, head tilted upward reciting verse with a proud detached smile — aloof and free. Laozhang comic rendering, soft ground shadow",
+   "added": "2026-11-02T13:31:38+08:00"
+  },
+  {
+   "id": "lil2-drinker",
+   "name": "酒仙 · 精致小人",
+   "nameEn": "The Wine Immortal · Refined Figure",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
+   "file": "assets/img/full/lil2_drinker_t.png",
+   "thumb": "assets/img/thumbs/lil2_drinker_t.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1761054,
+   "ver": "13d75b04",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#282725",
+   "tags": [
+    "酒仙",
+    "原创",
+    "立绘",
+    "涡纹",
+    "透明",
+    "小人"
+   ],
+   "tagsEn": [
+    "wine immortal",
+    "original",
+    "character art",
+    "spiral pattern",
+    "transparent",
+    "little figure"
+   ],
+   "desc": "原创精致小人：宽袍敞怀、襟口绣旋涡纹，怀抱酒坛、醉眼眯笑，衣袖滑落，气质洒脱不羁。老张漫画渲染，脚下柔和投影",
+   "descEn": "Original refined figure: a loosely open robe with swirling spiral patterns on the lapels, hugging a wine jar with blissful tipsy grin and slipping sleeve — untamed and merry. Laozhang comic rendering, soft ground shadow",
+   "added": "2026-11-02T13:31:38+08:00"
+  },
+  {
+   "id": "lil2-goplayer",
+   "name": "棋士 · 精致小人",
+   "nameEn": "The Go Player · Refined Figure",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
+   "file": "assets/img/full/lil2_goplayer_t.png",
+   "thumb": "assets/img/thumbs/lil2_goplayer_t.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1126286,
+   "ver": "9fd17156",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#191e26",
+   "tags": [
+    "棋士",
+    "原创",
+    "立绘",
+    "棋格纹",
+    "透明",
+    "小人"
+   ],
+   "tagsEn": [
+    "go player",
+    "original",
+    "character art",
+    "grid pattern",
+    "transparent",
+    "little figure"
+   ],
+   "desc": "原创精致小人：宽袖深袍、衣缘织棋格纹，指间拈子、敛袖而立，凝神静思，气质沉稳缜密。老张漫画渲染，脚下柔和投影",
+   "descEn": "Original refined figure: a wide-sleeved dark robe with a subtle grid motif at the hem, a single stone pinched between fingers, half-closed eyes in concentration — composed and precise. Laozhang comic rendering, soft ground shadow",
+   "added": "2026-11-02T13:31:38+08:00"
+  },
+  {
+   "id": "lil2-painter",
+   "name": "画师 · 精致小人",
+   "nameEn": "The Painter · Refined Figure",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
+   "file": "assets/img/full/lil2_painter_t.png",
+   "thumb": "assets/img/thumbs/lil2_painter_t.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1786738,
+   "ver": "9301c510",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#3a3733",
+   "tags": [
+    "画师",
+    "原创",
+    "立绘",
+    "卷云纹",
+    "透明",
+    "小人"
+   ],
+   "tagsEn": [
+    "painter",
+    "original",
+    "character art",
+    "scroll-cloud pattern",
+    "transparent",
+    "little figure"
+   ],
+   "desc": "原创精致小人：飘逸长衫、肩绕卷云纹，执笔悬腕、回眸带笑，披帛垂臂，气质潇洒灵动。老张漫画渲染，脚下柔和投影",
+   "descEn": "Original refined figure: a flowing gown with scrolling-cloud motifs across the shoulders, a fine brush aloft and half-unrolled paper in hand, glancing back with a lively smile — spontaneous and graceful. Laozhang comic rendering, soft ground shadow",
+   "added": "2026-11-02T13:31:38+08:00"
+  },
+  {
+   "id": "lil2-gardener",
+   "name": "花匠 · 精致小人",
+   "nameEn": "The Gardener · Refined Figure",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
+   "file": "assets/img/full/lil2_gardener_t.png",
+   "thumb": "assets/img/thumbs/lil2_gardener_t.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1868664,
+   "ver": "f3d5bd2f",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#312b28",
+   "tags": [
+    "花匠",
+    "原创",
+    "立绘",
+    "宝相花纹",
+    "透明",
+    "小人"
+   ],
+   "tagsEn": [
+    "gardener",
+    "original",
+    "character art",
+    "baoxiang floral pattern",
+    "transparent",
+    "little figure"
+   ],
+   "desc": "原创精致小人：短衣围裙、围裙印宝相花纹，臂挎花篮、手持花剪，俯身含笑，气质耐心温润。老张漫画渲染，脚下柔和投影",
+   "descEn": "Original refined figure: a work apron printed with ornate baoxiang floral medallions, a basket of blooms on one arm and flower shears in hand, bending in with a warm smile — patient and gentle. Laozhang comic rendering, soft ground shadow",
+   "added": "2026-11-02T13:31:38+08:00"
+  },
+  {
+   "id": "lil2-boatman",
+   "name": "艄公 · 精致小人",
+   "nameEn": "The Boatman · Refined Figure",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
+   "file": "assets/img/full/lil2_boatman_t.png",
+   "thumb": "assets/img/thumbs/lil2_boatman_t.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1683366,
+   "ver": "d611ffd9",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#272423",
+   "tags": [
+    "艄公",
+    "原创",
+    "立绘",
+    "江崖纹",
+    "透明",
+    "小人"
+   ],
+   "tagsEn": [
+    "boatman",
+    "original",
+    "character art",
+    "river-cliff pattern",
+    "transparent",
+    "little figure"
+   ],
+   "desc": "原创精致小人：粗布短褂、衣缘印江崖纹，撑篙而立、搭手远望，咧嘴憨笑，气质达观乐天。老张漫画渲染，脚下柔和投影",
+   "descEn": "Original refined figure: a coarse short jacket with jagged river-cliff wave motifs at the hem, gripping a punt pole and shading his eyes to the distance, broad gap-toothed grin — sunny and optimistic. Laozhang comic rendering, soft ground shadow",
+   "added": "2026-11-02T13:31:38+08:00"
+  },
+  {
+   "id": "lil2-hunter",
+   "name": "猎人 · 精致小人",
+   "nameEn": "The Hunter · Refined Figure",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
+   "file": "assets/img/full/lil2_hunter_t.png",
+   "thumb": "assets/img/thumbs/lil2_hunter_t.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1812295,
+   "ver": "c1588d01",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#1d1c1e",
+   "tags": [
+    "猎人",
+    "原创",
+    "立绘",
+    "鹿角纹",
+    "透明",
+    "小人"
+   ],
+   "tagsEn": [
+    "hunter",
+    "original",
+    "character art",
+    "deer-antler pattern",
+    "transparent",
+    "little figure"
+   ],
+   "desc": "原创精致小人：皮质猎装、肩缀鹿角纹，背负弯弓、腰悬箭囊，搭手远眺，目光锐利，气质机敏果决。老张漫画渲染，脚下柔和投影",
+   "descEn": "Original refined figure: a fitted leather hunting outfit with deer-antler motifs on the shoulder, a recurve bow on the back and a quiver at the hip, keen scanning gaze — sharp and decisive. Laozhang comic rendering, soft ground shadow",
+   "added": "2026-11-02T13:31:38+08:00"
+  },
+  {
+   "id": "lil2-herbalist",
+   "name": "采药人 · 精致小人",
+   "nameEn": "The Herbalist · Refined Figure",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
+   "file": "assets/img/full/lil2_herbalist_t.png",
+   "thumb": "assets/img/thumbs/lil2_herbalist_t.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1647488,
+   "ver": "e7b73217",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#312c27",
+   "tags": [
+    "采药人",
+    "原创",
+    "立绘",
+    "草叶纹",
+    "透明",
+    "小人"
+   ],
+   "tagsEn": [
+    "herbalist",
+    "original",
+    "character art",
+    "herb-leaf pattern",
+    "transparent",
+    "little figure"
+   ],
+   "desc": "原创精致小人：扎巾短褐、袖缘印草叶纹，背负竹篓、拈枝细看，神情专注，气质沉静笃定。老张漫画渲染，脚下柔和投影",
+   "descEn": "Original refined figure: a tied headcloth and short tunic with herb-leaf vein motifs on the sleeves, a bamboo basket of plants on the back, closely examining a sprig — quiet and absorbed. Laozhang comic rendering, soft ground shadow",
+   "added": "2026-11-02T13:31:38+08:00"
+  },
+  {
+   "id": "lil2-diviner",
+   "name": "卜者 · 精致小人",
+   "nameEn": "The Diviner · Refined Figure",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
+   "file": "assets/img/full/lil2_diviner_t.png",
+   "thumb": "assets/img/thumbs/lil2_diviner_t.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1758744,
+   "ver": "e1c3df61",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#26221e",
+   "tags": [
+    "卜者",
+    "原创",
+    "立绘",
+    "龟甲纹",
+    "透明",
+    "小人"
+   ],
+   "tagsEn": [
+    "diviner",
+    "original",
+    "character art",
+    "tortoise-shell pattern",
+    "transparent",
+    "little figure"
+   ],
+   "desc": "原创精致小人：宽大深袍、胸前缀龟甲纹，一手持幡、一手捧龟甲，眯眼诡笑，气质神秘玄妙。老张漫画渲染，脚下柔和投影",
+   "descEn": "Original refined figure: a wide dark robe with hexagonal tortoise-shell patterns across the chest, a banner staff in one hand and an ancient cracked shell in the other, enigmatic narrowed smile — mysterious and arcane. Laozhang comic rendering, soft ground shadow",
+   "added": "2026-11-02T13:31:38+08:00"
+  },
+  {
+   "id": "lil2-flutist",
+   "name": "笛者 · 精致小人",
+   "nameEn": "The Flutist · Refined Figure",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
+   "file": "assets/img/full/lil2_flutist_t.png",
+   "thumb": "assets/img/thumbs/lil2_flutist_t.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1399548,
+   "ver": "c504b073",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#30312f",
+   "tags": [
+    "笛者",
+    "原创",
+    "立绘",
+    "风回纹",
+    "透明",
+    "小人"
+   ],
+   "tagsEn": [
+    "flutist",
+    "original",
+    "character art",
+    "wind-spiral pattern",
+    "transparent",
+    "little figure"
+   ],
+   "desc": "原创精致小人：飘逸长衣、袖缘旋风回纹，横笛闭目、广袖临风，身姿若悬，气质悠远空灵。老张漫画渲染，脚下柔和投影",
+   "descEn": "Original refined figure: a flowing long robe with curling wind-spiral motifs along the sleeves, a bamboo flute to the lips and eyes closed in rapt absorption, weightless poise — distant and ethereal. Laozhang comic rendering, soft ground shadow",
+   "added": "2026-11-02T13:31:38+08:00"
+  },
+  {
+   "id": "lil2-lady",
+   "name": "仕女 · 精致小人",
+   "nameEn": "The Lady · Refined Figure",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
+   "file": "assets/img/full/lil2_lady_t.png",
+   "thumb": "assets/img/thumbs/lil2_lady_t.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1703146,
+   "ver": "0544b93d",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#2a2727",
+   "tags": [
+    "仕女",
+    "原创",
+    "立绘",
+    "团花纹",
+    "透明",
+    "小人"
+   ],
+   "tagsEn": [
+    "classical lady",
+    "original",
+    "character art",
+    "round-medallion pattern",
+    "transparent",
+    "little figure"
+   ],
+   "desc": "原创精致小人：交领襦裙、裙裾缀团花纹，执扇半掩、敛袖低眉，步摇轻晃，气质娴雅含蓄。老张漫画渲染，脚下柔和投影",
+   "descEn": "Original refined figure: an elegant cross-collar ruqun with round floral medallions on the skirt, a silk fan half concealing a soft smile and head gently lowered — reserved and graceful. Laozhang comic rendering, soft ground shadow",
+   "added": "2026-11-02T13:31:38+08:00"
+  },
+  {
+   "id": "lil2-child",
+   "name": "稚子 · 精致小人",
+   "nameEn": "The Little Child · Refined Figure",
+   "category": "characters",
+   "categoryLabel": "人物立绘",
+   "categoryLabelEn": "Character Art",
+   "file": "assets/img/full/lil2_child_t.png",
+   "thumb": "assets/img/thumbs/lil2_child_t.webp",
+   "width": 1024,
+   "height": 1024,
+   "srcWidth": 1024,
+   "srcHeight": 1024,
+   "bytes": 1760720,
+   "ver": "d5c5c0c8",
+   "transparent": true,
+   "animated": false,
+   "effect": null,
+   "color": "#352625",
+   "tags": [
+    "稚子",
+    "原创",
+    "立绘",
+    "石榴纹",
+    "透明",
+    "小人"
+   ],
+   "tagsEn": [
+    "little child",
+    "original",
+    "character art",
+    "pomegranate pattern",
+    "transparent",
+    "little figure"
+   ],
+   "desc": "原创精致小人：红肚兜短裤、布印石榴纹，高举糖葫芦、赤脚雀跃，咧嘴大笑，气质活泼娇憨。老张漫画渲染，脚下柔和投影",
+   "descEn": "Original refined figure: a bright belly-band and shorts printed with pomegranate-burst motifs, a stick of candied haws held overhead, hopping barefoot with a big toothy grin — lively and adorable. Laozhang comic rendering, soft ground shadow",
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "figure-farmer-sickle",
@@ -14732,7 +15512,7 @@
    ],
    "desc": "原创系列：东南亚高地农社的年轻男子，靛蓝手织短衫配编织腰封，赤足扛竹柄弯镰，细腻美式漫画风全身立绘",
    "descEn": "Original series: a young man from a Southeast Asian highland farming community in a loose indigo hand-woven tunic, barefoot, a bamboo-handled sickle resting on his shoulder, detailed American comic style full-body art",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "figure-farmer-hoe",
@@ -14775,7 +15555,7 @@
    ],
    "desc": "原创系列：东非牧社的年轻女子，铁红围裙长裙配米色披肩与串珠饰品，双手扶一把长柄铁锄，赤足戴脚环，细腻美式漫画风全身立绘",
    "descEn": "Original series: a young woman from an East African pastoral community in a rust-red wrap skirt and cream shawl, holding a long-handled iron hoe, barefoot with anklets, detailed American comic style full-body art",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "figure-farmer-pitchfork",
@@ -14819,7 +15599,7 @@
    ],
    "desc": "原创系列：中亚草原村落的农工，褪色橄榄绿帆布工装外套配皮质腰带与旧皮靴，一手扶四齿干草叉，一手抱一捆收割麦子，细腻美式漫画风全身立绘",
    "descEn": "Original series: a farmer from a Central Asian steppe village in a faded olive canvas work coat, holding a four-tine hay fork and a bundle of cut wheat, detailed American comic style full-body art",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "figure-farmer-pole",
@@ -14863,7 +15643,7 @@
    ],
    "desc": "原创系列：南美高原农村的年轻女子，芥末黄长裙配条纹织带与灰绿披肩，绿色织带头环束起长辫，背小竹篓手扶长竹竿顶端扎着谷穗，细腻美式漫画风全身立绘",
    "descEn": "Original series: a young woman from a South American highland village in a mustard-yellow skirt and grey-green poncho, braided hair with a woven headband, a bamboo pole with harvested grain, detailed American comic style full-body art",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "char-ayan",
@@ -14907,7 +15687,7 @@
    ],
    "desc": "比老张更细腻的原创小人：阿岩，一位风尘仆仆的仿古旅人，身着做旧皮外套、黄铜护目镜，手持地图",
    "descEn": "A more detailed original little figure than Laozhang: A-Yan, a weathered vintage traveler in a worn leather coat with brass goggles, holding a map",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "char-xuanye",
@@ -14951,7 +15731,7 @@
    ],
    "desc": "比老张更细腻的原创小人：玄夜，星轨工程师，身着发光线条的未来工装、半透明护目镜投出全息 HUD",
    "descEn": "A more detailed original little figure than Laozhang: Xuan-Ye, a star-track engineer in a glowing futuristic work suit with a holographic HUD visor",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "char-laoshuan",
@@ -14995,7 +15775,7 @@
    ],
    "desc": "比老张更细腻的原创小人：老栓，山野药师，身着层叠土布长袍、背着草药师竹篮",
    "descEn": "A more detailed original little figure than Laozhang: Lao-Shuan, a mountain herbalist in layered earthy linen robes with a woven herb basket",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "char-qingluan",
@@ -15039,7 +15819,7 @@
    ],
    "desc": "比老张更细腻的原创小人：青鸾，机械舞者，铬银网纱舞衣缀满品红与青色 LED 光带",
    "descEn": "A more detailed original little figure than Laozhang: Qing-Luan, a mech dancer in a chrome mesh outfit traced with magenta and cyan LED strips",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "char-aluo",
@@ -15083,7 +15863,7 @@
    ],
    "desc": "比老张更细腻的原创小人：阿萝，古风绣娘，身着精美汉服、手执绣绷",
    "descEn": "A more detailed original little figure than Laozhang: A-Luo, an ancient-style embroideress in an elegant hanfu holding an embroidery hoop",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   },
   {
    "id": "char-lin",
@@ -15127,7 +15907,7 @@
    ],
    "desc": "比老张更细腻的原创小人：凛，赛博巡员，流线型装甲制服、琥珀色 HUD 护目镜、手持能量警棍",
    "descEn": "A more detailed original little figure than Laozhang: Lin, a cyber patrol officer in a streamlined armored suit with an amber HUD visor and an energy baton",
-   "added": "2026-11-01T20:26:52+08:00"
+   "added": "2026-11-02T13:31:38+08:00"
   }
  ]
 }
