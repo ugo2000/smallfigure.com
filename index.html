@@ -108,7 +108,7 @@
       </div>
       <p class="footer-coop-mail"><span data-i18n="footer.coop.desc">以上任意一项，邮件直接聊：</span><a href="mailto:info@zhuaotech.com">info@zhuaotech.com</a></p>
     </div>
-    <p class="footer-note" data-i18n="footer.ai">关于 AI 与虚构的说明：本站所有素材图片均由 AI 生成并处理为透明 PNG；各处「故事由来」均为 AI 辅助创作的虚构设定，非事实陈述，素材规格以灯箱参数区为准。相关声明统一在此披露，不逐图重复。</p>
+    <p class="footer-note" data-i18n="footer.ai">关于虚构与授权的说明：各处「故事由来」均为虚构设定，非事实陈述，素材规格以灯箱参数区为准；本站不承诺商用授权，转载或使用请保留署名与出处（smallfigure.com）。相关声明统一在此披露，不逐图重复。</p>
     <p class="dim"><span data-i18n="footer.contact">联系：</span><a href="mailto:ugo2000@126.com">ugo2000@126.com</a></p>
     <p class="dim" data-i18n="footer.hosted">© 2026 smallfigure.com</p>
   </div>
@@ -186,5 +186,114 @@
 
 <script src="i18n.js?v=6"></script>
 <script src="app.js?v=6"></script>
+<!-- smallfigure TCG · 浮动预告窗（Coming Soon） -->
+<style>
+.tcgfw-wrap *{box-sizing:border-box;margin:0;padding:0}
+.tcgfw-wrap{position:fixed;left:24px;bottom:24px;z-index:99999;font-family:"Segoe UI",system-ui,"PingFang SC","Microsoft YaHei",sans-serif}
+.tcgfw-win{width:320px;background:rgba(18,22,36,.82);border:1px solid rgba(201,162,39,.5);border-radius:16px;
+  box-shadow:0 24px 60px rgba(0,0,0,.5);backdrop-filter:blur(16px) saturate(140%);overflow:hidden;
+  animation:tcgfw-pop .5s cubic-bezier(.18,.9,.3,1.2) both}
+@keyframes tcgfw-pop{from{opacity:0;transform:translateY(16px) scale(.96)}to{opacity:1;transform:none}}
+.tcgfw-bar{display:flex;align-items:center;gap:7px;padding:9px 11px;cursor:pointer;
+  background:linear-gradient(90deg,rgba(201,162,39,.2),rgba(74,95,208,.16));border-bottom:1px solid rgba(255,255,255,.08)}
+.tcgfw-bar .tt{font-size:12.5px;font-weight:700;color:#f3e8c4;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tcgfw-bar .x{border:0;background:rgba(255,255,255,.1);color:#fff;width:22px;height:22px;border-radius:6px;cursor:pointer;font-size:13px}
+.tcgfw-body{padding:14px}
+.tcgfw-ey{display:inline-flex;align-items:center;gap:6px;font-size:10.5px;letter-spacing:2px;color:#C9A227;font-weight:700;text-transform:uppercase}
+.tcgfw-ey::before{content:"";width:6px;height:6px;border-radius:50%;background:#C9A227;box-shadow:0 0 10px #C9A227;animation:tcgfw-b 1.6s infinite}
+@keyframes tcgfw-b{50%{opacity:.3}}
+.tcgfw-h{font-size:21px;font-weight:800;margin-top:5px;color:#fff}
+.tcgfw-s{font-size:12.5px;color:#9aa3b5;margin-top:1px}
+.tcgfw-stage{height:180px;display:grid;place-items:center;margin:12px 0 4px}
+.tcgfw-slide{position:absolute;width:128px;transition:.5s;border-radius:9px;filter:drop-shadow(0 12px 22px rgba(0,0,0,.5));opacity:0;transform:scale(.7)}
+.tcgfw-slide img{width:100%;display:block;border-radius:9px}
+.tcgfw-slide.a{transform:scale(1);opacity:1;z-index:3}.tcgfw-slide.p{transform:translateX(-78px) scale(.8) rotate(-6deg);opacity:.35;z-index:2}
+.tcgfw-slide.n{transform:translateX(78px) scale(.8) rotate(6deg);opacity:.35;z-index:2}
+.tcgfw-dots{display:flex;gap:5px;justify-content:center}
+.tcgfw-dots i{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.22);display:block}
+.tcgfw-dots i.on{background:#C9A227;width:16px;border-radius:4px}
+.tcgfw-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:10px 0}
+.tcgfw-stats div{background:rgba(28,33,52,.85);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:8px 4px;text-align:center}
+.tcgfw-stats b{display:block;font-size:15px;color:#fff}.tcgfw-stats span{font-size:9px;color:#9aa3b5;letter-spacing:.4px}
+.tcgfw-cta{display:flex;gap:8px;margin-top:6px}
+.tcgfw-cta button{flex:1;border:0;border-radius:11px;padding:10px;font-size:13px;font-weight:700;cursor:pointer}
+.tcgfw-cta .p{background:linear-gradient(180deg,#e7c14e,#C9A227);color:#1a1304}
+.tcgfw-cta .g{background:rgba(255,255,255,.07);color:#fff;border:1px solid rgba(255,255,255,.14)}
+.tcgfw-foot{text-align:center;font-size:10px;color:#9aa3b5;margin-top:9px}
+.tcgfw-fab{position:fixed;right:22px;bottom:22px;z-index:99999;width:56px;height:56px;border-radius:50%;
+  border:1px solid rgba(201,162,39,.5);background:rgba(18,22,36,.85);backdrop-filter:blur(12px);
+  cursor:pointer;display:none;align-items:center;justify-content:center;font-size:24px;box-shadow:0 12px 26px rgba(0,0,0,.5)}
+.tcgfw-fab.show{display:flex}
+</style>
+
+<div class="tcgfw-wrap">
+  <div class="tcgfw-win" id="tcgfwWin">
+    <div class="tcgfw-bar" id="tcgfwBar">
+      <span class="tt">smallfigure TCG — Coming Soon</span>
+      <button class="x" id="tcgfwX" title="收起">×</button>
+    </div>
+    <div class="tcgfw-body">
+      <span class="tcgfw-ey">Crowdfunding · Q1 2027</span>
+      <div class="tcgfw-h">smallfigure TCG</div>
+      <div class="tcgfw-s">Set 1 — All Things Have Souls</div>
+      <div class="tcgfw-stage" id="tcgfwStage">
+        <div class="tcgfw-slide"><img src="assets/tcg/card_SSR_hero-t.png" alt=""></div>
+        <div class="tcgfw-slide"><img src="assets/tcg/card_SSR_alien-t.png" alt=""></div>
+        <div class="tcgfw-slide"><img src="assets/tcg/card_SSR_aliens-deep-space-hunter.png" alt=""></div>
+        <div class="tcgfw-slide"><img src="assets/tcg/card_SR_wpn-hammer.png" alt=""></div>
+        <div class="tcgfw-slide"><img src="assets/tcg/card_R_boot-wingturbo.png" alt=""></div>
+      </div>
+      <div class="tcgfw-dots" id="tcgfwDots"></div>
+      <div class="tcgfw-stats">
+        <div><b>100</b><span>CARDS</span></div><div><b>6</b><span>FACTIONS</span></div>
+        <div><b>N·R·SR·SSR</b><span>RARITIES</span></div><div><b>$59</b><span>PER DECK</span></div>
+      </div>
+      <div class="tcgfw-cta">
+        <button class="p" id="tcgfwCtaP">Back this project</button>
+        <button class="g" id="tcgfwCtaG">Get notified</button>
+      </div>
+      <div class="tcgfw-foot">Goal: $59,000 · Crowdfunding live on smallfigure.com</div>
+    </div>
+  </div>
+  <button class="tcgfw-fab" id="tcgfwFab">🃏</button>
+</div>
+
+<script>
+(function(){
+  /* ====== 唯一需要改的地方 ======
+     Gamefound Campaign 页建好后，把真实 URL 粘到下面双引号里即可，
+     例如 "https://gamefound.com/projects/ugo2000/smallfigure-tcg"；
+     留空则按钮显示"即将上线"提示。 */
+  var TCG_CAMPAIGN_URL = "";
+
+  var win=document.getElementById('tcgfwWin'),fab=document.getElementById('tcgfwFab');
+  document.getElementById('tcgfwX').onclick=function(){win.style.display='none';fab.classList.add('show');};
+  fab.onclick=function(){win.style.display='';fab.classList.remove('show');};
+  document.getElementById('tcgfwCtaP').onclick=function(){
+    if(TCG_CAMPAIGN_URL){window.open(TCG_CAMPAIGN_URL,'_blank','noopener');}
+    else{window.location.href='/tcg';}
+  };
+  document.getElementById('tcgfwCtaG').onclick=function(){
+    alert('We will email you when the campaign goes live.');
+  };
+  var slides=[].slice.call(document.querySelectorAll('.tcgfw-slide')),cur=0,t;
+  var db=document.getElementById('tcgfwDots');
+  slides.forEach(function(_,i){var d=document.createElement('i');if(i===0)d.className='on';db.appendChild(d);});
+  var dots=[].slice.call(db.children);
+  function lay(){var N=slides.length;slides.forEach(function(s,i){
+    s.className='tcgfw-slide';
+    if(i===cur)s.classList.add('a');else if(i===(cur-1+N)%N)s.classList.add('p');else if(i===(cur+1)%N)s.classList.add('n');
+  });dots.forEach(function(d,i){d.className=i===cur?'on':'';});}
+  function go(i){cur=i;lay();rest();}
+  function nx(){cur=(cur+1)%slides.length;lay();}
+  function rest(){clearInterval(t);t=setInterval(nx,2600);}
+  slides.forEach(function(s,i){s.onclick=function(){go(i);};});
+  var st=document.getElementById('tcgfwStage');
+  st.addEventListener('mouseenter',function(){clearInterval(t);});
+  st.addEventListener('mouseleave',rest);
+  lay();rest();
+})();
+</script>
+
 </body>
 </html>
