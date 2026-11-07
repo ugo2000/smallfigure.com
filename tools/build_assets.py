@@ -107,10 +107,11 @@ CAT_LABELS = {
     "metalfolk": {"zh": "古董金属人", "en": "Antique Metal Folk"},
     "gizmos": {"zh": "小器械", "en": "Tiny Contraptions"},
     "toys": {"zh": "中国玩具", "en": "Chinese Toys"},
+    "playkids": {"zh": "童戏小人", "en": "Children at Play"},
 }
 
-SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔 / 童话人物 / 盛装外星人 / 怪奇化学仪 / 旧时百工 / 戏曲小人 / 海洋怪兽 / 衣装植物 / 古董金属人 / 小器械 / 中国玩具",
-            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures / Fairytale / Dressed Aliens / Odd Chemistry / Old Trades / Opera Figures / Sea Monsters / Costumed Plants / Antique Metal Folk / Tiny Contraptions / Chinese Toys"}
+SUBTITLE = {"zh": "原创素材图鉴 · 角色 / 武器装备 / 弹药 / 动物 / 食物 / 载具 / 异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / 异星猎食 / 徽章 / 星球徽志 / 小人动图 / 古怪乐器 / 物理武器 / 变异稻草人 / 多牙生物 / 古怪外星石头 / 外星货币 / 古怪符号 / 飞船 / 空间武器 / 飞行靴子 / 复古盾牌 / 变身能量块 / 变形怪兽 / 古怪望远镜 / 手作纹样 / 骑兽武者 / 怪异枪械 / 都市小民 / 古怪老人 / 古怪小鬼 / 会飞的猛兽 / 古怪花草 / 古怪金银珠宝 / 仙童 / 奇食瓶罐 / 长毛皮鞋 / 古怪虫豸 / 怪诞星座 / 无厘头人物 / 复古人物 / 古今混搭小人 / 异形兵刃 / 怪异巨人 / 怪异骷髅 / 奇门兵器 / 怪兽玩具 / 古怪走兽 / 深海怪鱼 / 怪鸟 / 钥匙锁具 / 立体公仔 / 童话人物 / 盛装外星人 / 怪奇化学仪 / 旧时百工 / 戏曲小人 / 海洋怪兽 / 衣装植物 / 古董金属人 / 小器械 / 中国玩具 / 童戏小人",
+            "en": "Original Asset Gallery · Character Art / Weapons & Gear / Ammunition / Creatures / Food & Drink / Vehicles & Machines / Alien Creatures / Alien Flora / Stone Age & Primitives / Colored Potions / Arcane Books / Arcane Implements / Castles / Old Furniture / Odd Devices / Alien Predation / Badges / Planet Sigils / Mini Animations / Weird Instruments / Physics Weapons / Mutant Scarecrows / Many-Fanged Beasts / Alien Stones / Alien Currency / Odd Symbols / Spaceships / Space Weapons / Flying Boots / Retro Shields / Morphing Energy Blocks / Morph Monsters / Odd Telescopes / Handmade Motifs / Beast Riders / Bizarre Firearms / Modern Folk / Eccentric Elders / Wee Imps / Flying Beasts / Odd Plants / Curious Jewels / Fairy Kids / Odd Food Jars / Furry Boots / Weird Bugs / Odd Constellations / Nonsense Folk / Retro Folk / Fusion Folk / Odd Blades / Bizarre Giants / Bizarre Skulls / Odd Weapons / Monster Toys / Odd Beasts / Odd Fish / Odd Birds / Keys & Locks / Toy Figures / Fairytale / Dressed Aliens / Odd Chemistry / Old Trades / Opera Figures / Sea Monsters / Costumed Plants / Antique Metal Folk / Tiny Contraptions / Chinese Toys / Children at Play"}
 
 SOURCE = ("原创系列（细腻美式漫画风，含角色立绘 / 武器装备 / 弹药军械 / 徽章 / 动物 / 食物美食 / 载具机械 / "
           "异星生物 / 异星植物 / 石器原始 / 奇色液体 / 魔法书籍 / 魔法法器 / 城堡建筑 / 古旧家具 / 奇械科技 / "
@@ -2747,6 +2748,44 @@ ITEMS = [
      "tags_en": ["chinese toys", "bristle horse", "clay figure", "horsehair mane", "string puppet"],
      "desc_zh": "中国玩具：鬃人是天津胡同里的提线泥偶，骑在彩漆木马上，马颈扎一圈马尾鬃，小人穿红袄蓝裤，底座两只竹轮一拉就走，泥胎彩绘磨得斑驳，故事书插画风格，纤细墨线配柔和淡彩，透明 PNG，1024×1024",
      "desc_en": "Chinese Toys: a string-pulled clay figure from a Tianjin alley, riding a painted wooden horse whose neck is bound with a mane of real horsehair, the little rider in a red jacket and blue trousers, two bamboo wheels on the base that roll when the strings are pulled, the clay and paint rubbed mottled with handling, storybook illustration with delicate ink linework and soft watercolor washes, transparent PNG, 1024×1024",
+     "transparent": True, "effect": None},
+
+    # ---- 童戏小人（老张漫画渲染，玩中国老玩具的孩子）----
+    {"src": "processed/kid-diabolo.png", "id": "kid-diabolo", "name_zh": "抖空竹", "name_en": "Diabolo Player",
+     "cat": "playkids", "tags": ["童戏小人", "空竹", "抖空竹", "棉线", "传统游戏"],
+     "tags_en": ["children at play", "diabolo", "chinese yo-yo", "cotton string", "traditional game"],
+     "desc_zh": "童戏小人：穿蓝灰短褂的男孩双手扯线抖空竹，一腿抬起，红金双轮空竹悬在棉线中间转得带风，圆脸笑得眼睛弯起来，粗黑墨线配平涂赛璐璐与网点质感，脚下柔和椭圆投影，透明 PNG，1024×1024",
+     "desc_en": "Children at Play: a boy in a blue-grey short jacket working a diabolo on a cotton string, one leg lifted, the red-and-gold double wheel spinning between the cords, round face creased into a laugh, bold American comic-book rendering with heavy black ink outlines, flat cel shading and halftone texture, soft elliptical ground shadow, transparent PNG, 1024x1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/kid-jianzi.png", "id": "kid-jianzi", "name_zh": "踢毽子", "name_en": "Jianzi Kicker",
+     "cat": "playkids", "tags": ["童戏小人", "毽子", "踢毽子", "红羽", "双髻"],
+     "tags_en": ["children at play", "jianzi", "shuttlecock", "red feathers", "pigtails"],
+     "desc_zh": "童戏小人：红袄绿裤梳双髻的女孩抬起一脚踢毽子，红羽毽子翻在半空，两臂张开保持平衡，衣摆随动作鼓起，粗黑墨线配平涂赛璐璐与网点质感，脚下柔和椭圆投影，透明 PNG，1024×1024",
+     "desc_en": "Children at Play: a girl in a red jacket and green trousers with two buns kicking a jianzi, the red-feathered shuttlecock flipping overhead, arms spread for balance and hem ballooning with the motion, bold American comic-book rendering with heavy black ink outlines, flat cel shading and halftone texture, soft elliptical ground shadow, transparent PNG, 1024x1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/kid-kite.png", "id": "kid-kite", "name_zh": "放沙燕风筝", "name_en": "Kite Flyer",
+     "cat": "playkids", "tags": ["童戏小人", "沙燕风筝", "放风筝", "风筝线", "仰头"],
+     "tags_en": ["children at play", "sand swallow kite", "kite flying", "kite string", "looking up"],
+     "desc_zh": "童戏小人：黄马甲暗蓝裤的小童仰头放沙燕风筝，一手举线轴一手牵线，红黑彩绘的沙燕在身侧斜着打旋，线绷出细弧，粗黑墨线配平涂赛璐璐与网点质感，脚下柔和椭圆投影，透明 PNG，1024×1024",
+     "desc_en": "Children at Play: a small child in a yellow vest and dark blue trousers looking up while flying a sand-swallow kite, one hand raising the spool and the other holding the taut line, the red-and-black painted swallow banking beside them, bold American comic-book rendering with heavy black ink outlines, flat cel shading and halftone texture, soft elliptical ground shadow, transparent PNG, 1024x1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/kid-lantern.png", "id": "kid-lantern", "name_zh": "捧走马灯", "name_en": "Lantern Bearer",
+     "cat": "playkids", "tags": ["童戏小人", "走马灯", "灯笼", "烛火", "双髻"],
+     "tags_en": ["children at play", "revolving lantern", "paper lantern", "candlelight", "pigtails"],
+     "desc_zh": "童戏小人：粉袄格纹罩衫梳双髻的女孩双手捧一盏走马灯，菱格纸窗里透出暖黄烛光，灯檐垂着短穗，低头看得认真，粗黑墨线配平涂赛璐璐与网点质感，脚下柔和椭圆投影，透明 PNG，1024×1024",
+     "desc_en": "Children at Play: a girl in a pink quilted jacket with two buns cradling a revolving paper lantern in both hands, warm candlelight glowing through the diamond-latticed windows, short tassels hanging from the eaves, head bent in quiet concentration, bold American comic-book rendering with heavy black ink outlines, flat cel shading and halftone texture, soft elliptical ground shadow, transparent PNG, 1024x1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/kid-drum.png", "id": "kid-drum", "name_zh": "摇拨浪鼓", "name_en": "Pellet Drum Boy",
+     "cat": "playkids", "tags": ["童戏小人", "拨浪鼓", "红鼓", "摇鼓", "小孩"],
+     "tags_en": ["children at play", "pellet drum", "red drum", "rattle", "child"],
+     "desc_zh": "童戏小人：米色短褐蓝裤的小男孩举着拨浪鼓摇得张嘴笑，鼓面朱红，两侧红球甩成两道弧线，一脚踮起跟着节奏晃，粗黑墨线配平涂赛璐璐与网点质感，脚下柔和椭圆投影，透明 PNG，1024×1024",
+     "desc_en": "Children at Play: a little boy in a tan short coat and blue trousers shaking a pellet drum with a wide-open laugh, the drum face vermilion and its two red beads swinging out in arcs, one foot tiptoeing to the rhythm, bold American comic-book rendering with heavy black ink outlines, flat cel shading and halftone texture, soft elliptical ground shadow, transparent PNG, 1024x1024",
+     "transparent": True, "effect": None},
+    {"src": "processed/kid-top.png", "id": "kid-top", "name_zh": "抽陀螺", "name_en": "Whipping Top",
+     "cat": "playkids", "tags": ["童戏小人", "陀螺", "抽陀螺", "鞭杆", "蹲身"],
+     "tags_en": ["children at play", "whipping top", "spinning top", "whip stick", "crouching"],
+     "desc_zh": "童戏小人：灰蓝上衣棕裤的男孩蹲着身抽陀螺，一手举细竹鞭杆，绳梢正甩向地上那只红蓝陀螺，身子前倾眯眼瞄着，粗黑墨线配平涂赛璐璐与网点质感，脚下柔和椭圆投影，透明 PNG，1024×1024",
+     "desc_en": "Children at Play: a boy in a slate-blue jacket and brown trousers crouching to whip a spinning top, one hand raising a slender bamboo whip as the cord lashes toward the red-and-blue top on the ground, leaning in with narrowed eyes, bold American comic-book rendering with heavy black ink outlines, flat cel shading and halftone texture, soft elliptical ground shadow, transparent PNG, 1024x1024",
      "transparent": True, "effect": None},
 ]
 
