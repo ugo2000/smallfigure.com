@@ -66,6 +66,11 @@ smallfigure = 小人的图。
 ├── tools/build_assets.py              # 素材构建脚本（可重复跑，幂等）
 ├── tools/sync_site.sh                 # 同步站点文件进 _site
 ├── tools/deploy.sh                    # 一键部署（同步 + wrangler pages deploy）
+├── game/                              # 内置小游戏 Smallfigure: Merge Museum（自托管于 /game/）
+│   ├── index.html / style.css / game.js / sprites/ / favicon.webp / privacy.html
+│   ├── preview.html                   # 本地零外链预览版
+│   ├── README.md / STORE.md           # 玩法说明与上架清单（itch.io / Poki / CrazyGames / YouTube）
+│   └── make_game_sprites.py / make_game_cover.py   # 素材与封面构建（可重复跑）
 └── .gitignore                         # 忽略 originals/、_site/、临时预览图
 ```
 
@@ -113,6 +118,21 @@ npx wrangler d1 execute smallfigure_downloads --remote --file migrations/0002_au
 
 自定义域名 `smallfigure.com` 与 `www.smallfigure.com` 均已绑定（Cloudflare DNS CNAME → smallfigure.pages.dev，
 已 proxied，SSL 自动签发）。当前状态：线上 https://smallfigure.com 与 https://www.smallfigure.com 正常运行。
+
+## 内置小游戏 Smallfigure: Merge Museum
+
+站内含一个原创小人合成小游戏，自托管在 **`/game/`**（`https://smallfigure.com/game/`）。玩法：顶部落小人、两个同级相碰合成更高一级，从晶铃一路合到老张；堆过红线即结束，解锁的角色进图鉴。默认英语、右下角可切中文，零外部请求、无第三方广告 SDK（失败续命按钮在无广告 SDK 时自动隐藏）。
+
+构建与部署：
+
+```bash
+python tools/make_game_sprites.py   # 从站内缩略图生成 11 张 sprite（可重复跑）
+python tools/build_game.py          # 生成 preview.html + 三个平台 ZIP + 自托管版 _site/game/
+bash tools/sync_game.sh             # 把自托管版同步进 _site/game/（含零外链校验）
+# 上架：bash tools/deploy.sh 会先 sync_site 再 sync_game，再构建详情页/SEO 并 wrangler 直传
+```
+
+`tools/build_game.py` 的 `build_selfhost()` 负责 `_site/game/`：零外链、页脚带 `privacy.html` 链接；`game/privacy.html` 为自托管专属隐私页（仅 localStorage、无追踪）。三个平台提交包（YouTube / web / Poki）与 itch.io / CrazyGames 上架清单见 `game/STORE.md`。
 
 ## 登录门控与用户统计
 

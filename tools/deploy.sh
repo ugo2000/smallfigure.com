@@ -11,6 +11,7 @@ NODE="C:/Users/Administrator/.workbuddy/binaries/node/versions/22.22.2-6/node.ex
 WRANGLER="C:/Users/Administrator/.workbuddy/binaries/node/workspace/node_modules/wrangler/bin/wrangler.js"
 
 bash tools/sync_site.sh
+bash tools/sync_game.sh
 "$NODE" tools/build_item_pages.mjs
 "$NODE" tools/build-seo.mjs
 "$NODE" "$WRANGLER" pages deploy _site --project-name=smallfigure --branch=main

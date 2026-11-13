@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="description" content="Smallfigure: Merge Museum — drop tiny folks, merge them, and collect the whole illustrated encyclopedia.">
+<title>Smallfigure: Merge Museum · Local Preview</title>
+<link rel="icon" type="image/webp" href="favicon.webp">
+<!-- Web / itch.io build: zero external requests, no platform SDK. -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <div class="frame">
+
+    <header class="hud">
+      <div class="hud-block">
+        <span class="hud-label" data-t="score">SCORE</span>
+        <strong class="hud-value" id="scoreVal">0</strong>
+      </div>
+      <div class="hud-title">
+        <span class="ht-mark">◉</span>
+        <span>smallfigure</span>
+        <small data-t="subtitle">MERGE MUSEUM</small>
+      </div>
+      <div class="hud-block right">
+        <span class="hud-label" data-t="best">BEST</span>
+        <strong class="hud-value small" id="bestVal">0</strong>
+      </div>
+      <div class="hud-tools">
+        <button type="button" id="btnCollection" class="icon-btn" data-t-title="collection" title="Collection">▦</button>
+        <button type="button" id="btnSound" class="icon-btn local-only" title="Sound">♪</button>
+        <button type="button" id="btnPause" class="icon-btn local-only" title="Pause">Ⅱ</button>
+      </div>
+    </header>
+
+    <div class="stage">
+      <canvas id="board" width="420" height="720"></canvas>
+
+      <div class="overlay" id="loading">
+        <div class="spinner"></div>
+        <p data-t="loading">Waking up the tiny folks…</p>
+      </div>
+
+      <div class="overlay" id="menu" hidden>
+        <div class="menu-art"><img src="sprites/l2.webp" alt=""><img src="sprites/l7.webp" alt=""><img src="sprites/l11.webp" alt=""></div>
+        <h1>Smallfigure</h1>
+        <h2 data-t="subtitle">MERGE MUSEUM</h2>
+        <p class="menu-desc" data-t="menuDesc">Drop a tiny folk. Two of a kind merge into something stranger. Fill the whole encyclopedia — if the pile stays below the line.</p>
+        <button type="button" class="btn primary" id="btnStart" data-t="start">START PLAYING</button>
+        <p class="menu-how" data-t="howTo">MOVE to aim · TAP / CLICK to drop · ← → + SPACE on keyboard</p>
+        <p class="menu-meta"><span id="menuProgress">0 / 11</span> <span data-t="collected">collected</span> · <span data-t="bestShort">best</span> <span id="menuBest">0</span></p>
+        <button type="button" class="menu-lang" id="btnMenuLang">切换为中文</button>
+      </div>
+
+      <div class="overlay" id="over" hidden>
+        <div class="over-card">
+          <p class="over-kicker" data-t="pileTop">THE PILE TOPPED OUT</p>
+          <div class="over-score" id="overScore">0</div>
+          <p class="over-label" data-t="score">SCORE</p>
+          <p class="over-best"><span data-t="best">BEST</span> <b id="overBest">0</b> <span id="newBest" class="new-best" data-t="newBest" hidden>NEW!</span></p>
+          <button type="button" class="btn primary" id="btnAgain" data-t="again">PLAY AGAIN</button>
+          <button type="button" class="btn ghost" id="btnRevive" data-t="revive">WATCH AD · CLEAR THE TOP</button>
+          <button type="button" class="btn link" id="btnOverCollection" data-t="collection">COLLECTION</button>
+        </div>
+      </div>
+
+      <div class="overlay" id="paused" hidden>
+        <div class="over-card">
+          <p class="over-kicker" data-t="paused">PAUSED</p>
+          <button type="button" class="btn primary" id="btnResume" data-t="resume">RESUME</button>
+        </div>
+      </div>
+
+      <div class="sheet" id="collection" hidden>
+        <div class="sheet-head">
+          <div><h3 data-t="collection">COLLECTION</h3><p class="sheet-sub"><span id="collProgress">0 / 11</span> <span data-t="collected">collected</span></p></div>
+          <button type="button" class="icon-btn" id="btnCollClose">✕</button>
+        </div>
+        <div class="coll-grid" id="collGrid"></div>
+        <p class="sheet-foot" data-t="collFoot">Every character is an original illustration from smallfigure.com</p>
+      </div>
+
+      <div class="sheet detail" id="detail" hidden>
+        <div class="sheet-head">
+          <div><h3 id="detailName">—</h3><p class="sheet-sub" id="detailLv">LV 1</p></div>
+          <button type="button" class="icon-btn" id="btnDetailClose">✕</button>
+        </div>
+        <div class="detail-body">
+          <img id="detailImg" src="" alt="">
+          <p id="detailNote"></p>
+        </div>
+        <p class="sheet-foot">smallfigure.com · original character art</p>
+      </div>
+
+      <div class="toast" id="toast" hidden></div>
+    </div>
+
+    <div class="nextbar">
+      <div class="next-slot"><span class="nb-label" data-t="now">NOW</span><img id="curImg" src="sprites/l1.webp" alt=""></div>
+      <p class="nb-hint" data-t="hint">Two of a kind merge. Keep the pile low.</p>
+      <button type="button" class="lang-chip" id="btnLang" title="Switch to 中文">EN</button>
+      <div class="next-slot"><span class="nb-label" data-t="next">NEXT</span><img id="nxtImg" src="sprites/l1.webp" alt=""></div>
+    </div>
+
+    <footer class="brandbar"><span>© 2026 smallfigure.com</span><span data-t="brandTag">ORIGINAL TINY FOLKS · MERGE &amp; COLLECT</span></footer>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
