@@ -34,6 +34,9 @@ tools/_diag_*
 .gh_token
 .cf_token
 .itch_token
+
+# itch.io 调试过程截图（临时产物，不入库）
+tools/itch_shots/
 .env
 .env.*
 .dev.vars
