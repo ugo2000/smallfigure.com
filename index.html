@@ -189,7 +189,7 @@
 <!-- smallfigure TCG · 浮动预告窗（Coming Soon） -->
 <style>
 .tcgfw-wrap *{box-sizing:border-box;margin:0;padding:0}
-.tcgfw-wrap{position:fixed;left:24px;bottom:24px;z-index:99999;font-family:"Segoe UI",system-ui,"PingFang SC","Microsoft YaHei",sans-serif}
+.tcgfw-wrap{position:fixed;left:24px;bottom:24px;z-index:60;font-family:"Segoe UI",system-ui,"PingFang SC","Microsoft YaHei",sans-serif}
 .tcgfw-win{width:320px;background:rgba(18,22,36,.82);border:1px solid rgba(201,162,39,.5);border-radius:16px;
   box-shadow:0 24px 60px rgba(0,0,0,.5);backdrop-filter:blur(16px) saturate(140%);overflow:hidden;
   animation:tcgfw-pop .5s cubic-bezier(.18,.9,.3,1.2) both}
@@ -204,11 +204,17 @@
 @keyframes tcgfw-b{50%{opacity:.3}}
 .tcgfw-h{font-size:21px;font-weight:800;margin-top:5px;color:#fff}
 .tcgfw-s{font-size:12.5px;color:#9aa3b5;margin-top:1px}
-.tcgfw-stage{height:180px;display:grid;place-items:center;margin:12px 0 4px}
-.tcgfw-slide{position:absolute;width:128px;transition:.5s;border-radius:9px;filter:drop-shadow(0 12px 22px rgba(0,0,0,.5));opacity:0;transform:scale(.7)}
-.tcgfw-slide img{width:100%;display:block;border-radius:9px}
-.tcgfw-slide.a{transform:scale(1);opacity:1;z-index:3}.tcgfw-slide.p{transform:translateX(-78px) scale(.8) rotate(-6deg);opacity:.35;z-index:2}
-.tcgfw-slide.n{transform:translateX(78px) scale(.8) rotate(6deg);opacity:.35;z-index:2}
+/* 舞台必须是定位上下文，否则绝对定位的 slide 会脱离容器。
+   内部再套一层 flex 居中盒，卡牌（744×1039 竖版）按高度贴合舞台，宽度由比例推导。 */
+.tcgfw-stage{height:186px;position:relative;margin:12px 0 4px}
+.tcgfw-stage-in{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.tcgfw-slide{position:absolute;left:50%;top:50%;height:178px;width:127px;transition:.5s;
+  border-radius:9px;filter:drop-shadow(0 12px 22px rgba(0,0,0,.5));opacity:0;
+  margin-left:-63.5px;margin-top:-89px;transform:scale(.72)}
+.tcgfw-slide img{height:100%;width:100%;display:block;border-radius:9px;object-fit:contain}
+.tcgfw-slide.a{transform:scale(1);opacity:1;z-index:3}
+.tcgfw-slide.p{transform:translateX(-72px) scale(.78) rotate(-6deg);opacity:.35;z-index:2}
+.tcgfw-slide.n{transform:translateX(72px) scale(.78) rotate(6deg);opacity:.35;z-index:2}
 .tcgfw-dots{display:flex;gap:5px;justify-content:center}
 .tcgfw-dots i{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.22);display:block}
 .tcgfw-dots i.on{background:#C9A227;width:16px;border-radius:4px}
@@ -220,10 +226,17 @@
 .tcgfw-cta .p{background:linear-gradient(180deg,#e7c14e,#C9A227);color:#1a1304}
 .tcgfw-cta .g{background:rgba(255,255,255,.07);color:#fff;border:1px solid rgba(255,255,255,.14)}
 .tcgfw-foot{text-align:center;font-size:10px;color:#9aa3b5;margin-top:9px}
-.tcgfw-fab{position:fixed;right:22px;bottom:22px;z-index:99999;width:56px;height:56px;border-radius:50%;
+/* FAB 收在左下角浮窗的位置上，展开浮窗时它隐藏，两者不同时出现 */
+.tcgfw-fab{position:fixed;left:24px;bottom:24px;z-index:60;width:48px;height:48px;border-radius:50%;
   border:1px solid rgba(201,162,39,.5);background:rgba(18,22,36,.85);backdrop-filter:blur(12px);
-  cursor:pointer;display:none;align-items:center;justify-content:center;font-size:24px;box-shadow:0 12px 26px rgba(0,0,0,.5)}
+  cursor:pointer;display:none;align-items:center;justify-content:center;font-size:21px;box-shadow:0 12px 26px rgba(0,0,0,.5)}
 .tcgfw-fab.show{display:flex}
+/* 灯箱打开时让浮窗退让，避免遮挡大图与说明文字 */
+body:has(#lightbox:not([hidden])) .tcgfw-wrap,
+body:has(#lightbox:not([hidden])) .tcgfw-fab{display:none !important}
+/* 认证弹窗同理 */
+body:has(#authModal:not([hidden])) .tcgfw-wrap,
+body:has(#authModal:not([hidden])) .tcgfw-fab{display:none !important}
 </style>
 
 <div class="tcgfw-wrap">
@@ -237,11 +250,13 @@
       <div class="tcgfw-h">smallfigure TCG</div>
       <div class="tcgfw-s">Set 1 — All Things Have Souls</div>
       <div class="tcgfw-stage" id="tcgfwStage">
-        <div class="tcgfw-slide"><img src="assets/tcg/card_SSR_hero-t.png" alt=""></div>
-        <div class="tcgfw-slide"><img src="assets/tcg/card_SSR_alien-t.png" alt=""></div>
-        <div class="tcgfw-slide"><img src="assets/tcg/card_SSR_aliens-deep-space-hunter.png" alt=""></div>
-        <div class="tcgfw-slide"><img src="assets/tcg/card_SR_wpn-hammer.png" alt=""></div>
-        <div class="tcgfw-slide"><img src="assets/tcg/card_R_boot-wingturbo.png" alt=""></div>
+        <div class="tcgfw-stage-in">
+          <div class="tcgfw-slide"><img src="assets/tcg/card_SSR_hero-t.png" alt=""></div>
+          <div class="tcgfw-slide"><img src="assets/tcg/card_SSR_alien-t.png" alt=""></div>
+          <div class="tcgfw-slide"><img src="assets/tcg/card_SSR_aliens-deep-space-hunter.png" alt=""></div>
+          <div class="tcgfw-slide"><img src="assets/tcg/card_SR_wpn-hammer.png" alt=""></div>
+          <div class="tcgfw-slide"><img src="assets/tcg/card_R_boot-wingturbo.png" alt=""></div>
+        </div>
       </div>
       <div class="tcgfw-dots" id="tcgfwDots"></div>
       <div class="tcgfw-stats">
@@ -263,15 +278,14 @@
   /* ====== 唯一需要改的地方 ======
      Gamefound Campaign 页建好后，把真实 URL 粘到下面双引号里即可，
      例如 "https://gamefound.com/projects/ugo2000/smallfigure-tcg"；
-     留空则按钮显示"即将上线"提示。 */
+     留空则按钮跳到站内预告页 /tcg.html，不会出现死链。 */
   var TCG_CAMPAIGN_URL = "";
 
   var win=document.getElementById('tcgfwWin'),fab=document.getElementById('tcgfwFab');
   document.getElementById('tcgfwX').onclick=function(){win.style.display='none';fab.classList.add('show');};
-  fab.onclick=function(){win.style.display='';fab.classList.remove('show');};
   document.getElementById('tcgfwCtaP').onclick=function(){
     if(TCG_CAMPAIGN_URL){window.open(TCG_CAMPAIGN_URL,'_blank','noopener');}
-    else{window.location.href='/tcg';}
+    else{window.location.href='/tcg.html';}
   };
   document.getElementById('tcgfwCtaG').onclick=function(){
     alert('We will email you when the campaign goes live.');
@@ -292,6 +306,27 @@
   st.addEventListener('mouseenter',function(){clearInterval(t);});
   st.addEventListener('mouseleave',rest);
   lay();rest();
+
+  /* 滚动浏览图库时自动收起浮窗：
+     浮窗是 fixed 定位，会压住左下角的素材卡片，导致卡片点不开。
+     用户一旦开始滚动就收成 FAB（可点开），不打扰浏览。 */
+  var scrolled=false;
+  function onScroll(){
+    if(scrolled) return;
+    if(window.scrollY > 120){
+      scrolled=true;
+      win.style.display='none';
+      fab.classList.add('show');
+      clearInterval(t);
+    }
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  /* FAB 展开后回到顶部才允许再次自动展开，避免挡住正在看的内容 */
+  fab.onclick=function(){
+    win.style.display='';fab.classList.remove('show');
+    scrolled=false;
+    rest();
+  };
 })();
 </script>
 

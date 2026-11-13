@@ -1459,6 +1459,414 @@
   "metalfolk-gardener": {
    "zh": "镀金小园丁戴着草帽，系一条缀着铜绿的深铜围裙，一手拎黄铜洒水壶低头浇水，壶嘴滴出一串水珠。金箔剥落处露出底下深铜，磨旧的金边发暗。它浇的花在透明背景上，所以水珠落下去就再也不见了。",
    "en": "The gilded gardener wears a straw hat and a dark bronze apron spotted with verdigris, one hand tipping a brass watering can as he bends to pour, droplets falling from the spout. Chipped gold leaf reveals the bronze beneath, worn gilt edges gone dull. The flowers he waters live on a transparent background, so the water falls and is never seen again."
+  },
+  "gizmos-bellclock": {
+   "zh": "自鸣铜座钟只有巴掌大，圆脸钟盘上两根细长指针从不指向任何真实时间。小门里的钟摆自己晃着，顶上一对铜铃跟着摆一下响一声。铜壳发乌，细划痕一道叠一道，铜绿长在缝里。它每天只肯响三次，多一次都不干——规矩是它定的。",
+   "en": "The chiming brass clock is only palm-sized, its round dial carrying two slim hands that never point at any real time. The pendulum swings on its own behind a little door, and a pair of brass bells on top rings once per swing. The shell is tarnished, scratches layered over scratches, verdigris creeping into the seams. It consents to chime three times a day and not one chime more — the rule is its own."
+  },
+  "gizmos-grabber": {
+   "zh": "多节铜机械手由一段段铜环关节连成，从底座一路弯上来，末端那对小夹爪微微张着，像随时要抓住什么。铜面被摩挲得发亮，关节缝里却积着细灰。它够不着任何东西——爪张开又合上，合上又张开，永远差着最后一寸。",
+   "en": "The jointed brass grabber is a chain of linked brass-ring segments curving up from its base, ending in a pair of small pincers held slightly open, as if about to take hold. The brass is polished bright by handling, yet grey dust has settled in the joint seams. It cannot reach anything — the pincers open and close, close and open, always a final inch short."
+  },
+  "gizmos-steamfan": {
+   "zh": "喷汽小风轮是一截黄铜立管顶着一只三叶小风轮，侧边小阀门一开，几缕白汽便推着叶片缓缓转起来。铜管发乌，细划痕绕着管身一圈圈。转得慢，但从不停；阀门一关，它就顺势把最后半圈转完，才真正安静。",
+   "en": "The steam-puff whirligig is a short brass tube topped with a three-blade fan. Open the little valve at the side and a few wisps of white steam push the blades around, slowly. The tube is tarnished, scratches circling its length. It turns slowly but never stops; close the valve and it finishes the last half-turn before it truly settles."
+  },
+  "gizmos-inker": {
+   "zh": "自动研墨磨是一只铜制小磨盘，上截齿轮咬着一块石磨缓缓转，墨从底口一滴滴落进旁边的小铜盂。铜壳磨亮，几点铜绿藏在接缝里。它磨出来的墨永远浓得刚好——不多一滴，也不少一滴，连滴进盂里的声音都是同一个调。",
+   "en": "The self-grinding ink mill is a small brass millstone turned slowly by a gear above it, ink dripping drop by drop from the bottom spout into a tiny brass cup alongside. The shell is polished bright, with a few verdigris spots hidden in the seams. The ink it grinds is always exactly right — not a drop more, not a drop less, and every drop that falls makes the same single note."
+  },
+  "gizmos-astrolabe": {
+   "zh": "折叠观星仪是几层黄铜圆盘叠在一起，每层都刻着细密星点，边缘能折出几根指针，像一张缩到巴掌大的星图。铜面发乌，划痕沿着盘的圆周走。它指着的那颗星，恰好就是它自己的位置。",
+   "en": "The folding astrolabe is several brass discs stacked on one another, each engraved with fine star points, with pointers folding out at the rim like a star chart shrunk to the palm of a hand. The brass is tarnished and the scratches run with the circumference. The star it indicates turns out to be exactly its own position."
+  },
+  "gizmos-musictoy": {
+   "zh": "发条八音匣是方方正正的一只小铜匣，盖上半透明小窗，窗里一个黄铜机械小人随着发条一圈圈转。侧面露着上弦旋钮，铜壳磨亮，铜绿点缀在角上。它只认那根发条——上紧它就唱，唱完就哑，绝不换调。",
+   "en": "The clockwork music box is a small square brass case with a translucent window in the lid, and behind it a tiny brass automaton turns as the spring unwinds. The winding knob shows at one side, the shell polished bright with verdigris at the corners. It knows only that one spring — wind it and it plays, and when the song ends it falls silent rather than changing key."
+  },
+  "leaf-starvein": {
+   "zh": "星脉叶是一枚深靛蓝的泪滴形叶片，细金线在叶面上把一颗颗四角星连成整幅星座图，三颗星点最亮，还有一弯月牙挨在叶尖。象牙白叶脉从短柄向四周散开。它从来不落在地上——它属于天空，只是借了叶子的形状落在纸上。",
+   "en": "The star-vein leaf is a deep indigo teardrop whose surface holds a whole constellation map, thin gold lines joining tiny four-pointed stars, three of them burning brightest, with a crescent crowding the tip. Ivory veins fan out from the short stem. It never falls to the ground — it belongs to the sky and only borrows the shape of a leaf to land on paper."
+  },
+  "leaf-crystalhoney": {
+   "zh": "晶格叶整片由六边形晶体小格拼成蜂巢，每一格都是带一点高光的棱面宝石。一条粗黄铜主脉从叶柄直贯叶尖，分出细枝脉。翠绿与墨绿的叶肉里点着薄荷绿、珊瑚粉和暖金。它不是叶子长成了宝石，是宝石决定要像一片叶子。",
+   "en": "The crystal-honeycomb leaf is built entirely from interlocking hexagonal cells, each one a faceted jewel carrying a small highlight. A thick polished brass midrib runs from stem to tip and branches into fine veins. Emerald and deep green flesh is dotted with mint, coral pink and warm gold. It is not a leaf that turned to gem — it is a gem that decided to look like a leaf."
+  },
+  "leaf-gearclock": {
+   "zh": "齿轮叶是长卵形，叶缘整整一圈切成圆润的黄铜齿牙，叶内三枚咬合的小齿轮和一卷金色发条充当叶脉。正中一枚象牙圆盘完全空白，没有刻度也没有数字。规矩很怪：这枚叶子只负责咬合，不负责报时——它从来不说几点。",
+   "en": "The clockwork leaf is long and oval, its edge cut into neat rounded brass teeth all the way around, with three interlocking gears and a coil of golden spring forming its veins. At the centre sits a completely blank ivory disc, no scale and no numerals. Its rule is strange: this leaf exists only to mesh, never to tell the time — it never says what hour it is."
+  },
+  "leaf-moonphase": {
+   "zh": "月相叶是完整的心形轮廓，主脉上从叶柄到叶尖排着五枚小圆月相章，先是满月，再是几弯素净的象牙月牙，章与章之间散着三颗四角小星。深梅紫叶肉配暖金边。它每一片都记着同一件事，只是记到哪一弯为止，各不相同。",
+   "en": "The moonphase leaf has a smooth, unbroken heart-shaped outline, five small round moon-phase medallions running along the midrib from stem to tip — a full moon first, then a few plain ivory crescents — with three tiny four-pointed stars scattered between them. Deep plum flesh edged in warm gold. Every leaf records the same single matter; only how far it got differs."
+  },
+  "leaf-lampvein": {
+   "zh": "灯脉叶是披针形的，叶脉其实是一根根会发光的玻璃灯管：粗琥珀主脉上分出六盏小灯泡，每盏里都亮着一小簇暖火，叶尖飘起三缕淡光。墨绿叶肉配琥珀与奶油黄，接头处是黄铜。它不靠太阳活，它自己就是那点光。",
+   "en": "The lantern-vein leaf is lance-shaped, and its veins are really glowing glass lamp tubes: a thick amber main tube with six little bulb-shaped lamps branching off, each holding a small warm flame, three pale curls of light drifting from the tip. Forest-green flesh in amber and butter yellow, brass fittings at the joints. It does not live on sunlight — it is the light itself."
+  },
+  "leaf-doublespiral": {
+   "zh": "双螺叶圆润，被裂成左右对称的两半，像双螺旋一样彼此缠绕卷曲，中间留一道象牙白细缝。午夜蓝叶肉里藏着星点和碎星，两半分别染着薄荷绿、珊瑚粉与暖金，三点珍珠光沿卷边浮动。它的一半总想去贴另一半，可中间那道缝它自己也不肯合。",
+   "en": "The twin-spiral leaf is rounded and split into two symmetrical halves that curl around each other like a double spiral, leaving a thin ivory seam between them. Midnight-blue flesh hides stars and stardust; the halves are painted pale mint, coral pink and warm brass gold, with three pearl glints floating along the curled edges. Each half always wants to reach the other, yet the seam it refuses to close is its own."
+  },
+  "leaf-metalscales": {
+   "zh": "鳞甲叶是卵形的，整片叶面覆满层层叠叠的抛光金属鳞片，排成整齐的鳞列，每一片小鳞都沿边缘带一道亮高光。中脉是粗黄铜，鳞列之间分出细枝脉。酒红叶肉从缝里透出来，像龙鳞缝里的旧伤。它每一片鳞都朝着同一个方向护着叶心。",
+   "en": "The metal-scale leaf is oval, its whole surface covered in overlapping polished metal scales laid out in neat rows, every small scale carrying a bright highlight along its rim. The midrib is thick brass, with fine branch veins running between the rows. Wine-red flesh shows through the seams like an old wound under dragon scale. Every scale faces the same way, guarding the leaf's heart."
+  },
+  "leaf-dewlens": {
+   "zh": "露镜叶是菱形的，边缘带浅浅波浪，叶面上嵌着七颗浑圆露珠，像七枚小透镜，每颗里都收着一小卷象牙云或一颗四角星。露珠外围泛着淡涟漪。松针绿叶肉配淡天蓝。它收集的不是水，是每一个被它照见的小世界。",
+   "en": "The dew-lens leaf is diamond-shaped with gently scalloped edges, seven clear round dewdrops embedded across the blade like tiny lenses, each holding a miniature curled ivory cloud or a single four-pointed star, faint concentric ripples around them. Pine-green flesh with pale sky blue. It gathers no water — it gathers every small world it happens to see."
+  },
+  "food-friedrice": {
+   "zh": "金黄蛋炒饭盛在白瓷蓝边碗里，粒粒分明，缀着青豆、玉米和胡萝卜丁。热气照升，脚下照投影。它是全站最会撒谎的一碗饭——看着刚出锅，其实连锅都没有。透明背景上，米饭凉得比谁都快。",
+   "en": "Golden egg fried rice in a white bowl with a blue rim, every grain distinct, scattered with green peas, corn and carrot cubes. Steam rises on cue, shadow falls beneath. It is the biggest liar in the gallery — it looks just-fried, though no wok was ever involved. On a transparent background, fried rice cools faster than anything else."
+  },
+  "food-sushi": {
+   "zh": "寿司拼盘摆在黑木方盘上，三文鱼握寿司、金枪鱼卷和玉子烧各占一角，旁点着青芥与姜片。摆盘讲究得像要拍广告，可它从不拍照——透明背景上，连影子都是画的。姜片倒是很诚实的配角，辣得很坦然。",
+   "en": "A sushi platter on a black wooden tray: salmon nigiri, tuna rolls and tamago each holding a corner, with wasabi and pickled ginger alongside. Plated as if for an advert, though it is never photographed — on a transparent background even the shadow is drawn. The ginger is an honest supporting actor, pungent without apology."
+  },
+  "food-hotpot": {
+   "zh": "红油火锅用黄铜九宫格锅，红汤底翻着辣椒与肉片、菇蔬，热气一腾起来就把整张图都暖了。规矩：格子要留着空位——吃到最后那几格往往是别人的。透明背景上汤不会凉，辣也不会减半分。",
+   "en": "A spicy hot pot in a brass nine-grid pot, red broth carrying peppers, meat slices and mushrooms and greens, steam rising until the whole picture warms. Rule: leave the grid spaces empty — the last few squares are usually someone else's. On a transparent background the broth never cools and the heat never eases."
+  },
+  "food-skewer": {
+   "zh": "孜然烤串是几根铁签串起焦香羊肉块，撒满孜然辣椒，旁边配着青葱。肉块边缘焦得发黑，油光还在。签子被握得发亮，说明有人已经决定要吃了——但透明背景上没人来，签子只好一直举着。",
+   "en": "Several metal skewers of charred lamb cubes dusted with cumin and chili, scallions beside. The edges of the meat blacken, the sheen of fat still there. The skewers are polished bright by a grip, meaning someone already decided to eat — but on a transparent background nobody comes, so the skewer stays raised."
+  },
+  "food-wonton": {
+   "zh": "鲜虾云吞面是清汤碗里的三只云吞配细面，缀着小白菜和葱花，热气袅袅往上飘。云吞皮薄得能透出里面粉红的虾仁。规矩：一共三只，先吃哪只自己定——但吃下去就没了，碗永远是满的。",
+   "en": "Three shrimp wontons and thin noodles in clear broth with bok choy and scallion, wisps of steam curling up. The wonton skins are thin enough to show the pink shrimp inside. Rule: there are three, and you choose which to eat first — except that eating one changes nothing, because the bowl stays full."
+  },
+  "food-mapo": {
+   "zh": "麻婆豆腐盛在白瓷碗里，红亮得发油，撒着青蒜与花椒，旁点一小撮肉末。麻辣是它的脾气，也是它的规矩——花椒点到刚好，不多不少。透明背景上豆腐不冒热气，只是看着像冒了。",
+   "en": "Mapo tofu in a white bowl, glossy red, scattered with scallion and Sichuan peppercorn, a small mound of minced meat beside. The heat is its temperament and its rule — the peppercorn lands exactly right, no more and no less. On a transparent background the tofu gives off no heat, only looks as if it does."
+  },
+  "toy-diabolo": {
+   "zh": "空竹是两只竹轮并排的古老陀螺，轮面点着朱红与靛蓝旋纹，轮轴牵一根彩绳，绳头系一枚小铜铃。竹皮泛黄，细密裂纹像老人手上的纹。技巧在于抖：抖对了它自己会站住，抖错了就一头栽在透明背景上，再也起不来。",
+   "en": "A diabolo of two bamboo wheels side by side, wheel faces dotted with vermilion and indigo spirals, a coloured cord through the axle with a tiny brass bell at the end. The bamboo skin has yellowed, fine cracks like the lines on an old hand. The whole skill lies in the wrist: whipped right, it stands on its own; whipped wrong, it falls onto the transparent background and never gets up."
+  },
+  "toy-spinningtop": {
+   "zh": "陀螺是车木削成的圆锥，顶端一截细杆可以捻在指间，锥身刷着靛蓝与朱红相间的旋纹，底端钉一枚磨亮的铁尖。木纹清晰，有几道开裂。它转到最后总要歪一下——那一下是它跟透明背景告别的动作。",
+   "en": "A lathe-turned wooden top, a slim peg at the crown for flicking between the fingers, its cone painted in indigo and vermilion spirals, a polished iron point at the base. The wood grain runs clear, with a few splits. At the very end it must lean once — that lean is how it says goodbye to the transparent background."
+  },
+  "toy-jianzi": {
+   "zh": "毽子以一枚方孔铜钱作底座，插上削好的鸡毛根，羽毛分红、黄、白三色分层散开。铜钱磨得发亮，边上还留着一点绿锈。踢得好的时候它能立在空中不落，踢不好就趴在透明背景上，羽毛还是照样分三层。",
+   "en": "A jianzi built on a square-holed coin base fitted with trimmed rooster quills, plumage fanning out in layers of red, yellow and white. The coin is worn bright with a touch of verdigris at the edge. Kicked well it can stand in the air without falling; kicked badly it lies down on the transparent background with its feathers still neatly layered."
+  },
+  "toy-kite": {
+   "zh": "沙燕风筝是北京式燕子造型，竹篾骨架撑出双翼与尖尾，糊上薄纸后点上靛青、朱红与藤黄的几笔，尾梢垂两条飘带。纸面带细微折痕，是被风反复折过又展开留下的。它飞得越高，线越难放——规矩是放线的人不能抬头太久。",
+   "en": "A Beijing swallow kite, bamboo splints stretched into two wings and a pointed tail, covered in thin paper and brushed with a few strokes of indigo, vermilion and rattan yellow, two ribbons trailing from the tail tip. Fine creases run across the paper, folded and unfolded by wind. The higher it flies, the harder the line pulls — rule: whoever holds it must not look up for long."
+  },
+  "toy-lantern": {
+   "zh": "走马灯是六棱纸罩灯笼，内壁装一圈可转的纸轮，轮上剪出人马花鸟的剪影。罩面画着折枝花卉，烛光把暖黄透出来，纸骨竹圈在光里分明。它转一圈，人马就走过一圈——透明的背景上那些剪影，谁也追不上。",
+   "en": "A hexagonal paper-shade lantern holding a rotating drum lined with cut-out silhouettes of riders, birds and flowers. The shade is painted with blossoming branches and lit from within by a warm candle glow, bamboo hoops showing crisply through. Each turn carries the riders one circuit of the drum — and on a transparent background, nobody ever catches them."
+  },
+  "toy-ninerings": {
+   "zh": "九连环由九枚铜环串在一根弯钩铜杆上，环面磨出温润包浆，钩头铸成小如意头，环与环层层相扣。要解开它得按固定次序来，一步错，前面全白解。规矩：解开了也别急着得意——重新套回去才是本事。",
+   "en": "Nine bronze rings threaded onto a curved bronze rod, ring faces worn to a warm patina, the hook cast as a small ruyi head, each ring nested into the next. It opens only in a fixed order; one wrong step undoes all the others. Rule: even when you crack it, don't crow — putting it back together is the real trick."
+  },
+  "toy-tangram": {
+   "zh": "七巧板是七块彩漆薄木板拼成的方形：两块大三角、三块中三角、两块小三角与一块平行四边形。板面漆色分朱红、靛蓝、藤黄、墨绿，边缘见浅色木茬。它能被拼成无数图形，但只有七块——想加东西是加不进来的。",
+   "en": "A tangram assembled into a square from seven painted wooden pieces — two large triangles, three medium, two small and a parallelogram — in vermilion, indigo, rattan yellow and ink green, pale wood showing at the cut edges. It can be arranged into countless figures, but there are only seven pieces — you cannot add a single one more."
+  },
+  "toy-lubanlock": {
+   "zh": "鲁班锁是六根木条互相咬合成的立体锁，榫头层层穿插，拆不开。竹节木面刷成深浅两色棕，边角磨出圆润包浆。它是这一组里唯一被设计成要拆的玩具——只不过要先学会装回去。规矩：拆到最后六根木条，你得能原样拼回。",
+   "en": "A Luban lock of six wooden bars mortised into an interlocking solid puzzle that cannot be pulled apart, bamboo-node wood stained in two shades of brown, corners worn to a rounded polish. It is the only toy here designed to be taken apart — though you must first learn to put it back. Rule: when you are down to six bars, you must be able to rebuild them as they were."
+  },
+  "toy-pelletdrum": {
+   "zh": "拨浪鼓是双面蒙皮的小鼓，左右各伸一柄，鼓面画着胖娃娃与牡丹，两粒木珠连着细绳绕在柄上。鼓身朱红，鼓框浅木色带着磨痕。摇起来两粒珠子轮流敲打，声音一左一右像在对话。规矩：它只能聊两句，多了就吵。",
+   "en": "A pellet drum with skin stretched over both faces, a handle on each side, the drumheads painted with a plump child and peonies, two wooden beads on strings looped around the handles. Vermilion body, pale wooden rim worn smooth. Shaken, the two beads take turns striking, the sound alternating left and right like a conversation. Rule: it only manages two lines before it turns into noise."
+  },
+  "toy-tumbler": {
+   "zh": "不倒翁是个圆胖白娃娃，脑袋大身子短，穿红肚兜扎着小褡裢，圆底压着重心，推倒多少次都能自己晃回来。腮边两团红晕，表情憨笑。它不站得住也不需要站得住——规矩是：能弹回来的，都算站得稳。",
+   "en": "A round chubby doll with an oversized head and short body, wearing a red belly band and a little waist pouch, its weighted round base making it wobble back upright however often it is pushed. Two rosy circles on the cheeks and a guileless grin. It cannot stand still and does not need to — rule: whatever can bounce back counts as standing firm."
+  },
+  "toy-paperflip": {
+   "zh": "纸翻花是用彩纸剪叠成的花形玩具，一拉一松便翻转开合，花瓣分靛蓝、朱红与藤黄多层。纸面薄透，折痕与剪刀毛边都看得见。规矩：拉绳的手不能抖，抖一下这朵花就散了，散了就得重新剪。",
+   "en": "A paper flip flower cut and folded from coloured paper so it opens and turns as the string is pulled, layered petals in indigo, vermilion and rattan yellow. The paper is thin enough to see through, fold lines and scissor feathering both visible. Rule: do not let your hand shake on the string — one tremor and the flower comes apart, and then it must be cut again."
+  },
+  "toy-bamboodragonfly": {
+   "zh": "竹蜻蜓是竹刀削成的叶片插在木杆顶端，缠一根棉线，拨动后叶片旋起停在半空。竹片青黄相间带着毛刺，杆头缠线处磨出深色。它停在空中那一瞬最像蜻蜓——只一瞬，然后落下，再等下一次拨动。",
+   "en": "A bamboo dragonfly, a shaved leaf blade fitted to the top of a wooden stick with a cotton cord wound around it, spun by hand until the blade hovers overhead. The blade alternates yellow-green with raw splinters, the cord seat darkened by wear. The moment it hangs in the air is the most dragonfly-like it will ever be — one moment, then down, waiting for the next spin."
+  },
+  "toy-pinwheel": {
+   "zh": "风车是四片斜折彩纸装在细竹签上，红黄蓝绿四色交叠成一圈风叶，转起来像一朵转动的花。纸边有折痕和轻微毛口。做它的人手笨，折得不太齐，转起来就有点晃——规矩：歪着转也算转。",
+   "en": "A pinwheel of four diagonally folded coloured papers pinned on a slender bamboo stick, red, yellow, blue and green overlapping into a ring of vanes that turns like a blossoming flower. The paper edges are creased and slightly feathered. Whoever folded it was clumsy, so it turns a little unevenly — rule: a crooked spin is still a spin."
+  },
+  "toy-clothtiger": {
+   "zh": "布老虎是棉布缝的虎头，额头一个黑底金线的王字，两耳圆立，颊边绣着虎纹，胡须用白线一根根挑出。橙黄棉布起了毛球，线头有点松。它早就被摸得起了球——规矩：这样的虎才值得留着，硬挺的新虎反而没人要。",
+   "en": "A cloth tiger head sewn from cotton, a gold-on-black 王 character stitched on the forehead, two round upright ears, tiger stripes embroidered along the cheeks, white thread whiskers pulled out one by one. The orange cotton has gone puffy and a few threads have loosened. It has been petted into fluff — rule: a tiger like that is worth keeping; a stiff new one nobody wants."
+  },
+  "toy-rabbitlord": {
+   "zh": "兔儿爷是北京庙会的泥塑兔神，长耳竖起，穿金黄甲胄蹬云纹翘头靴，双手捧着一面小旗。彩绘剥落露出白坯胎。它是庙会上的神像，却一点也不严肃——规矩：供完它就下桌，跟别的小玩意儿挤在一块儿玩。",
+   "en": "The clay rabbit lord of Beijing temple fairs, long ears standing up, dressed in golden armour and cloud-patterned boots with turned-up toes, both hands holding a small banner. The paint has chipped back to the pale clay body. A temple-fair god who is in no way solemn — rule: once the offerings are done he comes down off the table and plays with everything else."
+  },
+  "toy-nigugu": {
+   "zh": "泥咕咕是胶泥捏的小鸟哨，胖身短尾，翅膀一捏就响，脊背刷红绿两色，尾根留一个空哨孔。泥胎干裂出细小裂纹。它其实有两副嗓子——捏翅膀是吱声，含着吹是长音。规矩：别对着别人的耳朵吹。",
+   "en": "A nigugu clay bird whistle, plump body and short tail, its wing squeezing out a squeak, the back painted in red and green, a hollow whistle hole left at the base of the tail. The dried clay has cracked with fine fissures. It actually has two voices — squeeze the wing for a squeak, blow with it held for a long note. Rule: do not blow it near someone else's ear."
+  },
+  "toy-sugarfigure": {
+   "zh": "糖人是熬化的麦芽糖趁热吹成的糖画，琥珀通透带上糖丝的细纹，塑成举着花枪的小猴。糖体薄处近乎透明。它活得极短——糖会返潮，纹路会慢慢化掉。规矩：画的时候手要快，慢了糖就拉不动丝了。",
+   "en": "A sugar figurine, maltose syrup boiled hot and blown into a sugar painting, amber and translucent with fine threads of pulled sugar, shaped into a small monkey raising a flowered spear. The thinnest parts are almost clear. It lives very briefly — sugar sweats and the lines slowly dissolve. Rule: the hand must be fast while it is drawn, or the syrup will not pull."
+  },
+  "toy-klotski": {
+   "zh": "华容道是木框棋盘里卡着一批红蓝滑块，块面画着武将与兵卒，四四方方严丝合缝。木框榫接紧密，带磨亮的包浆。规矩：块不能硬推——每次只许动空格旁边那一块，多推一步就卡死。",
+   "en": "A Klotski board where a crowd of red and blue sliding blocks painted with generals and soldiers is jammed tight inside a wooden frame, the pieces squared off and fitting snugly, the mortised frame rubbed to a mellow polish. Rule: no shoving — only the block beside the gap may move, and one push too many jams the whole thing."
+  },
+  "toy-slingshot": {
+   "zh": "弹弓是天然竹叉削成的 Y 形，叉尖各拴一段旧皮筋，兜里放着一颗圆泥丸。竹皮青褐带雀斑，握柄处汗渍磨得发亮。它其实不常打鸟，多半是打罐子、打树梢上的果子。规矩：橡皮筋绷紧的时候别站得太近。",
+   "en": "A slingshot carved from a natural bamboo fork into a Y, an old rubber band looped around each fork tip, a round clay pellet resting in the pouch. The bamboo skin is greenish brown with mottled speckles, the grip polished by sweaty palms. It rarely hunts birds — mostly tin cans, or fruit still up in the branches. Rule: do not stand close while the band is drawn back."
+  },
+  "toy-zongren": {
+   "zh": "鬃人是天津胡同里的提线泥偶，骑在彩漆木马上，马颈扎一圈马尾鬃，小人穿红袄蓝裤，底座两只竹轮一拉就走。泥胎彩绘磨得斑驳，露出的底色已经分不清原本是什么红。它是骑在马上又被线牵着——规矩：算它是马上的兵，不算它是马上的囚犯。",
+   "en": "A string-pulled clay figure from a Tianjin alley, riding a painted wooden horse whose neck is bound with a mane of real horsehair, the little rider in a red jacket and blue trousers, two bamboo wheels on the base that roll when the strings are pulled. The clay and paint are rubbed mottled and the original colours can no longer be told apart. It rides a horse while also being led by strings — rule: count it as a soldier on horseback, not a prisoner on one."
+  },
+  "kid-diabolo": {
+   "zh": "抖空竹的男孩穿蓝灰短褂，双手扯着棉线把红金双轮甩到半空，一腿抬起，脸笑得眼睛都弯了。轮子转起来带风，线在阳光里抖成一条虚影。规矩：线一松他就得追着跑——所以玩这个的男孩，鞋总是跑掉一只。",
+   "en": "A boy in a blue-grey short jacket working a diabolo on a cotton string, one leg lifted, the red-and-gold double wheel spinning between the cords, round face creased into a laugh. The wheel hums as it turns and the string blurs in the light. Rule: let the string slack and he has to run after it — which is why boys who play this always lose one shoe."
+  },
+  "kid-jianzi": {
+   "zh": "踢毽子的女孩穿红袄绿裤梳着双髻，抬起一脚把红羽毽子翻在半空，两臂张开保持平衡，衣摆随动作鼓起来。毽子在透明背景上飞得比哪都高，也落得比哪都准——它总往她脚背上落。",
+   "en": "A girl in a red jacket and green trousers with two buns, kicking a jianzi so the red-feathered shuttlecock flips overhead, arms spread for balance and hem ballooning with the motion. It flies higher here than anywhere, and lands more surely too — it always comes down toward her instep."
+  },
+  "kid-kite": {
+   "zh": "放沙燕风筝的小童穿黄马甲暗蓝裤，仰着头，一手举线轴一手牵线，红黑彩绘的沙燕在身侧斜着打旋。线绷出一道细弧，风筝顺着线转，像被拴住的鸟。规矩：线不能放太长，长了孩子就管不住它了。",
+   "en": "A small child in a yellow vest and dark blue trousers looking up while flying a sand-swallow kite, one hand raising the spool and the other holding the taut line, the red-and-black painted swallow banking beside them. The line bows into a thin arc and the kite turns along it like a tethered bird. Rule: do not let out too much line — past a certain length the child loses control of it."
+  },
+  "kid-lantern": {
+   "zh": "捧走马灯的女孩穿粉袄格纹罩衫梳着双髻，双手捧一盏走马灯，菱格纸窗里透出暖黄烛光，灯檐垂着短穗。她低着头看得认真，烛影在纸上慢慢转。规矩：灯举久了手会酸，所以这类小孩走路慢——她是在等纸轮转完一圈。",
+   "en": "A girl in a pink quilted jacket with two buns cradling a revolving paper lantern in both hands, warm candlelight glowing through the diamond-latticed windows, short tassels hanging from the eaves. Head bent in quiet concentration as the shadows turn slowly on the paper. Rule: holding a lantern tires the arms, so children like her walk slowly — they are waiting for the drum to finish its turn."
+  },
+  "kid-drum": {
+   "zh": "摇拨浪鼓的小男孩穿米色短褐蓝裤，把鼓摇得张嘴笑。鼓面朱红，两侧红球甩成两道弧线，一脚踮起跟着节奏晃。声音一左一右，像有两个人在替他说笑。规矩：他笑得停不下来的时候，多半是鼓快散了。",
+   "en": "A little boy in a tan short coat and blue trousers shaking a pellet drum with a wide-open laugh, the drum face vermilion and its two red beads swinging out in arcs, one foot tiptoeing to the rhythm. The sound alternates left and right, like two people laughing on his behalf. Rule: when he cannot stop laughing, the drum is usually coming apart."
+  },
+  "kid-top": {
+   "zh": "抽陀螺的男孩穿灰蓝上衣棕裤，蹲着身子一手举细竹鞭杆，绳梢正甩向地上那只红蓝陀螺。他身子前倾眯着眼瞄，嘴里咬着气。规矩：陀螺一歪就得立刻再抽一鞭——手慢半拍，陀螺就躺在透明背景上不起来了。",
+   "en": "A boy in a slate-blue jacket and brown trousers crouching to whip a spinning top, one hand raising a slender bamboo whip as the cord lashes toward the red-and-blue top on the ground. He leans in with narrowed eyes, breath held. Rule: the moment the top starts to lean, whip again at once — half a beat slow and it lies down on the transparent background for good."
+  },
+  "lil-scholar": {
+   "zh": "书生穿素蓝长衫，衣缘绣着云纹，双手捧一卷书垂目沉思。云纹绣得很密，像一场没下完的雨。他走路极轻，怕吵醒书里的人。规矩：书卷不能展开太久——展开久了，里面的道理会跑到肩膀上去。",
+   "en": "The scholar wears a pale-blue robe with cloud-scroll hems and holds a rolled scroll in both hands, eyes lowered in calm thought. The cloud pattern is stitched so densely it looks like rain that never finished. He walks very quietly, for fear of waking whoever is in the book. Rule: do not keep the scroll open too long — left open, its meaning climbs up into your shoulders."
+  },
+  "lil-tea": {
+   "zh": "茶人穿棉麻宽袍，袖口衣缘染着水波纹，双手把茶盏捧在胸前，恬淡含笑。水波纹只在袖口那一圈，像他连喝茶的姿势都记得省水。他一天只喝三盏，多一盏就误了时辰。规矩：三盏之后别劝——劝了也是白劝。",
+   "en": "The tea person wears a loose undyed-linen tunic with water-ripple motifs at the cuffs and cradles a tea cup at the chest, a tranquil composed smile. The ripples circle only the cuffs, as if even his posture remembered to save water. He drinks three cups a day; a fourth would ruin the hour. Rule: after the third, do not persuade him — it is wasted effort."
+  },
+  "lil-embroider": {
+   "zh": "绣娘穿交领襦裙，衣襟与腰带织着缠枝花纹，抬手引着线，偏头带一点俏皮神采。缠枝纹顺着腰带一路爬，爬到袖口就停住。她手里的线永远比绣完的活多出一截——规矩：线不要剪断，留着，下一件衣服就有得接。",
+   "en": "The embroiderer wears a fitted cross-collar ruqun with intertwined floral-vine patterns on the bodice and sash, a raised needle and trailing thread, her head tilted with a lively, slightly mischievous look. The vine climbs the sash and stops at the cuff. The thread in her hand is always longer than the work she has finished — rule: never cut the thread, keep it, so the next garment has something to join onto."
+  },
+  "lil-sword": {
+   "zh": "侠客穿短打劲装，护肩与袖口绘着方正雷纹，腰悬长剑，一手叉在腰带上，笑容不羁。雷纹画得方方正正，像他这个人。剑不轻，他从不觉得重——规矩：侠客不解释自己为什么拔剑，解释了就不侠了。",
+   "en": "The swordsman wears a short practical martial outfit with bold angular thunder-key patterns on the shoulder guards, a sheathed sword at the hip, one hand on his belt and a roguish grin. The thunder pattern is square and blunt, like the man himself. The sword is not light and he never minds — rule: a swordsman never explains why he drew his blade; explain and he stops being one."
+  },
+  "lil-music": {
+   "zh": "琴师穿飘逸长衣，袖上散布星纹与卷草，斜抱一把古琴，仰首出神。他的琴横在胸前却没弹——他正听着什么。星纹只在袖口聚成一片，像他心里那点光。规矩：琴师抬头的瞬间别打断他，那是曲子最要紧的地方。",
+   "en": "The musician wears a flowing long robe with scattered star-and-scrolling-vine motifs on the sleeves, a small zither held diagonally, his gaze lifted and distant. The zither lies across his chest unplayed — he is listening to something. The stars gather only at the cuffs, like the light inside him. Rule: when the musician lifts his head, do not interrupt; that is where the piece turns."
+  },
+  "lil-craft": {
+   "zh": "匠人穿工装短褐，皮围裙上印着利落的方格纹，手里一把木刨，神情专注。围裙上的格子方方正正，跟他刨出来的木面一样。他做事不说话，一句多余的话能毁掉一刀。规矩：看他干活的时候别出声，出声就重来。",
+   "en": "The craftsman wears a short work jacket and a leather apron printed with a crisp geometric grid, a small wooden plane in hand and an utterly focused face. The grid on the apron is as square as the boards he planes. He works without speaking; one unnecessary word can spoil a single cut. Rule: watch him work in silence — speak, and it starts again."
+  },
+  "lil-merchant": {
+   "zh": "掌柜穿圆领袍，领口衣缘缀着钱纹菱格，抬手像在议价，笑得精明又热络。菱格在领口排成一圈，像算盘珠子。规矩：跟他还价可以，但一次只能让一步——让多了他不赚，反而不再理你。",
+   "en": "The shopkeeper wears a round-collar gown with diamond-coin motifs along the collar and hem, one hand raised mid-gesture as if closing a deal, bright shrewd friendly smile. The diamonds line up at the collar like beads on an abacus. Rule: you may bargain with him, but concede one step at a time — concede too much and he earns nothing and stops dealing with you."
+  },
+  "lil-recluse": {
+   "zh": "隐者穿素简道袍，衣摆爬满冰裂纹釉样，拄一根结绳杖，含着通透的笑。冰裂纹从下摆一路裂到袖口，像釉面裂开却不碎。他不说话时最清楚，一开口反而添乱。规矩：不懂就别问——问了他也答，只是答得更少。",
+   "en": "The recluse wears a simple straw-trimmed Taoist robe with ice-crack glaze patterns crawling up the hem, a knotted walking staff in hand and a wise, amused half-smile. The crackle runs from hem to cuff like glaze that broke without shattering. He is clearest when he is silent; speaking only muddies it. Rule: if you do not understand, do not ask — he would answer, but with fewer words."
+  },
+  "lil2-fisher": {
+   "zh": "渔父穿蓑衣斗笠，衣缘织着鳞纹，肩扛钓竿、腰悬鱼篓，含笑缓步。鳞纹一片片压着，像真的鱼鳞贴上去。他钓的鱼从不装进篓里——篓是空的，鱼在钩上。规矩：跟他走一段路，不许问钓到了几条。",
+   "en": "The fisherman wears a straw rain cape and conical hat with fish-scale patterns woven into the hem, a bamboo rod slung over the shoulder and a fish basket at the hip, strolling with a content smile. The scales lie one over another like real fish scales pressed on. His basket is always empty — the fish are on the hook. Rule: walk with him a while, and do not ask how many he has caught."
+  },
+  "lil2-woodman": {
+   "zh": "樵夫穿粗布短褐，胸前印着年轮纹，背负柴捆、肩扛长斧，咧嘴憨笑。年轮纹一圈套一圈，像他数过的树。柴捆压得肩膀歪，他也不换边。规矩：斧子落下之前别喊他——喊了斧头会偏。",
+   "en": "The woodcutter wears a short work jacket with tree-ring patterns on the chest, a bundle of firewood on his back and a broad axe on his shoulder, a simple cheerful grin. The rings circle inside circles, like the trees he has counted. The bundle bends his shoulder and he never switches it. Rule: do not shout before the axe falls — shout, and the swing goes wide."
+  },
+  "lil2-farmer": {
+   "zh": "农夫穿粗布短衫，衣缘袖口绣着稻穗纹，扶着锄头抬手拭汗，头戴草帽，笑得温厚。稻穗纹沉甸甸地垂在袖口，穗子都朝一个方向。他一年种的东西自己吃不完。规矩：别问他收成——他会把最好的分给你。",
+   "en": "The farmer wears a rough-spun tunic with golden rice-ear motifs on the hem and cuffs, leaning on a hoe and wiping his brow under a straw hat, warm good-natured smile. The ears hang heavy at the cuffs, all leaning the same way. He grows more than he can eat. Rule: do not ask about his harvest — he will hand you the best of it."
+  },
+  "lil2-cowherd": {
+   "zh": "牧童穿短衣短裤，肩头印着柳叶纹，横笛吹奏，赤脚而立，歪头俏笑。柳叶纹被风吹得动，纹样也跟着动。他吹的调子只有一句，吹第二遍时自己先笑了。规矩：笛声一停就别说要听——他吹第二遍会更好。",
+   "en": "The cowherd boy wears short pants and an open shirt with willow-leaf motifs on the shoulders, playing a bamboo flute barefoot, head tilted with a mischievous grin. The willow leaves seem to stir, and the pattern with them. His tune is a single phrase, and the second time through he laughs before it ends. Rule: when the flute stops, do not ask for an encore — the second time through is better."
+  },
+  "lil2-healer": {
+   "zh": "郎中穿洗练长衫，胸前绣着灵芝纹，背着药箱，手里托着药杵，含笑伸手。灵芝纹一圈圈绕在胸口，像长年采药的路线。他递药时总先递最不苦的那味。规矩：问他治不治得好——他只会说：先吃。",
+   "en": "The healer wears a long pale robe with lingzhi mushroom motifs across the chest, a medicine chest on his back and a small mortar in hand, offering a remedy with a compassionate smile. The lingzhi rings circle his chest like the routes of years spent gathering herbs. He always offers the least bitter medicine first. Rule: ask him whether it will work — he will only say: take it first."
+  },
+  "lil2-taoist": {
+   "zh": "道士穿深蓝道袍，胸前缀一枚八卦纹圆章，拂尘搭在小臂上，垂目淡然。八卦章上的卦爻磨得看不清一半。他从不说自己会什么，只说今日不宜。规矩：他说不宜的事就别做——他一年里说错的次数，一只手数得完。",
+   "en": "The Taoist wears a dark-blue robe with a circular bagua medallion on the chest, a horsetail whisk across the forearm, eyes gently lowered. Half the trigrams on the medallion have worn past reading. He never says what he can do, only that today is unsuitable. Rule: do not do the things he calls unsuitable — the number of times he is wrong in a year can be counted on one hand."
+  },
+  "lil2-monk": {
+   "zh": "僧侣穿橙黄僧衣，衣缘缀着莲瓣纹，腕上绕一串念珠，手里托一只陶钵，垂目浅笑。莲瓣纹一瓣一瓣从下摆开上去，像在慢慢长。他托钵的手很稳——钵里没有饭，他照样托着。规矩：钵前别站太久，他不催人，但你会自己不好意思。",
+   "en": "The monk wears a saffron robe with lotus-petal motifs along the hem, prayer beads at the wrist and an alms bowl in hand, serene lowered eyes. The petals open upward one by one from the hem, as though still growing. His hand is steady, though the bowl is empty — he carries it all the same. Rule: do not stand too long before the bowl; he will not rush you, but you will embarrass yourself."
+  },
+  "lil2-warrior": {
+   "zh": "武生穿紧身扎甲，肩胸绘着腾起的火焰纹，长枪往地上一杵，另一手按拳而立，目光炯炯。火焰纹烧到领口就停住，没有一处烧过头。他亮相时不眨眼，亮相完了才眨。规矩：枪一旦杵下去，他不会再动第二下——除非你先动。",
+   "en": "The martial performer wears a fitted armoured costume with bold flame patterns blazing up the shoulders, a long spear planted and a fist at the hip, intense blazing eyes. The flames reach the collar and stop there, not one stroke beyond. He holds the pose without blinking and only blinks once it is done. Rule: once the spear is planted, he will not move a second time — unless you move first."
+  },
+  "lil2-poet": {
+   "zh": "诗人穿青绿长衫，袖上垂着竹节纹，腰间挂一只酒壶，仰首吟哦，疏放一笑。竹节纹一节一节数下去，数到第七节就断了——那节是空出来的位置。他念完一句总要等半拍，像在等谁接。规矩：他等的那半拍，别接，他会自己续上。",
+   "en": "The poet wears a teal robe with bamboo-node motifs down the sleeves, a wine gourd at the waist, head tilted upward reciting verse with a proud, detached smile. The nodes are counted down and the seventh is blank — that gap is deliberate. After each line he waits half a beat, as if for someone to answer. Rule: do not fill that half-beat; he will continue by himself."
+  },
+  "lil2-drinker": {
+   "zh": "酒仙宽袍敞怀，襟口绣着旋涡纹，怀抱一只酒坛，醉眼眯笑，衣袖滑落半边。旋涡纹一圈套一圈，看久了会跟着转。他醉得很有分寸——从不超过三分，因为第四分就站不住了。规矩：想扶他的时候别扶，他会自己稳。",
+   "en": "The wine immortal wears a loosely open robe with swirling spiral patterns on the lapels, hugging a wine jar, blissful tipsy grin, one sleeve slipping. The spirals spiral inside spirals, and after a while your eyes follow them. He is drunk with precision — never past the third measure, because the fourth is where standing fails. Rule: do not steady him if he stumbles; he will find his own feet."
+  },
+  "lil2-goplayer": {
+   "zh": "棋士穿宽袖深袍，衣缘织着棋格纹，指间拈着一枚棋子，敛袖而立，凝神静思。棋格纹方方正正，从衣摆一直排到袖口。他落子之前会把棋子在指间转三圈。规矩：不要在他数到第三圈时说话——第三圈之后就是落子。",
+   "en": "The go player wears a wide-sleeved dark robe with a subtle grid motif at the hem, a single stone pinched between his fingers, half-closed eyes in concentration. The grid runs square from hem to cuff. Before placing a stone he turns it in his fingers three times. Rule: do not speak as he counts the third turn — after the third, the stone falls."
+  },
+  "lil2-painter": {
+   "zh": "画师穿飘逸长衫，肩头绕着卷云纹，执笔悬腕，一手半卷画纸，回眸带笑。卷云纹在肩头绕成一个小旋涡，像他脑子里的主意。他落笔前先在空中比划两下，那两下才是画。规矩：别催他——画没出来之前，画纸只是一张纸。",
+   "en": "The painter wears a flowing gown with scrolling-cloud motifs across the shoulders, a fine brush aloft, a half-unrolled paper in the other hand, glancing back with a lively smile. The clouds coil into a small swirl at the shoulder, like an idea turning over. He traces two shapes in the air before he commits — those two strokes are the picture. Rule: do not rush him; before the picture exists, the paper is only paper."
+  },
+  "lil2-gardener": {
+   "zh": "花匠穿短衣围裙，围裙上印着宝相花纹，臂弯挎一只花篮，手里拿着花剪，俯身含笑。宝相花纹一圈圈绕在围裙上，像一朵永远开着的花。他剪枝时先比一比，才下剪。规矩：他比的时候别凑近看——花剪很准，比的时间是留给花的。",
+   "en": "The gardener wears a work apron printed with ornate baoxiang floral medallions, a basket of blooms on one arm and flower shears in the other, bending in with a warm smile. The medallions circle the apron like a flower that never closes. He measures a branch before he cuts. Rule: do not lean in while he measures — the shears are accurate, and the measuring is for the flower."
+  },
+  "lil2-boatman": {
+   "zh": "艄公穿粗布短褂，衣缘印着江崖纹，撑篙而立，一手搭在额前远望，咧嘴憨笑，牙都看得见。江崖纹从衣摆叠上来，一层压一层，像远处的山。他一天来回十几趟，篙上的手印比脸还黑。规矩：船靠岸时别催，他先把船停稳。",
+   "en": "The boatman wears a coarse short jacket with jagged river-cliff wave motifs at the hem, gripping a punt pole, one hand shading his eyes to the distance, broad gap-toothed grin. The cliffs stack upward from the hem like far mountains. He makes a dozen trips a day, and his hands on the pole are darker than his face. Rule: do not rush him at the landing — he stops the boat first."
+  },
+  "lil2-hunter": {
+   "zh": "猎人穿皮质猎装，肩头缀着鹿角纹，背负弯弓、腰悬箭囊，搭手远眺，目光锐利。鹿角纹在肩上一分岔，岔口都朝着他看的方向。他的弓背在背上，箭在囊里，一直没动过。规矩：他不打已经看见的——他要等它自己再往前走一步。",
+   "en": "The hunter wears a fitted leather hunting outfit with deer-antler motifs on the shoulder, a recurve bow on his back and a quiver at the hip, keen scanning gaze. The antlers fork at the shoulder, both tines pointing where he is looking. His bow stays on his back and his arrows stay in the quiver, unmoved. Rule: he does not shoot what he already sees — he waits for it to take one more step."
+  },
+  "lil2-herbalist": {
+   "zh": "采药人扎着巾，穿短褐，袖缘印草叶纹，背一只竹篓，手里拈着一枝细看，神情专注。草叶纹顺着袖缘往上长，长到肩头就断了——再往上是山，不是衣服。他分不清草和菜，但分得出哪一枝不能采。规矩：跟着他走可以，别伸手碰他筐里的。",
+   "en": "The herbalist wears a tied headcloth and short tunic with herb-leaf vein motifs on the sleeves, a bamboo basket of plants on his back, closely examining a sprig, quiet and absorbed. The leaf veins climb the sleeve and stop at the shoulder — beyond that is mountain, not clothing. He cannot tell grass from vegetables, but he can tell which sprig must not be picked. Rule: walk with him if you like, but do not reach into his basket."
+  },
+  "lil2-diviner": {
+   "zh": "卜者穿宽大深袍，胸前缀着龟甲纹，一手持幡，一手捧龟甲，眯眼诡笑。龟甲上的裂纹纵横交错，像一张看不懂的地图。他给人指路之前从不看路，只看甲。规矩：别问他算得准不准——他只说：甲上是这么写的。",
+   "en": "The diviner wears a wide dark robe with hexagonal tortoise-shell patterns across the chest, a banner staff in one hand and an ancient cracked shell in the other, enigmatic narrowed smile. The cracks cross and recross like an unreadable map. Before pointing anyone anywhere, he never looks at the road, only at the shell. Rule: do not ask how accurate he is — he says only: the shell says so."
+  },
+  "lil2-flutist": {
+   "zh": "笛者穿飘逸长衣，袖缘旋着风回纹，横笛闭目，广袖临风，身姿若悬。风回纹一圈圈顺着袖口转，转到袖尖就散开。他吹的调子在透明背景上听得见风，却看不见风。规矩：他闭眼的时候别拍手——他会换一段更轻的。",
+   "en": "The flutist wears a flowing long robe with curling wind-spiral motifs along the sleeves, a bamboo flute to the lips, eyes closed, wide sleeves in the air, weightless poise. The spirals travel down the sleeve and scatter at the tip. You can hear the wind in his tune on a transparent background, but you cannot see it. Rule: do not applaud while his eyes are closed — he will switch to something softer."
+  },
+  "lil2-lady": {
+   "zh": "仕女穿交领襦裙，裙裾缀着团花纹，执扇半掩面，敛袖低眉，步摇轻晃。团花纹一朵一朵圆得规矩，藏在裙褶里。她笑的时候扇子会挡掉一半——看得到的那一半才是给你看的。规矩：她把扇子放下的时候再走近半步，那才是真的。",
+   "en": "The classical lady wears an elegant cross-collar ruqun with round floral medallions on the skirt, a silk fan half concealing her face, head gently lowered, a hairpin swaying. The medallions are perfectly round, hiding in the pleats. When she smiles the fan hides half of it — the visible half is the half meant for you. Rule: move closer only after she lowers the fan; only then is it real."
+  },
+  "lil2-child": {
+   "zh": "稚子穿红肚兜短裤，布上印着石榴纹，高高举起一串糖葫芦，赤脚雀跃，咧嘴大笑。石榴纹裂着口籽都露出来。他跑起来肚兜会歪，但从来不系紧——系紧了就不肯走路了。规矩：别扶他，他摔了自己会爬起来笑得更大声。",
+   "en": "The little child wears a bright belly-band and shorts printed with pomegranate-burst motifs, a stick of candied haws held overhead, hopping barefoot with a big toothy grin. The pomegranates are split open, seeds showing. His belly-band slips as he runs and is never tied tight — tied tight, he refuses to walk. Rule: do not lift him; if he falls he gets up laughing harder."
+  },
+  "emblem-cloudwhale": {
+   "zh": "云中鲸是一头小蓝鲸游过卷起的象牙白云，云下悬着三颗雨滴，鲸背喷出一小缕雾气。深钴蓝圆底压着细金边框，上下各一枚小铆钉。它游过的云都不下雨——雨都被它背上那口气挡住了。",
+   "en": "A cloud whale swims through a curled ivory cloud, three raindrops hanging below and a curl of mist rising from its spout, on a deep cobalt enamel field inside a thin brass rim with two rivets. The clouds it passes never rain — the puff from its back holds the rain off."
+  },
+  "emblem-bottledstorm": {
+   "zh": "瓶中雷是一只琥珀玻璃小瓶封着朱红软木塞，瓶里关着一道盘成圈的金黄闪电，瓶颈浮着三点火星。深青绿圆底配细金边框。那道闪电在瓶里已经待了很多年，一直没等到要劈的那一下。",
+   "en": "A small amber glass bottle sealed with a coral cork, a coiled golden lightning bolt trapped inside and three sparks floating near the neck, on a deep teal enamel field inside a thin brass rim. That bolt has been in the bottle a long time and has still not found the strike it was waiting for."
+  },
+  "emblem-hiveclock": {
+   "zh": "蜂巢钟是八格蜜金蜂巢绕着中央一块象牙白钟面，钟面只有两根黄铜指针和十二颗小圆点，不留任何数字。两只小蜜蜂停在巢格上。指针照走，可谁也说不清它指几点——上面没有数字。",
+   "en": "Eight honey-gold wax cells ring a blank ivory clock dial with only two brass hands and twelve tiny gold dots, no numerals at all, two small bees resting on the cells. The hands move, but nobody can say what hour it shows — there are no numbers to say it with."
+  },
+  "emblem-eyekey": {
+   "zh": "眼钥匙是一把立着的旧式铜钥匙，钥匙环化成一只睁开的绿眼睛，瞳孔居中，下方短短的睫毛正好排成钥匙齿。深墨绿圆底配细金边框。这把钥匙不开门——它只负责看。",
+   "en": "An upright old brass key whose bow becomes a wide open green eye with a dark pupil, short eyelashes forming the key teeth below, on a deep inky green enamel field inside a thin brass rim. This key opens no door — it is only in charge of looking."
+  },
+  "emblem-windupplanet": {
+   "zh": "发条行星是一颗薄荷绿带珊瑚红纹的小行星，斜套着黄铜星环，右侧伸出一枚上发条的钥匙。深靛蓝圆底撒着三颗象牙小星。它每转一圈要上一次弦——转得比钟快，但比钟累。",
+   "en": "A pale mint planet streaked with coral red, tilted inside a warm brass ring, a wind-up key protruding from its right side, three ivory stars scattered over a midnight indigo field. It must be wound once per revolution — turning faster than a clock, but working harder than one."
+  },
+  "emblem-mothcandle": {
+   "zh": "蛾与烛是一支短铜烛台上的蜡烛，烧着高高的暖橙火苗，一只浅色飞蛾展翅绕着火转，两缕细烟盘上去。暗红圆底配细金边框。蛾子每晚都来，烧掉多少蜡它不在意——它只认那点光。",
+   "en": "A candle in a short brass holder burning with a tall amber flame, one pale moth circling it with spread wings, two curls of smoke above, on a deep burnt-red enamel field inside a thin brass rim. The moth comes every night and does not care how much wax it costs — it only knows that light."
+  },
+  "emblem-keyholegarden": {
+   "zh": "锁孔花园里长出一座微型花园，圆头小树撑开黄绿树冠，三朵小花与卷须绕着树根，一架小梯子斜靠在锁孔内壁。土黄与苔绿圆底配细金边框。没人拿钥匙来开——这扇门是自己开的。",
+   "en": "A large ornate keyhole holding a miniature garden, a round little tree with a yellow-green canopy, three small flowers and curling tendrils at its roots, a tiny ladder leaning against the inner edge, on an ochre and moss-green field inside a thin brass rim. Nobody brings a key — this door opened itself."
+  },
+  "emblem-moonsnail": {
+   "zh": "月蜗是一只小蜗牛，背着象牙白月牙壳，壳上旋着细细的螺纹，头顶两枚软触角，身后跟着一颗小星与两点碎光。淡紫蓝圆底配细金边框。它背上的壳是月亮的边——月缺的那一块，正好够蜗牛住。",
+   "en": "A small snail carrying an ivory crescent-moon shell with a fine spiral, two soft antennae on its head, one little star and two dots trailing behind, on a pale lavender blue field inside a thin brass rim. Its shell is the edge of the moon — the missing crescent is exactly room enough for a snail."
+  },
+  "emblem-umbrellajelly": {
+   "zh": "伞水母是一柄小阳伞，伞盖化作半透明水母，垂下的触须正好排成伞骨，周围落着三颗雨滴，伞柄弯出小钩。深靛蓝圆底配细金边框。下雨的时候它不躲——它就是雨伞。",
+   "en": "A small parasol whose domed canopy is a translucent jellyfish, dangling tentacles forming the umbrella ribs, three raindrops falling around it and a tiny curled handle below, on a deep indigo field inside a thin brass rim. When it rains it does not take shelter — it is the shelter."
+  },
+  "emblem-teacupgalaxy": {
+   "zh": "茶杯星河是一只白瓷小茶杯连着杯托，杯口旋出一圈细碎星河与淡蓝雾气，上方浮着三颗四角星。深青绿圆底配细金边框。杯里盛的小宇宙没别的客人，只在杯沿转一圈就走了。",
+   "en": "A small white porcelain teacup on its saucer with a swirl of tiny stars and pale blue mist rising from it, three four-pointed stars floating above, on a deep teal field inside a thin brass rim. The little galaxy in the cup has no other guests — it turns once around the rim and leaves."
+  },
+  "emblem-matchboxfire": {
+   "zh": "火柴盒篝火是一只半抽开的小火柴盒，盒里躺着两根火柴，敞开的盒屉上烧着一小簇交叉枝条的篝火，飘起一缕淡烟。深酒红圆底配细金边框。盒里的两根没点——留着下次再用。",
+   "en": "A small matchbox slid half open with two matches inside, a tiny campfire of crossed twigs burning above the open tray and one curl of pale smoke drifting up, on a deep wine red field inside a thin brass rim. The two matches inside are unlit — saved for next time."
+  },
+  "emblem-bookbirds": {
+   "zh": "书页飞鸟是一本摊开的空白书册，珊瑚红书封，三只折纸小鸟从书页间飞起，另有两页纸在上方打旋，页面上不留任何字迹。深墨绿圆底配细金边框。字被人一页页拿走了，剩下纸折成了鸟。",
+   "en": "An open book with completely blank ivory pages and a coral red cover, three little origami paper birds flying up out of it and two loose pages fluttering above, no writing anywhere, on a deep forest green field inside a thin brass rim. Someone took the words away page by page, and folded the remainder into birds."
+  },
+  "emblem-lanternfish": {
+   "zh": "灯中小鱼是一盏黄铜小提灯，圆玻璃罩里游着一尾橙色小鱼，衬着两枝水草与三颗气泡，顶上带小提环。午夜蓝圆底配细金边框。鱼不游向灯芯——它只在这盏灯里绕圈。",
+   "en": "A small brass hand lantern whose rounded glass chamber holds one tiny orange fish like an aquarium, two green water weeds and three bubbles around it, a short carrying loop on top, on a midnight blue field inside a thin brass rim. The fish never swims toward the flame — it only circles inside this lantern."
+  },
+  "emblem-clocktree": {
+   "zh": "齿轮树是一圈相扣的黄铜小齿轮围着中央一块象牙白空白圆盘，盘心长出一株三枝绿叶小树，两缕细根攀过盘沿。深赭褐圆底配细金边框。圆盘上没有指针也没有数字——这棵树自己就是时间。",
+   "en": "A ring of interlocking brass gear wheels around a completely blank ivory dial, a tiny green tree with three leafy branches growing from its centre and two roots curling over the edge, on a deep ochre brown field inside a thin brass rim. No hands, no numerals — the tree itself is the time."
+  },
+  "emblem-keymoon": {
+   "zh": "钥匙月是一把立着的旧式黄铜钥匙，圆环钥柄化作一弯象牙白月牙，细链上垂着两颗小星，下方是短短的钥匙齿。深紫圆底配细金边框。月亮挂在一把钥匙上，钥匙却打不开它。",
+   "en": "An upright old brass key whose round bow becomes a slender ivory crescent moon, two tiny four-pointed stars hanging from it on fine chains, short plain key teeth below, on a deep plum purple field inside a thin brass rim. A moon hangs from a key, and the key cannot open it."
+  },
+  "emblem-bottlesail": {
+   "zh": "瓶中帆是一只斜躺的透明玻璃瓶，素软木塞封口，瓶中一叶白三角帆小船浮在一小卷蓝浪上，瓶颈旁两颗气泡。深松绿圆底配细金边框。瓶身不贴任何标签也不塞纸条——那船自己认得路。",
+   "en": "A small clear glass bottle lying at a slight angle with a plain cork stopper, a tiny white sailboat floating inside on a curl of blue wave and two bubbles near the neck, on a deep pine green field inside a thin brass rim. No label, no folded note inside — the boat knows the way by itself."
+  },
+  "emblem-wellstars": {
+   "zh": "井中星夜是一眼石砌小井的圆形井口，幽深井里藏着一小片夜空与三颗金星、一弯月牙，绳上吊着一只黄铜小桶。灰蓝石色圆底配细金边框。井里的星星不用打水——打水的人只管把桶放下去。",
+   "en": "The round stone rim of a little wishing well seen slightly from above, a miniature night sky with three golden stars and a small crescent moon inside its dark opening, a tiny brass bucket hanging on a rope, on a deep blue-gray slate field inside a thin brass rim. The stars in the well need no water drawn — whoever wants them simply lowers the bucket."
+  },
+  "emblem-drawerspring": {
+   "zh": "抽屉春天是一只带圆铜拉手的小木抽屉，被拉开一半，抽屉里长出一枝三朵花的花枝与两只小蝴蝶，几片绿叶翻过抽屉边沿。赤陶红圆底配细金边框。抽屉一直关着的时候，春天在里面等。",
+   "en": "A small wooden drawer pulled half open with a round brass knob, a flowering branch with three blossoms and two little butterflies growing out of it, a few green leaves curling over the edge, on a deep terracotta red field inside a thin brass rim. As long as the drawer stays shut, the spring waits inside it."
+  },
+  "emblem-telescopecomet": {
+   "zh": "镜中彗星是一支短筒黄铜单筒望远镜斜指向上，宽镜口里探出一颗拖着长长卷尾的小彗星，镜口旁三颗碎星。深靛蓝圆底配细金边框。它被望远镜看见时，正在离开——所以永远只看得到尾巴。",
+   "en": "A short antique brass spyglass angled upward, a bright little comet with a long curling golden tail emerging from its wide front lens, three tiny stars around the lens, on a deep indigo blue field inside a thin brass rim. It is already leaving when the glass finds it — which is why only the tail is ever seen."
+  },
+  "emblem-birdcagecloud": {
+   "zh": "笼中云是一只带小顶环的黄铜鸟笼，笼门半开，笼里关着的不是鸟而是一朵三瓣蓬松白云，两颗小雨滴正从门缝溜出去。深墨绿圆底配细金边框。门是开的——云要出去，雨跟出去两滴。",
+   "en": "An ornate brass birdcage with its little door swung open, one fluffy white cloud with three rounded lobes floating inside instead of a bird, two tiny raindrops escaping through the door, on a deep forest green field inside a thin brass rim. The door is open — the cloud is leaving, and two drops of rain go with it."
+  },
+  "emblem-hourglassflower": {
+   "zh": "沙漏花是一只黄铜框架小沙漏，上球装的是珊瑚色花瓣而不是沙，三片花瓣正穿过细颈落下，下球积成小小一堆。深紫圆底配细金边框。它漏的是花——落完一次要等很久才重新开满。",
+   "en": "A small hourglass with a brass frame, its upper bulb filled with loose coral flower petals instead of sand, three petals falling through the narrow neck and a little mound gathered below, on a deep plum purple field inside a thin brass rim. It leaks flowers — after one run it takes a long while to fill again."
+  },
+  "emblem-doorsea": {
+   "zh": "门里海是一扇圆顶小木门半掩着，门缝里涌出两卷蓝海浪与一叶白帆，门板上有一枚小锁孔，门前三级台阶。深青绿圆底配细金边框。门后不是房间——门后是海，门只是开在那儿。",
+   "en": "A small round-topped wooden door standing half open, two curling blue sea waves and one tiny white sailboat visible through the opening, a little brass keyhole and three small steps, on a deep teal field inside a thin brass rim. Behind the door is no room — behind it is the sea; the door simply stands there."
+  },
+  "emblem-quillmoon": {
+   "zh": "羽笔月是一支斜置的象牙白羽毛笔配金色笔尖，笔尖滴下一弯细月牙与三颗星形墨点，下方卷着一小缕墨涡。深酒红圆底配细金边框。写下的不是字，是能浮起来的东西。",
+   "en": "One ivory feather quill angled diagonally with a golden nib, a slender crescent moon and three star-shaped ink droplets dripping from the nib, a tiny swirl of ink below, on a deep wine red field inside a thin brass rim. What it writes is not words — it is things that can float."
+  },
+  "emblem-gearbfly": {
+   "zh": "齿轮蝶是一只正面展翅的对称蝴蝶，翅面由相扣的小黄铜齿轮拼成，身体中央盘着一圈发条弹簧，两根卷曲触角，翅缘点着珊瑚小点。深赭褐圆底配细金边框。翅膀转起来时会响——很轻，但听得见。",
+   "en": "A butterfly seen front-on with perfectly symmetrical wings made of small interlocking brass gears, a coiled clockwork spring at the centre of its body, two curled antennae and tiny coral dots along the wing edges, on a deep ochre brown field inside a thin brass rim. Its wings make a sound as they turn — very faint, but audible."
+  },
+  "emblem-envelopeforest": {
+   "zh": "信封森林是一只掀开封口的素色信封，里面长出三棵圆头小树与两朵小蘑菇，几片叶子和一根藤蔓翻过纸边，信封上不留地址、邮票或任何字迹。深松绿圆底配细金边框。没人寄它——它寄给自己。",
+   "en": "An opened plain envelope with its flap lifted, three tiny round trees and two small mushrooms growing out of it, a few leaves and a vine curling over the paper edge, completely blank with no address, stamp or writing, on a deep pine green field inside a thin brass rim. Nobody mailed it — it mails itself."
+  },
+  "emblem-rainbulb": {
+   "zh": "灯泡雨是一只黄铜螺口的大圆玻璃灯泡，玻璃里落着四颗淡蓝雨滴，底部积成小水洼泛起两圈涟漪，顶上浮着一小朵云。午夜蓝圆底配细金边框。灯泡不亮也没有任何印字——它只是一间很小的屋子，雨在里面下得刚好。",
+   "en": "A large round glass light bulb with a brass screw base, a tiny shower of four pale blue raindrops falling inside into a small puddle with two ripple rings, one little cloud near the top, the bulb unlit with no markings, on a midnight blue field inside a thin brass rim. The bulb is not lit and bears no lettering — it is simply a very small room where it rains just right."
+  },
+  "emblem-chesscastle": {
+   "zh": "棋子城堡是一枚象牙白国际象棋车，做成三垛雉堞的小城堡塔，塔身两扇拱窗，顶上细铜杆挑着一面珊瑚小三角旗，宽圆底座。深蓝灰圆底配细金边框。棋子上没有任何字母或记号——它守的城不归任何一国。",
+   "en": "One ivory chess rook shaped as a tiny castle tower with three crenellations, a small coral pennant on a thin brass pole, two arched windows and a wide round base, completely plain with no letters or markings, on a deep blue-gray slate field inside a thin brass rim. No letters, no marks — the castle it guards belongs to no country."
+  },
+  "emblem-shellrecord": {
+   "zh": "贝壳唱片是一枚左右对称张开的扇贝壳，壳心托着一张小黑胶唱片，中心圆标是象牙白空白一片，只有几圈素纹沟槽，旁边斜靠一枚黄铜音叉，上方三点碎光。赤陶红圆底配细金边框。唱片的中心标签是空的——唱的是什么，它不打算说。",
+   "en": "An open scallop shell with two symmetrical fans holding a small gramophone record with a completely blank ivory centre label and plain concentric grooves, a little brass tuning fork leaning beside it and three tiny sparkles above, on a deep terracotta red field inside a thin brass rim. The label is blank — what it plays, it declines to say."
   }
  },
  "cats": {
@@ -1479,8 +1887,28 @@
    "en": "From black cats to ravens, the site's animals never wreck the house — they merely hold their composure on a transparent background. Keeping them requires no litter box, just a PNG alpha channel."
   },
   "food": {
-   "zh": "拉面、蛋糕与可疑罐头。本站的食物永远停在刚出锅的完美瞬间，而且永远吃不到——这是图鉴的残忍之处。",
-   "en": "Ramen, cake and tins of dubious content. The food here is forever at its perfect just-served moment, and forever inedible — such is the cruelty of a gallery."
+   "zh": "拉面、蛋糕、炒饭、寿司、火锅、烤串、云吞面、麻婆豆腐与可疑罐头。本站的食物永远停在刚出锅的完美瞬间，而且永远吃不到——这是图鉴的残忍之处。热气照升不误，脚下照投影，但透明背景上什么都不会留下。",
+   "en": "Ramen, cake, fried rice, sushi, hot pot, skewers, wonton noodles, mapo tofu and tins of dubious content. The food here is forever at its perfect just-served moment, and forever inedible — such is the cruelty of a gallery. The steam rises on schedule, the shadow falls beneath, but nothing ever stays on a transparent background."
+  },
+  "gizmos": {
+   "zh": "六件巴掌大的黄铜小器械：自鸣座钟、多节机械手、喷汽风轮、自动研墨磨、折叠观星仪、发条八音匣。每一件都能动，但动得都不太可靠——铜壳发乌、刻痕纵横、铜绿点点，是常年摆弄留下的年轮。规矩：只看不摸，摸之前先想清楚它会不会突然响。",
+   "en": "Six palm-sized brass contraptions: a chiming clock, a jointed grabber, a steam whirligig, a self-grinding ink mill, a folding astrolabe and a clockwork music box. Every one of them moves, but none moves quite reliably — tarnished shells, fine scratches and spots of verdigris, the rings of a lifetime of handling. Rules: look, don't touch, and think twice before you touch, because something might start chiming."
+  },
+  "alienleaves": {
+   "zh": "八枚从别的世界飘来的叶子标本：星脉、晶格、齿轮、月相、灯脉、双螺、鳞甲、露镜。叶肉有深靛蓝、翡翠绿、酒红，每片都规规矩矩平铺在透明背景上，像一页植物图鉴活页。规矩：只收叶子，不收根——根一来，这一页就长不完了。",
+   "en": "Eight leaf specimens blown in from elsewhere: star-veined, crystal-honeycombed, clockwork, moon-phased, lantern-veined, twin-spiralled, metal-scaled, dew-lensed. The blades run deep indigo, emerald and wine red, each one laid out flat and proper on a transparent background like a living page of a botanical atlas. Rules: leaves only, never roots — once the roots come, the page never ends."
+  },
+  "emblems": {
+   "zh": "三十枚别针大小的奇想徽章，每一枚都把一件不可能的事做成了一枚珐琅圆章：鲸在云里游、闪电被塞进瓶子、钟面长成蜂巢、钥匙长出眼睛、抽屉里抽出春天、灯泡里下着雨。构图一律居中对称，细金边框，上下各一枚小铆钉。规矩：徽章只讲一件事，讲不清楚就换一个想法。",
+   "en": "Thirty curious emblems the size of a brooch, each turning one impossible thing into a single enamel disc: a whale swimming through cloud, lightning bottled, a clock face grown into honeycomb, a key sprouting an eye, spring drawn out of a drawer, rain falling inside a light bulb. Every composition is centred and symmetrical, in a thin gold rim with a rivet above and below. Rules: an emblem tells exactly one story, and if it can't tell it clearly, it picks a different idea."
+  },
+  "toys": {
+   "zh": "二十件中国旧时玩具：空竹、陀螺、毽子、沙燕风筝、走马灯、九连环、七巧板、鲁班锁、拨浪鼓、不倒翁、纸翻花、竹蜻蜓、风车、布老虎、兔儿爷、泥咕咕、糖人、华容道、弹弓、鬃人。竹木铜纸各有各的手艺脾气，磨旧了、发黄了、开裂了，都留着。规矩：都是给人玩的，不许拿去拆——除了鲁班锁，它本来就是给你拆的。",
+   "en": "Twenty old Chinese toys: a diabolo, a spinning top, a jianzi, a swallow kite, a revolving lantern, nine linked rings, a tangram, a Luban lock, a pellet drum, a tumbler doll, a paper flip flower, a bamboo dragonfly, a pinwheel, a cloth tiger, a clay rabbit lord, a nigugu bird, a sugar figurine, a Klotski board, a bamboo slingshot and a bristle horse. Bamboo, wood, bronze and paper each carry their own temperament, worn pale, yellowed and split but all kept. Rules: these are for playing with, not for taking apart — except the Luban lock, which exists to be taken apart."
+  },
+  "playkids": {
+   "zh": "六个玩得起劲的孩子：抖空竹、踢毽子、放风筝、捧走马灯、摇拨浪鼓、抽陀螺。红袄绿裤、黄马甲蓝裤子，脚下踩着自己的影子就笑。规矩：只管玩，别数摔了几次，也别问为什么风筝线断了——那是风的事。",
+   "en": "Six kids thoroughly absorbed in play: working a diabolo, kicking a jianzi, flying a kite, carrying a revolving lantern, shaking a pellet drum, whipping a spinning top. Red jackets and green trousers, yellow vests and blue pants, laughing with a shadow under their feet. Rules: just play, don't count the falls, and don't ask why the kite string snapped — that's the wind's business."
   },
   "vehicles": {
    "zh": "从复古火箭到碟形光束船，动力系统一律不可考。但只要背景是星空，速度感就成立。",
