@@ -30,3 +30,18 @@
 /c/*
   Cache-Control: public, max-age=0, must-revalidate
   Link: <https://smallfigure.com/llms.txt>; rel="describedby"
+
+# 游戏目录：HTML 与脚本短缓存（改版后刷新即可见，避免旧 game.js 残留 4 小时）
+# 注意 Cloudflare Pages「后匹配胜出」：/game/sprites/* 必须放在 /game/* 之后
+/game/
+  Cache-Control: public, max-age=0, must-revalidate
+/game/*.js
+  Cache-Control: public, max-age=0, must-revalidate
+/game/*.css
+  Cache-Control: public, max-age=0, must-revalidate
+/game/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+/game/*.webp
+  Cache-Control: public, max-age=3600
+/game/sprites/*
+  Cache-Control: public, max-age=86400
