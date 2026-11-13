@@ -33,9 +33,13 @@ tools/_diag_*
 # 本地凭据文件（绝不进公开仓库）
 .gh_token
 .cf_token
+.itch_token
 .env
 .env.*
 .dev.vars
+
+# butler 二进制（itch.io 发布工具，体积大，仅本地使用，重新下载即可）
+tools/butler/
 
 # 依赖与系统文件
 node_modules/

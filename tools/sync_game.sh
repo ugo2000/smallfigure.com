@@ -16,12 +16,18 @@ PY="C:/Users/Administrator/.workbuddy/binaries/python/envs/default/Scripts/pytho
 "$PY" tools/build_game.py >/dev/null
 
 # 校验：自托管版必须存在且零外部请求
+# 注意：这里只拦「资源加载型外链」（script src / link href / img src / css url() / fetch）。
+# 页脚里 <a href="https://ugo2000.itch.io/..."> 是用户点击才发生的导航链接，不属于自动请求，
+# 自托管版允许存在这类指向 itch.io 的导流链接。
 SH="_site/game"
 if [ ! -f "$SH/index.html" ]; then
   echo "[sync_game] 致命：_site/game/index.html 未生成" >&2
   exit 1
 fi
-EXT=$(grep -oE 'https?://[^"'"'"' <>]+' "$SH/index.html" "$SH/game.js" "$SH/style.css" 2>/dev/null | grep -v 'www.youtube.com/game_api' || true)
+EXT=$(grep -oE '(src|href)="https?://[^"]+"|url\(https?://[^)]+\)|fetch\(["'"'"']https?://[^)]+' \
+  "$SH/index.html" "$SH/game.js" "$SH/style.css" 2>/dev/null \
+  | grep -v 'www.youtube.com/game_api' \
+  | grep -vE '(src|href)="https://ugo2000\.itch\.io/' || true)
 if [ -n "$EXT" ]; then
   echo "[sync_game] 致命：自托管版含外部请求 -> $EXT" >&2
   exit 1

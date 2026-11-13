@@ -37,6 +37,7 @@
       collFoot: 'Every character is an original illustration from smallfigure.com',
       now: 'NOW', next: 'NEXT', hint: 'Two of a kind merge. Keep the pile low.',
       brandTag: 'ORIGINAL TINY FOLKS · MERGE & COLLECT', privacy: 'PRIVACY',
+      itchLink: 'PLAY ON ITCH.IO',
       unlocked: 'NEW IN THE MUSEUM', complete: 'MUSEUM COMPLETE!', tooHigh: 'TOO HIGH!',
       adFail: 'No ad right now — try again later.', revived: 'Top cleared. Keep going!',
       newBest: 'NEW!'
@@ -51,6 +52,7 @@
       collFoot: '每个小人都是 smallfigure.com 的原创插画',
       now: '当前', next: '下一个', hint: '两个相同的会合成，别堆太高。',
       brandTag: '原创小人 · 合成与收集', privacy: '隐私',
+      itchLink: '去 itch.io 玩',
       unlocked: '图鉴新增', complete: '图鉴收齐了！', tooHigh: '太高了！',
       adFail: '暂时没有广告，稍后再试。', revived: '顶层清掉了，继续！',
       newBest: '新纪录'
