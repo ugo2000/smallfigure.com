@@ -63,7 +63,7 @@ No installs, no accounts, no timers, no energy. Just one more try.
 >
 > Questions: ugo2000@126.com · smallfigure.com
 
-部署后建议挂在 `https://smallfigure.com/game/privacy`，现在**还没部署**。
+已部署：隐私页在 `https://smallfigure.com/game/privacy.html`（自托管、零追踪，仅 localStorage）。
 
 ## 提交顺序与门槛
 
@@ -85,4 +85,4 @@ early access 意向表 → 频道管理员权限 → 开发者门户四步 → �
 
 Poki / CrazyGames 的钱来自各自 SDK 的广告，YouTube 的钱来自门户里的广告位（资格分批开放、比例未公开）。
 三个平台都不支持内购。所以顺序是：itch.io 先验玩法 → Poki / CrazyGames 跑留存和 eCPM → 拿着数据去谈 YouTube 或发行伙伴。
-**当前状态：本地文件已备齐，未部署线上，未提交 git，未在任何平台注册或上传。**
+**当前状态：已本地提交并 push 到 GitHub（分支 `workbuddy/main-8002f772`，与本地、生产一致）；游戏已上线 `https://smallfigure.com/game/`；itch.io 物料与发布核对单已备齐（`game/itch-io-listing.md`），由 U 哥登录账号上传；Poki / CrazyGames / YouTube 待接各自 SDK 后推进。**

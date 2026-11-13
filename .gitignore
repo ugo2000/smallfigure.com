@@ -47,3 +47,6 @@ generated-images/
 
 # character-art 抠图脚本本地副本（skill 目录已有，不入库）
 tools/_cut/
+
+# 构建产物：游戏发布包 / 截图（由 tools/build_game.py 生成，可重建）
+outputs/
