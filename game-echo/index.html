@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="description" content="Echo Museum — a puzzle about waiting for yourself. Freeze your steps into echoes, stand on the plates, and walk past everyone you used to be.">
+<title>Smallfigure: Echo Museum</title>
+<link rel="icon" type="image/webp" href="favicon.webp">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <div class="frame">
+
+    <header class="hud">
+      <div class="hud-title">
+        <span class="ht-mark">◉</span><span>smallfigure</span>
+        <small data-t="subtitle">ECHO MUSEUM</small>
+      </div>
+      <div class="hud-tools">
+        <button type="button" id="btnLevels" class="icon-btn" title="Levels">▦</button>
+        <button type="button" id="btnHelp" class="icon-btn" title="How to play">?</button>
+        <button type="button" id="btnSound" class="icon-btn" title="Sound">♪</button>
+        <button type="button" id="btnLang" class="icon-btn wide" title="中文">EN</button>
+      </div>
+    </header>
+
+    <div class="metabar">
+      <div class="mb-item"><span data-t="level">LEVEL</span><b id="mLevel">01</b></div>
+      <div class="mb-item"><span data-t="step">STEP</span><b id="mStep">00</b></div>
+      <div class="mb-item"><span data-t="echo">ECHOES</span><b id="mEcho">0</b></div>
+      <div class="mb-item"><span data-t="shard">SHARDS</span><b id="mShard">0/0</b></div>
+    </div>
+
+    <div class="timeline" id="timeline"></div>
+
+    <div class="stage">
+      <canvas id="board" width="420" height="560"></canvas>
+
+      <div class="overlay" id="menu" hidden>
+        <div class="menu-art"><img src="sprites/l4.webp" alt=""><img src="sprites/l7.webp" alt=""><img src="sprites/l11.webp" alt=""></div>
+        <h1>Smallfigure</h1>
+        <h2 data-t="subtitle">ECHO MUSEUM</h2>
+        <p class="menu-tag" data-t="tagline">A PUZZLE ABOUT WAITING FOR YOURSELF</p>
+        <p class="menu-desc" data-t="menuDesc">Every step you take is remembered. Freeze a walk and it becomes an echo that replays beside you — and then stands still. Leave an echo on a plate to hold a door open, and walk past everyone you used to be.</p>
+        <button type="button" class="btn primary" id="btnStart" data-t="start">START PLAYING</button>
+        <p class="menu-how" data-t="howTo">ARROWS / SWIPE to move · WAIT to let echoes catch up · FREEZE to leave one behind</p>
+        <p class="menu-meta"><span id="menuProgress">0 / 10</span> <span data-t="cleared">rooms opened</span></p>
+      </div>
+
+      <div class="overlay" id="clear" hidden>
+        <div class="clear-card">
+          <p class="over-kicker" data-t="roomOpen">A ROOM OPENS</p>
+          <img id="clearImg" src="" alt="">
+          <h3 id="clearName">—</h3>
+          <p class="clear-note" id="clearNote">—</p>
+          <p class="clear-stats" id="clearStats"></p>
+          <button type="button" class="btn primary" id="btnNext" data-t="next">NEXT ROOM</button>
+          <button type="button" class="btn link" id="btnReplay" data-t="replay">REPLAY THIS ROOM</button>
+        </div>
+      </div>
+
+      <div class="overlay" id="allclear" hidden>
+        <div class="clear-card">
+          <p class="over-kicker" data-t="allClear">THE MUSEUM IS AWAKE</p>
+          <div class="all-art"><img src="sprites/l11.webp" alt=""></div>
+          <h3 data-t="allClearTitle">All eleven are here.</h3>
+          <p class="clear-note" data-t="allClearDesc">Old Zhang points at something just off the edge of the picture. You have been everyone in this room.</p>
+          <p class="clear-stats" id="allStats"></p>
+          <button type="button" class="btn primary" id="btnAgain" data-t="again">PLAY FROM THE START</button>
+          <button type="button" class="btn link" id="btnAllLevels" data-t="levels">ROOMS</button>
+        </div>
+      </div>
+
+      <div class="sheet" id="help" hidden>
+        <div class="sheet-head"><div><h3 data-t="howTitle">HOW TO PLAY</h3></div><button type="button" class="icon-btn" id="btnHelpClose">✕</button></div>
+        <div class="help-body" id="helpBody"></div>
+        <p class="sheet-foot">smallfigure.com · original character art</p>
+      </div>
+
+      <div class="sheet" id="levels" hidden>
+        <div class="sheet-head"><div><h3 data-t="levels">ROOMS</h3><p class="sheet-sub" id="levelsSub"></p></div><button type="button" class="icon-btn" id="btnLevelsClose">✕</button></div>
+        <div class="level-grid" id="levelGrid"></div>
+        <p class="sheet-foot" data-t="collFoot">Every character is an original illustration from smallfigure.com</p>
+      </div>
+
+      <div class="toast" id="toast" hidden></div>
+    </div>
+
+    <div class="controls">
+      <div class="dpad">
+        <button type="button" class="dbtn up" data-act="U" aria-label="up">↑</button>
+        <button type="button" class="dbtn left" data-act="L" aria-label="left">←</button>
+        <button type="button" class="dbtn mid" data-act="W"><span data-t="wait">WAIT</span></button>
+        <button type="button" class="dbtn right" data-act="R" aria-label="right">→</button>
+        <button type="button" class="dbtn down" data-act="D" aria-label="down">↓</button>
+      </div>
+      <div class="actions">
+        <button type="button" class="abtn freeze" id="btnFreeze"><b data-t="freeze">FREEZE</b><small data-t="freezeSub">leave an echo</small></button>
+        <div class="action-row">
+          <button type="button" class="abtn" id="btnUndo" data-t="undo">UNDO</button>
+          <button type="button" class="abtn" id="btnReset" data-t="reset">RESET</button>
+        </div>
+        <button type="button" class="abtn hint" id="btnHint" data-t="hint">HINT</button>
+      </div>
+    </div>
+
+    <footer class="brandbar"><span>© 2026 smallfigure.com</span><span class="dot">·</span><a href="https://smallfigure.com/game/" target="_blank" rel="noopener" data-t="otherGame">ALSO: MERGE MUSEUM</a></footer>
+  </div>
+</div>
+<script src="levels.js"></script>
+<script src="echo.js"></script>
+</body>
+</html>

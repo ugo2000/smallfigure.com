@@ -70,7 +70,7 @@ BRANDBAR_SELFHOST = (
     '<a href="privacy.html" data-t="privacy">PRIVACY</a>'
     '<a href="https://ugo2000.itch.io/smallfigure-merge-museum" '
     'target="_blank" rel="noopener nofollow" data-t="itchLink">PLAY ON ITCH.IO</a>'
-    '<span data-t="brandTag">ORIGINAL TINY FOLKS · MERGE &amp; COLLECT</span></footer>'
+    '<a href="https://smallfigure.com/echo/" data-t="echoLink">PLAY: ECHO MUSEUM</a></footer>'
 )
 
 

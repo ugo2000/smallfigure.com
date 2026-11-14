@@ -45,3 +45,17 @@
   Cache-Control: public, max-age=3600
 /game/sprites/*
   Cache-Control: public, max-age=86400
+
+# 第二个游戏 Echo Museum（同上：用显式扩展名规则，Pages 的通配规则不可靠）
+/echo/
+  Cache-Control: public, max-age=0, must-revalidate
+/echo/*.js
+  Cache-Control: public, max-age=0, must-revalidate
+/echo/*.css
+  Cache-Control: public, max-age=0, must-revalidate
+/echo/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+/echo/*.webp
+  Cache-Control: public, max-age=3600
+/echo/sprites/*
+  Cache-Control: public, max-age=86400
