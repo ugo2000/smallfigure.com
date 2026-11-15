@@ -277,8 +277,10 @@
   }
 
   function newState(g) {
+    // pickups runs parallel to path: it records which shard (if any) was picked
+    // on each step, so undo can restore the collection state exactly.
     return { echoes: [], path: [{ x: g.start.x, y: g.start.y }], t: 0,
-             collected: {}, loops: 0, frozen: 0 };
+             collected: {}, pickups: [null], loops: 0, frozen: 0 };
   }
 
   var DELTA = { U: { x: 0, y: -1 }, D: { x: 0, y: 1 }, L: { x: -1, y: 0 }, R: { x: 1, y: 0 }, W: { x: 0, y: 0 } };
@@ -293,12 +295,17 @@
 
     var nt = st.t + 1;
     var npath = st.path.concat([to]);
-    var nst = { echoes: st.echoes, path: npath, t: nt, collected: st.collected, loops: st.loops, frozen: st.frozen };
+    var npick = (st.pickups || []).concat([null]);
+    var nst = { echoes: st.echoes, path: npath, t: nt, collected: st.collected,
+                loops: st.loops, frozen: st.frozen, pickups: npick };
 
     var shard = false;
     if (g.cells[to.y][to.x] === '*') {
       var k = key(to);
-      if (!nst.collected[k]) { nst.collected = Object.assign({}, nst.collected); nst.collected[k] = true; shard = true; }
+      if (!nst.collected[k]) {
+        nst.collected = Object.assign({}, nst.collected); nst.collected[k] = true;
+        shard = true; npick[npick.length - 1] = k;
+      }
     }
 
     var win = (g.cells[to.y][to.x] === 'E' && doorOpen(g, nst));
@@ -311,14 +318,20 @@
     return { ok: true, state: {
       echoes: st.echoes.concat([st.path.slice()]),
       path: [{ x: g.start.x, y: g.start.y }], t: 0,
-      collected: st.collected, loops: st.loops + 1, frozen: st.frozen + 1
+      collected: st.collected, pickups: [null],
+      loops: st.loops + 1, frozen: st.frozen + 1
     } };
   }
 
   function undo(st) {
     if (st.t === 0) return { ok: false, state: st };
+    var pk = st.pickups || [];
+    var k = pk[st.t];
+    var ncollected = st.collected;
+    if (k) { ncollected = Object.assign({}, st.collected); delete ncollected[k]; }
     return { ok: true, state: { echoes: st.echoes, path: st.path.slice(0, -1), t: st.t - 1,
-                                collected: st.collected, loops: st.loops, frozen: st.frozen } };
+                                collected: ncollected, pickups: pk.slice(0, -1),
+                                loops: st.loops, frozen: st.frozen } };
   }
 
   function reset(g) { return newState(g); }

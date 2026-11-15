@@ -623,10 +623,22 @@
     updateNext(); sfx.drop();
   }
   window.addEventListener('keydown', function (e) {
+    var ae = document.activeElement;
+    var onControl = ae && /^(BUTTON|A|INPUT|TEXTAREA|SELECT)$/.test(ae.tagName);
+    // SPACE / ENTER on a focused control must activate that control, not drop a ball.
+    if ((e.key === ' ' || e.key === 'Enter') && onControl) return;
+    // Menus and sheets keep native keyboard scrolling.
+    if (state !== 'playing') return;
     if (e.key === 'ArrowLeft') { aimX = clamp(aimX - 16, WALL + 20, W - WALL - 20); e.preventDefault(); }
     else if (e.key === 'ArrowRight') { aimX = clamp(aimX + 16, WALL + 20, W - WALL - 20); e.preventDefault(); }
     else if (e.key === ' ' || e.key === 'Enter') { drop(aimX); e.preventDefault(); }
   });
+  // Mouse clicks must not leave focus on a button, or the next SPACE would
+  // re-trigger that button instead of dropping a ball.
+  var allBtns = document.querySelectorAll('button');
+  for (var bi = 0; bi < allBtns.length; bi++) {
+    allBtns[bi].addEventListener('click', function () { this.blur(); });
+  }
 
   // ---- buttons ----
   $('btnLang').addEventListener('click', function () { setLang(lang === 'zh' ? 'en' : 'zh'); });

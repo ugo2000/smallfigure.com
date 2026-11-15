@@ -25,6 +25,10 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   });
 
   await page.goto(URL, { waitUntil: 'networkidle', timeout: 30000 });
+  // This is a persistent profile: stale progress would make START open the newest
+  // unlocked room instead of level 1, so always begin from a clean save.
+  await page.evaluate(() => localStorage.clear());
+  await page.reload({ waitUntil: 'networkidle' });
   await sleep(1200);
 
   // --- menu ---

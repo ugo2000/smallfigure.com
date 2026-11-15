@@ -22,6 +22,9 @@ const KEY = { U: 'ArrowUp', D: 'ArrowDown', L: 'ArrowLeft', R: 'ArrowRight', W: 
   page.on('pageerror', e => errors.push(String(e).slice(0, 180)));
   page.on('console', m => { if (m.type() === 'error') errors.push(m.text().slice(0, 180)); });
   await page.goto(URL, { waitUntil: 'networkidle', timeout: 30000 });
+  // Persistent profile keeps progress between runs; reset so START opens level 1.
+  await page.evaluate(() => localStorage.clear());
+  await page.reload({ waitUntil: 'networkidle' });
   await sleep(900);
   await page.click('#btnStart');
   await sleep(350);

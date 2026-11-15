@@ -74,6 +74,7 @@
   // ---------- state ----------
   var lang = 'en', level = 0, g = null, st = null, history = [], mode = 'menu';
   var unlocked = 1, cleared = {}, best = {}, soundOn = true, toastTimer = null;
+  var winTimer = null, winLevel = -1;
   var imgs = {}, imgsReady = false, actx = null, raf = null, flash = 0, shake = 0, winGlow = 0;
   var SAVE_KEY = 'sfem-save-v1';
 
@@ -84,8 +85,12 @@
       var raw = localStorage.getItem(SAVE_KEY);
       if (!raw) return;
       var o = JSON.parse(raw);
-      unlocked = Math.max(1, Math.min(C.LEVELS.length, o.unlocked || 1));
-      cleared = o.cleared || {}; best = o.best || {};
+      if (!o || typeof o !== 'object') return;
+      // A corrupted / hand-edited save must never produce a NaN level index.
+      var u = Number(o.unlocked);
+      unlocked = (isFinite(u) && u >= 1) ? Math.max(1, Math.min(C.LEVELS.length, Math.floor(u))) : 1;
+      cleared = (o.cleared && typeof o.cleared === 'object' && !Array.isArray(o.cleared)) ? o.cleared : {};
+      best = (o.best && typeof o.best === 'object' && !Array.isArray(o.best)) ? o.best : {};
       if (o.lang === 'zh' || o.lang === 'en') lang = o.lang;
       if (typeof o.sound === 'boolean') soundOn = o.sound;
     } catch (e) {}
@@ -156,13 +161,16 @@
     var el = $('toast'); el.textContent = msg; el.hidden = false;
     clearTimeout(toastTimer); toastTimer = setTimeout(function () { el.hidden = true; }, ms || 2600);
   }
+  function uiBusy() {
+    return ['menu', 'clear', 'allclear', 'help', 'levels'].some(function (k) { return !$(k).hidden; });
+  }
+  // Game input is only accepted while the board itself is the active surface.
+  // Otherwise arrow keys leak into the help / room sheets and hints fire on the menu.
+  function playable() { return mode === 'play' && !uiBusy(); }
   function overlay(id, show) {
     $(id).hidden = !show;
     var ctrls = document.querySelector('.controls');
-    if (ctrls) {
-      var busy = ['menu', 'clear', 'allclear', 'help', 'levels'].some(function (k) { return !$(k).hidden; });
-      ctrls.classList.toggle('idle', busy);
-    }
+    if (ctrls) ctrls.classList.toggle('idle', uiBusy());
   }
 
   // ---------- HUD / timeline ----------
@@ -404,7 +412,11 @@
 
   // ---------- game flow ----------
   function startLevel(idx) {
-    level = Math.max(0, Math.min(C.LEVELS.length - 1, idx));
+    // A pending clear-panel reveal belongs to the room that just finished.
+    if (winTimer) { clearTimeout(winTimer); winTimer = null; }
+    winLevel = -1;
+    var n = Number(idx);
+    level = Math.max(0, Math.min(C.LEVELS.length - 1, isFinite(n) ? Math.floor(n) : 0));
     g = C.parse(C.LEVELS[level].map);
     st = C.newState(g); history = []; mode = 'play'; flash = 0.7; winGlow = 0;
     overlay('menu', false); overlay('clear', false); overlay('allclear', false);
@@ -414,7 +426,7 @@
   }
 
   function doAction(a) {
-    if (mode !== 'play') return;
+    if (!playable()) return;
     var before = C.doorOpen(g, st);
     var r = C.act(g, st, a);
     if (!r.ok) {
@@ -437,7 +449,7 @@
   }
 
   function doFreeze() {
-    if (mode !== 'play') return;
+    if (!playable()) return;
     var r = C.freeze(g, st);
     if (!r.ok) { SFX.blocked(); toast(t('noEcho'), 1800); return; }
     pushHistory();
@@ -447,13 +459,13 @@
   }
 
   function doUndo() {
-    if (mode !== 'play') return;
+    if (!playable()) return;
     if (!history.length) { toast(t('undoNone'), 1400); return; }
     st = history.pop(); SFX.click(); updateHUD(); updateTimeline();
   }
 
   function doReset() {
-    if (mode !== 'play') return;
+    if (!playable()) return;
     history = []; st = C.reset(g); SFX.click(); toast(t('resetDone'), 1400);
     updateHUD(); updateTimeline();
   }
@@ -470,7 +482,11 @@
     try { if (YT && window.ytgame.engagement) window.ytgame.engagement.sendScore({ value: (level + 1) * 100 + Math.max(0, 50 - st.t) }); } catch (e) {}
     var folkIdx = Math.min(C.FOLKS.length - 1, level);
     var f = C.FOLKS[folkIdx];
-    setTimeout(function () {
+    winLevel = level;
+    winTimer = setTimeout(function () {
+      winTimer = null;
+      // The player can open the room grid during this delay and switch rooms.
+      if (mode !== 'clear' || level !== winLevel) return;
       if (level === C.LEVELS.length - 1) { showAllClear(); return; }
       $('clearImg').src = 'sprites/' + f.k + '.webp';
       $('clearName').textContent = f[lang];
@@ -483,7 +499,12 @@
 
   function showAllClear() {
     var perfectRooms = 0, totalSteps = 0;
-    Object.keys(cleared).forEach(function (k) { if (cleared[k].perfect) perfectRooms++; totalSteps += cleared[k].steps; });
+    Object.keys(cleared).forEach(function (k) {
+      var c = cleared[k];
+      if (!c || typeof c !== 'object') return;
+      if (c.perfect) perfectRooms++;
+      if (typeof c.steps === 'number' && isFinite(c.steps)) totalSteps += c.steps;
+    });
     $('allStats').textContent = C.LEVELS.length + ' / ' + C.LEVELS.length + ' · ' + perfectRooms + ' ' + (lang === 'zh' ? '间完美' : 'perfect') + ' · ' + totalSteps + ' ' + t('stepsUsed');
     overlay('allclear', true);
   }
@@ -506,7 +527,7 @@
     for (var i = 0; i < cells.length; i++) {
       cells[i].addEventListener('click', function () {
         var n = parseInt(this.getAttribute('data-level'), 10);
-        SFX.click(); startLevel(n);
+        SFX.click(); this.blur(); startLevel(n);
       });
     }
   }
@@ -533,6 +554,15 @@
 
     document.addEventListener('keydown', function (e) {
       var k = e.key.toLowerCase();
+      var ae = document.activeElement;
+      var onControl = ae && /^(BUTTON|A|INPUT|TEXTAREA|SELECT)$/.test(ae.tagName);
+      // Space / Enter on a focused control belong to the browser, not the game.
+      if ((k === ' ' || k === 'spacebar' || k === 'enter') && onControl) return;
+      if (k === 'enter' && mode === 'menu') {
+        e.preventDefault(); startLevel(Math.min(unlocked - 1, C.LEVELS.length - 1)); return;
+      }
+      // While any panel is up, leave arrow keys free for native scrolling.
+      if (!playable()) return;
       var map = { arrowup: 'U', arrowdown: 'D', arrowleft: 'L', arrowright: 'R', w: 'U', s: 'D', a: 'L', d: 'R' };
       if (map[k]) { e.preventDefault(); doAction(map[k]); }
       else if (k === ' ' || k === 'spacebar') { e.preventDefault(); doAction('W'); }
@@ -540,7 +570,6 @@
       else if (k === 'z') { e.preventDefault(); doUndo(); }
       else if (k === 'r') { e.preventDefault(); doReset(); }
       else if (k === 'h') { e.preventDefault(); showHint(); }
-      else if (k === 'enter' && mode === 'menu') { e.preventDefault(); startLevel(Math.min(unlocked - 1, C.LEVELS.length - 1)); }
     });
 
     // swipe on canvas
@@ -555,10 +584,18 @@
     });
     canvas.addEventListener('touchmove', function (e) { e.preventDefault(); }, { passive: false });
 
+    // A mouse click must not leave focus on a button: otherwise the next SPACE
+    // would re-trigger that button instead of being the WAIT action.
+    var btns = document.querySelectorAll('button');
+    for (var b = 0; b < btns.length; b++) {
+      btns[b].addEventListener('click', function () { this.blur(); });
+    }
+
     window.addEventListener('resize', fit);
   }
 
   function showHint() {
+    if (!playable()) return;
     var L = C.LEVELS[level];
     toast(t('hintTitle') + ' · ' + L.hint[lang], 5200);
   }
