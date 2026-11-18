@@ -360,7 +360,7 @@
         'background-image:url(' + assetUrl(im, 'file') + ');background-size:' + w + 'px ' + (framePx * im.frames) + 'px;"></div>';
     }
     var fx = im.effect ? ' class="fx-' + im.effect + '"' : '';
-    return '<img' + fx + ' loading="lazy" src="' + assetUrl(im, 'thumb') + '" alt="' + esc(locName(im)) + '" width="' + im.width + '" height="' + im.height + '">';
+    return '<img' + fx + ' loading="lazy" decoding="async" src="' + assetUrl(im, 'thumb') + '" alt="' + esc(locName(im)) + '" width="' + im.width + '" height="' + im.height + '">';
   }
 
   function cardEl(im) {

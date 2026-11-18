@@ -140,12 +140,14 @@ function ok(name, cond) {
   /* ---------- 8. CTA 无死链 ---------- */
   const cta = await page.evaluate(() => {
     const a = document.getElementById('tcgfwCtaP');
-    return { tag: a.tagName, url: a.getAttribute('onclick') || '' };
+    /* CTA 是 onclick = function(){...} 动态绑定，读 HTML 属性总是空串，
+       必须读函数体才能真正验证跳转目标（旧断言因此长期假通过）。 */
+    return { tag: a.tagName, url: typeof a.onclick === 'function' ? String(a.onclick) : '' };
   });
-  ok('CTA 不是跳转死链的裸 URL', !/location\.href\s*=\s*'\/tcg'/.test(cta.url));
+  ok('CTA 跳转到规范预告页 /tcg', /location\.href\s*=\s*'\/tcg'/.test(cta.url));
 
   if (ONLINE) {
-    const tcgPage = await page.goto(BASE + '/tcg.html', { waitUntil: 'domcontentloaded' });
+    const tcgPage = await page.goto(BASE + '/tcg', { waitUntil: 'domcontentloaded' });
     ok('TCG 预告页返回 200', tcgPage && tcgPage.status() === 200);
     const tcgImgs = await page.evaluate(() =>
       Array.from(document.querySelectorAll('.tcg-card img')).map((i) => i.complete && i.naturalWidth > 0));

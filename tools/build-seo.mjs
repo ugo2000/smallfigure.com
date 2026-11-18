@@ -10,7 +10,7 @@
  * 规格来源：技术 SEO 架构师（盘古）2026-10-25 交付。
  */
 import { createHash } from 'node:crypto';
-import { readFileSync, writeFileSync, copyFileSync, existsSync, readdirSync, rmSync } from 'node:fs';
+import { readFileSync, writeFileSync, copyFileSync, existsSync, readdirSync, rmSync, mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { ITEM_PATH, CAT_PATH } from './_site_routes.mjs';
@@ -207,9 +207,14 @@ const lastmod = (imagesData.generated || new Date().toISOString()).slice(0, 10);
    这样搜索引擎能把每张图收录到各自的落地页，图片搜索也才有对应页面可指。 */
 let sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n' +
   `  <url>\n    <loc>${BASE}/</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>\n`;
-/* TCG 众筹预告页（存在才收录） */
+/* TCG 众筹预告页（存在才收录）
+   同时产出 /tcg/ 真实目录落点：Pages 对 /tcg.html 会 308 到 /tcg，
+   直接给出目录页可让规范 URL 不依赖平台重定向行为，sitemap 也只写 /tcg。 */
 if (existsSync(path.join(SITE, 'tcg.html'))) {
-  sitemap += `  <url>\n    <loc>${BASE}/tcg.html</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.7</priority>\n  </url>\n`;
+  const tcgDir = path.join(SITE, 'tcg');
+  mkdirSync(tcgDir, { recursive: true });
+  copyFileSync(path.join(SITE, 'tcg.html'), path.join(tcgDir, 'index.html'));
+  sitemap += `  <url>\n    <loc>${BASE}/tcg</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.7</priority>\n  </url>\n`;
 }
 /* 分类页 */
 for (const c of manifest.cats || []) {
@@ -301,7 +306,7 @@ const llms = [
   `- 首页：${BASE}/`,
   `- 站点地图（含全部图片条目）：${BASE}/sitemap.xml`,
   `- robots.txt：${BASE}/robots.txt`,
-  `- TCG 众筹预告页：${BASE}/tcg.html`,
+  `- TCG 众筹预告页：${BASE}/tcg`,
   `- Markdown 全文：对 ${BASE}/ 发送带 \`Accept: text/markdown\` 的请求即返回纯 Markdown 全文`,
   '',
   `## 分类（共 ${nCats} 个，合计 ${nItems} 件素材）`,
